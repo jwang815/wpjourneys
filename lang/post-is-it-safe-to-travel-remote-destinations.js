@@ -128,7 +128,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_safe_h3_4": {
     "en": "Logistical Isolation",
-    "zh": "后勤上的"孤立无援""
+    "zh": "后勤上的“孤立无援”"
   },
   "post_safe_p_16": {
     "en": "This one is underappreciated. In a remote destination, if something goes wrong, a missed connection, a vehicle breakdown, an unexpected border closure, the margin for error is smaller. There's no Uber, no walk-in clinic, no hotel with a 24-hour front desk.",
@@ -242,7 +242,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_safe_p_29": {
     "en": "You don't need to become an expert on every country you visit. But understanding the basic political situation, cultural norms, and any regional sensitivities in your destination makes you a more aware and resilient traveler, and helps you recognize when something feels off.",
-    "zh": "你不必为每一个到访的国家都成为专家，但了解目的地的基本政治局势、文化规范以及地区性的敏感议题，会让你成为一位更具觉察力、也更具韧性的旅行者，也能帮助你在情况有些"不对劲"时第一时间察觉。"
+    "zh": "你不必为每一个到访的国家都成为专家，但了解目的地的基本政治局势、文化规范以及地区性的敏感议题，会让你成为一位更具觉察力、也更具韧性的旅行者，也能帮助你在情况有些“不对劲”时第一时间察觉。"
   },
 
   "post_safe_h2_5": {
@@ -284,11 +284,11 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_safe_p_37": {
     "en": "Here's what often gets left out of both the \"adventure is worth it\" narrative and the \"stay safe, stay home\" counter-narrative.",
-    "zh": "在"探险终究值得"与"安全第一，留在家里"这两种相互对立的叙事中，往往都遗漏了同一件事。"
+    "zh": "在“探险终究值得”与“安全第一，留在家里”这两种相互对立的叙事中，往往都遗漏了同一件事。"
   },
   "post_safe_p_38": {
     "en": "All travel involves risk. Driving to work involves risk. The question is never whether risk exists. It's whether that risk is understood, managed, and proportionate to the reward.",
-    "zh": "一切出行都有风险——哪怕只是开车上班。问题从来不是"风险是否存在"，而是这份风险是否被理解、被管理，以及它是否与所获得的回报相称。"
+    "zh": "一切出行都有风险——哪怕只是开车上班。问题从来不是“风险是否存在”，而是这份风险是否被理解、被管理，以及它是否与所获得的回报相称。"
   },
   "post_safe_p_39": {
     "en": "Remote and frontier travel, when run by competent operators, isn't reckless gambling. Often it's more carefully managed than independent travel to the same places, because the logistics and safety systems are built into the trip rather than improvised on the spot.",
@@ -313,15 +313,15 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_safe_p_43": {
     "en": "The reason isn't that struggle builds character. It's that truly remote destinations offer encounters with landscapes, cultures, and ways of life that haven't been packaged for mass consumption. The effort required to reach them helps keep them that way.",
-    "zh": "原因并非"吃苦能磨练心性"，而是真正偏远的目的地，所能赠予你的，是那些尚未被打包成大众商品的风景、文化与生活方式。抵达它们所需付出的努力，本身就是让它们得以保持原貌的屏障。"
+    "zh": "原因并非“吃苦能磨练心性”，而是真正偏远的目的地，所能赠予你的，是那些尚未被打包成大众商品的风景、文化与生活方式。抵达它们所需付出的努力，本身就是让它们得以保持原貌的屏障。"
   },
   "post_safe_p_44": {
     "en": "People who've joined well-organized expeditions to places like the Wakhan Corridor, the Faroe Islands' interior, the highlands of Ethiopian Tigray, or Borneo's river systems talk about these trips differently than they do resort vacations. The difference isn't difficulty. It's authenticity.",
-    "zh": "那些参与过精心组织的探险——前往瓦罕走廊、法罗群岛的腹地、埃塞俄比亚提格雷高地，或婆罗洲水网的人，谈起这些旅程时的语气，与谈起度假村假期截然不同。区别不在于"难度"，而在于"真实"。"
+    "zh": "那些参与过精心组织的探险——前往瓦罕走廊、法罗群岛的腹地、埃塞俄比亚提格雷高地，或婆罗洲水网的人，谈起这些旅程时的语气，与谈起度假村假期截然不同。区别不在于“难度”，而在于“真实”。"
   },
   "post_safe_p_45": {
     "en": "The trade-off is real: more preparation, deeper trust in your operator, greater comfort with uncertainty, in exchange for experiences most people never have access to.",
-    "zh": "这其中的取舍是真实的：更多的准备、对运营商更深的信任、与"不确定性"更自在地共处——以此换来大多数人一生都未能企及的经历。"
+    "zh": "这其中的取舍是真实的：更多的准备、对运营商更深的信任、与“不确定性”更自在地共处——以此换来大多数人一生都未能企及的经历。"
   },
 
   "post_safe_h2_8": {
