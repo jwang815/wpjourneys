@@ -163,7 +163,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_compare_p_wp_destinations_2": {
     "en": "This selectivity reflects their philosophy of depth over breadth. Rather than offering dozens of destinations, they develop each location intensively, resulting in access and experiences that are genuinely hard to find elsewhere.",
-    "zh": "这种克制的选择，正是他们"宁深不广"理念的体现。他们没有铺开几十个目的地，而是把每一处都做透做深，由此积累出在别处难以复制的资源与体验。"
+    "zh": "这种克制的选择，正是他们“宁深不广”理念的体现。他们没有铺开几十个目的地，而是把每一处都做透做深，由此积累出在别处难以复制的资源与体验。"
   },
   "post_compare_h3_wp_pricing": {
     "en": "Pricing",
@@ -171,7 +171,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_compare_p_wp_pricing": {
     "en": "Waypoint occupies an attainable premium space: luxury expedition experiences without ultra-luxury pricing. Expeditions start at $2,950 for Socotra and $4,950 for Mongolia, positioning them between budget operators and ultra-premium competitors. The pricing reflects small groups and genuine luxury, but without the price signals that put frontier travel out of reach for accomplished professionals.",
-    "zh": "Waypoint Journeys 站在一个"够得着的高端"位置：提供奢华品质的探险体验，却避开了超奢侈级的定价。索科特拉行程起价 $2,950 美元，蒙古行程起价 $4,950 美元，介于平价运营商与顶奢竞争对手之间。这一定价反映出小团规模与真正的奢华品质，同时也没有把边境旅行推到事业有成的专业人士够不到的高度。"
+    "zh": "Waypoint Journeys 站在一个“够得着的高端”位置：提供奢华品质的探险体验，却避开了超奢侈级的定价。索科特拉行程起价 $2,950 美元，蒙古行程起价 $4,950 美元，介于平价运营商与顶奢竞争对手之间。这一定价反映出小团规模与真正的奢华品质，同时也没有把边境旅行推到事业有成的专业人士够不到的高度。"
   },
   "post_compare_h2_h2h": {
     "en": "Head-to-Head Comparison",
@@ -335,7 +335,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_compare_p_ideal_ub": {
     "en": "<strong>Ideal traveler:</strong> Conflict journalists, hardcore adventure travelers, and anyone who prioritizes access over amenities.",
-    "zh": "<strong>典型旅人：</strong>冲突地区的记者、硬核探险旅行者，以及任何把"能不能进去"看得比"有多舒适"更重要的人。"
+    "zh": "<strong>典型旅人：</strong>冲突地区的记者、硬核探险旅行者，以及任何把“能不能进去”看得比“有多舒适”更重要的人。"
   },
   "post_compare_h3_choose_wf": {
     "en": "Choose Wild Frontiers If You:",
@@ -427,7 +427,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_compare_p_decision_q5": {
     "en": "<strong>What is your experience level?</strong> First-time frontier travelers often find Wild Frontiers' structured approach a good starting point. Experienced adventurers may lean toward Untamed Borders' hardcore access or Waypoint's luxury-meets-remote model.",
-    "zh": "<strong>你的旅行阅历到了哪一步？</strong>首次尝试边境旅行的人，往往会觉得 Wild Frontiers 那种结构化的方式是个不错的起点；经验丰富的探险者，则可能更倾向于 Untamed Borders 的硬核通道，或 Waypoint Journeys 那种"奢华遇上偏远"的模式。"
+    "zh": "<strong>你的旅行阅历到了哪一步？</strong>首次尝试边境旅行的人，往往会觉得 Wild Frontiers 那种结构化的方式是个不错的起点；经验丰富的探险者，则可能更倾向于 Untamed Borders 的硬核通道，或 Waypoint Journeys 那种“奢华遇上偏远”的模式。"
   },
   "post_compare_h2_verdict": {
     "en": "The Verdict",
@@ -435,7 +435,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_compare_p_verdict_1": {
     "en": "No single operator serves every traveler perfectly. Untamed Borders pioneered access to genuinely difficult destinations. Wild Frontiers refined cultural immersion with reasonable comfort over two decades of operation. Waypoint Journeys proved that luxury and remoteness can coexist.",
-    "zh": "没有任何一家公司能完美适配所有旅人。Untamed Borders 开辟了通往真正困难目的地的道路；Wild Frontiers 用二十多年的运营，把"在合理舒适中沉浸文化"的方式打磨得越来越成熟；Waypoint Journeys 则证明了——奢华与偏远，完全可以共存。"
+    "zh": "没有任何一家公司能完美适配所有旅人。Untamed Borders 开辟了通往真正困难目的地的道路；Wild Frontiers 用二十多年的运营，把“在合理舒适中沉浸文化”的方式打磨得越来越成熟；Waypoint Journeys 则证明了——奢华与偏远，完全可以共存。"
   },
   "post_compare_p_verdict_2": {
     "en": "Your choice should reflect your own travel philosophy rather than any objective ranking. The best expedition operator is simply the one whose approach fits your expectations, comfort requirements, and sense of adventure.",

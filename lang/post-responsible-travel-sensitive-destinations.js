@@ -75,7 +75,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_responsible_p11": {
     "en": "Responsible travel in sensitive destinations requires moving beyond simple \"do no harm\" thinking toward active positive impact. This demands a framework that considers multiple stakeholders and long-term consequences.",
-    "zh": "在敏感目的地践行负责任旅行，不能止步于"不造成伤害"的朴素思维，而应迈向主动的正向影响。这需要一套框架，去权衡多方利益相关者与长远的后果。"
+    "zh": "在敏感目的地践行负责任旅行，不能止步于“不造成伤害”的朴素思维，而应迈向主动的正向影响。这需要一套框架，去权衡多方利益相关者与长远的后果。"
   },
   "post_responsible_h3_local": {
     "en": "The Local Community Test",
@@ -135,7 +135,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_responsible_p20": {
     "en": "Your choice of tour operator becomes an ethical statement. Mass-market operators often prioritize profit over responsibility, while some \"adventure\" companies treat sensitive destinations as exotic playgrounds.",
-    "zh": "你选择哪家旅行运营商，本身就是一种伦理表态。大众市场化的运营方往往把利润置于责任之前，而某些自诩"探险"的公司，则把敏感目的地当作异域猎奇的游乐场。"
+    "zh": "你选择哪家旅行运营商，本身就是一种伦理表态。大众市场化的运营方往往把利润置于责任之前，而某些自诩“探险”的公司，则把敏感目的地当作异域猎奇的游乐场。"
   },
   "post_responsible_p21": {
     "en": "Look for operators with demonstrated commitment to local communities. They should employ local guides, use local accommodations, and contribute to community development projects. They should also be transparent about challenges and limitations rather than painting unrealistic pictures of their impact.",
@@ -291,7 +291,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_responsible_p45": {
     "en": "Sometimes the most responsible choice is not to travel. Certain destinations or circumstances make ethical travel impossible, regardless of your intentions.",
-    "zh": "有时，最负责任的选择是不去。某些目的地，或某些时机，让"伦理地旅行"本身就成了无法成立的命题，无论你的初心如何。"
+    "zh": "有时，最负责任的选择是不去。某些目的地，或某些时机，让“伦理地旅行”本身就成了无法成立的命题，无论你的初心如何。"
   },
   "post_responsible_h3_conflict": {
     "en": "Active Conflict Zones",
