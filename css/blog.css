@@ -345,6 +345,7 @@ a {
   max-height: 720px;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   overflow: hidden;
 }
 .post-hero-image {
@@ -364,6 +365,9 @@ a {
   z-index: 2;
   padding: 0 48px 56px;
   max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 .post-hero-category {
   font-family: var(--font-body);
