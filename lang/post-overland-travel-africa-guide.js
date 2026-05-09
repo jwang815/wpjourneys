@@ -305,7 +305,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_overland_p_markets": {
     "en": "<strong>Markets:</strong> Buying fresh produce in local markets becomes part survival skill, part cultural crash course. Your guides help decode local customs and keep you from paying tourist prices.",
-    "zh": "<strong>集市：</strong>在当地市场采购新鲜食材，既是一种生存技能，也是一场速成的文化课。向导会帮你解读当地规矩，避免被当作"旅行者价"来对待。"
+    "zh": "<strong>集市：</strong>在当地市场采购新鲜食材，既是一种生存技能，也是一场速成的文化课。向导会帮你解读当地规矩，避免被当作「旅行者价」来对待。"
   },
   "post_overland_p_community": {
     "en": "<strong>Community Visits:</strong> Expeditions often include stops in traditional villages or with nomadic communities, arranged through local contacts who ensure these visits benefit everyone involved.",
@@ -520,7 +520,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_overland_p_readiness": {
     "en": "You don't need to be an athlete, but you should be comfortable with long days on rough roads, daily camp setup and breakdown, walking on uneven terrain, and basic physical tasks. Fitness matters less than mindset. Overland travel is full of things that don't go to plan: a border crossing that eats half your day, a detour forced by rain, a mechanical issue in the middle of nowhere. The travelers who genuinely enjoy it are the ones who can shrug, adapt, and find something interesting in the delay.",
-    "zh": "你不必是运动员，但要能从容应对漫长的颠簸路况、每天扎营与拔营的循环、在崎岖地形上行走以及基本的体力活儿。比起体能，心态更为关键。陆路之旅里"计划赶不上变化"是常态：一次过境吃掉半天时间，一场大雨逼出绕行路线，又或是车在荒郊野外掉链子。真正乐在其中的人，往往是那些能耸耸肩、灵活应对，并在等待中也能发现些有趣事物的旅人。"
+    "zh": "你不必是运动员，但要能从容应对漫长的颠簸路况、每天扎营与拔营的循环、在崎岖地形上行走以及基本的体力活儿。比起体能，心态更为关键。陆路之旅里「计划赶不上变化」是常态：一次过境吃掉半天时间，一场大雨逼出绕行路线，又或是车在荒郊野外掉链子。真正乐在其中的人，往往是那些能耸耸肩、灵活应对，并在等待中也能发现些有趣事物的旅人。"
   },
   "post_overland_h3_pack": {
     "en": "What to Pack",
