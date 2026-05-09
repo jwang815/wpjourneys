@@ -1,6 +1,7 @@
 // Shared translations for blog pages (nav, footer, common UI).
-// Individual blog post body content is published in English only.
-window.__i18n = {
+// Per-post translation files extend window.__i18n via Object.assign so they
+// can layer on top of these shared keys without overwriting them.
+window.__i18n = Object.assign(window.__i18n || {}, {
   "blog_nav_home": {
     "en": "Home",
     "zh": "首页"
@@ -44,5 +45,21 @@ window.__i18n = {
   "blog_index_hero_subtitle": {
     "en": "Guides, stories, and insights from the places where the map ends.",
     "zh": "在地图终止之处，关于那些地方的指南、故事与思考。"
+  },
+  "blog_category_company": {
+    "en": "Company",
+    "zh": "公司"
+  },
+  "blog_category_destinations": {
+    "en": "Destinations",
+    "zh": "目的地"
+  },
+  "blog_category_planning": {
+    "en": "Planning",
+    "zh": "行前规划"
+  },
+  "blog_meta_min_read": {
+    "en": "min read",
+    "zh": "分钟阅读"
   }
-};
+});
