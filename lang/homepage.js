@@ -191,6 +191,34 @@ window.__i18n = {
     "en": "Drive the legendary Karakoram Highway through the world's most dramatic mountain corridor. Explore the Hunza Valley's ancient forts and apricot orchards, cross the highest paved border crossing on Earth, and discover Lahore's Mughal heritage.",
     "zh": "驾车穿越传奇的喀喇昆仑公路，途经世界上最壮观的山脉走廊。探索罕萨谷的古堡和杏花园，跨越地球上海拔最高的铺装国境口岸，感受拉合尔的莫卧儿遗产。"
   },
+  "expedition_turkmenistan_tag": {
+    "en": "The Door to Hell",
+    "zh": "地狱之门"
+  },
+  "expedition_turkmenistan_name": {
+    "en": "Turkmenistan",
+    "zh": "土库曼斯坦"
+  },
+  "expedition_turkmenistan_subtitle": {
+    "en": "The Door to Hell, Ancient Merv & White-Marble Ashgabat",
+    "zh": "地狱之门、古梅尔夫与白色大理石的阿什哈巴德"
+  },
+  "expedition_turkmenistan_desc": {
+    "en": "Sleep on the rim of the Darvaza Gas Crater — a 70-metre flaming pit burning since 1971 — then walk the Silk Road ruins of Ancient Merv and Konye-Urgench, drive into the striped cliffs of Yangykala Canyon, and end among the white-marble boulevards of Ashgabat.",
+    "zh": "在自1971年起燃烧不熄、宽达70米的达瓦扎天然气坑边扎营过夜；漫步古梅尔夫与库尼亚-乌尔根奇的丝路遗址；驶入杨吉卡拉峡谷条纹色的悬崖；最后在阿什哈巴德的白色大理石大道间收尾。"
+  },
+  "expedition_turkmenistan_dates": {
+    "en": "7 Days",
+    "zh": "7天"
+  },
+  "expedition_turkmenistan_price": {
+    "en": "From $3,495",
+    "zh": "起价 $3,495"
+  },
+  "expedition_turkmenistan_cta": {
+    "en": "View Expedition",
+    "zh": "查看行程详情"
+  },
   "expedition_mauritania_tag": {
     "en": "Sahara Expedition",
     "zh": "撒哈拉探险"
@@ -536,8 +564,8 @@ window.__i18n = {
     "zh": "任何目的地，全程规划，专属于您"
   },
   "custom_text": {
-    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
-    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
+    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, Turkmenistan, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
+    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、土库曼斯坦、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
   },
   "custom_feat1": {
     "en": "Any country, any region",
