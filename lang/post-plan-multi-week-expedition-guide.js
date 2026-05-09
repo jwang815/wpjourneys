@@ -10,8 +10,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何筹划一场数周长途远征：写给初次出发者的分步指南"
   },
   "post_plan_hero_meta": {
-    "en": "March 14, 2026 &middot; 11 min read",
-    "zh": "2026年3月14日 &middot; 阅读约11分钟"
+    "en": "March 14, 2026 · 11 min read",
+    "zh": "2026年3月14日 · 阅读约11分钟"
   },
 
   "post_plan_p_intro1": {
@@ -686,8 +686,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "远征旅行与探险旅行：究竟有何不同？"
   },
   "post_plan_related1_meta": {
-    "en": "October 18, 2025 &middot; 9 min read",
-    "zh": "2025年10月18日 &middot; 阅读约9分钟"
+    "en": "October 18, 2025 · 9 min read",
+    "zh": "2025年10月18日 · 阅读约9分钟"
   },
   "post_plan_related2_cat": {
     "en": "Planning",
@@ -698,8 +698,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何挑选一家远征旅行公司：值得问的12个问题"
   },
   "post_plan_related2_meta": {
-    "en": "November 5, 2025 &middot; 11 min read",
-    "zh": "2025年11月5日 &middot; 阅读约11分钟"
+    "en": "November 5, 2025 · 11 min read",
+    "zh": "2025年11月5日 · 阅读约11分钟"
   },
   "post_plan_related3_cat": {
     "en": "Company",
@@ -710,7 +710,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是什么？"
   },
   "post_plan_related3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读约8分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读约8分钟"
   }
 });

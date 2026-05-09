@@ -10,8 +10,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "不丹旅行指南：如何造访地球上最后的香格里拉"
   },
   "post_bhutan_hero_meta": {
-    "en": "March 25, 2026 &middot; 15 min read",
-    "zh": "2026年3月25日 &middot; 阅读约15分钟"
+    "en": "March 25, 2026 · 15 min read",
+    "zh": "2026年3月25日 · 阅读约15分钟"
   },
   "post_bhutan_intro_p1": {
     "en": "The Kingdom of Bhutan exists in defiance of the modern world. While neighboring countries court mass tourism, this Himalayan nation deliberately limits visitors to preserve what money cannot buy: authenticity, tranquility, and a culture untouched by the homogenizing forces of globalization.",
@@ -494,8 +494,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "你真正能造访的全球十大最偏远目的地"
   },
   "post_bhutan_related_meta1": {
-    "en": "October 2, 2025 &middot; 12 min read",
-    "zh": "2025年10月2日 &middot; 阅读约12分钟"
+    "en": "October 2, 2025 · 12 min read",
+    "zh": "2025年10月2日 · 阅读约12分钟"
   },
   "post_bhutan_related_cat2": {
     "en": "Destinations",
@@ -506,8 +506,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "索科特拉岛旅行指南"
   },
   "post_bhutan_related_meta2": {
-    "en": "November 22, 2025 &middot; 15 min read",
-    "zh": "2025年11月22日 &middot; 阅读约15分钟"
+    "en": "November 22, 2025 · 15 min read",
+    "zh": "2025年11月22日 · 阅读约15分钟"
   },
   "post_bhutan_related_cat3": {
     "en": "Company",
@@ -518,7 +518,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是什么？"
   },
   "post_bhutan_related_meta3": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读约8分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读约8分钟"
   }
 });

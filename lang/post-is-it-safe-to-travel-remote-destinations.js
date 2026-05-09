@@ -9,8 +9,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "前往偏远与边境目的地，真的安全吗？一份理性的出行指南"
   },
   "post_safe_hero_meta": {
-    "en": "December 20, 2025 &middot; 10 min read",
-    "zh": "2025年12月20日 &middot; 阅读时间 10 分钟"
+    "en": "December 20, 2025 · 10 min read",
+    "zh": "2025年12月20日 · 阅读时间 10 分钟"
   },
 
   "post_safe_h2_1": {
@@ -367,8 +367,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "探险之旅 vs. 冒险之旅：两者究竟有何不同？"
   },
   "post_safe_related_1_meta": {
-    "en": "October 18, 2025 &middot; 9 min read",
-    "zh": "2025年10月18日 &middot; 阅读时间 9 分钟"
+    "en": "October 18, 2025 · 9 min read",
+    "zh": "2025年10月18日 · 阅读时间 9 分钟"
   },
   "post_safe_related_2_cat": {
     "en": "Planning",
@@ -379,8 +379,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何挑选一家探险旅行公司：值得提问的 12 个问题"
   },
   "post_safe_related_2_meta": {
-    "en": "November 5, 2025 &middot; 11 min read",
-    "zh": "2025年11月5日 &middot; 阅读时间 11 分钟"
+    "en": "November 5, 2025 · 11 min read",
+    "zh": "2025年11月5日 · 阅读时间 11 分钟"
   },
   "post_safe_related_3_cat": {
     "en": "Company",
@@ -391,7 +391,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是什么？"
   },
   "post_safe_related_3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读时间 8 分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读时间 8 分钟"
   }
 });

@@ -10,8 +10,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "小型团队探险与私人定制探险：资深旅行者该如何抉择？"
   },
   "post_smallgrp_meta": {
-    "en": "January 19, 2026 &middot; 8 min read",
-    "zh": "2026年1月19日 &middot; 8 分钟阅读"
+    "en": "January 19, 2026 · 8 min read",
+    "zh": "2026年1月19日 · 8 分钟阅读"
   },
 
   "post_smallgrp_p1": {
@@ -234,8 +234,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "探险旅行与冒险旅行：两者究竟有何不同？"
   },
   "post_smallgrp_related_meta1": {
-    "en": "October 18, 2025 &middot; 9 min read",
-    "zh": "2025年10月18日 &middot; 9 分钟阅读"
+    "en": "October 18, 2025 · 9 min read",
+    "zh": "2025年10月18日 · 9 分钟阅读"
   },
   "post_smallgrp_related_cat2": {
     "en": "Planning",
@@ -246,8 +246,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何挑选一家探险旅行公司：12 个值得发问的关键问题"
   },
   "post_smallgrp_related_meta2": {
-    "en": "November 5, 2025 &middot; 11 min read",
-    "zh": "2025年11月5日 &middot; 11 分钟阅读"
+    "en": "November 5, 2025 · 11 min read",
+    "zh": "2025年11月5日 · 11 分钟阅读"
   },
   "post_smallgrp_related_cat3": {
     "en": "Company",
@@ -258,7 +258,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是怎样一家公司？"
   },
   "post_smallgrp_related_meta3": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 8 分钟阅读"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 8 分钟阅读"
   }
 });

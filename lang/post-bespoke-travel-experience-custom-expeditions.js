@@ -8,7 +8,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "何谓量身定制的旅行体验？——定制远征是如何运作的"
   },
   "post_bespoke_meta": {
-    "en": "March 5, 2026 &middot; 9 min read",
+    "en": "March 5, 2026 · 9 min read",
     "zh": "2026年3月5日 · 阅读时长 9 分钟"
   },
   "post_bespoke_h2_meaning": {
@@ -376,7 +376,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "远征旅行与探险旅行：差别究竟在哪？"
   },
   "post_bespoke_related_meta1": {
-    "en": "October 18, 2025 &middot; 9 min read",
+    "en": "October 18, 2025 · 9 min read",
     "zh": "2025年10月18日 · 阅读时长 9 分钟"
   },
   "post_bespoke_related_cat2": {
@@ -388,7 +388,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何挑选远征旅行公司：值得提出的 12 个问题"
   },
   "post_bespoke_related_meta2": {
-    "en": "November 5, 2025 &middot; 11 min read",
+    "en": "November 5, 2025 · 11 min read",
     "zh": "2025年11月5日 · 阅读时长 11 分钟"
   },
   "post_bespoke_related_cat3": {
@@ -400,7 +400,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "何谓 Waypoint Journeys？"
   },
   "post_bespoke_related_meta3": {
-    "en": "September 15, 2025 &middot; 8 min read",
+    "en": "September 15, 2025 · 8 min read",
     "zh": "2025年9月15日 · 阅读时长 8 分钟"
   }
 });

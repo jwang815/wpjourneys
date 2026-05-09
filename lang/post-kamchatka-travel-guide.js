@@ -10,7 +10,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "堪察加旅行指南：如何探索俄罗斯的火山荒野"
   },
   "post_kamchatka_hero_meta": {
-    "en": "January 6, 2026 &middot; 10 min read",
+    "en": "January 6, 2026 · 10 min read",
     "zh": "2026年1月6日 · 10分钟阅读"
   },
 
@@ -433,7 +433,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "全球十大真正可以前往的最偏远目的地"
   },
   "post_kamchatka_related1_meta": {
-    "en": "October 2, 2025 &middot; 12 min read",
+    "en": "October 2, 2025 · 12 min read",
     "zh": "2025年10月2日 · 12分钟阅读"
   },
   "post_kamchatka_related2_cat": {
@@ -445,7 +445,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "索科特拉岛旅行指南"
   },
   "post_kamchatka_related2_meta": {
-    "en": "November 22, 2025 &middot; 15 min read",
+    "en": "November 22, 2025 · 15 min read",
     "zh": "2025年11月22日 · 15分钟阅读"
   },
   "post_kamchatka_related3_cat": {
@@ -457,7 +457,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是什么？"
   },
   "post_kamchatka_related3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
+    "en": "September 15, 2025 · 8 min read",
     "zh": "2025年9月15日 · 8分钟阅读"
   }
 });

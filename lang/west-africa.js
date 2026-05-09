@@ -4,12 +4,16 @@ window.__i18n = {
     "zh": "探险之旅"
   },
   "wa_nav_about": {
-    "en": "About",
+    "en": "About Us",
     "zh": "关于我们"
   },
-  "wa_nav_contact": {
-    "en": "Contact",
-    "zh": "联系我们"
+  "wa_nav_blog": {
+    "en": "Blog",
+    "zh": "博客"
+  },
+  "wa_nav_book": {
+    "en": "Book Now",
+    "zh": "立即预订"
   },
   "wa_hero_eyebrow": {
     "en": "Waypoint Journeys × West Africa",
@@ -48,7 +52,7 @@ window.__i18n = {
     "zh": "历史活在街道、神殿与大海之间"
   },
   "wa_overview_p1": {
-    "en": "West Africa's Gulf of Guinea coast holds some of the most powerful stories on Earth. This is the Slave Coast — where for three centuries, millions were taken through the Door of No Return at Ouidah. It is also the birthplace of Voodoo, where ancient spirits still walk through sacred forests and living temples. And it is modern, vibrant, resilient Africa — market women in Lomé trading in cloth empires, fishermen casting nets at dawn across Lake Nokoué, and Accra's creative energy reshaping a continent.",
+    "en": "West Africa’s Gulf of Guinea coast holds some of the most powerful stories on Earth. This is the Slave Coast — where for three centuries, millions were taken through the Door of No Return at Ouidah. It is also the birthplace of Voodoo, where ancient spirits still walk through sacred forests and living temples. And it is modern, vibrant, resilient Africa — market women in Lomé trading in cloth empires, fishermen casting nets at dawn across Lake Nokoué, and Accra’s creative energy reshaping a continent.",
     "zh": "西非几内亚湾海岸承载着世界上最震撼人心的历史篇章。这里是昔日的“奴隶海岸”——三个世纪间，数百万人从维达的“不归之门”被强行带走。这里同样是巫毒教的发源地，古老的神灵至今仍游荡于圣林与活生生的神殿之中。而今，这片土地焕发着蓬勃的现代生机——洛美市场的女商人掌管着布料帝国，渔夫在诺克韦湖的晨曦中撒网，阿克拉涌动的创造力正在重塑整个非洲大陆。"
   },
   "wa_overview_p2": {
@@ -116,7 +120,7 @@ window.__i18n = {
     "zh": "集市与鲜活的文化"
   },
   "wa_feature6_desc": {
-    "en": "From the fetish market of Lomé to the Grand Marché, from the artisan villages of Togo to the Makola Market of Accra — West Africa's markets are theatres of daily life.",
+    "en": "From the fetish market of Lomé to the Grand Marché, from the artisan villages of Togo to the Makola Market of Accra — West Africa’s markets are theatres of daily life.",
     "zh": "从洛美的巫术市场到大集市，从多哥的手工艺人村落到阿克拉的马科拉市场——西非的集市，是日常生活最生动的舞台。"
   },
   "wa_itinerary_label": {
@@ -144,7 +148,7 @@ window.__i18n = {
     "zh": "第1天"
   },
   "wa_day1_desc": {
-    "en": "Arrive at Cotonou Cadjehoun Airport, Benin's economic capital on the Gulf of Guinea. Transfer to your hotel in Ouidah, a historic town on the coast that serves as your base for the first three nights. Settle in and prepare for a week that will reshape how you see Africa.",
+    "en": "Arrive at Cotonou Cadjehoun Airport, Benin’s economic capital on the Gulf of Guinea. Transfer to your hotel in Ouidah, a historic town on the coast that serves as your base for the first three nights. Settle in and prepare for a week that will reshape how you see Africa.",
     "zh": "抵达科托努卡杰胡恩机场——贝宁的经济首都，坐落于几内亚湾畔。驱车前往沿海历史名城维达入住酒店，这里将是最初三晚的根据地。安顿下来，静候一段将彻底改变你对非洲认知的旅程。"
   },
   "wa_day2_label": {
@@ -192,7 +196,7 @@ window.__i18n = {
     "zh": "第4天"
   },
   "wa_day4_desc": {
-    "en": "Cross the border into Togo after an early morning departure. After a ninety-minute drive and immigration formalities, begin exploring Lomé, Togo's low-key coastal capital. Visit a preserved slave house in Agbodrafo, then take in Independence Square, the Artisans Village, and the National Museum. The afternoon is devoted to the Fetish Market — the largest traditional medicine market in West Africa — followed by the fishing harbour, Art Street, and the bustling Grand Marché. Overnight in Lomé.",
+    "en": "Cross the border into Togo after an early morning departure. After a ninety-minute drive and immigration formalities, begin exploring Lomé, Togo’s low-key coastal capital. Visit a preserved slave house in Agbodrafo, then take in Independence Square, the Artisans Village, and the National Museum. The afternoon is devoted to the Fetish Market — the largest traditional medicine market in West Africa — followed by the fishing harbour, Art Street, and the bustling Grand Marché. Overnight in Lomé.",
     "zh": "清晨启程，越过边境进入多哥。经过九十分钟的车程与入境手续后，开始探索洛美——多哥低调而独特的海滨首都。前往阿格博德拉福参观保存完好的奴隶旧居，随后游览独立广场、手工艺人村与国家博物馆。下午全程留给巫术市场——西非规模最大的传统草药市集——继而漫步渔港、艺术街，最终融入人声鼎沸的大集市。夜宿洛美。"
   },
   "wa_day5_label": {
@@ -224,7 +228,7 @@ window.__i18n = {
     "zh": "第6天"
   },
   "wa_day6_desc": {
-    "en": "A full day immersed in Ghana's vibrant capital. Visit the Kwame Nkrumah Memorial Park, dedicated to the founding father of Ghanaian independence. Stand at Independence Square, also known as Black Star Square, the symbolic heart of the nation. Tour the National Museum, drive past the imposing Osu Castle — the former seat of the Ghanaian presidency — and walk through the historic streets of Jamestown, Accra's oldest neighbourhood. In the afternoon, drive to Cape Coast to position for the following day.",
+    "en": "A full day immersed in Ghana’s vibrant capital. Visit the Kwame Nkrumah Memorial Park, dedicated to the founding father of Ghanaian independence. Stand at Independence Square, also known as Black Star Square, the symbolic heart of the nation. Tour the National Museum, drive past the imposing Osu Castle — the former seat of the Ghanaian presidency — and walk through the historic streets of Jamestown, Accra’s oldest neighbourhood. In the afternoon, drive to Cape Coast to position for the following day.",
     "zh": "整日沉浸于加纳生机勃勃的首都之中。参观恩克鲁玛纪念公园，向加纳独立之父致敬；伫立于象征国家精神的独立广场——亦称“黑星广场”——感受这片土地的历史重量。游览国家博物馆，驶过气势磅礴的奥苏城堡——昔日的加纳总统府——并漫步于詹姆斯敦古朴的街巷，探访阿克拉最古老的街区。下午驱车前往海角海岸，为翌日的行程做好准备。"
   },
   "wa_day7_label": {
@@ -272,7 +276,7 @@ window.__i18n = {
     "zh": "行程详情"
   },
   "wa_details_title": {
-    "en": "What's Included",
+    "en": "What’s Included",
     "zh": "费用包含"
   },
   "wa_details_dates_label": {
@@ -376,11 +380,11 @@ window.__i18n = {
     "zh": "安全须知"
   },
   "wa_safety_desc": {
-    "en": "West Africa is one of the continent's most welcoming and accessible regions for international visitors. The countries on this route — Benin, Togo, and Ghana — are politically stable and accustomed to hosting travellers. Ghana in particular is one of Africa's safest destinations, with a strong tradition of hospitality. Our local guides have deep relationships throughout every community on this route, and we coordinate all border crossings and logistics so you can focus entirely on the experience.",
+    "en": "West Africa is one of the continent’s most welcoming and accessible regions for international visitors. The countries on this route — Benin, Togo, and Ghana — are politically stable and accustomed to hosting travellers. Ghana in particular is one of Africa’s safest destinations, with a strong tradition of hospitality. Our local guides have deep relationships throughout every community on this route, and we coordinate all border crossings and logistics so you can focus entirely on the experience.",
     "zh": "西非是非洲大陆对国际游客最为友好、最易于到访的地区之一。本线路途经的贝宁、多哥与加纳三国政治稳定，素有接待旅行者的丰富经验。其中加纳更是非洲最安全的旅行目的地之一，以深厚的待客之道著称。我们的当地导游与沿途每一个社区都建立了深厚的信任关系，所有边境过境手续及后勤事务均由我们全程统筹安排，让您得以全然专注于旅途体验本身。"
   },
   "wa_footer_tagline": {
-    "en": "Luxury adventure travel to the world's last wild places.",
+    "en": "Luxury adventure travel to the world’s last wild places.",
     "zh": "奢华探险，通往世界最后的荒野秘境。"
   },
   "wa_footer_copy": {
@@ -392,7 +396,7 @@ window.__i18n = {
     "zh": "常见问题"
   },
   "wa_faq_title": {
-    "en": "Common Questions About the West Africa Expedition",
+    "en": "Common Questions About This Expedition",
     "zh": "西非探险常见问题"
   },
   "wa_faq_q1": {

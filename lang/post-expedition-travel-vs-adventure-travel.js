@@ -10,8 +10,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "探险旅行与冒险旅行：究竟有何不同？"
   },
   "post_evta_meta": {
-    "en": "October 18, 2025 &middot; 9 min read",
-    "zh": "2025年10月18日 &middot; 阅读约9分钟"
+    "en": "October 18, 2025 · 9 min read",
+    "zh": "2025年10月18日 · 阅读约9分钟"
   },
   "post_evta_p1": {
     "en": "You're scrolling through travel websites and two terms keep appearing: \"adventure travel\" and \"expedition travel.\" At first glance they seem interchangeable, both promise excitement, unique experiences, and a break from ordinary tourism. But dig a little deeper and you'll find they represent genuinely different ways of engaging with the world.",
@@ -454,8 +454,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何挑选一家探险旅行公司：12个值得提出的问题"
   },
   "post_evta_related_meta_1": {
-    "en": "November 5, 2025 &middot; 11 min read",
-    "zh": "2025年11月5日 &middot; 阅读约11分钟"
+    "en": "November 5, 2025 · 11 min read",
+    "zh": "2025年11月5日 · 阅读约11分钟"
   },
   "post_evta_related_cat_2": {
     "en": "Planning",
@@ -466,8 +466,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "前往偏远与边境目的地，安全吗？"
   },
   "post_evta_related_meta_2": {
-    "en": "December 20, 2025 &middot; 10 min read",
-    "zh": "2025年12月20日 &middot; 阅读约10分钟"
+    "en": "December 20, 2025 · 10 min read",
+    "zh": "2025年12月20日 · 阅读约10分钟"
   },
   "post_evta_related_cat_3": {
     "en": "Company",
@@ -478,7 +478,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是什么？"
   },
   "post_evta_related_meta_3": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读约8分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读约8分钟"
   }
 });

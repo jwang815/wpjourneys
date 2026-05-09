@@ -380,7 +380,7 @@ window.__i18n = {
     "zh": "常见问题"
   },
   "sc_faq_title": {
-    "en": "Common Questions About the Socotra Expedition",
+    "en": "Common Questions About This Expedition",
     "zh": "索科特拉探险常见问题"
   },
   "sc_faq_q1": {

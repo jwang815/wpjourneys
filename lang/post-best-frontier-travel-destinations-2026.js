@@ -10,8 +10,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "2026年最佳前沿旅行目的地：资深旅行者的下一站"
   },
   "post_frontier_meta": {
-    "en": "February 10, 2026 &middot; 10 min read",
-    "zh": "2026年2月10日 &middot; 阅读约10分钟"
+    "en": "February 10, 2026 · 10 min read",
+    "zh": "2026年2月10日 · 阅读约10分钟"
   },
   "post_frontier_h2_intro": {
     "en": "The Best Frontier Travel Destinations for 2026: Where Serious Travelers Are Going Next",
@@ -198,8 +198,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "世界上你真的能去的10个最偏远目的地"
   },
   "post_frontier_related1_meta": {
-    "en": "October 2, 2025 &middot; 12 min read",
-    "zh": "2025年10月2日 &middot; 阅读约12分钟"
+    "en": "October 2, 2025 · 12 min read",
+    "zh": "2025年10月2日 · 阅读约12分钟"
   },
   "post_frontier_related2_cat": {
     "en": "Destinations",
@@ -210,8 +210,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "索科特拉岛旅行指南"
   },
   "post_frontier_related2_meta": {
-    "en": "November 22, 2025 &middot; 15 min read",
-    "zh": "2025年11月22日 &middot; 阅读约15分钟"
+    "en": "November 22, 2025 · 15 min read",
+    "zh": "2025年11月22日 · 阅读约15分钟"
   },
   "post_frontier_related3_cat": {
     "en": "Company",
@@ -222,7 +222,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "什么是 Waypoint Journeys？"
   },
   "post_frontier_related3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读约8分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读约8分钟"
   }
 });

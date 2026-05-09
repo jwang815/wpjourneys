@@ -11,8 +11,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "索科特拉岛旅行指南：如何探访印度洋的加拉帕戈斯"
   },
   "post_socotra_guide_hero_meta": {
-    "en": "November 22, 2025 &middot; 15 min read",
-    "zh": "2025年11月22日 &middot; 阅读约15分钟"
+    "en": "November 22, 2025 · 15 min read",
+    "zh": "2025年11月22日 · 阅读约15分钟"
   },
 
   "post_socotra_guide_h2_intro": {
@@ -537,8 +537,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "全球10个真正可以抵达的最偏远目的地"
   },
   "post_socotra_guide_related_1_meta": {
-    "en": "October 2, 2025 &middot; 12 min read",
-    "zh": "2025年10月2日 &middot; 阅读约12分钟"
+    "en": "October 2, 2025 · 12 min read",
+    "zh": "2025年10月2日 · 阅读约12分钟"
   },
   "post_socotra_guide_related_2_cat": {
     "en": "Destinations",
@@ -549,8 +549,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "瓦罕走廊旅行指南"
   },
   "post_socotra_guide_related_2_meta": {
-    "en": "December 8, 2025 &middot; 18 min read",
-    "zh": "2025年12月8日 &middot; 阅读约18分钟"
+    "en": "December 8, 2025 · 18 min read",
+    "zh": "2025年12月8日 · 阅读约18分钟"
   },
   "post_socotra_guide_related_3_cat": {
     "en": "Company",
@@ -561,7 +561,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是什么？"
   },
   "post_socotra_guide_related_3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读约8分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读约8分钟"
   }
 });

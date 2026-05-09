@@ -532,8 +532,8 @@ window.__i18n = {
     "zh": "第8天"
   },
   "mn_14n_day5_desc": {
-    "en": "Return to Ulaanbaatar for the opening ceremony of Naadam, Mongolia's national festival. At the Central Stadium, costumed horsemen parade, wrestling champions are introduced, and archery competitors take their marks. Child jockeys as young as five years old prepare to race across the open steppe in one of sport's most extraordinary spectacles.",
-    "zh": "返回乌兰巴托，迎接那达慕——蒙古国家节日的开幕盛典。在中央体育场，身着盛装的骑手列队游行，摔跤冠军逐一亮相，弓箭手们各就各位。年仅五岁的童骑手们整装待发，即将驰骋于开阔草原之上，参与这场运动史上最非凡的竞技壮景。"
+    "en": "Return to Ulaanbaatar for the opening ceremony of Naadam, Mongolia's national festival. At the Central Stadium, costumed horsemen parade, wrestling champions are introduced, and archery competitors take their marks. Child jockeys as young as five years old prepare for the long-distance horse races stretching across the open steppe beyond the city.",
+    "zh": "返回乌兰巴托，迎接那达慕——蒙古国家节日的开幕盛典。在中央体育场，身着盛装的骑手列队游行，摔跤冠军逐一亮相，弓箭手们各就各位。年仅五岁的童骑手们整装待发，即将驰骋于城外辽阔草原之上的长距离赛马。"
   },
   "mn_14n_day6_label": {
     "en": "Day 6",
@@ -1080,7 +1080,7 @@ window.__i18n = {
     "zh": "常见问题"
   },
   "mn_faq_title": {
-    "en": "Common Questions About the Mongolia Expedition",
+    "en": "Common Questions About This Expedition",
     "zh": "蒙古探险常见问题"
   },
   "mn_faq_q1": {

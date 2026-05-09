@@ -10,8 +10,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "法罗群岛旅行指南：如何探索欧洲最后的荒野边境之一"
   },
   "post_faroe_hero_meta": {
-    "en": "March 18, 2026 &middot; 15 min read",
-    "zh": "2026年3月18日 &middot; 阅读约15分钟"
+    "en": "March 18, 2026 · 15 min read",
+    "zh": "2026年3月18日 · 阅读约15分钟"
   },
 
   "post_faroe_intro_1": {
@@ -460,8 +460,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "世界上真正能够前往的10大最偏远目的地"
   },
   "post_faroe_related_1_meta": {
-    "en": "October 2, 2025 &middot; 12 min read",
-    "zh": "2025年10月2日 &middot; 阅读约12分钟"
+    "en": "October 2, 2025 · 12 min read",
+    "zh": "2025年10月2日 · 阅读约12分钟"
   },
   "post_faroe_related_2_cat": {
     "en": "Destinations",
@@ -472,8 +472,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "索科特拉岛旅行指南"
   },
   "post_faroe_related_2_meta": {
-    "en": "November 22, 2025 &middot; 15 min read",
-    "zh": "2025年11月22日 &middot; 阅读约15分钟"
+    "en": "November 22, 2025 · 15 min read",
+    "zh": "2025年11月22日 · 阅读约15分钟"
   },
   "post_faroe_related_3_cat": {
     "en": "Company",
@@ -484,7 +484,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "什么是 Waypoint Journeys？"
   },
   "post_faroe_related_3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读约8分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读约8分钟"
   }
 });

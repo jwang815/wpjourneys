@@ -11,8 +11,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "什么是 Waypoint Journeys？专为世界最难抵达之地而生的探险旅行公司"
   },
   "post_whatiswj_hero_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读约 8 分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读约 8 分钟"
   },
 
   // Section 1
@@ -287,8 +287,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "全球十大真正可抵达的偏远目的地"
   },
   "post_whatiswj_rel1_meta": {
-    "en": "October 2, 2025 &middot; 12 min read",
-    "zh": "2025年10月2日 &middot; 阅读约 12 分钟"
+    "en": "October 2, 2025 · 12 min read",
+    "zh": "2025年10月2日 · 阅读约 12 分钟"
   },
   "post_whatiswj_rel2_cat": {
     "en": "Planning",
@@ -299,8 +299,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "探险旅行 与 冒险旅行：究竟有何不同？"
   },
   "post_whatiswj_rel2_meta": {
-    "en": "October 18, 2025 &middot; 9 min read",
-    "zh": "2025年10月18日 &middot; 阅读约 9 分钟"
+    "en": "October 18, 2025 · 9 min read",
+    "zh": "2025年10月18日 · 阅读约 9 分钟"
   },
   "post_whatiswj_rel3_cat": {
     "en": "Planning",
@@ -311,7 +311,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何选择一家探险旅行公司：必问的 12 个问题"
   },
   "post_whatiswj_rel3_meta": {
-    "en": "November 5, 2025 &middot; 11 min read",
-    "zh": "2025年11月5日 &middot; 阅读约 11 分钟"
+    "en": "November 5, 2025 · 11 min read",
+    "zh": "2025年11月5日 · 阅读约 11 分钟"
   }
 });

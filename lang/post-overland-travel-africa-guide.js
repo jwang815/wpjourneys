@@ -10,8 +10,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "穿越非洲陆路之旅：跨越大陆远征终极指南"
   },
   "post_overland_meta": {
-    "en": "February 22, 2026 &middot; 14 min read",
-    "zh": "2026年2月22日 &middot; 14分钟阅读"
+    "en": "February 22, 2026 · 14 min read",
+    "zh": "2026年2月22日 · 14分钟阅读"
   },
 
   "post_overland_h2_intro": {
@@ -659,8 +659,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "全球十大真正可抵达的极偏远目的地"
   },
   "post_overland_related1_meta": {
-    "en": "October 2, 2025 &middot; 12 min read",
-    "zh": "2025年10月2日 &middot; 12分钟阅读"
+    "en": "October 2, 2025 · 12 min read",
+    "zh": "2025年10月2日 · 12分钟阅读"
   },
   "post_overland_related2_cat": {
     "en": "Destinations",
@@ -671,8 +671,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "索科特拉岛旅行指南"
   },
   "post_overland_related2_meta": {
-    "en": "November 22, 2025 &middot; 15 min read",
-    "zh": "2025年11月22日 &middot; 15分钟阅读"
+    "en": "November 22, 2025 · 15 min read",
+    "zh": "2025年11月22日 · 15分钟阅读"
   },
   "post_overland_related3_cat": {
     "en": "Company",
@@ -683,7 +683,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys是什么？"
   },
   "post_overland_related3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 8分钟阅读"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 8分钟阅读"
   }
 });

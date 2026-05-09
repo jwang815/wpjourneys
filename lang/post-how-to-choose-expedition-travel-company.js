@@ -10,7 +10,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何挑选探险旅行公司：出发前必问的 12 个问题"
   },
   "post_choose_meta": {
-    "en": "November 5, 2025 &middot; 11 min read",
+    "en": "November 5, 2025 · 11 min read",
     "zh": "2025 年 11 月 5 日 · 阅读约 11 分钟"
   },
   "post_choose_h2_1": {
@@ -470,7 +470,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "探险旅行 vs. 冒险旅行：两者究竟有何不同？"
   },
   "post_choose_related1_meta": {
-    "en": "October 18, 2025 &middot; 9 min read",
+    "en": "October 18, 2025 · 9 min read",
     "zh": "2025 年 10 月 18 日 · 阅读约 9 分钟"
   },
   "post_choose_related2_cat": {
@@ -482,7 +482,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "前往偏远与边境目的地，真的安全吗？"
   },
   "post_choose_related2_meta": {
-    "en": "December 20, 2025 &middot; 10 min read",
+    "en": "December 20, 2025 · 10 min read",
     "zh": "2025 年 12 月 20 日 · 阅读约 10 分钟"
   },
   "post_choose_related3_cat": {
@@ -494,7 +494,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是一家怎样的公司？"
   },
   "post_choose_related3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
+    "en": "September 15, 2025 · 8 min read",
     "zh": "2025 年 9 月 15 日 · 阅读约 8 分钟"
   }
 });

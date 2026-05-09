@@ -10,7 +10,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Untamed Borders、Wild Frontiers 与 Waypoint Journeys：哪一家探险旅行公司更适合你？"
   },
   "post_compare_hero_meta": {
-    "en": "March 28, 2026 &middot; 10 min read",
+    "en": "March 28, 2026 · 10 min read",
     "zh": "2026年3月28日 · 10 分钟阅读"
   },
   "post_compare_h2_landscape": {
@@ -466,7 +466,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "探险旅行 vs. 冒险旅行：两者究竟有何不同？"
   },
   "post_compare_related_1_meta": {
-    "en": "October 18, 2025 &middot; 9 min read",
+    "en": "October 18, 2025 · 9 min read",
     "zh": "2025年10月18日 · 9 分钟阅读"
   },
   "post_compare_related_2_cat": {
@@ -478,7 +478,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何挑选一家探险旅行公司：必问的 12 个问题"
   },
   "post_compare_related_2_meta": {
-    "en": "November 5, 2025 &middot; 11 min read",
+    "en": "November 5, 2025 · 11 min read",
     "zh": "2025年11月5日 · 11 分钟阅读"
   },
   "post_compare_related_3_cat": {
@@ -490,7 +490,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是什么？"
   },
   "post_compare_related_3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
+    "en": "September 15, 2025 · 8 min read",
     "zh": "2025年9月15日 · 8 分钟阅读"
   }
 });

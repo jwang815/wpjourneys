@@ -10,8 +10,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "在敏感目的地的负责任旅行：如何以伦理之心抵达"
   },
   "post_responsible_meta": {
-    "en": "March 22, 2026 &middot; 11 min read",
-    "zh": "2026年3月22日 &middot; 阅读约11分钟"
+    "en": "March 22, 2026 · 11 min read",
+    "zh": "2026年3月22日 · 阅读约11分钟"
   },
   "post_responsible_p1": {
     "en": "The photograph haunts me still: a young woman posing with a peace sign outside Pyongyang's Grand People's Study House, her Instagram caption reading \"Living my best life in North Korea!\" Behind her, the reality of one of the world's most repressive regimes continues unchanged. Her visit funded the very system that denies basic freedoms to millions.",
@@ -430,8 +430,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "探索式旅行与冒险旅行：到底有什么区别？"
   },
   "post_responsible_related1_meta": {
-    "en": "October 18, 2025 &middot; 9 min read",
-    "zh": "2025年10月18日 &middot; 阅读约9分钟"
+    "en": "October 18, 2025 · 9 min read",
+    "zh": "2025年10月18日 · 阅读约9分钟"
   },
   "post_responsible_related2_cat": {
     "en": "Planning",
@@ -442,8 +442,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "如何选择探索旅行公司：必问的12个问题"
   },
   "post_responsible_related2_meta": {
-    "en": "November 5, 2025 &middot; 11 min read",
-    "zh": "2025年11月5日 &middot; 阅读约11分钟"
+    "en": "November 5, 2025 · 11 min read",
+    "zh": "2025年11月5日 · 阅读约11分钟"
   },
   "post_responsible_related3_cat": {
     "en": "Company",
@@ -454,7 +454,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys是什么？"
   },
   "post_responsible_related3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读约8分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读约8分钟"
   }
 });

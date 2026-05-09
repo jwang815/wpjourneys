@@ -10,8 +10,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "埃塞俄比亚高原旅行指南：徒步塞米恩山脉及其他秘境"
   },
   "post_ethiopia_hero_meta": {
-    "en": "January 28, 2026 &middot; 11 min read",
-    "zh": "2026年1月28日 &middot; 阅读约11分钟"
+    "en": "January 28, 2026 · 11 min read",
+    "zh": "2026年1月28日 · 阅读约11分钟"
   },
   "post_ethiopia_intro_h2": {
     "en": "Ethiopia isn't on the edge of the map. It's at the center of something most travelers never find.",
@@ -406,8 +406,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "全球10个真正可以抵达的最偏远目的地"
   },
   "post_ethiopia_related_card1_meta": {
-    "en": "October 2, 2025 &middot; 12 min read",
-    "zh": "2025年10月2日 &middot; 阅读约12分钟"
+    "en": "October 2, 2025 · 12 min read",
+    "zh": "2025年10月2日 · 阅读约12分钟"
   },
   "post_ethiopia_related_card2_cat": {
     "en": "Destinations",
@@ -418,8 +418,8 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "索科特拉岛旅行指南"
   },
   "post_ethiopia_related_card2_meta": {
-    "en": "November 22, 2025 &middot; 15 min read",
-    "zh": "2025年11月22日 &middot; 阅读约15分钟"
+    "en": "November 22, 2025 · 15 min read",
+    "zh": "2025年11月22日 · 阅读约15分钟"
   },
   "post_ethiopia_related_card3_cat": {
     "en": "Company",
@@ -430,7 +430,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "zh": "Waypoint Journeys 是什么？"
   },
   "post_ethiopia_related_card3_meta": {
-    "en": "September 15, 2025 &middot; 8 min read",
-    "zh": "2025年9月15日 &middot; 阅读约8分钟"
+    "en": "September 15, 2025 · 8 min read",
+    "zh": "2025年9月15日 · 阅读约8分钟"
   }
 });
