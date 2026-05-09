@@ -92,7 +92,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_safe_p_11": {
     "en": "River crossings, technical trails, extreme weather, wildlife: remote destinations put you in environments that don't come with safety nets. But that's not a reason to stay home. It's a reason to travel with people who really know these places.",
-    "zh": "涉水渡河、技术性山径、极端天气、野生动物——偏远目的地会把你带入并无现成"安全网"的环境之中。但这并不是足不出户的理由，而恰恰是与真正熟悉那片土地的人同行的理由。"
+    "zh": "涉水渡河、技术性山径、极端天气、野生动物——偏远目的地会把你带入并无现成“安全网”的环境之中。但这并不是足不出户的理由，而恰恰是与真正熟悉那片土地的人同行的理由。"
   },
   "post_safe_p_12": {
     "en": "Local expertise becomes essential in frontier travel. It's what makes safe expedition design possible. Someone who's crossed a particular river valley dozens of times knows seasonal water levels, weather patterns, and safe routes in ways that satellite mapping can't capture.",
@@ -104,7 +104,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_safe_p_13": {
     "en": "Some frontier destinations sit in or near regions with complex political dynamics. Here's where travelers sometimes mix up \"unfamiliar\" with \"unsafe,\" or assume that social media popularity equals stability.",
-    "zh": "一些边境目的地位于政治格局错综复杂的地区，或与之相邻。许多旅行者在此处往往会混淆"陌生"与"不安全"，或者把社交媒体上的热度等同于实际的稳定。"
+    "zh": "一些边境目的地位于政治格局错综复杂的地区，或与之相邻。许多旅行者在此处往往会混淆“陌生”与“不安全”，或者把社交媒体上的热度等同于实际的稳定。"
   },
   "post_safe_p_14": {
     "en": "Honest risk assessment here means:",
