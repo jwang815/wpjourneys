@@ -4,9 +4,9 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.wpjourneys.com" }],
-      "destination": "https://wpjourneys.com/:path*",
+      "destination": "https://wpjourneys.com/$1",
       "permanent": true
     },
     { "source": "/home", "destination": "/", "permanent": true },
