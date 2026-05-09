@@ -45,6 +45,14 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - Highlights: Karakoram Highway, Hunza Valley autumn foliage, Lahore's Mughal heritage, Skardu, Attabad Lake, Passu Cones, Wagah Border ceremony
 - Description: Travel the Karakoram Highway through the most dramatic mountain landscapes on Earth. From Lahore's Mughal splendour to Hunza Valley's golden autumn, this expedition reveals Pakistan's extraordinary beauty and hospitality.
 
+### Turkmenistan
+- URL: https://wpjourneys.com/turkmenistan-expedition/
+- Duration: 7 days
+- Price: From $3,495 per person
+- Group size: Max 5 guests
+- Highlights: Darvaza Gas Crater (Door to Hell), Ancient Merv (UNESCO), Konye-Urgench (UNESCO), white-marble Ashgabat, Yangykala Canyon, Old Nisa, Nokhur villages
+- Description: Seven days across the strangest country in Central Asia. Sleep on the rim of the Darvaza Gas Crater, walk Silk Road ruins, drive into the striped cliffs of Yangykala, and end among the white-marble boulevards of Ashgabat.
+
 ### Mauritania
 - URL: https://wpjourneys.com/mauritania-expedition/
 - Duration: 8 days
@@ -76,6 +84,6 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - 24/7 on-the-ground support
 - Expert local guides
 - Price range: $2,450–$7,450 per person
-- Destinations: Socotra (Yemen), Mongolia, Pakistan, Ghana, Benin, Togo, Mauritania, Eritrea, Myanmar
+- Destinations: Socotra (Yemen), Mongolia, Pakistan, Turkmenistan, Ghana, Benin, Togo, Mauritania, Eritrea, Myanmar
 - All trips include accommodation, internal transport, guided activities, and most meals
 - Bilingual website: English and Simplified Chinese (中文)
