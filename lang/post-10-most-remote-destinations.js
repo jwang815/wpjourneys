@@ -80,7 +80,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_remote_dest3_p2": {
     "en": "Life here operates like a time capsule. Everyone knows everyone. Doors stay unlocked. The single settlement, Edinburgh of the Seven Seas, functions more like an extended family than a town. You'll find one pub, one school, one hospital, plus a post office whose stamps collectors worldwide quietly seek out.",
-    "zh": "这里的生活就像一只时间胶囊。人人彼此相识，门户从不上锁。岛上唯一的聚落"七海爱丁堡"与其说是一座小镇，不如说像一个延伸的大家庭。这里有一家酒馆、一所学校、一所医院，外加一间邮局——它发行的邮票在全球收藏圈里被悄悄追逐。"
+    "zh": "这里的生活就像一只时间胶囊。人人彼此相识，门户从不上锁。岛上唯一的聚落“七海爱丁堡”与其说是一座小镇，不如说像一个延伸的大家庭。这里有一家酒馆、一所学校、一所医院，外加一间邮局——它发行的邮票在全球收藏圈里被悄悄追逐。"
   },
   "post_remote_dest3_p3": {
     "en": "The only way there is aboard supply ships that run from Cape Town several times a year. Expect five to six days crossing some of the South Atlantic's roughest waters, and that's when weather allows, which isn't always. No flights serve the island, and visitors need advance permission along with proof they can cover their own costs.",
@@ -164,7 +164,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_remote_dest7_p1": {
     "en": "Fifty residents. That's it. Pitcairn is one of the most isolated communities on Earth, and its origin story is unlike anything else: the final hiding place of the HMS Bounty mutineers, who blended 18th-century British traditions with Polynesian influences into a culture that exists nowhere else and has been quietly evolving ever since.",
-    "zh": "五十名居民，仅此而已。皮特凯恩是地球上最孤立的社区之一，它的起源故事独一无二——这里是英国皇家海军"邦蒂号"叛变水手们最后的藏身之地。他们把十八世纪的英国传统与波利尼西亚文化糅合在一起，孕育出世上别无分号的独特文化，并自此悄然演化至今。"
+    "zh": "五十名居民，仅此而已。皮特凯恩是地球上最孤立的社区之一，它的起源故事独一无二——这里是英国皇家海军“邦蒂号”叛变水手们最后的藏身之地。他们把十八世纪的英国传统与波利尼西亚文化糅合在一起，孕育出世上别无分号的独特文化，并自此悄然演化至今。"
   },
   "post_remote_dest7_p2": {
     "en": "The island's geography helped make that isolation permanent. Sea cliffs rise straight from the Pacific on nearly every side, creating the natural fortress that kept the mutineers hidden for decades. Today, visitors find a community built on cooperation and self-sufficiency, where every resident fills multiple roles in island life.",
@@ -234,7 +234,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_remote_dest10_p2": {
     "en": "The landscape earns that comparison. Katabatic winds have carved rocks into formations that don't appear anywhere else on Earth. Hypersaline lakes like Lake Vanda stay liquid despite sub-zero temperatures, sustaining ecosystems that push the boundaries of what we understand about life itself.",
-    "zh": "这里的地貌当之无愧。下降风把岩石雕刻成地球其他地方都见不到的形态。像万达湖这样的超盐湖泊，即便在零度以下也能保持液态，孕育着不断挑战我们对"生命"理解边界的生态系统。"
+    "zh": "这里的地貌当之无愧。下降风把岩石雕刻成地球其他地方都见不到的形态。像万达湖这样的超盐湖泊，即便在零度以下也能保持液态，孕育着不断挑战我们对“生命”理解边界的生态系统。"
   },
   "post_remote_dest10_p3": {
     "en": "Scientists have found microorganisms living inside rocks here, a discovery that has real implications for the possibility of life in similarly extreme environments elsewhere in the universe. The dry valleys are Earth's closest approximation to extraterrestrial conditions.",
@@ -266,7 +266,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   // Value section
   "post_remote_value_h2": {
     "en": "Why Remoteness Still Has Value",
-    "zh": "为什么"偏远"依然有它的价值"
+    "zh": "为什么“偏远”依然有它的价值"
   },
   "post_remote_value_p1": {
     "en": "True remoteness delivers something you can't stream or scroll through, and as connectivity spreads everywhere, that difference becomes more precious. These places put human presence in proper perspective. Landscapes and communities that developed without constant outside influence look nothing like what you'll encounter closer to home.",
@@ -278,7 +278,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_remote_value_p3": {
     "en": "There's also what these places still contain. South Georgia's wildlife abundance, Socotra's evolutionary oddities: these aren't things that exist in diminished form somewhere more accessible. They exist here, and only here.",
-    "zh": "还有这些地方至今仍然蕴藏的东西。南乔治亚岛的野生动物盛景、索科特拉的演化奇观——这些都不是在某个更容易抵达的地方还能见到一份"打折版"的事物。它们只存在于这里，仅在这里。"
+    "zh": "还有这些地方至今仍然蕴藏的东西。南乔治亚岛的野生动物盛景、索科特拉的演化奇观——这些都不是在某个更容易抵达的地方还能见到一份“打折版”的事物。它们只存在于这里，仅在这里。"
   },
 
   // Responsible travel section

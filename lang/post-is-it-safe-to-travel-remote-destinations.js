@@ -27,16 +27,16 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_safe_p_3": {
     "en": "It's the right question. Not because remote travel carries inherent danger, but because it deserves an honest answer: not some \"adventure conquers all\" sales pitch or a watered-down reassurance meant to get you to sign up.",
-    "zh": "这是一个正确的问题。并非因为偏远地区的旅行天生危险，而是因为它值得一个诚实的回答——不是那种「探险战胜一切」的推销话术，也不是为了让你签下合同而稀释过的安抚之词。"
+    "zh": "这是一个正确的问题。并非因为偏远地区的旅行天生危险，而是因为它值得一个诚实的回答——不是那种“探险战胜一切”的推销话术，也不是为了让你签下合同而稀释过的安抚之词。"
   },
   "post_safe_p_4": {
     "en": "Here's what you actually need to know. The real risks, how seasoned operators handle them, what proper preparation involves, and how to tell a well-planned expedition from someone just hoping for the best.",
-    "zh": "以下，是你真正需要了解的内容：那些真实存在的风险、资深运营商如何应对它们、何为周密的行前准备，以及如何辨别一次精心策划的探险与一次仅仅"听天由命"的出行。"
+    "zh": "以下，是你真正需要了解的内容：那些真实存在的风险、资深运营商如何应对它们、何为周密的行前准备，以及如何辨别一次精心策划的探险与一次仅仅“听天由命”的出行。"
   },
 
   "post_safe_h2_2": {
     "en": "What \"Remote\" Actually Means for Safety",
-    "zh": ""偏远"对于安全究竟意味着什么"
+    "zh": "“偏远”对于安全究竟意味着什么"
   },
   "post_safe_p_5": {
     "en": "Let's start with something important: remote doesn't equal dangerous. It means farther out, less infrastructure, and fewer backup options when things don't go as planned. These are real limitations, but they're manageable ones.",
