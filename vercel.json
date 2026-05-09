@@ -3,6 +3,12 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.wpjourneys.com" }],
+      "destination": "https://wpjourneys.com/:path*",
+      "permanent": true
+    },
     { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/home/", "destination": "/", "permanent": true },
     { "source": "/contact", "destination": "/#contact", "permanent": true },
