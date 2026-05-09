@@ -33,7 +33,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_socotra_guide_p_intro_4": {
     "en": "What draws people to Socotra isn't thrill-seeking for its own sake. It's the biological weirdness of the place. About 37% of Socotra's plant species, 90% of its reptile species, and 95% of its land snail species exist nowhere else on Earth. UNESCO made the Socotra Archipelago a World Heritage Site in 2008. Scientists call it the \"Galápagos of the Indian Ocean,\" and that comparison works. Both islands evolved in near-total isolation, creating life that looks like it belongs to a different evolutionary timeline.",
-    "zh": "吸引人们前往索科特拉的，并非单纯的猎奇与刺激，而是这片土地在生物学意义上的离奇。索科特拉约37%的植物、90%的爬行动物和95%的陆生蜗牛物种在地球其他任何地方都找不到。2008年，联合国教科文组织将索科特拉群岛列入世界遗产名录。科学家称它为"印度洋的加拉帕戈斯"，这个比喻恰如其分。两座群岛都在近乎彻底的孤立中演化，孕育出仿佛来自另一条演化时间线的生命。"
+    "zh": "吸引人们前往索科特拉的，并非单纯的猎奇与刺激，而是这片土地在生物学意义上的离奇。索科特拉约37%的植物、90%的爬行动物和95%的陆生蜗牛物种在地球其他任何地方都找不到。2008年，联合国教科文组织将索科特拉群岛列入世界遗产名录。科学家称它为“印度洋的加拉帕戈斯”，这个比喻恰如其分。两座群岛都在近乎彻底的孤立中演化，孕育出仿佛来自另一条演化时间线的生命。"
   },
   "post_socotra_guide_p_intro_5": {
     "en": "Here's what you need to know before going: when to visit, how the logistics work, what makes the island worth the effort, and why traveling with a specialist expedition is really your only viable choice.",
@@ -116,7 +116,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_socotra_guide_p_avoid_2": {
     "en": "This isn't a \"travel at your own risk\" situation. It's genuinely inaccessible. Planning around the monsoon isn't a preference; it's a requirement.",
-    "zh": "这并非"风险自负"那么简单，而是确确实实的无法到达。绕开季风季节安排行程不是偏好问题，而是硬性要求。"
+    "zh": "这并非“风险自负”那么简单，而是确确实实的无法到达。绕开季风季节安排行程不是偏好问题，而是硬性要求。"
   },
 
   "post_socotra_guide_h2_get": {
@@ -214,7 +214,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_socotra_guide_p_detwah_2": {
     "en": "What catches you off guard is the quiet. Some afternoons, there's genuinely no one else there. No other boats, no other footprints. Just the lagoon, the dunes, and the particular stillness that comes from being somewhere most people will never go. It's one of those moments where Socotra's scale and its emptiness stop being abstract ideas and become something you actually feel.",
-    "zh": "真正令人措手不及的是那份寂静。某些午后，这里真的空无一人——没有别的船只，没有别的脚印。只剩泻湖、沙丘，以及"身处大多数人永远不会到达之处"所带来的特有静默。在那一刻，索科特拉的辽阔与空旷不再是抽象的概念，而成为你可以真切感受到的存在。"
+    "zh": "真正令人措手不及的是那份寂静。某些午后，这里真的空无一人——没有别的船只，没有别的脚印。只剩泻湖、沙丘，以及“身处大多数人永远不会到达之处”所带来的特有静默。在那一刻，索科特拉的辽阔与空旷不再是抽象的概念，而成为你可以真切感受到的存在。"
   },
   "post_socotra_guide_h3_homhil": {
     "en": "Homhil Protected Area",
@@ -222,7 +222,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_socotra_guide_p_homhil_1": {
     "en": "Tucked into the northeast of the island, Homhil manages to pack a lot of what makes Socotra remarkable into a single area: dragon blood trees, frankincense trees, natural pools fed by mountain springs, and long coastal views that make it hard to leave. It's one of those places that earns its protected status just by existing.",
-    "zh": "藏匿于岛屿东北角的霍姆希勒，将索科特拉的诸多奇观浓缩于一处：龙血树、乳香树、由山泉汇成的天然水潭，以及让人难以挪步的辽阔海景。仅凭其存在本身，它就足以配得上"保护区"的称号。"
+    "zh": "藏匿于岛屿东北角的霍姆希勒，将索科特拉的诸多奇观浓缩于一处：龙血树、乳香树、由山泉汇成的天然水潭，以及让人难以挪步的辽阔海景。仅凭其存在本身，它就足以配得上“保护区”的称号。"
   },
   "post_socotra_guide_p_homhil_2": {
     "en": "The pools are fed by springs that filter down through the rock, making them some of the only places on the island where you can swim in fresh water. After days of heat and dust, that's not a small thing. Most people who visit Homhil end up staying longer than they planned.",
@@ -283,7 +283,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_socotra_guide_p_acc_2": {
     "en": "The overall experience sits somewhere between glamping and genuinely roughing it. Comfortable enough that you'll sleep well, basic enough that you're actually in the environment rather than insulated from it.",
-    "zh": "整体体验介于精致露营与真正"野放"之间：舒适到让你睡个好觉，又简朴到让你真正身处环境之中，而非被隔绝在外。"
+    "zh": "整体体验介于精致露营与真正“野放”之间：舒适到让你睡个好觉，又简朴到让你真正身处环境之中，而非被隔绝在外。"
   },
   "post_socotra_guide_h3_food": {
     "en": "Food",
@@ -504,7 +504,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_socotra_guide_p_plan_1": {
     "en": "Socotra is one of the last places on Earth that genuinely earns the word \"undiscovered.\" Not because no one has been there, but because so few people have, and the island has remained almost entirely unchanged by the ones who did. The dragon blood trees don't care about tourism trends. The Detwah Lagoon doesn't know what Instagram is. The Socotri language has survived for millennia and will survive long after you've gone home.",
-    "zh": "索科特拉是地球上为数不多真正配得上"未被发现"四字的地方之一。不是因为没人去过，而是去过的人太少，且这座岛屿几乎丝毫未受这些访客的影响。龙血树不会理会旅游潮流，代特瓦泻湖不知Instagram为何物，索科特拉语历经千年延续至今，并将在你返回家中之后继续存在很久。"
+    "zh": "索科特拉是地球上为数不多真正配得上“未被发现”四字的地方之一。不是因为没人去过，而是去过的人太少，且这座岛屿几乎丝毫未受这些访客的影响。龙血树不会理会旅游潮流，代特瓦泻湖不知Instagram为何物，索科特拉语历经千年延续至今，并将在你返回家中之后继续存在很久。"
   },
   "post_socotra_guide_p_plan_2": {
     "en": "What you bring back from a trip like this isn't a tan or a souvenir. It's a shift in perspective, the kind that comes from standing somewhere genuinely ancient and strange and realizing the world is far weirder and more alive than your daily routine ever lets on.",
