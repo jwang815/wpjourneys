@@ -54,10 +54,10 @@
       <span class="nav-logo-text">Waypoint Journeys</span>
     </a>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/about/">About Us</a></li>
-      <li><a href="mailto:info@wpjourneys.com" class="nav-cta-btn">Inquire</a></li>
+      <li><a href="/" data-i18n="blog_nav_home">Home</a></li>
+      <li><a href="/blog/" data-i18n="blog_nav_blog">Blog</a></li>
+      <li><a href="/about/" data-i18n="blog_nav_about">About Us</a></li>
+      <li><a href="mailto:info@wpjourneys.com" class="nav-cta-btn" data-i18n="blog_nav_inquire">Inquire</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span>
@@ -67,22 +67,22 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="/" onclick="closeMobileMenu()">Home</a>
-    <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-    <a href="/about/" onclick="closeMobileMenu()">About Us</a>
-    <a href="mailto:info@wpjourneys.com" onclick="closeMobileMenu()">Inquire</a>
+    <a href="/" onclick="closeMobileMenu()" data-i18n="blog_nav_home">Home</a>
+    <a href="/blog/" onclick="closeMobileMenu()" data-i18n="blog_nav_blog">Blog</a>
+    <a href="/about/" onclick="closeMobileMenu()" data-i18n="blog_nav_about">About Us</a>
+    <a href="mailto:info@wpjourneys.com" onclick="closeMobileMenu()" data-i18n="blog_nav_inquire">Inquire</a>
   </div>
 
   <section class="blog-hero">
-    <h1>The Journal</h1>
-    <p>Guides, stories, and insights from the places where the map ends.</p>
+    <h1 data-i18n="blog_index_hero_title">The Journal</h1>
+    <p data-i18n="blog_index_hero_subtitle">Guides, stories, and insights from the places where the map ends.</p>
   </section>
 
   <div class="blog-filters">
-    <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="company">Company</button>
-      <button class="filter-btn" data-filter="destinations">Destinations</button>
-      <button class="filter-btn" data-filter="planning">Planning</button>
+    <button class="filter-btn active" data-filter="all" data-i18n="blog_filter_all">All</button>
+      <button class="filter-btn" data-filter="company" data-i18n="blog_filter_company">Company</button>
+      <button class="filter-btn" data-filter="destinations" data-i18n="blog_filter_destinations">Destinations</button>
+      <button class="filter-btn" data-filter="planning" data-i18n="blog_filter_planning">Planning</button>
   </div>
 
   <div class="blog-grid" id="blogGrid">
@@ -320,7 +320,7 @@
   </div>
 
   <footer class="blog-footer">
-    <p>&copy; 2026 <a href="/">Waypoint Journeys</a>. Where the map ends, the journey begins.</p>
+    <p data-i18n-html="blog_footer_copy">&copy; 2026 <a href="/">Waypoint Journeys</a>. Where the map ends, the journey begins.</p>
   </footer>
 
   <script>
@@ -360,6 +360,9 @@
       });
     });
   </script>
+
+  <script src="/lang/blog.js"></script>
+  <script src="/lang/i18n.js"></script>
 
 </body>
 </html>

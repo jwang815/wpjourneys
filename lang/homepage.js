@@ -56,12 +56,12 @@ window.__i18n = {
     "zh": "WAYPOINT JOURNEYS 的不同之道"
   },
   "philosophy_title": {
-    "en": "Not All Who Wander Are Lost. But the Best Ones Are.",
-    "zh": "漫游者并非迷失，而那些最勇敢的灵魂，早已欣然放逐自我。"
+    "en": "Private Luxury Expeditions, Max 5 Guests Per Trip",
+    "zh": "私享奢华探险，每团最多五位宾客"
   },
   "philosophy_text_1": {
-    "en": "The rarest places on earth aren't defined by distance. They're defined by access. Geographic, cultural, human. We built Waypoint Journeys to open those doors. Every expedition is crafted from the ground up by destination specialists and local experts who call these remote corners of the world home.",
-    "zh": "世界上最珍稀的目的地，并非取决于距离，而是取决于通达——地理的、文化的、人文的。我们创立Waypoint Journeys，正是为了打开那些大门。每一条行程，皆由目的地专家与以这片远方为家园的本地向导从零开始精心设计。"
+    "en": "The rarest places on earth aren't defined by distance. They're defined by access. Geographic, cultural, human. We built Waypoint Journeys to deliver luxury expeditions to places most operators won't touch. Every itinerary is crafted from the ground up by destination specialists and local experts who call these remote corners of the world home.",
+    "zh": "世界上最珍稀的目的地，并非取决于距离，而是取决于通达——地理的、文化的、人文的。我们创立 Waypoint Journeys，正是为了把奢华探险带到那些大多数运营商不愿涉足的角落。每一条行程，皆由目的地专家与以这些远方为家园的本地向导从零开始精心打造。"
   },
   "philosophy_text_2": {
     "en": "Our groups never exceed five. Not because exclusivity makes good marketing, but because it changes what's possible. Where you can go. Who you can meet. How deeply you experience a place. We set up private camps beneath desert stars, arrange dinners in thousand-year-old ruins, and partner with lodges and glamping operators who share our obsession with detail and authenticity. Without compromising an ounce of luxury.",
@@ -76,8 +76,8 @@ window.__i18n = {
     "zh": "即将出发的探险之旅"
   },
   "expeditions_title": {
-    "en": "Choose Your Next Chapter",
-    "zh": "开启您的下一段传奇"
+    "en": "Upcoming Off-the-Beaten-Path Expeditions",
+    "zh": "即将出发的人迹罕至探险"
   },
   "expedition_socotra_tag": {
     "en": "Featured Expedition",
@@ -191,6 +191,90 @@ window.__i18n = {
     "en": "Drive the legendary Karakoram Highway through the world's most dramatic mountain corridor. Explore the Hunza Valley's ancient forts and apricot orchards, cross the highest paved border crossing on Earth, and discover Lahore's Mughal heritage.",
     "zh": "驾车穿越传奇的喀喇昆仑公路，途经世界上最壮观的山脉走廊。探索罕萨谷的古堡和杏花园，跨越地球上海拔最高的铺装国境口岸，感受拉合尔的莫卧儿遗产。"
   },
+  "expedition_mauritania_tag": {
+    "en": "Sahara Expedition",
+    "zh": "撒哈拉探险"
+  },
+  "expedition_mauritania_name": {
+    "en": "Mauritania",
+    "zh": "毛里塔尼亚"
+  },
+  "expedition_mauritania_subtitle": {
+    "en": "The Sahara and the Iron Ore Train",
+    "zh": "撒哈拉与铁矿石火车"
+  },
+  "expedition_mauritania_desc": {
+    "en": "Ride one of the longest trains in the world across the Sahara, walk the stone libraries of medieval Chinguetti, camp beneath the monolith of Ben Amera, and close the journey at Cabo Blanco — the last refuge of the Mediterranean monk seal.",
+    "zh": "搭乘世界上最长的列车之一穿越撒哈拉，漫步中世纪欣盖提的石头图书馆，在本·阿梅拉巨岩下扎营，最后在地中海僧海豹最后的避风港——白角（Cabo Blanco）画上句点。"
+  },
+  "expedition_mauritania_dates": {
+    "en": "8 Days",
+    "zh": "8天"
+  },
+  "expedition_mauritania_price": {
+    "en": "From $2,950",
+    "zh": "起价 $2,950"
+  },
+  "expedition_mauritania_cta": {
+    "en": "View Expedition",
+    "zh": "查看行程详情"
+  },
+  "expedition_eritrea_tag": {
+    "en": "Modernist Africa",
+    "zh": "现代主义非洲"
+  },
+  "expedition_eritrea_name": {
+    "en": "Eritrea",
+    "zh": "厄立特里亚"
+  },
+  "expedition_eritrea_subtitle": {
+    "en": "The Horn of Africa's Modernist Jewel",
+    "zh": "非洲之角的现代主义瑰宝"
+  },
+  "expedition_eritrea_desc": {
+    "en": "The country almost nobody has been to. Asmara is UNESCO's newest world heritage city — the finest collection of early modernist architecture on Earth — with the Red Sea coast at Massawa and Keren's Monday camel market as counterpoints.",
+    "zh": "几乎无人踏足的国度。阿斯马拉是联合国教科文组织最新列入名录的世界遗产城市——地球上最完整的早期现代主义建筑群——再加上马萨瓦的红海海岸与凯伦周一的骆驼集市，相映成趣。"
+  },
+  "expedition_eritrea_dates": {
+    "en": "5 Days",
+    "zh": "5天"
+  },
+  "expedition_eritrea_price": {
+    "en": "From $2,450",
+    "zh": "起价 $2,450"
+  },
+  "expedition_eritrea_cta": {
+    "en": "View Expedition",
+    "zh": "查看行程详情"
+  },
+  "expedition_myanmar_tag": {
+    "en": "Balloons Over Bagan",
+    "zh": "蒲甘热气球"
+  },
+  "expedition_myanmar_name": {
+    "en": "Myanmar",
+    "zh": "缅甸"
+  },
+  "expedition_myanmar_subtitle": {
+    "en": "Bagan, Balloons & the Golden Land",
+    "zh": "蒲甘、热气球与金色国度"
+  },
+  "expedition_myanmar_desc": {
+    "en": "Drift silently at sunrise across Bagan's plain of two thousand temples. Cross the U Bein teak bridge at golden hour. Float through Inle Lake's stilted villages, climb into Pindaya's Buddha caves, and end at Yangon's golden Shwedagon Pagoda.",
+    "zh": "日出时分，静静飘过蒲甘两千座佛塔的原野。在金色时刻走过乌本柚木桥。漂过茵莱湖的高脚屋村庄，登上彬达雅的佛窟，最后在仰光的金色大金塔（Shwedagon Pagoda）画下句点。"
+  },
+  "expedition_myanmar_dates": {
+    "en": "15 Days",
+    "zh": "15天"
+  },
+  "expedition_myanmar_price": {
+    "en": "From $3,950",
+    "zh": "起价 $3,950"
+  },
+  "expedition_myanmar_cta": {
+    "en": "View Expedition",
+    "zh": "查看行程详情"
+  },
   "hiw_label": {
     "en": "HOW IT WORKS",
     "zh": "预订流程"
@@ -204,15 +288,15 @@ window.__i18n = {
     "zh": "告诉我们您的梦想"
   },
   "hiw_step1_text": {
-    "en": "Reach out by email or WhatsApp with your destination interests, travel dates, and group size. There are no forms to fill out and no obligations — just a conversation about where you want to go.",
-    "zh": "通过电子邮件或WhatsApp联系我们，告知您感兴趣的目的地、旅行日期和团队人数。无需填写表格，没有任何约束——只是一次关于您想去哪里的对话。"
+    "en": "Reach out by email or WhatsApp with your destination interests, travel dates, and group size. There are no forms to fill out and no obligations. Just a conversation about where you want to go.",
+    "zh": "通过电子邮件或 WhatsApp 与我们联系，告诉我们您感兴趣的目的地、旅行日期和团队人数。无需填写任何表格，没有任何约束——只是一次关于您想去哪里的对话。"
   },
   "hiw_step2_title": {
     "en": "We Design Your Itinerary",
     "zh": "我们为您量身定制行程"
   },
   "hiw_step2_text": {
-    "en": "Our destination specialists craft a fully bespoke itinerary tailored to your interests, fitness level, and pace. Every detail — from accommodation to local guides to charter flights — is handled by our on-the-ground team.",
+    "en": "Our destination specialists craft a fully bespoke itinerary tailored to your interests, fitness level, and pace. Every detail, from accommodation to local guides to charter flights, is handled by our on-the-ground team.",
     "zh": "我们的目的地专家根据您的兴趣、体能水平和节奏，量身打造完全定制的行程。从住宿到当地向导再到包机航班，每一个细节都由我们的当地团队负责。"
   },
   "hiw_step3_title": {
@@ -260,8 +344,8 @@ window.__i18n = {
     "zh": "旅行者心声"
   },
   "testimonials_title": {
-    "en": "In Their Own Words",
-    "zh": "听他们亲口讲述"
+    "en": "What Our Travelers Say About Their Expeditions",
+    "zh": "旅行者如何讲述他们的探险"
   },
   "testimonial_1_quote": {
     "en": "We almost didn't go. Socotra sounded too remote, too complicated. But from the moment we landed on that charter flight, everything just worked. Our guide Saleh knew every beach, every hidden cave. Sleeping on Detwah Lagoon with the Milky Way right there... my wife still talks about it weekly.",
@@ -328,8 +412,8 @@ window.__i18n = {
     "zh": "开启您的专属故事"
   },
   "cta_title": {
-    "en": "Your Next Chapter Awaits",
-    "zh": "您的下一段传奇，正在等待"
+    "en": "Book Your Luxury Expedition. Inquire Today.",
+    "zh": "预订您的奢华探险，立即咨询。"
   },
   "cta_text": {
     "en": "Every journey begins with a single conversation. Tell us where you dream of going, and we'll show you a world beyond imagination.",
@@ -368,24 +452,24 @@ window.__i18n = {
     "zh": "Waypoint Journeys 与其他高端旅行公司有什么不同？"
   },
   "faq_a1": {
-    "en": "We go where others don\'t. Waypoint Journeys specializes in off-the-beaten-path destinations like Socotra Island, Mongolia, Pakistan, and West Africa — places most luxury operators won\'t touch. Every expedition is limited to 5 guests maximum, with hand-crafted itineraries built from the ground up by local experts who call these regions home.",
-    "zh": "我们前往其他公司不敢涉足的地方。Waypoint Journeys 专注于索科特拉岛、蒙古、巴基斯坦和西非等人迹罕至的目的地。每次探险最多仅限5位客人，由当地专家从零打造定制行程。"
+    "en": "Waypoint Journeys is a private luxury expedition company specializing in remote destinations most operators won't attempt. Every expedition is limited to 5 guests maximum, with itineraries built from the ground up by destination specialists and local experts. Current expeditions include Socotra Island (a UNESCO World Heritage Site), Mongolia, Pakistan's Karakoram region, and West Africa. Prices start from $2,950 per person.",
+    "zh": "Waypoint Journeys 是一家专注于其他运营商不敢涉足的偏远目的地的私享奢华探险公司。每次探险最多仅五位宾客，行程由目的地专家与当地向导从零开始量身打造。目前的探险包括索科特拉岛（联合国教科文组织世界遗产）、蒙古、巴基斯坦喀喇昆仑地区与西非。每人起价 2,950 美元。"
   },
   "faq_q2": {
     "en": "What is included in the expedition price?",
     "zh": "探险费用包含哪些项目？"
   },
   "faq_a2": {
-    "en": "All expeditions include accommodation, expert local guides, ground transportation, most meals, and 24/7 on-the-ground support. International flights to the starting city are not included, giving you flexibility to book your own routing. Specific inclusions vary by destination — check each expedition page for the full breakdown.",
-    "zh": "所有探险均包含住宿、当地专家向导、地面交通、大部分餐食以及全天候地面支持。前往出发城市的国际航班不包含在内，让您自由安排航线。具体包含内容因目的地而异，请查看各探险页面了解详情。"
+    "en": "All expeditions include accommodation, expert local guides, ground transportation, most meals, and 24/7 on-the-ground support. The Socotra expedition (7 days, from $2,950) includes camping under some of the darkest skies on Earth. Mongolia offers three tiers: 11-night ($4,950), 14-night ($5,950), and 17-night ($7,450). International flights to the starting city are not included, giving you flexibility to book your own routing.",
+    "zh": "所有探险均包含住宿、当地专家向导、地面交通、大部分餐食以及全天候地面支持。索科特拉探险（7天，起价 $2,950）包含在地球上最纯净星空下的露营。蒙古提供三档：11晚（$4,950）、14晚（$5,950）和 17晚（$7,450）。前往出发城市的国际航班不包含在内，让您可自由安排航线。"
   },
   "faq_q3": {
     "en": "How physically demanding are the expeditions?",
     "zh": "探险对体能要求高吗？"
   },
   "faq_a3": {
-    "en": "It depends on the destination. Socotra involves moderate hiking and beach camping. Mongolia can range from comfortable to adventurous depending on which itinerary tier you choose. Pakistan\'s Karakoram Highway trip is mostly vehicle-based with light walks. West Africa is culturally intensive but not physically strenuous. None require technical mountaineering — just a reasonable level of fitness and a spirit of adventure.",
-    "zh": "视目的地而定。索科特拉涉及中等强度的徒步和海滩露营。蒙古根据您选择的行程档次，从舒适到冒险不等。巴基斯坦喀喇昆仑公路之旅以车辆为主，辅以轻度步行。西非文化体验丰富但体力要求不高。所有行程都不需要专业登山技能，只需合理的体能和冒险精神。"
+    "en": "Physical demands vary by destination. Socotra involves moderate hiking and beach camping across 7 days. Mongolia ranges from comfortable ger stays to multi-day horseback treks. Pakistan's 13-day Karakoram Highway expedition is mostly vehicle-based with walks at elevations up to 4,693 meters (Khunjerab Pass). West Africa's 10-day cultural expedition is not physically strenuous. None require technical mountaineering.",
+    "zh": "体力要求因目的地而异。索科特拉是7天的中等强度徒步与海滩露营。蒙古从舒适的蒙古包住宿到多日骑马穿越草原皆有。巴基斯坦的13天喀喇昆仑公路探险以车辆为主，辅以海拔高达 4,693 米（红其拉甫山口）的轻度徒步。西非的10天文化探险体力要求不高。所有行程都无需专业登山技能。"
   },
   "faq_q4": {
     "en": "Can I book a private or custom expedition?",
@@ -400,16 +484,16 @@ window.__i18n = {
     "zh": "前往这些目的地安全吗？"
   },
   "faq_a5": {
-    "en": "Safety is our top priority. Our team leaders have years of experience operating in every destination we offer. We maintain relationships with trusted local partners, monitor conditions continuously, and provide 24/7 support throughout every trip. Many of our destinations are far safer than their reputations suggest — Pakistan and Mongolia, for example, are among the most hospitable countries in the world for visitors.",
-    "zh": "安全是我们的首要考量。我们的领队在每个目的地都拥有多年运营经验，与当地可信赖的合作伙伴保持长期关系，持续监控当地状况，并在整个行程中提供全天候支持。许多目的地远比其声誉所暗示的要安全得多——例如巴基斯坦和蒙古是世界上对游客最友善的国家之一。"
+    "en": "Safety planning is built into every expedition. Our team leaders have years of on-the-ground experience in every destination we offer. We maintain long-standing relationships with trusted local partners, monitor conditions continuously, carry satellite communication equipment, and provide 24/7 support throughout every trip. Pakistan and Mongolia, for example, are consistently rated among the most hospitable countries in the world for visitors.",
+    "zh": "安全规划贯穿每一次探险。我们的领队在每个目的地都积累了多年的在地经验。我们与可信赖的当地合作伙伴保持长期关系，持续监控当地状况，携带卫星通信设备，并在整个行程中提供全天候支援。例如，巴基斯坦和蒙古一直被评为世界上对游客最友善的国家之一。"
   },
   "faq_q6": {
     "en": "How far in advance should I book?",
     "zh": "需要提前多久预订？"
   },
   "faq_a6": {
-    "en": "We recommend booking at least 2–3 months in advance. With a maximum of 5 guests per trip, spots fill quickly — especially for destinations like Socotra where charter flights have limited availability. That said, last-minute inquiries are always welcome if space remains.",
-    "zh": "我们建议至少提前2至3个月预订。每次行程最多5位客人，名额很快售罄，尤其是像索科特拉这样包机航班有限的目的地。当然，如果还有名额，我们随时欢迎临时咨询。"
+    "en": "We recommend booking at least 2 to 3 months in advance. With a maximum of 5 guests per expedition, spots fill quickly, especially for destinations like Socotra where flight access is limited and seasonal (October through April only). Last-minute inquiries are always welcome if space remains.",
+    "zh": "我们建议至少提前 2 至 3 个月预订。每次探险最多五位宾客，名额很快售罄，尤其是像索科特拉这样航班有限且具有季节性（仅 10 月至次年 4 月）的目的地。如仍有名额，我们随时欢迎临时咨询。"
   },
   "footer_link_home": {
     "en": "Home",
@@ -452,8 +536,8 @@ window.__i18n = {
     "zh": "任何目的地，全程规划，专属于您"
   },
   "custom_text": {
-    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, and West Africa, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
-    "zh": "我们的定期探险涵盖索科特拉岛、蒙古、巴基斯坦和西非，但我们的服务远不止于此。如果您心中有一个不在我们列表上的目的地，我们将从零开始为您打造专属探险，足迹遍及全球。从许可证、物流到当地向导和住宿，我们处理每一个细节，让您专注于旅程本身。"
+    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
+    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
   },
   "custom_feat1": {
     "en": "Any country, any region",

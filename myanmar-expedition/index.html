@@ -1436,12 +1436,12 @@
 <body>
 
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
-    <a href="#overview" onclick="closeMobileMenu()">Overview</a>
-    <a href="#itinerary" onclick="closeMobileMenu()">Itinerary</a>
-    <a href="#details" onclick="closeMobileMenu()">Details</a>
-    <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-    <a href="/about/" onclick="closeMobileMenu()">About Us</a>
-    <a href="#book" onclick="closeMobileMenu()">Book Now</a>
+    <a href="#overview" onclick="closeMobileMenu()" data-i18n="my_nav_overview">Overview</a>
+    <a href="#itinerary" onclick="closeMobileMenu()" data-i18n="my_nav_itinerary">Itinerary</a>
+    <a href="#details" onclick="closeMobileMenu()" data-i18n="my_nav_details">Details</a>
+    <a href="/blog/" onclick="closeMobileMenu()" data-i18n="my_nav_blog">Blog</a>
+    <a href="/about/" onclick="closeMobileMenu()" data-i18n="my_nav_about">About Us</a>
+    <a href="#book" onclick="closeMobileMenu()" data-i18n="my_nav_book">Book Now</a>
   </div>
 
   <nav id="navbar" role="navigation" aria-label="Main navigation">
@@ -1457,16 +1457,16 @@
         <polygon points="42,24 28,21.5 30,24 28,26.5" fill="#C4944A" opacity="0.5"/>
         <circle cx="24" cy="24" r="3" fill="#C4944A"/>
       </svg>
-      <span class="nav-logo-text">Waypoint Journeys</span>
+      <span class="nav-logo-text" data-i18n="my_footer_brand">Waypoint Journeys</span>
     </a>
 
     <ul class="nav-links">
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#itinerary">Itinerary</a></li>
-      <li><a href="#details">Details</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/about/">About Us</a></li>
-      <li><a href="#book" class="nav-cta">Book Now</a></li>
+      <li><a href="#overview" data-i18n="my_nav_overview">Overview</a></li>
+      <li><a href="#itinerary" data-i18n="my_nav_itinerary">Itinerary</a></li>
+      <li><a href="#details" data-i18n="my_nav_details">Details</a></li>
+      <li><a href="/blog/" data-i18n="my_nav_blog">Blog</a></li>
+      <li><a href="/about/" data-i18n="my_nav_about">About Us</a></li>
+      <li><a href="#book" class="nav-cta" data-i18n="my_nav_book">Book Now</a></li>
     </ul>
 
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -1480,15 +1480,15 @@
     <div class="hero-bg" id="heroBg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Waypoint Journeys Presents</p>
-      <h1 class="hero-title">Myanmar</h1>
-      <p class="hero-subtitle">Bagan, Balloons & the Golden Land</p>
-      <p class="hero-dates">15 Days</p>
-      <p class="hero-tagline">Fifteen Days Across the Temple Plains, Floating Villages, and Golden Pagodas of Burma</p>
-      <a href="#overview" class="hero-cta">View Expedition Details &#8595;</a>
+      <p class="hero-eyebrow" data-i18n="my_hero_eyebrow">Waypoint Journeys Presents</p>
+      <h1 class="hero-title" data-i18n="my_hero_title">Myanmar</h1>
+      <p class="hero-subtitle" data-i18n="my_hero_subtitle">Bagan, Balloons & the Golden Land</p>
+      <p class="hero-dates" data-i18n="my_hero_dates">15 Days</p>
+      <p class="hero-tagline" data-i18n="my_hero_tagline">Fifteen Days Across the Temple Plains, Floating Villages, and Golden Pagodas of Burma</p>
+      <a href="#overview" class="hero-cta" data-i18n="my_hero_cta">View Expedition Details &#8595;</a>
     </div>
     <div class="hero-scroll" aria-hidden="true">
-      <span>Scroll</span>
+      <span data-i18n="my_hero_scroll">Scroll</span>
       <div class="scroll-arrow"></div>
     </div>
   </section>
@@ -1498,7 +1498,7 @@
       <div class="container">
         <div class="intro-grid">
           <div class="intro-text fade-in-left">
-            <span class="section-label">The Destination</span>
+            <span class="section-label" data-i18n="my_overview_label">The Destination</span>
             <h2 class="section-title" id="overview-title">The Golden Land — and the Country the World Has Mostly Stopped Visiting</h2>
             <span class="gold-line"></span>
             <p>Myanmar is one of the strangest gifts in contemporary travel. It is a country of staggering natural and architectural beauty — the Bagan plain with its two thousand Buddhist temples, Inle Lake's floating gardens and one-legged rowing fishermen, the golden Shwedagon Pagoda rising 99 metres above Yangon — that, due to the 2021 political rupture, receives a tiny fraction of the visitors it once did. Those who travel here now find a country largely to themselves, met with the same extraordinary warmth that has always defined the Burmese welcome.</p>
@@ -1545,7 +1545,7 @@
   <section id="highlights" aria-labelledby="highlights-title">
     <div class="container">
       <div class="highlights-header fade-in">
-        <span class="section-label">Why Myanmar</span>
+        <span class="section-label" data-i18n="my_highlights_label">Why Myanmar</span>
         <h2 class="section-title" id="highlights-title">A Country Unlike Any Other</h2>
         <span class="gold-line"></span>
       </div>
@@ -1626,8 +1626,8 @@
   <section id="itinerary" aria-labelledby="itinerary-title">
     <div class="container">
       <div class="itinerary-header fade-in">
-        <span class="section-label">Day by Day</span>
-        <h2 class="section-title" id="itinerary-title">The Expedition</h2>
+        <span class="section-label" data-i18n="my_itinerary_label">Day by Day</span>
+        <h2 class="section-title" id="itinerary-title" data-i18n="my_itinerary_title">The Expedition</h2>
         <span class="gold-line"></span>
         <p style="color: var(--text-muted); font-size: 1rem; max-width: 520px; margin: 0 auto; margin-top: 0.8rem;">Fifteen days from the temple plain of Bagan to the golden stupa of Yangon.</p>
       </div>
@@ -2003,8 +2003,8 @@
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
       </a>
-    </div>    <p class="footer-tagline">Luxury adventure travel to the world's last wild places.</p>
-    <p class="footer-copy">&copy; 2026 Waypoint Journeys. All rights reserved.</p>
+    </div>    <p class="footer-tagline" data-i18n="my_footer_tagline">Luxury adventure travel to the world's last wild places.</p>
+    <p class="footer-copy" data-i18n="my_footer_copy">&copy; 2026 Waypoint Journeys. All rights reserved.</p>
   </footer>
 
   <script>
@@ -2124,6 +2124,7 @@
   </script>
 
 
+  <script src="/lang/myanmar.js"></script>
   <script src="/lang/i18n.js?v=20260424"></script>
 
 </body>
