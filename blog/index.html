@@ -54,10 +54,10 @@
       <span class="nav-logo-text">Waypoint Journeys</span>
     </a>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/about/">About Us</a></li>
-      <li><a href="mailto:info@wpjourneys.com" class="nav-cta-btn">Inquire</a></li>
+      <li><a href="/" data-i18n="blog_nav_home">Home</a></li>
+      <li><a href="/blog/" data-i18n="blog_nav_blog">Blog</a></li>
+      <li><a href="/about/" data-i18n="blog_nav_about">About Us</a></li>
+      <li><a href="mailto:info@wpjourneys.com" class="nav-cta-btn" data-i18n="blog_nav_inquire">Inquire</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span>
@@ -67,22 +67,22 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="/" onclick="closeMobileMenu()">Home</a>
-    <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-    <a href="/about/" onclick="closeMobileMenu()">About Us</a>
-    <a href="mailto:info@wpjourneys.com" onclick="closeMobileMenu()">Inquire</a>
+    <a href="/" onclick="closeMobileMenu()" data-i18n="blog_nav_home">Home</a>
+    <a href="/blog/" onclick="closeMobileMenu()" data-i18n="blog_nav_blog">Blog</a>
+    <a href="/about/" onclick="closeMobileMenu()" data-i18n="blog_nav_about">About Us</a>
+    <a href="mailto:info@wpjourneys.com" onclick="closeMobileMenu()" data-i18n="blog_nav_inquire">Inquire</a>
   </div>
 
   <section class="blog-hero">
-    <h1>The Journal</h1>
-    <p>Guides, stories, and insights from the places where the map ends.</p>
+    <h1 data-i18n="blog_index_hero_title">The Journal</h1>
+    <p data-i18n="blog_index_hero_subtitle">Guides, stories, and insights from the places where the map ends.</p>
   </section>
 
   <div class="blog-filters">
-    <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="company">Company</button>
-      <button class="filter-btn" data-filter="destinations">Destinations</button>
-      <button class="filter-btn" data-filter="planning">Planning</button>
+    <button class="filter-btn active" data-filter="all" data-i18n="blog_filter_all">All</button>
+      <button class="filter-btn" data-filter="company" data-i18n="blog_filter_company">Company</button>
+      <button class="filter-btn" data-filter="destinations" data-i18n="blog_filter_destinations">Destinations</button>
+      <button class="filter-btn" data-filter="planning" data-i18n="blog_filter_planning">Planning</button>
   </div>
 
   <div class="blog-grid" id="blogGrid">
@@ -91,10 +91,10 @@
           <img class="blog-card-image" src="https://cdn.britannica.com/40/147340-050-5F07048D/Yurts-nomad-gers-Orkhon-valley-Orkhon-River-Mongolia.jpg" alt="Mongolia by Private Expedition" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">Mongolia by Private Expedition</h3>
-          <p class="blog-card-excerpt">Group tours show you Mongolia's highlights. A private expedition with five travelers reveals its true character, from regional Naadam festivals to remote Altai valleys few outsider...</p>
-          <div class="blog-card-meta">March 30, 2026 &middot; 9 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_mongolia_private_expedition_title">Mongolia by Private Expedition</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_mongolia_private_expedition_excerpt">Group tours show you Mongolia's highlights. A private expedition with five travelers reveals its true character, from regional Naadam festivals to remote Altai valleys few outsider...</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_mongolia_private_expedition_meta">March 30, 2026 &middot; 9 min read</div>
         </div>
       </a>
       <a href="/blog/untamed-borders-vs-wild-frontiers-vs-waypoint-journeys/" class="blog-card" data-category="planning">
@@ -102,10 +102,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80" alt="Untamed Borders vs. Wild Frontiers vs. Waypoint Journeys" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Planning</div>
-          <h3 class="blog-card-title">Untamed Borders vs. Wild Frontiers vs. Waypoint Journeys</h3>
-          <p class="blog-card-excerpt">A practical comparison of Untamed Borders, Wild Frontiers, and Waypoint Journeys to help you choose the right expedition operator for your travel style and priorities.</p>
-          <div class="blog-card-meta">March 28, 2026 &middot; 10 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_planning">Planning</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_untamed_borders_vs_wild_frontiers_vs_waypoint_journeys_title">Untamed Borders vs. Wild Frontiers vs. Waypoint Journeys</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_untamed_borders_vs_wild_frontiers_vs_waypoint_journeys_excerpt">A practical comparison of Untamed Borders, Wild Frontiers, and Waypoint Journeys to help you choose the right expedition operator for your travel style and priorities.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_untamed_borders_vs_wild_frontiers_vs_waypoint_journeys_meta">March 28, 2026 &middot; 10 min read</div>
         </div>
       </a>
       <a href="/blog/bhutan-travel-guide/" class="blog-card" data-category="destinations">
@@ -113,10 +113,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1600&q=80" alt="Bhutan Travel Guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">Bhutan Travel Guide</h3>
-          <p class="blog-card-excerpt">Bhutan's 'High Value, Low Impact' tourism model filters out casual visitors by design. Here's how to plan an expedition worthy of the kingdom's extraordinary culture and landscape.</p>
-          <div class="blog-card-meta">March 25, 2026 &middot; 15 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_bhutan_travel_guide_title">Bhutan Travel Guide</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_bhutan_travel_guide_excerpt">Bhutan's 'High Value, Low Impact' tourism model filters out casual visitors by design. Here's how to plan an expedition worthy of the kingdom's extraordinary culture and landscape.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_bhutan_travel_guide_meta">March 25, 2026 &middot; 15 min read</div>
         </div>
       </a>
       <a href="/blog/responsible-travel-sensitive-destinations/" class="blog-card" data-category="planning">
@@ -124,10 +124,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?w=1600&q=80" alt="Responsible Travel in Sensitive Destinations" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Planning</div>
-          <h3 class="blog-card-title">Responsible Travel in Sensitive Destinations</h3>
-          <p class="blog-card-excerpt">Visiting places with political, cultural, or environmental fragility demands more than good intentions. Here's a practical framework for traveling ethically in sensitive destinatio...</p>
-          <div class="blog-card-meta">March 22, 2026 &middot; 11 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_planning">Planning</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_responsible_travel_sensitive_destinations_title">Responsible Travel in Sensitive Destinations</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_responsible_travel_sensitive_destinations_excerpt">Visiting places with political, cultural, or environmental fragility demands more than good intentions. Here's a practical framework for traveling ethically in sensitive destinatio...</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_responsible_travel_sensitive_destinations_meta">March 22, 2026 &middot; 11 min read</div>
         </div>
       </a>
       <a href="/blog/faroe-islands-travel-guide/" class="blog-card" data-category="destinations">
@@ -135,10 +135,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1613310023042-ad79320c00ff?w=1600&q=80" alt="The Faroe Islands Travel Guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">The Faroe Islands Travel Guide</h3>
-          <p class="blog-card-excerpt">Wild cliffs, dramatic hikes, and an untouched Nordic culture: the Faroe Islands remain one of Europe's most rewarding and genuinely remote destinations.</p>
-          <div class="blog-card-meta">March 18, 2026 &middot; 15 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_faroe_islands_travel_guide_title">The Faroe Islands Travel Guide</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_faroe_islands_travel_guide_excerpt">Wild cliffs, dramatic hikes, and an untouched Nordic culture: the Faroe Islands remain one of Europe's most rewarding and genuinely remote destinations.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_faroe_islands_travel_guide_meta">March 18, 2026 &middot; 15 min read</div>
         </div>
       </a>
       <a href="/blog/plan-multi-week-expedition-guide/" class="blog-card" data-category="planning">
@@ -146,10 +146,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=1600&q=80" alt="How to Plan a Multi-Week Expedition" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Planning</div>
-          <h3 class="blog-card-title">How to Plan a Multi-Week Expedition</h3>
-          <p class="blog-card-excerpt">Multi-week expeditions demand months of real preparation. This step-by-step guide covers destination research, permits, fitness training, gear, emergency planning, and everything i...</p>
-          <div class="blog-card-meta">March 14, 2026 &middot; 11 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_planning">Planning</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_plan_multi_week_expedition_guide_title">How to Plan a Multi-Week Expedition</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_plan_multi_week_expedition_guide_excerpt">Multi-week expeditions demand months of real preparation. This step-by-step guide covers destination research, permits, fitness training, gear, emergency planning, and everything i...</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_plan_multi_week_expedition_guide_meta">March 14, 2026 &middot; 11 min read</div>
         </div>
       </a>
       <a href="/blog/papua-new-guinea-travel-guide/" class="blog-card" data-category="destinations">
@@ -157,10 +157,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1600&q=80" alt="Papua New Guinea Travel Guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">Papua New Guinea Travel Guide</h3>
-          <p class="blog-card-excerpt">Papua New Guinea is expedition travel at its rawest: the Kokoda Track, Highland sing-sings, and Coral Triangle diving. Not for casual tourists, but unforgettable for those who come...</p>
-          <div class="blog-card-meta">March 10, 2026 &middot; 13 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_papua_new_guinea_travel_guide_title">Papua New Guinea Travel Guide</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_papua_new_guinea_travel_guide_excerpt">Papua New Guinea is expedition travel at its rawest: the Kokoda Track, Highland sing-sings, and Coral Triangle diving. Not for casual tourists, but unforgettable for those who come...</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_papua_new_guinea_travel_guide_meta">March 10, 2026 &middot; 13 min read</div>
         </div>
       </a>
       <a href="/blog/bespoke-travel-experience-custom-expeditions/" class="blog-card" data-category="planning">
@@ -168,10 +168,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1600&q=80" alt="What Is a Bespoke Travel Experience?" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Planning</div>
-          <h3 class="blog-card-title">What Is a Bespoke Travel Experience?</h3>
-          <p class="blog-card-excerpt">Bespoke expeditions aren't expensive versions of standard trips. They're custom-built journeys designed around your goals, with intimate groups of up to 5 guests and access that no...</p>
-          <div class="blog-card-meta">March 5, 2026 &middot; 9 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_planning">Planning</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_bespoke_travel_experience_custom_expeditions_title">What Is a Bespoke Travel Experience?</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_bespoke_travel_experience_custom_expeditions_excerpt">Bespoke expeditions aren't expensive versions of standard trips. They're custom-built journeys designed around your goals, with intimate groups of up to 5 guests and access that no...</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_bespoke_travel_experience_custom_expeditions_meta">March 5, 2026 &middot; 9 min read</div>
         </div>
       </a>
       <a href="/blog/somaliland-travel-guide/" class="blog-card" data-category="destinations">
@@ -179,10 +179,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=1600&q=80" alt="Somaliland Travel Guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">Somaliland Travel Guide</h3>
-          <p class="blog-card-excerpt">Somaliland is one of the world's least-visited destinations and one of its most rewarding. This guide covers safety, visas, top attractions, and how to plan your visit in 2026.</p>
-          <div class="blog-card-meta">February 28, 2026 &middot; 13 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_somaliland_travel_guide_title">Somaliland Travel Guide</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_somaliland_travel_guide_excerpt">Somaliland is one of the world's least-visited destinations and one of its most rewarding. This guide covers safety, visas, top attractions, and how to plan your visit in 2026.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_somaliland_travel_guide_meta">February 28, 2026 &middot; 13 min read</div>
         </div>
       </a>
       <a href="/blog/overland-travel-africa-guide/" class="blog-card" data-category="destinations">
@@ -190,10 +190,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&q=80" alt="Overland Travel in Africa" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">Overland Travel in Africa</h3>
-          <p class="blog-card-excerpt">A complete guide to overland travel in Africa: classic routes from Cape to Cairo, how to choose an operator, practical logistics, and what to expect from a cross-continent expediti...</p>
-          <div class="blog-card-meta">February 22, 2026 &middot; 14 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_overland_travel_africa_guide_title">Overland Travel in Africa</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_overland_travel_africa_guide_excerpt">A complete guide to overland travel in Africa: classic routes from Cape to Cairo, how to choose an operator, practical logistics, and what to expect from a cross-continent expediti...</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_overland_travel_africa_guide_meta">February 22, 2026 &middot; 14 min read</div>
         </div>
       </a>
       <a href="/blog/best-frontier-travel-destinations-2026/" class="blog-card" data-category="destinations">
@@ -201,10 +201,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600&q=80" alt="The Best Frontier Travel Destinations for 2026" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">The Best Frontier Travel Destinations for 2026</h3>
-          <p class="blog-card-excerpt">The frontier destinations defining expedition travel in 2026, from Somaliland's ancient cave paintings to Papua New Guinea's highland cultures and Kyrgyzstan's nomadic valleys.</p>
-          <div class="blog-card-meta">February 10, 2026 &middot; 10 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_best_frontier_travel_destinations_2026_title">The Best Frontier Travel Destinations for 2026</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_best_frontier_travel_destinations_2026_excerpt">The frontier destinations defining expedition travel in 2026, from Somaliland's ancient cave paintings to Papua New Guinea's highland cultures and Kyrgyzstan's nomadic valleys.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_best_frontier_travel_destinations_2026_meta">February 10, 2026 &middot; 10 min read</div>
         </div>
       </a>
       <a href="/blog/ethiopian-highlands-travel-guide/" class="blog-card" data-category="destinations">
@@ -212,10 +212,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1600&q=80" alt="The Ethiopian Highlands Travel Guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">The Ethiopian Highlands Travel Guide</h3>
-          <p class="blog-card-excerpt">A practical guide to Ethiopia's highlands: trekking the Simien Mountains, exploring Lalibela's rock-hewn churches, descending into the Danakil Depression, and traveling the Omo Val...</p>
-          <div class="blog-card-meta">January 28, 2026 &middot; 11 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_ethiopian_highlands_travel_guide_title">The Ethiopian Highlands Travel Guide</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_ethiopian_highlands_travel_guide_excerpt">A practical guide to Ethiopia's highlands: trekking the Simien Mountains, exploring Lalibela's rock-hewn churches, descending into the Danakil Depression, and traveling the Omo Val...</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_ethiopian_highlands_travel_guide_meta">January 28, 2026 &middot; 11 min read</div>
         </div>
       </a>
       <a href="/blog/small-group-vs-private-expedition-tours/" class="blog-card" data-category="planning">
@@ -223,10 +223,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="Small Group vs. Private Expedition Tours" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Planning</div>
-          <h3 class="blog-card-title">Small Group vs. Private Expedition Tours</h3>
-          <p class="blog-card-excerpt">Small group and private expeditions both reach remote destinations, but create very different trips. Understanding the tradeoffs helps you choose the right format.</p>
-          <div class="blog-card-meta">January 19, 2026 &middot; 8 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_planning">Planning</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_small_group_vs_private_expedition_tours_title">Small Group vs. Private Expedition Tours</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_small_group_vs_private_expedition_tours_excerpt">Small group and private expeditions both reach remote destinations, but create very different trips. Understanding the tradeoffs helps you choose the right format.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_small_group_vs_private_expedition_tours_meta">January 19, 2026 &middot; 8 min read</div>
         </div>
       </a>
       <a href="/blog/kamchatka-travel-guide/" class="blog-card" data-category="destinations">
@@ -234,10 +234,10 @@
           <img class="blog-card-image" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/10/14/14/kamchatka-peninsula-4.jpg" alt="Kamchatka Travel Guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">Kamchatka Travel Guide</h3>
-          <p class="blog-card-excerpt">Kamchatka's 160 volcanoes, 20,000 brown bears, and road-free wilderness make it one of Earth's most intact ecosystems. Expert guidance is essential.</p>
-          <div class="blog-card-meta">January 6, 2026 &middot; 10 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_kamchatka_travel_guide_title">Kamchatka Travel Guide</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_kamchatka_travel_guide_excerpt">Kamchatka's 160 volcanoes, 20,000 brown bears, and road-free wilderness make it one of Earth's most intact ecosystems. Expert guidance is essential.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_kamchatka_travel_guide_meta">January 6, 2026 &middot; 10 min read</div>
         </div>
       </a>
       <a href="/blog/is-it-safe-to-travel-remote-destinations/" class="blog-card" data-category="planning">
@@ -245,10 +245,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?w=1600&q=80" alt="Is It Safe to Travel to Remote and Frontier Destinations?" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Planning</div>
-          <h3 class="blog-card-title">Is It Safe to Travel to Remote and Frontier Destinations?</h3>
-          <p class="blog-card-excerpt">Remote travel isn't inherently dangerous, but it does demand honest preparation. Here's a clear-eyed look at the real risks and how serious expedition operators manage them.</p>
-          <div class="blog-card-meta">December 20, 2025 &middot; 10 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_planning">Planning</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_is_it_safe_to_travel_remote_destinations_title">Is It Safe to Travel to Remote and Frontier Destinations?</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_is_it_safe_to_travel_remote_destinations_excerpt">Remote travel isn't inherently dangerous, but it does demand honest preparation. Here's a clear-eyed look at the real risks and how serious expedition operators manage them.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_is_it_safe_to_travel_remote_destinations_meta">December 20, 2025 &middot; 10 min read</div>
         </div>
       </a>
       <a href="/blog/wakhan-corridor-travel-guide/" class="blog-card" data-category="destinations">
@@ -256,10 +256,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=1600&q=80" alt="The Wakhan Corridor Travel Guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">The Wakhan Corridor Travel Guide</h3>
-          <p class="blog-card-excerpt">The Wakhan Corridor offers expedition travelers something genuinely rare: intact wilderness, living nomadic culture, and routes once walked by Marco Polo.</p>
-          <div class="blog-card-meta">December 8, 2025 &middot; 18 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_wakhan_corridor_travel_guide_title">The Wakhan Corridor Travel Guide</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_wakhan_corridor_travel_guide_excerpt">The Wakhan Corridor offers expedition travelers something genuinely rare: intact wilderness, living nomadic culture, and routes once walked by Marco Polo.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_wakhan_corridor_travel_guide_meta">December 8, 2025 &middot; 18 min read</div>
         </div>
       </a>
       <a href="/blog/socotra-island-travel-guide/" class="blog-card" data-category="destinations">
@@ -267,10 +267,10 @@
           <img class="blog-card-image" src="https://therevelator.org/wp-content/uploads/2024/01/dragonsblood.jpg" alt="Socotra Island Travel Guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">Socotra Island Travel Guide</h3>
-          <p class="blog-card-excerpt">Socotra's dragon blood trees, empty beaches, and alien landscapes make it one of the most extraordinary destinations on Earth. Here's everything you need to know to visit.</p>
-          <div class="blog-card-meta">November 22, 2025 &middot; 15 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_socotra_island_travel_guide_title">Socotra Island Travel Guide</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_socotra_island_travel_guide_excerpt">Socotra's dragon blood trees, empty beaches, and alien landscapes make it one of the most extraordinary destinations on Earth. Here's everything you need to know to visit.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_socotra_island_travel_guide_meta">November 22, 2025 &middot; 15 min read</div>
         </div>
       </a>
       <a href="/blog/how-to-choose-expedition-travel-company/" class="blog-card" data-category="planning">
@@ -278,10 +278,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80" alt="How to Choose an Expedition Travel Company: 12 Questions to Ask" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Planning</div>
-          <h3 class="blog-card-title">How to Choose an Expedition Travel Company: 12 Questions to Ask</h3>
-          <p class="blog-card-excerpt">Twelve questions to ask any expedition company before you book, covering guides, safety, group size, community partnerships, and what actually separates great operators from the re...</p>
-          <div class="blog-card-meta">November 5, 2025 &middot; 11 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_planning">Planning</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_how_to_choose_expedition_travel_company_title">How to Choose an Expedition Travel Company: 12 Questions to Ask</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_how_to_choose_expedition_travel_company_excerpt">Twelve questions to ask any expedition company before you book, covering guides, safety, group size, community partnerships, and what actually separates great operators from the re...</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_how_to_choose_expedition_travel_company_meta">November 5, 2025 &middot; 11 min read</div>
         </div>
       </a>
       <a href="/blog/expedition-travel-vs-adventure-travel/" class="blog-card" data-category="planning">
@@ -289,10 +289,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=1600&q=80" alt="Expedition Travel vs. Adventure Travel: What's the Difference?" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Planning</div>
-          <h3 class="blog-card-title">Expedition Travel vs. Adventure Travel: What's the Difference?</h3>
-          <p class="blog-card-excerpt">Adventure travel and expedition travel aren't the same thing. Here's how to tell them apart, and how to figure out which one is actually right for you.</p>
-          <div class="blog-card-meta">October 18, 2025 &middot; 9 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_planning">Planning</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_expedition_travel_vs_adventure_travel_title">Expedition Travel vs. Adventure Travel: What's the Difference?</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_expedition_travel_vs_adventure_travel_excerpt">Adventure travel and expedition travel aren't the same thing. Here's how to tell them apart, and how to figure out which one is actually right for you.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_expedition_travel_vs_adventure_travel_meta">October 18, 2025 &middot; 9 min read</div>
         </div>
       </a>
       <a href="/blog/10-most-remote-destinations/" class="blog-card" data-category="destinations">
@@ -300,10 +300,10 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80" alt="The 10 Most Remote Destinations in the World You Can Actually Visit" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Destinations</div>
-          <h3 class="blog-card-title">The 10 Most Remote Destinations in the World You Can Actually Visit</h3>
-          <p class="blog-card-excerpt">Ten places that still resist easy access: from Socotra's alien flora to Antarctica's Dry Valleys, where genuine remoteness demands real effort and rewards it.</p>
-          <div class="blog-card-meta">October 2, 2025 &middot; 12 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_destinations">Destinations</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_10_most_remote_destinations_title">The 10 Most Remote Destinations in the World You Can Actually Visit</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_10_most_remote_destinations_excerpt">Ten places that still resist easy access: from Socotra's alien flora to Antarctica's Dry Valleys, where genuine remoteness demands real effort and rewards it.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_10_most_remote_destinations_meta">October 2, 2025 &middot; 12 min read</div>
         </div>
       </a>
       <a href="/blog/what-is-waypoint-journeys/" class="blog-card" data-category="company">
@@ -311,16 +311,16 @@
           <img class="blog-card-image" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80" alt="What Is Waypoint Journeys?" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-category">Company</div>
-          <h3 class="blog-card-title">What Is Waypoint Journeys?</h3>
-          <p class="blog-card-excerpt">Waypoint Journeys is an expedition travel company running small-group journeys to genuinely remote destinations. Groups cap at 5; every itinerary is built from scratch.</p>
-          <div class="blog-card-meta">September 15, 2025 &middot; 8 min read</div>
+          <div class="blog-card-category" data-i18n="blog_category_company">Company</div>
+          <h3 class="blog-card-title" data-i18n="blog_card_what_is_waypoint_journeys_title">What Is Waypoint Journeys?</h3>
+          <p class="blog-card-excerpt" data-i18n="blog_card_what_is_waypoint_journeys_excerpt">Waypoint Journeys is an expedition travel company running small-group journeys to genuinely remote destinations. Groups cap at 5; every itinerary is built from scratch.</p>
+          <div class="blog-card-meta" data-i18n-html="blog_card_what_is_waypoint_journeys_meta">September 15, 2025 &middot; 8 min read</div>
         </div>
       </a>
   </div>
 
   <footer class="blog-footer">
-    <p>&copy; 2026 <a href="/">Waypoint Journeys</a>. Where the map ends, the journey begins.</p>
+    <p data-i18n-html="blog_footer_copy">&copy; 2026 <a href="/">Waypoint Journeys</a>. Where the map ends, the journey begins.</p>
   </footer>
 
   <script>
@@ -360,6 +360,10 @@
       });
     });
   </script>
+
+  <script src="/lang/blog.js"></script>
+  <script src="/lang/blog-index.js"></script>
+  <script src="/lang/i18n.js"></script>
 
 </body>
 </html>

@@ -476,7 +476,7 @@ window.__i18n = {
     "zh": "常见问题"
   },
   "pk_faq_title": {
-    "en": "Common Questions About the Pakistan Expedition",
+    "en": "Common Questions About This Expedition",
     "zh": "巴基斯坦探险常见问题"
   },
   "pk_faq_q1": {
