@@ -319,7 +319,7 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   },
   "post_socotra_guide_p_conn_1": {
     "en": "Mobile coverage exists in Hadibo and a few other areas. Outside of those, you're offline. Satellite communication devices are worth considering for longer expeditions. Most travelers find the disconnection to be one of the better parts of the experience, but it's worth knowing before you go.",
-    "zh": "哈迪博及少数地区有移动信号覆盖，离开这些区域你便彻底离线。较长的探险行程不妨考虑携带卫星通讯设备。多数旅行者反而觉得"断网"是体验中最美好的部分之一，但这一点最好出发前就心中有数。"
+    "zh": "哈迪博及少数地区有移动信号覆盖，离开这些区域你便彻底离线。较长的探险行程不妨考虑携带卫星通讯设备。多数旅行者反而觉得“断网”是体验中最美好的部分之一，但这一点最好出发前就心中有数。"
   },
 
   "post_socotra_guide_h2_why": {
