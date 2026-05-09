@@ -552,8 +552,8 @@ window.__i18n = {
     "zh": "当地专家全程陪同"
   },
   "custom_feat4": {
-    "en": "Permits, visas, flights handled",
-    "zh": "签证、许可、机票全包办"
+    "en": "Permits and transportation handled",
+    "zh": "许可与当地交通全包办"
   },
   "custom_btn": {
     "en": "Plan a Custom Expedition",
