@@ -57,7 +57,8 @@ UNAVAILABLE_PATTERNS = [
     r"sold\s*out",
     r"no\s+rooms?\s+available",
     r"no\s+availability",
-    r"are\s+not\s+available",
+    r"hotel\s+is\s+not\s+available",
+    r"not\s+available\s+during\s+(?:those|these|the\s+selected)\s+dates?",
     r"unavailable\s+for\s+the\s+selected",
 ]
 
@@ -100,6 +101,32 @@ def dismiss_cookie_banner(page: Page) -> None:
                 return
         except Exception:
             continue
+
+
+def submit_dates_form(page: Page) -> bool:
+    """The /shop/rooms URL renders a 'Select Dates and Guests' modal even when
+    URL params are present. Click 'BOOK NOW' to fire the rates search.
+    Returns True if a button was clicked."""
+    selectors = [
+        "button:has-text('BOOK NOW')",
+        "button:has-text('Book Now')",
+        "button:has-text('Find Rooms')",
+        "button:has-text('Search')",
+    ]
+    for sel in selectors:
+        try:
+            btn = page.locator(sel).first
+            if btn.is_visible(timeout=2000):
+                btn.click(timeout=3000)
+                try:
+                    page.wait_for_load_state("networkidle", timeout=20_000)
+                except PWTimeout:
+                    pass
+                page.wait_for_timeout(2_000)
+                return True
+        except Exception:
+            continue
+    return False
 
 
 def classify_page(page: Page) -> CheckResult:
@@ -187,6 +214,9 @@ def probe(browser: Browser, url: str) -> CheckResult:
         except PWTimeout:
             pass
         page.wait_for_timeout(2_000)
+
+        # Hyatt's deep link doesn't auto-submit; trigger the rates search.
+        submit_dates_form(page)
 
         result = classify_page(page)
 
