@@ -4,7 +4,7 @@ Pure detector: writes structured output and exits with a status code.
 The GitHub Actions workflow handles email notification + kill-switch commit.
 
 Configured via env vars:
-  HYATT_HOTEL_CODE   Hyatt property code (default: anlsl, Lindner Hotel Antwerp).
+  HYATT_HOTEL_CODE   Hyatt property code (default: anrja, Lindner Hotel Antwerp).
   CHECKIN_DATE       YYYY-MM-DD (default: 2026-07-16).
   CHECKOUT_DATE      YYYY-MM-DD (default: 2026-07-20).
   ROOMS              integer (default: 1).
@@ -26,9 +26,11 @@ import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import urlparse
 
 from playwright.sync_api import (
     Browser,
+    Error as PWError,
     Page,
     TimeoutError as PWTimeout,
     sync_playwright,
@@ -62,6 +64,19 @@ UNAVAILABLE_PATTERNS = [
     r"unavailable\s+for\s+the\s+selected",
 ]
 
+# Page titles / phrases Hyatt/Akamai serve when the request is being challenged.
+BOT_CHALLENGE_PATTERNS = [
+    r"just\s+a\s+moment",
+    r"access\s+denied",
+    r"pardon\s+our\s+interruption",
+    r"checking\s+your\s+browser",
+    r"are\s+you\s+a\s+human",
+]
+
+# Whitelist of characters allowed in `reason` so it is safe to interpolate
+# into shell strings / commit messages downstream. Anything else is dropped.
+SAFE_REASON_RE = re.compile(r"[^A-Za-z0-9 ._=,/+:\-]")
+
 
 @dataclass
 class CheckResult:
@@ -72,7 +87,7 @@ class CheckResult:
 
 
 class TransientError(RuntimeError):
-    """Raised for retryable failures (timeouts, navigation errors)."""
+    """Raised for retryable failures (timeouts, navigation errors, bot challenges)."""
 
 
 def build_url() -> str:
@@ -83,14 +98,35 @@ def build_url() -> str:
     )
 
 
+def is_property_page(url: str) -> bool:
+    """True if the URL is still on the property's /shop/rooms/<code> page.
+
+    Hyatt redirects unavailable searches to /search/hotels/... — that page
+    lists OTHER hotels' rates and must NOT be classified as availability
+    for our property.
+    """
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return False
+    if parsed.netloc.lower() not in {"www.hyatt.com", "hyatt.com"}:
+        return False
+    path = parsed.path.lower().rstrip("/")
+    return path == f"/shop/rooms/{HOTEL_CODE.lower()}"
+
+
 def dismiss_cookie_banner(page: Page) -> None:
-    """Hyatt uses OneTrust. Click any 'accept' style button if present."""
+    """Hyatt uses OneTrust. Click any 'accept' or 'close' style button if present."""
     selectors = [
         "#onetrust-accept-btn-handler",
+        "#onetrust-close-btn-container button",
         "button:has-text('Accept All Cookies')",
         "button:has-text('Accept All')",
         "button:has-text('Accept')",
         "button:has-text('I Accept')",
+        "button:has-text('Close')",
+        "button[aria-label*='cookie' i]",
+        "button[aria-label='Close']",
     ]
     for sel in selectors:
         try:
@@ -99,24 +135,45 @@ def dismiss_cookie_banner(page: Page) -> None:
                 btn.click(timeout=2000)
                 page.wait_for_timeout(500)
                 return
-        except Exception:
+        except Exception as exc:
+            print(f"dismiss_cookie_banner: selector {sel!r} skipped: {exc!r}")
             continue
 
 
-def submit_dates_form(page: Page) -> bool:
-    """The /shop/rooms URL renders a 'Select Dates and Guests' modal even when
-    URL params are present. Click 'BOOK NOW' to fire the rates search.
-    Returns True if a button was clicked."""
+def submit_dates_form_if_present(page: Page) -> bool:
+    """If Hyatt renders a 'Select Dates and Guests' modal (older flow),
+    submit it. On the current site, deep-linked URL params auto-fire the
+    rates search and no modal appears, so this is conditional.
+    Returns True if a button was actually clicked.
+    """
+    # Detect the modal first; if it isn't there, do nothing.
+    modal_indicators = [
+        "form:has-text('Select Dates')",
+        "div:has-text('Select Dates and Guests')",
+        "[role='dialog']:has-text('BOOK NOW')",
+    ]
+    modal_present = False
+    for ind in modal_indicators:
+        try:
+            if page.locator(ind).first.is_visible(timeout=1000):
+                modal_present = True
+                break
+        except Exception:
+            continue
+    if not modal_present:
+        return False
+
+    # Use exact-text matching to avoid clicking unrelated promo "Book now" CTAs.
     selectors = [
-        "button:has-text('BOOK NOW')",
-        "button:has-text('Book Now')",
-        "button:has-text('Find Rooms')",
-        "button:has-text('Search')",
+        "button:text-is('BOOK NOW')",
+        "button:text-is('Book Now')",
+        "button:text-is('Find Rooms')",
+        "button:text-is('Search')",
     ]
     for sel in selectors:
         try:
             btn = page.locator(sel).first
-            if btn.is_visible(timeout=2000):
+            if btn.is_visible(timeout=1500):
                 btn.click(timeout=3000)
                 try:
                     page.wait_for_load_state("networkidle", timeout=20_000)
@@ -124,21 +181,60 @@ def submit_dates_form(page: Page) -> bool:
                     pass
                 page.wait_for_timeout(2_000)
                 return True
-        except Exception:
+        except Exception as exc:
+            print(f"submit_dates_form: selector {sel!r} skipped: {exc!r}")
             continue
     return False
 
 
+def detect_bot_challenge(page: Page, body_text_lower: str) -> bool:
+    title_lower = ""
+    try:
+        title_lower = (page.title() or "").lower()
+    except Exception:
+        pass
+    for pat in BOT_CHALLENGE_PATTERNS:
+        if re.search(pat, title_lower) or re.search(pat, body_text_lower):
+            return True
+    return False
+
+
 def classify_page(page: Page) -> CheckResult:
-    """Inspect rendered DOM/text to decide availability."""
+    """Inspect rendered DOM/text to decide availability.
+
+    Order of checks:
+      1. If the URL has redirected away from /shop/rooms/<code>, the search
+         is unavailable (Hyatt routes unavailable property searches to a
+         generic /search/hotels/... results page that lists OTHER hotels).
+      2. If we hit a bot-challenge page, raise TransientError so we retry.
+      3. If the page contains an unavailability phrase, return unavailable.
+      4. Otherwise look for prices + booking CTAs scoped to the rates section.
+    """
     url = page.url
+
+    # (1) Redirect guard — non-retryable, this is high-confidence unavailable.
+    if not is_property_page(url):
+        return CheckResult(
+            available=False,
+            confidence="high",
+            reason=f"redirected off property page to {urlparse(url).path}",
+            url=url,
+        )
+
     try:
         body_text = page.locator("body").inner_text(timeout=10_000)
     except PWTimeout as exc:
         raise TransientError(f"timed out reading body: {exc}") from exc
+    except PWError as exc:
+        raise TransientError(f"playwright error reading body: {exc}") from exc
 
     lower = body_text.lower()
 
+    # (2) Bot challenge — retry.
+    if detect_bot_challenge(page, lower):
+        raise TransientError("bot-challenge / interstitial page detected")
+
+    # (3) Unavailability phrases.
     for pat in UNAVAILABLE_PATTERNS:
         if re.search(pat, lower):
             return CheckResult(
@@ -148,12 +244,36 @@ def classify_page(page: Page) -> CheckResult:
                 url=url,
             )
 
-    price_hits = len(re.findall(r"(?:€|EUR|USD|\$)\s*\d{2,4}", body_text))
+    # (4) Availability heuristic — scoped to the rates section, not the
+    # full body, to avoid counting prices in unrelated marketing modules.
+    rates_section = None
+    for sel in [
+        "[data-testid*='room-card']",
+        "[data-testid*='rate-card']",
+        "section:has(button:text-is('Select Room'))",
+        "main",
+    ]:
+        try:
+            loc = page.locator(sel)
+            if loc.count() > 0:
+                rates_section = loc
+                break
+        except Exception:
+            continue
+
+    scoped_text = body_text
+    if rates_section is not None:
+        try:
+            scoped_text = "\n".join(rates_section.all_inner_texts())
+        except Exception:
+            scoped_text = body_text
+
+    price_hits = len(re.findall(r"(?:€|EUR|USD|\$)\s*\d{2,4}", scoped_text))
     book_buttons = 0
     for sel in [
-        "button:has-text('Select')",
-        "button:has-text('Book')",
-        "a:has-text('Select Room')",
+        "button:text-is('Select Room')",
+        "button:text-is('Select')",
+        "a:text-is('Select Room')",
         "[data-testid*='select-room']",
         "[data-testid*='room-card']",
     ]:
@@ -166,14 +286,14 @@ def classify_page(page: Page) -> CheckResult:
         return CheckResult(
             available=True,
             confidence="high",
-            reason=f"prices={price_hits}, book_buttons={book_buttons}",
+            reason=f"prices={price_hits} book_buttons={book_buttons}",
             url=url,
         )
-    if price_hits >= 2:
+    if price_hits >= 2 and book_buttons >= 1:
         return CheckResult(
             available=True,
             confidence="low",
-            reason=f"prices={price_hits} but no clear booking buttons",
+            reason=f"prices={price_hits} book_buttons={book_buttons} (weak)",
             url=url,
         )
 
@@ -181,8 +301,8 @@ def classify_page(page: Page) -> CheckResult:
         available=False,
         confidence="low",
         reason=(
-            f"no unavailability phrase, no clear booking signals "
-            f"(prices={price_hits}, buttons={book_buttons})"
+            f"no unavailability phrase no clear booking signals "
+            f"prices={price_hits} buttons={book_buttons}"
         ),
         url=url,
     )
@@ -203,9 +323,16 @@ def probe(browser: Browser, url: str) -> CheckResult:
     page = context.new_page()
     try:
         try:
-            page.goto(url, wait_until="domcontentloaded", timeout=45_000)
+            response = page.goto(url, wait_until="domcontentloaded", timeout=45_000)
         except PWTimeout as exc:
             raise TransientError(f"navigation timeout: {exc}") from exc
+        except PWError as exc:
+            raise TransientError(f"navigation error: {exc}") from exc
+
+        if response is not None and response.status >= 500:
+            raise TransientError(f"upstream HTTP {response.status}")
+        if response is not None and response.status in (403, 429):
+            raise TransientError(f"likely bot block HTTP {response.status}")
 
         dismiss_cookie_banner(page)
 
@@ -215,17 +342,21 @@ def probe(browser: Browser, url: str) -> CheckResult:
             pass
         page.wait_for_timeout(2_000)
 
-        # Hyatt's deep link doesn't auto-submit; trigger the rates search.
-        submit_dates_form(page)
+        # No-op on the current Hyatt UI (rates auto-fire from URL params).
+        # Kept for resilience in case Hyatt re-introduces the modal flow.
+        submit_dates_form_if_present(page)
 
         result = classify_page(page)
 
         if result.available:
             ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
             page.screenshot(path=str(ARTIFACT_DIR / "available.png"), full_page=True)
-            (ARTIFACT_DIR / "available.html").write_text(
-                page.content(), encoding="utf-8"
-            )
+            # NOTE: full HTML may include tracking/session tokens. Keep only
+            # screenshot by default; HTML write is opt-in via env var.
+            if os.environ.get("MONITOR_DUMP_HTML") == "1":
+                (ARTIFACT_DIR / "available.html").write_text(
+                    page.content(), encoding="utf-8"
+                )
         elif result.confidence == "low":
             ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
             page.screenshot(path=str(ARTIFACT_DIR / "ambiguous.png"), full_page=True)
@@ -235,16 +366,27 @@ def probe(browser: Browser, url: str) -> CheckResult:
         context.close()
 
 
+def sanitize_reason(reason: str) -> str:
+    """Strip anything outside the safe-character whitelist so the reason
+    string can be safely passed through GitHub Actions outputs / shell."""
+    cleaned = SAFE_REASON_RE.sub("", reason)
+    # Collapse runs of whitespace and trim length.
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return cleaned[:240]
+
+
 def emit_outputs(result: CheckResult) -> None:
     """Append result fields to $GITHUB_OUTPUT for the workflow to consume."""
     out = os.environ.get("GITHUB_OUTPUT")
     if not out:
         return
+    safe_reason = sanitize_reason(result.reason)
+    safe_url = sanitize_reason(result.url)
     lines = [
         f"available={'true' if result.available else 'false'}",
         f"confidence={result.confidence}",
-        f"reason={result.reason}",
-        f"url={result.url}",
+        f"reason={safe_reason}",
+        f"url={safe_url}",
         f"checkin={CHECKIN}",
         f"checkout={CHECKOUT}",
         f"adults={ADULTS}",
