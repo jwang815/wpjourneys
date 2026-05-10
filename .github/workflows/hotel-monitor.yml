@@ -80,7 +80,7 @@ jobs:
         if: steps.killswitch.outputs.skip != 'true'
         id: check
         env:
-          HYATT_HOTEL_CODE: anlsl
+          HYATT_HOTEL_CODE: anrja
           CHECKIN_DATE: "2026-07-16"
           CHECKOUT_DATE: "2026-07-20"
           ROOMS: "1"

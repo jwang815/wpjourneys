@@ -41,7 +41,7 @@ from tenacity import (
 )
 
 
-HOTEL_CODE = os.environ.get("HYATT_HOTEL_CODE", "anlsl")
+HOTEL_CODE = os.environ.get("HYATT_HOTEL_CODE", "anrja")
 CHECKIN = os.environ.get("CHECKIN_DATE", "2026-07-16")
 CHECKOUT = os.environ.get("CHECKOUT_DATE", "2026-07-20")
 ROOMS = os.environ.get("ROOMS", "1")
