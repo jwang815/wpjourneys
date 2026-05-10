@@ -211,13 +211,27 @@ def classify_page(page: Page) -> CheckResult:
       4. Otherwise look for prices + booking CTAs scoped to the rates section.
     """
     url = page.url
+    parsed = urlparse(url)
+    path = parsed.path.lower().rstrip("/")
 
-    # (1) Redirect guard — non-retryable, this is high-confidence unavailable.
+    # (1) Redirect guard. Two cases:
+    #     - Redirected to /search/hotels/... — Hyatt's documented
+    #       sold-out behavior. High-confidence unavailable.
+    #     - Anywhere else (error page, edge-block, /error/) — we did
+    #       NOT actually probe the property page. Mark as ambiguous so
+    #       the workflow uploads an artifact and we don't false-negative.
     if not is_property_page(url):
+        if path.startswith("/search/hotels"):
+            return CheckResult(
+                available=False,
+                confidence="high",
+                reason=f"redirected to search results {path} (Hyatt sold-out signal)",
+                url=url,
+            )
         return CheckResult(
             available=False,
-            confidence="high",
-            reason=f"redirected off property page to {urlparse(url).path}",
+            confidence="low",
+            reason=f"redirected off property page to {path} (probe inconclusive)",
             url=url,
         )
 
@@ -332,7 +346,16 @@ def probe(browser: Browser, url: str) -> CheckResult:
         if response is not None and response.status >= 500:
             raise TransientError(f"upstream HTTP {response.status}")
         if response is not None and response.status in (403, 429):
-            raise TransientError(f"likely bot block HTTP {response.status}")
+            # Hyatt's edge sometimes 403s GitHub-Actions egress IPs but still
+            # serves a renderable body. Log and fall through to classification
+            # rather than failing — the redirect guard + unavailability-phrase
+            # checks are still correct, and an ambiguous result will trip the
+            # rc=3 artifact path so the user can inspect the screenshot.
+            print(
+                f"WARN: HTTP {response.status} on initial nav — "
+                f"continuing to classify (may be edge-block; "
+                f"check ambiguous.png artifact if confidence=low)"
+            )
 
         dismiss_cookie_banner(page)
 
