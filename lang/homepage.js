@@ -79,6 +79,34 @@ window.__i18n = {
     "en": "Upcoming Off-the-Beaten-Path Expeditions",
     "zh": "即将出发的人迹罕至探险"
   },
+  "expedition_bangladesh_tag": {
+    "en": "Soul of the Bengal Delta",
+    "zh": "孟加拉三角洲的灵魂"
+  },
+  "expedition_bangladesh_name": {
+    "en": "Bangladesh",
+    "zh": "孟加拉国"
+  },
+  "expedition_bangladesh_subtitle": {
+    "en": "Old Dhaka, Sreemangal Tea Country & the Floating Markets",
+    "zh": "达卡老城、斯里曼加尔茶园与水上市集"
+  },
+  "expedition_bangladesh_desc": {
+    "en": "A 7-day expedition through one of South Asia's most-overlooked countries. Old Dhaka and the Buriganga, the tea gardens of Sreemangal, the hoolock gibbons of Lawachara, an overnight launch to the Barisal floating markets, and the UNESCO ruins of Bagerhat.",
+    "zh": "穿越南亚最被忽略的国度之一的7日探险。达卡老城与布里甘加河、斯里曼加尔的茶园、劳阿恰拉的白眉长臂猿、夜航客轮南下巴里萨尔水上市集，以及世界遗产巴格哈特的废墟。"
+  },
+  "expedition_bangladesh_dates": {
+    "en": "7 Days",
+    "zh": "7天"
+  },
+  "expedition_bangladesh_price": {
+    "en": "From $1,695",
+    "zh": "起价 $1,695"
+  },
+  "expedition_bangladesh_cta": {
+    "en": "View Expedition",
+    "zh": "查看行程详情"
+  },
   "expedition_socotra_tag": {
     "en": "Featured Expedition",
     "zh": "重磅推荐"
@@ -648,8 +676,8 @@ window.__i18n = {
     "zh": "任何目的地，全程规划，专属于您"
   },
   "custom_text": {
-    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, Turkmenistan, Madagascar, Libya, Syria, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
-    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、土库曼斯坦、马达加斯加、利比亚、叙利亚、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
+    "en": "Our scheduled expeditions cover Bangladesh, Eritrea, Ghana/Benin/Togo, Libya, Madagascar, Mauritania, Mongolia, Myanmar, Pakistan, Socotra, Syria, and Turkmenistan, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
+    "zh": "我们的定期探险涵盖孟加拉国、厄立特里亚、加纳/贝宁/多哥、利比亚、马达加斯加、毛里塔尼亚、蒙古、缅甸、巴基斯坦、索科特拉、叙利亚与土库曼斯坦——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
   },
   "custom_feat1": {
     "en": "Any country, any region",
