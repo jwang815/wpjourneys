@@ -247,6 +247,34 @@ window.__i18n = {
     "en": "View Expedition",
     "zh": "查看行程详情"
   },
+  "expedition_libya_tag": {
+    "en": "Roman Africa & Sahara",
+    "zh": "罗马非洲与撒哈拉"
+  },
+  "expedition_libya_name": {
+    "en": "Libya",
+    "zh": "利比亚"
+  },
+  "expedition_libya_subtitle": {
+    "en": "Leptis Magna, Sabratha & the Acacus Sahara",
+    "zh": "莱普提斯·马格纳、萨布拉塔与阿卡库斯撒哈拉"
+  },
+  "expedition_libya_desc": {
+    "en": "Two of the most complete Roman cities in the Mediterranean, the Berber Nafusa mountains, the UNESCO Ghadames oasis, and — on the deepest itinerary — the prehistoric rock art of the Tadrart Acacus. Choose 2, 3, 5, or 8 nights.",
+    "zh": "地中海地区保存最完整的两座罗马城市、柏柏尔人的纳富萨山区、世界遗产加达梅斯绿洲；最深入的行程还涵盖塔德拉尔特·阿卡库斯的史前岩画。可选2、3、5或8晚。"
+  },
+  "expedition_libya_dates": {
+    "en": "2–9 Days",
+    "zh": "2–9天"
+  },
+  "expedition_libya_price": {
+    "en": "From $1,195",
+    "zh": "起价 $1,195"
+  },
+  "expedition_libya_cta": {
+    "en": "View Expedition",
+    "zh": "查看行程详情"
+  },
   "expedition_mauritania_tag": {
     "en": "Sahara Expedition",
     "zh": "撒哈拉探险"
@@ -592,8 +620,8 @@ window.__i18n = {
     "zh": "任何目的地，全程规划，专属于您"
   },
   "custom_text": {
-    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, Turkmenistan, Madagascar, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
-    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、土库曼斯坦、马达加斯加、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
+    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, Turkmenistan, Madagascar, Libya, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
+    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、土库曼斯坦、马达加斯加、利比亚、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
   },
   "custom_feat1": {
     "en": "Any country, any region",

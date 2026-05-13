@@ -61,6 +61,14 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - Highlights: Lemurs' Park, Kirindy Forest by night, Avenue of the Baobabs at sunset, Sacred Baobab of Marofandilia, Zazamalala and Kimony reserves, Peyrieras, Andasibe-Mantadia rainforest and the indri, optional Tsingy de Bemaraha (UNESCO)
 - Description: Seven days across the Eighth Continent. Meet lemurs at five reserves, watch the Avenue of the Baobabs throw hundred-metre shadows at sunset, walk Kirindy Forest by night in search of the fossa, and end at the dawn chorus of the indri in the Andasibe rainforest. Optional 2-day Tsingy de Bemaraha extension.
 
+### Libya
+- URL: https://wpjourneys.com/libya-expedition/
+- Duration: 2, 3, 5, or 8 nights (four options)
+- Price: From $1,195 per person (2-night) · $1,395 (3-night) · $1,795 (5-night, most popular) · $2,795 (8-night, includes 2 domestic flights)
+- Group size: Max 5 guests
+- Highlights: Leptis Magna (UNESCO), Sabratha (UNESCO), Tripoli Old City, Gharyan troglodyte homes, Nafusa Mountains (Qasr Al-Haj, Nalut, Kabaw, Tarmisa), Ghadames oasis (UNESCO), Tadrart Acacus prehistoric rock art (UNESCO), Maghadet dunes, Ubari Lakes
+- Description: Four ways to experience Libya, from a long weekend at the Roman cities to a nine-day Sahara expedition. Two of the most complete Roman cities in the Mediterranean, the Berber Nafusa mountains, the UNESCO Ghadames oasis, and — on the deepest itinerary — the prehistoric rock art of the Tadrart Acacus with three nights of desert camping.
+
 ### Mauritania
 - URL: https://wpjourneys.com/mauritania-expedition/
 - Duration: 8 days
@@ -92,6 +100,6 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - 24/7 on-the-ground support
 - Expert local guides
 - Price range: $2,450–$7,450 per person
-- Destinations: Socotra (Yemen), Mongolia, Pakistan, Turkmenistan, Madagascar, Ghana, Benin, Togo, Mauritania, Eritrea, Myanmar
+- Destinations: Socotra (Yemen), Mongolia, Pakistan, Turkmenistan, Madagascar, Libya, Ghana, Benin, Togo, Mauritania, Eritrea, Myanmar
 - All trips include accommodation, internal transport, guided activities, and most meals
 - Bilingual website: English and Simplified Chinese (中文)
