@@ -275,6 +275,34 @@ window.__i18n = {
     "en": "View Expedition",
     "zh": "查看行程详情"
   },
+  "expedition_syria_tag": {
+    "en": "Levant Reopening",
+    "zh": "黎凡特重启"
+  },
+  "expedition_syria_name": {
+    "en": "Syria",
+    "zh": "叙利亚"
+  },
+  "expedition_syria_subtitle": {
+    "en": "Damascus, Palmyra & the Old City of Aleppo",
+    "zh": "大马士革、帕尔米拉与阿勒颇老城"
+  },
+  "expedition_syria_desc": {
+    "en": "Ten days from Beirut across six UNESCO World Heritage sites: the Old City of Damascus, Bosra's Roman theatre, Maaloula where Aramaic is still spoken, Krak des Chevaliers, Palmyra, Apamea's Roman colonnade, and the Old City of Aleppo.",
+    "zh": "自贝鲁特启程，十天穿越六处联合国教科文组织世界遗产：大马士革老城、波斯拉的罗马剧场、至今仍以阿拉米语颂祷的玛卢拉、骑士堡、帕尔米拉、阿帕米亚的罗马柱廊，以及阿勒颇老城。"
+  },
+  "expedition_syria_dates": {
+    "en": "10 Days",
+    "zh": "10天"
+  },
+  "expedition_syria_price": {
+    "en": "From $2,950",
+    "zh": "起价 $2,950"
+  },
+  "expedition_syria_cta": {
+    "en": "View Expedition",
+    "zh": "查看行程详情"
+  },
   "expedition_mauritania_tag": {
     "en": "Sahara Expedition",
     "zh": "撒哈拉探险"
@@ -620,8 +648,8 @@ window.__i18n = {
     "zh": "任何目的地，全程规划，专属于您"
   },
   "custom_text": {
-    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, Turkmenistan, Madagascar, Libya, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
-    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、土库曼斯坦、马达加斯加、利比亚、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
+    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, Turkmenistan, Madagascar, Libya, Syria, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
+    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、土库曼斯坦、马达加斯加、利比亚、叙利亚、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
   },
   "custom_feat1": {
     "en": "Any country, any region",

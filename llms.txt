@@ -69,6 +69,14 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - Highlights: Leptis Magna (UNESCO), Sabratha (UNESCO), Tripoli Old City, Gharyan troglodyte homes, Nafusa Mountains (Qasr Al-Haj, Nalut, Kabaw, Tarmisa), Ghadames oasis (UNESCO), Tadrart Acacus prehistoric rock art (UNESCO), Maghadet dunes, Ubari Lakes
 - Description: Four ways to experience Libya, from a long weekend at the Roman cities to a nine-day Sahara expedition. Two of the most complete Roman cities in the Mediterranean, the Berber Nafusa mountains, the UNESCO Ghadames oasis, and — on the deepest itinerary — the prehistoric rock art of the Tadrart Acacus with three nights of desert camping.
 
+### Syria
+- URL: https://wpjourneys.com/syria-expedition/
+- Duration: 10 days / 9 nights
+- Price: From $2,950 per person
+- Group size: Max 5 guests
+- Highlights: Old City of Damascus (UNESCO), Umayyad Mosque, Mount Qasioun, Bosra (UNESCO), Maaloula (Aramaic monastery), Saidnaya, Deir Mar Musa, Krak des Chevaliers (UNESCO), Tartus and Arwad island, Amrit Phoenician ruins, Palmyra (UNESCO), Homs, Hama's waterwheels, Masyaf Castle of the Assassins, Apamea's Roman colonnade, Old City of Aleppo (UNESCO), Citadel, traditional Aleppo soap factory
+- Description: Ten days from Beirut, across the Levant, and back. The reopening of organised travel to Syria — six UNESCO World Heritage cities, the oldest continuously inhabited capital on Earth (Damascus), Aramaic prayer in the mountain monasteries, the great Crusader fortress, the return of Palmyra, and the medieval souks of Aleppo. Beirut–Damascus–Beirut by road; all security clearance and permits handled.
+
 ### Mauritania
 - URL: https://wpjourneys.com/mauritania-expedition/
 - Duration: 8 days
@@ -100,6 +108,6 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - 24/7 on-the-ground support
 - Expert local guides
 - Price range: $2,450–$7,450 per person
-- Destinations: Socotra (Yemen), Mongolia, Pakistan, Turkmenistan, Madagascar, Libya, Ghana, Benin, Togo, Mauritania, Eritrea, Myanmar
+- Destinations: Socotra (Yemen), Mongolia, Pakistan, Turkmenistan, Madagascar, Libya, Syria, Ghana, Benin, Togo, Mauritania, Eritrea, Myanmar
 - All trips include accommodation, internal transport, guided activities, and most meals
 - Bilingual website: English and Simplified Chinese (中文)
