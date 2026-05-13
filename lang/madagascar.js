@@ -79,8 +79,8 @@ window.__i18n = {
   },
   "md_feature6_title": { "en": "Optional: Tsingy de Bemaraha", "zh": "可选：津吉·德·贝马拉哈" },
   "md_feature6_desc": {
-    "en": "Add two days for the UNESCO-listed Tsingy — a forest of razor-sharp limestone pinnacles you traverse on suspended bridges and via ferrata. Reached by a long 4×4 day from Morondava with a river crossing; one of the strangest landscapes on Earth. <strong>+$209 per person ($2,959 total).</strong>",
-    "zh": "可加两天造访世界遗产津吉——一片由刀刃般锋利的石灰岩尖峰组成的「石森林」，您将在吊桥与铁索路上穿行其间。需自穆龙达瓦花一整日驾驶四驱越野并涉水过河前往；这里是地球上最奇异的景观之一。<strong>每人加 $209（总计 $2,959）。</strong>"
+    "en": "Add two days for the UNESCO-listed Tsingy — a forest of razor-sharp limestone pinnacles you traverse on suspended bridges and via ferrata. Reached by a long 4×4 day from Morondava with a river crossing; one of the strangest landscapes on Earth. <strong>+$200 per person ($2,950 total).</strong>",
+    "zh": "可加两天造访世界遗产津吉——一片由刀刃般锋利的石灰岩尖峰组成的「石森林」，您将在吊桥与铁索路上穿行其间。需自穆龙达瓦花一整日驾驶四驱越野并涉水过河前往；这里是地球上最奇异的景观之一。<strong>每人加 $200（总计 $2,950）。</strong>"
   },
 
   // Itinerary
@@ -192,8 +192,8 @@ window.__i18n = {
   },
   "md_details_notincluded_label": { "en": "Not Included", "zh": "不含项目" },
   "md_details_notincluded_value": {
-    "en": "International flights to Antananarivo; Madagascar tourist visa (~$35 USD, available on arrival or as eVisa); travel insurance; tips for driver and guide; photography permits at sensitive sites; alcohol and additional beverages; optional Tsingy de Bemaraha extension (+$209).",
-    "zh": "前往塔那那利佛的国际航班；马达加斯加旅游签证（约35美元，可落地办理或申请电子签）；旅行保险；司机与导游小费；敏感景点的拍摄许可；酒类及额外饮品；可选津吉·德·贝马拉哈延伸行程（+$209）。"
+    "en": "International flights to Antananarivo; Madagascar tourist visa (~$35 USD, available on arrival or as eVisa); travel insurance; tips for driver and guide; photography permits at sensitive sites; alcohol and additional beverages; optional Tsingy de Bemaraha extension (+$200).",
+    "zh": "前往塔那那利佛的国际航班；马达加斯加旅游签证（约35美元，可落地办理或申请电子签）；旅行保险；司机与导游小费；敏感景点的拍摄许可；酒类及额外饮品；可选津吉·德·贝马拉哈延伸行程（+$200）。"
   },
 
   // FAQ
@@ -217,8 +217,8 @@ window.__i18n = {
   },
   "md_faq4_q": { "en": "Can I add the Tsingy de Bemaraha to this trip?", "zh": "能否在行程中加入津吉·德·贝马拉哈？" },
   "md_faq4_a": {
-    "en": "Yes. A 2-day extension to the Tsingy de Bemaraha — the UNESCO-listed limestone stone forest — slots in between Morondava and the return to Antananarivo, and adds $209 per person ($2,959 total). The Tsingy is reached by a long 4×4 day from Morondava with a river crossing on the way; the reward is one of the strangest landscapes on Earth and a chance to walk above the canopy on suspended bridges and via ferrata. Best added when conditions on the road are favourable (May–October).",
-    "zh": "可以。可在穆龙达瓦与返回塔那那利佛之间加入两天的津吉·德·贝马拉哈延伸——这片被联合国教科文组织列入世界遗产的石灰岩石林，每人加 $209（总价 $2,959）。前往津吉需自穆龙达瓦驾驶一整日四驱越野并涉水过河，回报是地球上最奇异的景观之一，以及在吊桥与铁索路上跨越林冠之上的体验。最佳加选窗口为五至十月，道路状况较好。"
+    "en": "Yes. A 2-day extension to the Tsingy de Bemaraha — the UNESCO-listed limestone stone forest — slots in between Morondava and the return to Antananarivo, and adds $200 per person ($2,950 total). The Tsingy is reached by a long 4×4 day from Morondava with a river crossing on the way; the reward is one of the strangest landscapes on Earth and a chance to walk above the canopy on suspended bridges and via ferrata. Best added when conditions on the road are favourable (May–October).",
+    "zh": "可以。可在穆龙达瓦与返回塔那那利佛之间加入两天的津吉·德·贝马拉哈延伸——这片被联合国教科文组织列入世界遗产的石灰岩石林，每人加 $200（总价 $2,950）。前往津吉需自穆龙达瓦驾驶一整日四驱越野并涉水过河，回报是地球上最奇异的景观之一，以及在吊桥与铁索路上跨越林冠之上的体验。最佳加选窗口为五至十月，道路状况较好。"
   },
 
   // Pricing
@@ -242,8 +242,8 @@ window.__i18n = {
     "en": "Add the UNESCO-listed limestone stone forest between Morondava and the return to Antananarivo. Long 4×4 day in and out, suspended bridges and via ferrata, one of the strangest landscapes on Earth.",
     "zh": "在穆龙达瓦与返程塔那那利佛之间加入这片世遗石灰岩石林。需以一整日四驱往返，途中跨越吊桥与铁索路——是地球上最奇异的景观之一。"
   },
-  "md_addon_plus": { "en": "+$209 per person", "zh": "每人加 $209" },
-  "md_addon_total": { "en": "$2,959 total", "zh": "总价 $2,959" },
+  "md_addon_plus": { "en": "+$200 per person", "zh": "每人加 $200" },
+  "md_addon_total": { "en": "$2,950 total", "zh": "总价 $2,950" },
 
   // Safety
   "md_safety_title": { "en": "A Note on Safety", "zh": "关于安全的一则说明" },
