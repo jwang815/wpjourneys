@@ -219,6 +219,34 @@ window.__i18n = {
     "en": "View Expedition",
     "zh": "查看行程详情"
   },
+  "expedition_madagascar_tag": {
+    "en": "The Eighth Continent",
+    "zh": "第八大陆"
+  },
+  "expedition_madagascar_name": {
+    "en": "Madagascar",
+    "zh": "马达加斯加"
+  },
+  "expedition_madagascar_subtitle": {
+    "en": "Baobabs, Lemurs & the Eastern Rainforest",
+    "zh": "猴面包树、狐猴与东部雨林"
+  },
+  "expedition_madagascar_desc": {
+    "en": "Watch the Avenue of the Baobabs throw hundred-metre shadows at sunset, walk Kirindy Forest by night in search of the fossa, meet lemurs at five reserves, and end at the dawn chorus of the indri in the Andasibe rainforest. Optional 2-day Tsingy de Bemaraha extension.",
+    "zh": "看日落下的猴面包树大道投出逾百米长影；夜访基林迪森林寻访马岛獴；在五座保护区与狐猴近距离相遇；最后在安达西贝雨林中聆听大狐猴的清晨合鸣。可加选2天津吉·德·贝马拉哈延伸。"
+  },
+  "expedition_madagascar_dates": {
+    "en": "7 Days",
+    "zh": "7天"
+  },
+  "expedition_madagascar_price": {
+    "en": "From $2,750",
+    "zh": "起价 $2,750"
+  },
+  "expedition_madagascar_cta": {
+    "en": "View Expedition",
+    "zh": "查看行程详情"
+  },
   "expedition_mauritania_tag": {
     "en": "Sahara Expedition",
     "zh": "撒哈拉探险"
@@ -564,8 +592,8 @@ window.__i18n = {
     "zh": "任何目的地，全程规划，专属于您"
   },
   "custom_text": {
-    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, Turkmenistan, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
-    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、土库曼斯坦、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
+    "en": "Our scheduled expeditions cover Socotra, Mongolia, Pakistan, Turkmenistan, Madagascar, West Africa, Mauritania, Eritrea, and Myanmar, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
+    "zh": "我们的定期探险涵盖索科特拉、蒙古、巴基斯坦、土库曼斯坦、马达加斯加、西非、毛里塔尼亚、厄立特里亚与缅甸——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
   },
   "custom_feat1": {
     "en": "Any country, any region",
