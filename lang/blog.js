@@ -46,6 +46,10 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "en": "Guides, stories, and insights from the places where the map ends.",
     "zh": "在地图终止之处，关于那些地方的指南、故事与思考。"
   },
+  "blog_index_hero_intro": {
+    "en": "Long-form travel guides for the world's hardest-to-reach places — Socotra, the Wakhan Corridor, the Gobi, the Horn of Africa, the Sahara. Practical advice on planning expeditions, choosing operators, and traveling responsibly in destinations few tour groups ever visit.",
+    "zh": "为地球上最难抵达之地撰写的深度旅行指南——从索科特拉、瓦罕走廊、戈壁，到非洲之角与撒哈拉。关于如何规划探险、挑选运营方，以及如何在团队游鲜少涉足的目的地负责任地旅行的实用建议。"
+  },
   "blog_category_company": {
     "en": "Company",
     "zh": "公司"

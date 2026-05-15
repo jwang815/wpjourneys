@@ -230,6 +230,12 @@ a {
   margin: 0 auto;
   line-height: 1.7;
 }
+.blog-hero .blog-hero-intro {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  opacity: 0.55;
+  max-width: 720px;
+}
 
 /* Category Filter */
 .blog-filters {
