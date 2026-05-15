@@ -265,6 +265,9 @@
       transform: translateX(40px);
       transition: opacity 0.85s ease, transform 0.85s ease;
     }
+    @media (max-width: 900px) {
+      .fade-in-right { transform: none; }
+    }
 
     .fade-in-right.visible {
       opacity: 1;

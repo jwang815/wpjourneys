@@ -61,9 +61,5 @@ window.__i18n = Object.assign(window.__i18n || {}, {
   "blog_category_planning": {
     "en": "Planning",
     "zh": "行前规划"
-  },
-  "blog_meta_min_read": {
-    "en": "min read",
-    "zh": "分钟阅读"
   }
 });

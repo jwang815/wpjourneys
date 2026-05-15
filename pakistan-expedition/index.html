@@ -260,6 +260,9 @@
       transform: translateX(40px);
       transition: opacity 0.85s ease, transform 0.85s ease;
     }
+    @media (max-width: 900px) {
+      .fade-in-right { transform: none; }
+    }
 
     .fade-in-right.visible {
       opacity: 1;
@@ -1509,8 +1512,7 @@
             <img
               src="/images/expeditions/unsplash-1722926283743.jpg"
               alt="Badshahi Mosque at sunset in Lahore, Pakistan"
-              loading="lazy"
-            />
+              loading="lazy" width="1200" height="900" />
             <div class="intro-image-caption">
               <span data-i18n="pk_overview_image_caption">Badshahi Mosque, Lahore</span>
             </div>
@@ -1769,8 +1771,7 @@
       src="/images/expeditions/unsplash-1589798044196.jpg"
       alt="Karakoram Highway winding through dramatic mountain scenery, Pakistan"
       loading="lazy"
-      style="width:100%; height:100%; object-fit:cover; object-position: center 50%;"
-    />
+      style="width:100%; height:100%; object-fit:cover; object-position: center 50%;" width="1200" height="800" />
     <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(10,8,5,0.65) 0%, rgba(10,8,5,0.2) 50%, rgba(10,8,5,0.65) 100%);"></div>
     <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;">
       <div class="fade-in">

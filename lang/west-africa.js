@@ -35,10 +35,6 @@ window.__i18n = {
     "en": "8 days across three nations at the crossroads of history",
     "zh": "八天穿越三国，踏上历史的交汇之地"
   },
-  "wa_hero_cta": {
-    "en": "Reserve Your Spot",
-    "zh": "立即预订名额"
-  },
   "wa_hero_scroll": {
     "en": "Scroll",
     "zh": "向下滚动"
@@ -279,14 +275,6 @@ window.__i18n = {
     "en": "What’s Included",
     "zh": "费用包含"
   },
-  "wa_details_dates_label": {
-    "en": "Duration",
-    "zh": "出发日期"
-  },
-  "wa_details_dates_value": {
-    "en": "8 Days",
-    "zh": "8天"
-  },
   "wa_details_duration_label": {
     "en": "Duration",
     "zh": "行程时长"
@@ -462,25 +450,5 @@ window.__i18n = {
   "wa_related_pk_sub": {
     "en": "The Karakoram and Ancient Empires",
     "zh": "喀喇昆仑与古老帝国"
-  },
-  "wa_footer_link_home": {
-    "en": "Home",
-    "zh": "首页"
-  },
-  "wa_footer_link_socotra": {
-    "en": "Socotra Island Expedition",
-    "zh": "索科特拉岛探险"
-  },
-  "wa_footer_link_wa": {
-    "en": "Ghana, Benin & Togo Expedition",
-    "zh": "加纳、贝宁与多哥探险"
-  },
-  "wa_footer_link_mn": {
-    "en": "Mongolia Expedition",
-    "zh": "蒙古探险"
-  },
-  "wa_footer_link_pk": {
-    "en": "Pakistan Expedition",
-    "zh": "巴基斯坦探险"
   }
 };

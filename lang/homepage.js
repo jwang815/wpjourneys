@@ -1,31 +1,7 @@
 window.__i18n = {
-  "nav_approach": {
-    "en": "Our Approach",
-    "zh": "我们的理念"
-  },
-  "nav_expeditions": {
-    "en": "Expeditions",
-    "zh": "精选行程"
-  },
-  "nav_stories": {
-    "en": "Stories",
-    "zh": "旅行故事"
-  },
-  "nav_inquire": {
-    "en": "Inquire",
-    "zh": "咨询预订"
-  },
-  "mobile_nav_approach": {
-    "en": "Our Approach",
-    "zh": "我们的理念"
-  },
   "mobile_nav_expeditions": {
     "en": "Expeditions",
     "zh": "精选行程"
-  },
-  "mobile_nav_stories": {
-    "en": "Stories",
-    "zh": "旅行故事"
   },
   "mobile_nav_inquire": {
     "en": "Inquire",
@@ -34,14 +10,6 @@ window.__i18n = {
   "hero_eyebrow": {
     "en": "LUXURY EXPEDITIONS TO THE WORLD'S LAST WILD PLACES",
     "zh": "奢华探险 · 抵达世界最后的秘境"
-  },
-  "hero_title_line1": {
-    "en": "Where the Map Ends,",
-    "zh": "地图终止之处"
-  },
-  "hero_title_line2": {
-    "en": "the Journey Begins",
-    "zh": "正是旅程的起点"
   },
   "hero_subtitle": {
     "en": "Bringing You Luxury Off the Beaten Path",
@@ -634,26 +602,6 @@ window.__i18n = {
   "faq_a6": {
     "en": "We recommend booking at least 2 to 3 months in advance. With a maximum of 5 guests per expedition, spots fill quickly, especially for destinations like Socotra where flight access is limited and seasonal (October through April only). Last-minute inquiries are always welcome if space remains.",
     "zh": "我们建议至少提前 2 至 3 个月预订。每次探险最多五位宾客，名额很快售罄，尤其是像索科特拉这样航班有限且具有季节性（仅 10 月至次年 4 月）的目的地。如仍有名额，我们随时欢迎临时咨询。"
-  },
-  "footer_link_home": {
-    "en": "Home",
-    "zh": "首页"
-  },
-  "footer_link_socotra": {
-    "en": "Socotra Island Expedition",
-    "zh": "索科特拉岛探险"
-  },
-  "footer_link_wa": {
-    "en": "Ghana, Benin & Togo Expedition",
-    "zh": "加纳、贝宁与多哥探险"
-  },
-  "footer_link_mn": {
-    "en": "Mongolia Expedition",
-    "zh": "蒙古探险"
-  },
-  "footer_link_pk": {
-    "en": "Pakistan Expedition",
-    "zh": "巴基斯坦探险"
   },
   "mobile_nav_about": {
     "en": "About",

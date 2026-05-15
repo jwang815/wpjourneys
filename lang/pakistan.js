@@ -339,14 +339,6 @@ window.__i18n = {
     "en": "Small Group Expedition",
     "zh": "精英小团探险"
   },
-  "pk_details_tagline_1": {
-    "en": "Every Detail Arranged.",
-    "zh": "每一处细节，皆已妥善安排。"
-  },
-  "pk_details_tagline_2": {
-    "en": "Every Moment Yours.",
-    "zh": "每一个瞬间，皆属于你。"
-  },
   "pk_cinematic_title": {
     "en": "Every Detail Arranged.<br><em>Every Moment Yours.</em>",
     "zh": "一切细节，悉心安排。<br><em>每一刻光阴，尽属于你。</em>"
@@ -358,14 +350,6 @@ window.__i18n = {
   "pk_details_title": {
     "en": "What's Included",
     "zh": "行程包含内容"
-  },
-  "pk_detail_dates_label": {
-    "en": "Duration",
-    "zh": "出发日期"
-  },
-  "pk_detail_dates_value": {
-    "en": "13 Days",
-    "zh": "13天"
   },
   "pk_detail_duration_label": {
     "en": "Duration",
@@ -546,26 +530,6 @@ window.__i18n = {
   "pk_related_sc_sub": {
     "en": "The Alien Island",
     "zh": "来自另一星球的秘岛"
-  },
-  "pk_footer_link_home": {
-    "en": "Home",
-    "zh": "首页"
-  },
-  "pk_footer_link_socotra": {
-    "en": "Socotra Island Expedition",
-    "zh": "索科特拉岛探险"
-  },
-  "pk_footer_link_wa": {
-    "en": "Ghana, Benin & Togo Expedition",
-    "zh": "加纳、贝宁与多哥探险"
-  },
-  "pk_footer_link_mn": {
-    "en": "Mongolia Expedition",
-    "zh": "蒙古探险"
-  },
-  "pk_footer_link_pk": {
-    "en": "Pakistan Expedition",
-    "zh": "巴基斯坦探险"
   },
   "pk_nav_about": {
     "en": "About Us",

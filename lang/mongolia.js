@@ -15,10 +15,6 @@ window.__i18n = {
     "en": "Book Now",
     "zh": "立即预订"
   },
-  "mn_nav_logo_text": {
-    "en": "Waypoint Journeys",
-    "zh": "Waypoint Journeys"
-  },
   "mn_hero_eyebrow": {
     "en": "Waypoint Journeys Presents",
     "zh": "Waypoint Journeys 呈献"
@@ -171,14 +167,6 @@ window.__i18n = {
     "en": "17 Nights · from $7,450",
     "zh": "7月4日 – 21日 · 起价 $7,450"
   },
-  "mn_17n_day1_label": {
-    "en": "Day 1",
-    "zh": "第一天"
-  },
-  "mn_17n_day1_location": {
-    "en": "Arrive Ulaanbaatar",
-    "zh": "抵达乌兰巴托"
-  },
   "mn_17n_day1_date": {
     "en": "Day 1",
     "zh": "第1天"
@@ -186,10 +174,6 @@ window.__i18n = {
   "mn_17n_day1_desc": {
     "en": "Touch down in Ulaanbaatar, Mongolia's sprawling, contradictory capital where Soviet apartment blocks sit alongside Buddhist temples and modern glass towers. Transfer to your hotel and rest after your journey. This evening, gather around the table for a welcome dinner with your expedition companions, a first taste of Mongolian cuisine and the adventure ahead.",
     "zh": "降落乌兰巴托——蒙古这座充满矛盾魅力的首都，苏联式公寓楼与佛教庙宇、现代玻璃大厦比肩而立。入住酒店，从旅途的疲惫中舒缓身心。傍晚，与同行的探险伙伴围桌共享欢迎晚宴，初品蒙古美食，为即将展开的冒险举杯。"
-  },
-  "mn_17n_day2_label": {
-    "en": "Day 2",
-    "zh": "第二天"
   },
   "mn_17n_day2_location": {
     "en": "Fly to Olgii",
@@ -203,10 +187,6 @@ window.__i18n = {
     "en": "Take a domestic flight west to Olgii, the capital of Bayan-Olgii province and the heartland of Mongolia's Kazakh community. Explore the town's markets and mosques, a world apart from Ulaanbaatar. Tonight, sleep in Olgii town as you prepare to meet the legendary eagle hunters tomorrow.",
     "zh": "搭乘国内航班西飞至乌里雅苏台，这里是巴彦乌里雅省的省会，也是蒙古哈萨克族人的文化腹地。探访小城的集市与清真寺，感受迥异于乌兰巴托的另一片天地。今夜在乌里雅苏台安歇，为明日与传奇猎鹰手的相遇做好准备。"
   },
-  "mn_17n_day3_label": {
-    "en": "Day 3",
-    "zh": "第三天"
-  },
   "mn_17n_day3_location": {
     "en": "Sagsai Village",
     "zh": "萨格赛村"
@@ -219,193 +199,61 @@ window.__i18n = {
     "en": "Travel to Sagsai village, home to some of the most skilled eagle hunters in all of Mongolia. Watch a golden eagle hunting demonstration in the open valleys, the great birds streaking down from cliff faces at speeds exceeding 150 kilometers per hour. Learn about Kazakh culture, dress, music, and the rigorous years-long process of bonding a hunter with an eagle. Tonight, sleep in a traditional ger with your eagle hunter hosts, an intimate window into a way of life stretching back over 4,000 years.",
     "zh": "前往萨格赛村，这里居住着蒙古技艺最为精湛的猎鹰手。在开阔的山谷中观看金雕狩猎表演，雄鹰从峭壁之巅俯冲而下，时速超过一百五十公里，令人屏息。深入了解哈萨克族的文化习俗、传统服饰与音乐，以及猎人与雄鹰之间那段需要经年磨砺才能建立的深厚羁绊。今夜，与猎鹰主人共住传统蒙古包，亲密触碰这段延续逾四千年的古老生活方式。"
   },
-  "mn_17n_day4_label": {
-    "en": "Day 4",
-    "zh": "第四天"
-  },
   "mn_17n_day4_location": {
     "en": "Fly Back — Drive to Terelj",
     "zh": "飞返乌兰巴托，驱车前往特雷勒吉"
-  },
-  "mn_17n_day4_date": {
-    "en": "Day 4",
-    "zh": "第4天"
   },
   "mn_17n_day4_desc": {
     "en": "A morning farewell to your eagle hunter hosts before the flight back to Ulaanbaatar. Upon arrival, drive directly east to Terelj National Park, pausing at the colossal Genghis Khan Equestrian Statue—a 40-metre stainless steel figure and the world's largest equestrian statue. Ascend to the viewing platform for panoramic views of the Tuul River valley before continuing into Terelj's pristine granite valleys. Overnight in a traditional ger camp beneath an extraordinary starlit sky.",
     "zh": "清晨与猎鹰主人道别，乘机返回乌兰巴托。抵达后，即刻驱车向东前往特雷勒吉国家公园，途中在巍峨的成吉思汗骑马雕像前驻足——这座高达四十米的不锈钢巨像是世界上最大的骑马雕像。登上观景台，将图勒河谷的全景尽收眼底，随后深入特雷勒吉原始的花岗岩峡谷。在繁星璀璨的夜空下，于传统蒙古包营地安然入眠。"
   },
-  "mn_17n_day5_label": {
-    "en": "Day 5",
-    "zh": "第五天"
-  },
-  "mn_17n_day5_location": {
-    "en": "Terelj National Park",
-    "zh": "特雷勒吉国家公园"
-  },
-  "mn_17n_day5_date": {
-    "en": "Day 5",
-    "zh": "第5天"
-  },
   "mn_17n_day5_desc": {
     "en": "A full day to explore Terelj's dramatic granite landscape. Visit Turtle Rock, one of Mongolia's most recognizable natural sculptures, and climb to the Ariyabal Meditation Temple carved into the cliff face above a forested hillside. Spend the afternoon on horseback through open meadows flanked by pine forests. This extraordinary valley, just one hour from the capital, feels utterly removed from the modern world.",
     "zh": "整日探索特雷勒吉壮阔的花岗岩地貌。参观龟石——蒙古最具标志性的天然岩雕之一，而后攀登依崖而建的阿日雅贝勒庙。下午骑马穿越被松林环绕的开阔草甸。这片非凡的峡谷，距首都不过一小时车程，却令人全然忘却现代世界的喧嚣。"
-  },
-  "mn_17n_day6_label": {
-    "en": "Day 6",
-    "zh": "第六天"
   },
   "mn_17n_day6_location": {
     "en": "Return to Ulaanbaatar — City Tour",
     "zh": "返回乌兰巴托，游览城市"
   },
-  "mn_17n_day6_date": {
-    "en": "Day 6",
-    "zh": "第6天"
-  },
   "mn_17n_day6_desc": {
     "en": "Drive back into Ulaanbaatar for a full day in the capital. Begin at the Gandantegchinlen Monastery, the living center of Mongolian Buddhism, where monks chant their morning prayers beneath a 26-metre gilded statue. Walk to Chinggis Khan Square, the vast central plaza framed by government buildings and the looming bronze figure of the Great Khan himself. Spend the afternoon at the National Museum of Mongolia, tracing the full arc of the empire from the steppe tribes of antiquity to the modern nation.",
     "zh": "驱车返回乌兰巴托，整日畅游首都。从甘丹寺开始——这座蒙古佛教的活着的中心，僧侣们在高达二十六米的鎏金佛像下诵经祈祷。步行至成吉思汗广场，这座宏阔的中心广场四周环绕着政府大楼，广场上屹立着大汗本人的高大铜像。午后，在蒙古国家博物馆流连，追溯这一帝国从古代草原部落到现代民族国家的完整历程。"
-  },
-  "mn_17n_day7_label": {
-    "en": "Day 7",
-    "zh": "第七天"
   },
   "mn_17n_day7_location": {
     "en": "At Leisure in Ulaanbaatar",
     "zh": "乌兰巴托自由活动日"
   },
-  "mn_17n_day7_date": {
-    "en": "Day 7",
-    "zh": "第7天"
-  },
   "mn_17n_day7_desc": {
     "en": "A free day in the capital on the eve of Naadam. Sleep in, browse the Black Market bazaar for cashmere and handicrafts, visit the Mongolian Art Museum, or simply wander the city at your own pace. This evening, the anticipation builds as the city begins its preparations for one of the great cultural festivals of the world.",
     "zh": "那达慕前夕，在首都享受一整天的自由时光。睡个懒觉，逛逛黑市集市，淘选优质羊绒与传统手工艺品，造访蒙古美术馆，或只是随心漫步于城市之中。傍晚，随着全城为这场世界级文化盛典所做的准备，期待与兴奋的情绪在空气中悄然升腾。"
-  },
-  "mn_17n_day8_label": {
-    "en": "Day 8",
-    "zh": "第八天"
-  },
-  "mn_17n_day8_location": {
-    "en": "Naadam Festival Opening",
-    "zh": "那达慕节开幕式"
-  },
-  "mn_17n_day8_date": {
-    "en": "Day 8",
-    "zh": "第8天"
   },
   "mn_17n_day8_desc": {
     "en": "The opening ceremony of Naadam, Mongolia's national festival, begins today at the Central Stadium. Thousands gather as costumed horsemen parade, wrestling champions are introduced, and archery competitors take their marks. The wrestling competition, governed by rules older than the empire itself, begins immediately after the ceremony. Child jockeys as young as five years old prepare for the long-distance horse races stretching across the open steppe beyond the city.",
     "zh": "蒙古国家节日那达慕的开幕式今日在中央体育场隆重举行。数千人汇聚于此，身着盛装的骑手列队游行，摔跤冠军逐一亮相，弓箭手们各就各位蓄势待发。遵循着比帝国本身还要古老的规则，摔跤比赛在仪式结束后随即展开。年仅五岁的童骑手们也整装待发，准备参加穿越城外开阔草原的长距离赛马。"
   },
-  "mn_17n_day9_label": {
-    "en": "Day 9",
-    "zh": "第九天"
-  },
-  "mn_17n_day9_location": {
-    "en": "Naadam Festival Day 2",
-    "zh": "那达慕节第二天"
-  },
-  "mn_17n_day9_date": {
-    "en": "Day 9",
-    "zh": "第9天"
-  },
   "mn_17n_day9_desc": {
     "en": "Return to the festival grounds for a second day of competition. Wrestling finals, archery eliminations, and the thrilling conclusion of the horse races draw tens of thousands of spectators. Wander the festival grounds to sample khuushuur (fried mutton pastry), watch traditional throat singing, and mingle with Mongolian families in their finest deels. This is one of the great cultural spectacles of the world, and you are inside it.",
     "zh": "再度前往节庆场地，迎接第二天的精彩角逐。摔跤决赛、射箭淘汰赛以及扣人心弦的赛马终局，吸引数万观众。在节庆场地漫步，品尝胡须儿（炸羊肉饺），欣赏传统呼麦表演，与身着节日袍服（deel）的蒙古家庭共享这一时刻。这是世界上最盛大的文化景观之一，而你，就身处其中。"
-  },
-  "mn_17n_day10_label": {
-    "en": "Day 10",
-    "zh": "第十天"
-  },
-  "mn_17n_day10_location": {
-    "en": "Drive to Karakorum",
-    "zh": "驱车前往哈拉和林"
-  },
-  "mn_17n_day10_date": {
-    "en": "Day 10",
-    "zh": "第10天"
   },
   "mn_17n_day10_desc": {
     "en": "Leave Ulaanbaatar and head southwest along the valley of the Orkhon River toward the ancient capital of the Mongol Empire. Arrive at Karakorum in the afternoon. Visit the Erdene Zuu Monastery, built in 1586 from the stones of Genghis Khan's original capital, its white walls enclosing three ornate temples that survived the Soviet-era purges. Walk the outline of the old palace foundations as the steppe breeze carries the smell of wild sage. Tonight, sleep in a ger camp outside the monastery walls.",
     "zh": "离开乌兰巴托，沿鄂尔浑河河谷向西南行进，奔赴蒙古帝国的古都。午后抵达哈拉和林，参观额尔德尼召——建于1586年、以成吉思汗原都宫殿石块砌成的寺庙，其白色围墙之内，三座华美庙宇在苏联清洗年代中幸存至今。沿着昔日宫殿地基的轮廓缓步而行，草原的微风送来野生鼠尾草的芳香。今夜，在寺庙墙外的蒙古包营地安然入眠。"
   },
-  "mn_17n_day11_label": {
-    "en": "Day 11",
-    "zh": "第十一天"
-  },
-  "mn_17n_day11_location": {
-    "en": "Orkhon Valley",
-    "zh": "鄂尔浑河谷"
-  },
-  "mn_17n_day11_date": {
-    "en": "Day 11",
-    "zh": "第11天"
-  },
   "mn_17n_day11_desc": {
     "en": "Follow the Orkhon River deeper into one of Mongolia's most fertile and historically significant valleys. A morning hike brings you to the Orkhon Waterfall, which erupts from a basalt shelf formed by ancient volcanic activity. In the afternoon, visit a nomadic family at their summer camp, sharing tea, fermented mare's milk (airag), and a glimpse of the seasonal rhythms that have defined Mongolian life for centuries. The valley around you is a UNESCO World Heritage landscape.",
     "zh": "沿鄂尔浑河深入蒙古最富饶、最具历史意义的峡谷腹地。清晨徒步，抵达鄂尔浑瀑布——这道壮观的瀑流从古代火山活动形成的玄武岩台地上奔涌而出。午后，造访游牧家庭的夏季营地，共饮奶茶与马奶酒（airag），瞥见几百年来塑造蒙古人生活的那种四季流转的节奏。环绕着你的这片峡谷，是联合国教科文组织认定的世界遗产景观。"
-  },
-  "mn_17n_day12_label": {
-    "en": "Day 12",
-    "zh": "第十二天"
-  },
-  "mn_17n_day12_location": {
-    "en": "Ongi Monastery Ruins",
-    "zh": "翁金寺遗址"
-  },
-  "mn_17n_day12_date": {
-    "en": "Day 12",
-    "zh": "第12天"
   },
   "mn_17n_day12_desc": {
     "en": "Drive south through the transition zone where the steppe thins and the air begins to carry the dry, mineral scent of the approaching desert. Stop at the ruins of Ongi Monastery, once one of the largest religious complexes in Mongolia with over 30 temples and 1,000 monks, destroyed in the Stalinist purges of 1937. The ruins stand today as a haunting memorial. Reconstruction is underway, and the rebuilt main temple offers context and quiet reflection before the road south continues.",
     "zh": "向南驱车，穿越草原渐渐稀疏、空气中开始弥漫沙漠干燥矿物气息的过渡地带。在翁金寺遗址前驻足——这里曾是蒙古最大的宗教建筑群之一，拥有逾三十座庙宇与千名僧侣，于1937年斯大林清洗运动中被彻底摧毁。废墟至今仍屹立，如同一座令人唏嘘的纪念碑。重建工程正在推进，修葺一新的主殿提供了历史背景，亦给人以静默沉思的空间，而后继续向南行进。"
   },
-  "mn_17n_day13_label": {
-    "en": "Day 13",
-    "zh": "第十三天"
-  },
-  "mn_17n_day13_location": {
-    "en": "Flaming Cliffs",
-    "zh": "火焰崖"
-  },
-  "mn_17n_day13_date": {
-    "en": "Day 13",
-    "zh": "第13天"
-  },
   "mn_17n_day13_desc": {
     "en": "Drive to Bayanzag, the Flaming Cliffs, where American paleontologist Roy Chapman Andrews discovered the world's first dinosaur eggs in 1923. The red sandstone formations burn at sunset with an intensity that borders on supernatural. Walk the rim of the cliffs and peer down into the gullies where dinosaur fossils still surface after heavy rains.",
     "zh": "驱车前往巴彦扎格火焰崖——美国古生物学家罗伊·查普曼·安德鲁斯于1923年在此发现了世界上首枚恐龙蛋。日落时分，红砂岩地层燃烧般的色彩近乎超自然的壮丽。沿崖边漫步，俯瞰那些大雨过后仍会浮现恐龙化石的沟壑。"
   },
-  "mn_17n_day14_label": {
-    "en": "Day 14",
-    "zh": "第十四天"
-  },
-  "mn_17n_day14_location": {
-    "en": "Khongor Sand Dunes",
-    "zh": "洪戈林沙丘"
-  },
-  "mn_17n_day14_date": {
-    "en": "Day 14",
-    "zh": "第14天"
-  },
   "mn_17n_day14_desc": {
     "en": "The Khongor Sand Dunes, known as the Singing Sands, rise up to 300 metres and stretch nearly 200 kilometres across the Gobi floor. Ride Bactrian camels along their base, the ancient two-humped variety that has crossed these sands for millennia. In the late afternoon, climb the main dune ridge as the sun begins its descent, the valley below casting long violet shadows across the sand. The view from the summit, with the Gobi spreading in every direction, is among the great vistas of the natural world.",
     "zh": "洪戈林沙丘，又称'唱歌的沙'，高达三百米，绵延近二百公里横贯戈壁大地。骑乘双峰骆驼——这种古老的品种数千年来一直穿越这片沙海——沿沙丘基部缓行。午后时分，趁夕阳西沉时攀登主沙丘脊线，山谷中绵延的紫色阴影铺展于沙海之上。立于峰顶，戈壁在四面八方无尽延伸，此乃大自然最壮阔的景观之一。"
-  },
-  "mn_17n_day15_label": {
-    "en": "Day 15",
-    "zh": "第十五天"
-  },
-  "mn_17n_day15_location": {
-    "en": "Yol Valley and Three Camels Lodge",
-    "zh": "雅布赖峡谷与三骆驼酒店"
-  },
-  "mn_17n_day15_date": {
-    "en": "Day 15",
-    "zh": "第15天"
   },
   "mn_17n_day15_desc": {
     "en": "Enter the Gobi Gurvansaikhan National Park and descend into Yol Valley, a narrow ice gorge that persists through summer locked between soaring canyon walls. Walk the frozen floor of the gorge past nesting griffon vultures overhead. This afternoon, arrive at Three Camels Lodge, the Gobi's finest and most celebrated accommodation, a beautifully designed ger camp whose traditional architecture and attentive hospitality have earned it international recognition. Tonight, the desert sky above you will hold more stars than you have ever seen.",
@@ -415,14 +263,6 @@ window.__i18n = {
     "en": "Day 16",
     "zh": "第十六天"
   },
-  "mn_17n_day16_location": {
-    "en": "Tsagaan Suvarga",
-    "zh": "白塔（察干苏巴尔加）"
-  },
-  "mn_17n_day16_date": {
-    "en": "Day 16",
-    "zh": "第16天"
-  },
   "mn_17n_day16_desc": {
     "en": "Continue to Tsagaan Suvarga, the White Stupa, a formation of ancient seabed cliffs rising 30 metres from the Gobi plain in layered bands of white, red, and ochre. Once the floor of a shallow inland sea, these sedimentary walls are studded with the fossils of marine creatures that lived here 60 million years ago. At sunrise and sunset the cliffs ignite in color. It is one of Mongolia's most quietly spectacular landscapes, and almost no one outside the country knows it exists.",
     "zh": "继续前往察干苏巴尔加（白塔）——古代海底地层从戈壁平原拔地而起，以白、红、赭三色层层叠叠，高达三十米。这片曾是浅内陆海海底的沉积岩壁，至今镶嵌着六千万年前栖息于此的海洋生物化石。旭日初升与夕阳沉落之际，峭壁色彩瞬间燃烧。这是蒙古最静谧而壮观的景观之一，几乎不为国境之外的世界所知。"
@@ -430,14 +270,6 @@ window.__i18n = {
   "mn_17n_day17_label": {
     "en": "Day 17",
     "zh": "第十七天"
-  },
-  "mn_17n_day17_location": {
-    "en": "Drive Back to Ulaanbaatar",
-    "zh": "驱车返回乌兰巴托"
-  },
-  "mn_17n_day17_date": {
-    "en": "Day 17",
-    "zh": "第17天"
   },
   "mn_17n_day17_desc": {
     "en": "The final leg of the overland journey brings you back into Ulaanbaatar by afternoon. The rest of the day is yours: browse the Black Market (Narantuul), Mongolia's vast open-air bazaar, for cashmere, silver jewelry, and traditional handicrafts. This evening, gather for the farewell dinner: a proper Mongolian feast with the full group, a last sharing of stories from the road, and a toast to the steppe, the desert, and the eternal blue sky that watched over all of it.",
@@ -447,25 +279,9 @@ window.__i18n = {
     "en": "Day 18",
     "zh": "第十八天"
   },
-  "mn_17n_day18_location": {
-    "en": "Depart Ulaanbaatar",
-    "zh": "离开乌兰巴托"
-  },
-  "mn_17n_day18_date": {
-    "en": "Day 18",
-    "zh": "第18天"
-  },
   "mn_17n_day18_desc": {
     "en": "Transfer to Chinggis Khan International Airport for your onward journey. The expedition is complete. Mongolia has a way of following travelers home, a persistent quality of light and space that reframes ordinary life. We hope you carry a little of the eternal blue sky with you.",
     "zh": "前往成吉思汗国际机场，踏上归途。探险圆满落幕。蒙古有一种方式，会随着旅者悄然同行，那是一种关于光线与空间的执念，足以重新诠释平凡生活的意义。愿你将一抹永恒的苍天蓝，带回属于你的世界。"
-  },
-  "mn_14n_day1_label": {
-    "en": "Day 1",
-    "zh": "第一天"
-  },
-  "mn_14n_day1_location": {
-    "en": "Arrive Ulaanbaatar",
-    "zh": "抵达乌兰巴托"
   },
   "mn_14n_day1_date": {
     "en": "Day 4",
@@ -474,10 +290,6 @@ window.__i18n = {
   "mn_14n_day1_desc": {
     "en": "Arrive in Ulaanbaatar and transfer to your hotel. This evening, gather for a welcome dinner with your group and a first taste of Mongolian cuisine, setting the tone for the adventure ahead.",
     "zh": "抵达乌兰巴托，入住酒店。傍晚，与团队共享欢迎晚宴，初品蒙古美食，为即将开启的探险之旅定下基调。"
-  },
-  "mn_14n_day2_label": {
-    "en": "Day 2",
-    "zh": "第二天"
   },
   "mn_14n_day2_location": {
     "en": "Ulaanbaatar City Tour",
@@ -491,10 +303,6 @@ window.__i18n = {
     "en": "Begin at the Gandantegchinlen Monastery, the living center of Mongolian Buddhism. Walk to Chinggis Khan Square and spend the afternoon at the National Museum of Mongolia, tracing the full arc from ancient steppe tribes to the great empire.",
     "zh": "从甘丹寺开始，这是蒙古佛教活着的中心。步行至成吉思汗广场，午后在蒙古国家博物馆度过，追溯从古代草原部落到伟大帝国的完整历程。"
   },
-  "mn_14n_day3_label": {
-    "en": "Day 3",
-    "zh": "第三天"
-  },
   "mn_14n_day3_location": {
     "en": "Drive to Terelj National Park",
     "zh": "驱车前往特雷勒吉国家公园"
@@ -507,145 +315,45 @@ window.__i18n = {
     "en": "Drive east from Ulaanbaatar, stopping at the monumental Genghis Khan Equestrian Statue—a 40-metre stainless steel figure astride a horse, the largest equestrian statue in the world. Ascend to the viewing platform on the horse's head for panoramic views of the Tuul River valley. Continue into the pristine valleys of Terelj National Park, where granite tors rise improbably from the grassland. Overnight in a traditional ger camp beneath an extraordinary starlit sky.",
     "zh": "自乌兰巴托向东驱车，途中在巍峨的成吉思汗骑马雕像前驻足——这座高达四十米的不锈钢骑马巨像是世界上最大的同类雕像。登上马头顶部的观景台，将图勒河谷的全景尽收眼底。继续深入特雷勒吉国家公园的原始峡谷，花岗岩岩峰从草原之上拔地而起，蔚为壮观。在繁星满天的夜空下，于传统蒙古包营地安然入眠。"
   },
-  "mn_14n_day4_label": {
-    "en": "Day 4",
-    "zh": "第四天"
-  },
   "mn_14n_day4_location": {
     "en": "Terelj National Park",
     "zh": "特雷勒吉国家公园"
-  },
-  "mn_14n_day4_date": {
-    "en": "Day 7",
-    "zh": "第7天"
   },
   "mn_14n_day4_desc": {
     "en": "A full day to explore Terelj's dramatic granite landscape. Visit Turtle Rock, one of Mongolia's most recognizable natural sculptures, and climb to the Ariyabal Meditation Temple, a hillside Buddhist retreat carved into the cliff face. Spend the afternoon on horseback through open meadows flanked by pine forests, and overnight once more beneath the park's extraordinary starlit sky.",
     "zh": "整日探索特雷勒吉壮阔的花岗岩地貌。参观龟石——蒙古最具标志性的天然岩雕，攀登依崖而建的阿日雅贝勒庙，这座山腰佛教圣所依峭壁凿刻而成。午后骑马穿越被松林环抱的开阔草甸，再度于公园非凡的星光下安眠。"
   },
-  "mn_14n_day5_label": {
-    "en": "Day 5",
-    "zh": "第五天"
-  },
   "mn_14n_day5_location": {
     "en": "Return to UB — Naadam Opening",
     "zh": "返回乌兰巴托，那达慕开幕式"
-  },
-  "mn_14n_day5_date": {
-    "en": "Day 8",
-    "zh": "第8天"
   },
   "mn_14n_day5_desc": {
     "en": "Return to Ulaanbaatar for the opening ceremony of Naadam, Mongolia's national festival. At the Central Stadium, costumed horsemen parade, wrestling champions are introduced, and archery competitors take their marks. Child jockeys as young as five years old prepare for the long-distance horse races stretching across the open steppe beyond the city.",
     "zh": "返回乌兰巴托，迎接那达慕——蒙古国家节日的开幕盛典。在中央体育场，身着盛装的骑手列队游行，摔跤冠军逐一亮相，弓箭手们各就各位。年仅五岁的童骑手们整装待发，即将驰骋于城外辽阔草原之上的长距离赛马。"
   },
-  "mn_14n_day6_label": {
-    "en": "Day 6",
-    "zh": "第六天"
-  },
-  "mn_14n_day6_location": {
-    "en": "Naadam Festival Day 2",
-    "zh": "那达慕节第二天"
-  },
-  "mn_14n_day6_date": {
-    "en": "Day 9",
-    "zh": "第9天"
-  },
   "mn_14n_day6_desc": {
     "en": "Return for the wrestling finals, archery eliminations, and the thrilling conclusion of the horse races. Wander the festival grounds, sample khuushuur and airag, watch traditional throat singing, and mingle with Mongolian families in their finest deels.",
     "zh": "再度前往节庆场地，观看摔跤决赛、射箭淘汰赛与激动人心的赛马终局。漫步节庆场地，品尝胡须儿与马奶酒，欣赏传统呼麦表演，与身着节日盛装的蒙古家庭共享欢腾时刻。"
-  },
-  "mn_14n_day7_label": {
-    "en": "Day 7",
-    "zh": "第七天"
-  },
-  "mn_14n_day7_location": {
-    "en": "Drive to Karakorum",
-    "zh": "驱车前往哈拉和林"
-  },
-  "mn_14n_day7_date": {
-    "en": "Day 10",
-    "zh": "第10天"
   },
   "mn_14n_day7_desc": {
     "en": "Head southwest toward the ancient capital of the Mongol Empire. Arrive at Karakorum and visit the Erdene Zuu Monastery, built from the stones of Genghis Khan's original palace. Walk the foundation outlines as the steppe breeze carries wild sage. Overnight in a ger camp outside the monastery walls.",
     "zh": "向西南行进，奔赴蒙古帝国的古都。抵达哈拉和林，参观以成吉思汗旧宫殿石块砌成的额尔德尼召寺庙。沿着古宫殿地基的轮廓漫步，感受草原微风捎来的野生鼠尾草芬芳。今夜在寺庙墙外的蒙古包营地安歇。"
   },
-  "mn_14n_day8_label": {
-    "en": "Day 8",
-    "zh": "第八天"
-  },
-  "mn_14n_day8_location": {
-    "en": "Orkhon Valley",
-    "zh": "鄂尔浑河谷"
-  },
-  "mn_14n_day8_date": {
-    "en": "Day 11",
-    "zh": "第11天"
-  },
   "mn_14n_day8_desc": {
     "en": "Follow the Orkhon River into its UNESCO World Heritage valley. Hike to the Orkhon Waterfall erupting from ancient basalt. Visit a nomadic family at their summer camp, sharing tea and airag and witnessing the seasonal rhythms that have defined Mongolian life for centuries.",
     "zh": "沿鄂尔浑河深入这片联合国教科文组织认定的世界遗产峡谷。徒步前往从古代玄武岩台地奔涌而出的鄂尔浑瀑布。造访游牧家庭的夏季营地，共饮奶茶与马奶酒，见证几百年来塑造蒙古人生活的季节性节律。"
-  },
-  "mn_14n_day9_label": {
-    "en": "Day 9",
-    "zh": "第九天"
-  },
-  "mn_14n_day9_location": {
-    "en": "Ongi Monastery Ruins",
-    "zh": "翁金寺遗址"
-  },
-  "mn_14n_day9_date": {
-    "en": "Day 12",
-    "zh": "第12天"
   },
   "mn_14n_day9_desc": {
     "en": "Drive south through the steppe-to-desert transition zone. Stop at the ruins of Ongi Monastery, once one of Mongolia's largest religious complexes, destroyed in the Stalinist purges of 1937. The rebuilt main temple offers quiet reflection before the road south continues toward the Gobi.",
     "zh": "向南驱车，穿越草原向沙漠过渡的地带。在翁金寺遗址前驻足——这里曾是蒙古最大的宗教建筑群之一，于1937年斯大林清洗运动中被摧毁。修葺一新的主殿给人以宁静的反思空间，而后继续南行，直奔戈壁。"
   },
-  "mn_14n_day10_label": {
-    "en": "Day 10",
-    "zh": "第十天"
-  },
-  "mn_14n_day10_location": {
-    "en": "Flaming Cliffs",
-    "zh": "火焰崖"
-  },
-  "mn_14n_day10_date": {
-    "en": "Day 13",
-    "zh": "第13天"
-  },
   "mn_14n_day10_desc": {
     "en": "Visit Bayanzag, the Flaming Cliffs, where the world's first dinosaur eggs were discovered in 1923. The red sandstone formations burn at sunset. Walk the rim and peer into gullies where fossils still surface after rain.",
     "zh": "参观巴彦扎格火焰崖——1923年世界首枚恐龙蛋正是在此被发现。日落时分，红砂岩地层燃烧如火。沿崖边漫步，俯瞰大雨过后仍会浮现化石的沟壑。"
   },
-  "mn_14n_day11_label": {
-    "en": "Day 11",
-    "zh": "第十一天"
-  },
-  "mn_14n_day11_location": {
-    "en": "Khongor Sand Dunes",
-    "zh": "洪戈林沙丘"
-  },
-  "mn_14n_day11_date": {
-    "en": "Day 14",
-    "zh": "第14天"
-  },
   "mn_14n_day11_desc": {
     "en": "Ride Bactrian camels along the base of the Khongor Sand Dunes, rising 300 metres from the desert floor. Climb the main ridge at sunset as the valley below casts long violet shadows across the sand, one of the great vistas of the natural world.",
     "zh": "骑乘双峰骆驼沿洪戈林沙丘基部缓行，沙丘从沙漠地面拔起达三百米之高。趁夕阳西沉时攀登主沙丘脊线，谷底的紫色长影在沙海上缓缓延伸，这是自然界最壮阔的景观之一。"
-  },
-  "mn_14n_day12_label": {
-    "en": "Day 12",
-    "zh": "第十二天"
-  },
-  "mn_14n_day12_location": {
-    "en": "Yol Valley and Three Camels Lodge",
-    "zh": "雅布赖峡谷与三骆驼酒店"
-  },
-  "mn_14n_day12_date": {
-    "en": "Day 15",
-    "zh": "第15天"
   },
   "mn_14n_day12_desc": {
     "en": "Walk the ice gorge of Yol Valley inside Gobi Gurvansaikhan National Park. This afternoon, arrive at Three Camels Lodge, the Gobi's most celebrated ger camp accommodation. Tonight, the desert sky above you will hold more stars than you have ever seen.",
@@ -655,14 +363,6 @@ window.__i18n = {
     "en": "Day 13",
     "zh": "第十三天"
   },
-  "mn_14n_day13_location": {
-    "en": "Tsagaan Suvarga",
-    "zh": "白塔（察干苏巴尔加）"
-  },
-  "mn_14n_day13_date": {
-    "en": "Day 16",
-    "zh": "第16天"
-  },
   "mn_14n_day13_desc": {
     "en": "Visit Tsagaan Suvarga, the White Stupa, an ancient seabed rising 30 metres from the Gobi floor in layered bands of white, red, and ochre. At sunrise and sunset the cliffs ignite with color. One of Mongolia's most quietly spectacular landscapes.",
     "zh": "参观察干苏巴尔加（白塔），古代海底地层以白、红、赭三色层叠，从戈壁地面拔起三十米。旭日初升与夕阳沉落之际，峭壁色彩瞬间燃烧。这是蒙古最静谧而壮观的景观之一。"
@@ -671,14 +371,6 @@ window.__i18n = {
     "en": "Day 14",
     "zh": "第十四天"
   },
-  "mn_14n_day14_location": {
-    "en": "Drive Back to Ulaanbaatar",
-    "zh": "驱车返回乌兰巴托"
-  },
-  "mn_14n_day14_date": {
-    "en": "Day 17",
-    "zh": "第17天"
-  },
   "mn_14n_day14_desc": {
     "en": "Arrive back in Ulaanbaatar by afternoon. Browse the Black Market for cashmere and traditional crafts, or rest quietly as the city hums around you. This evening, a farewell dinner to share stories from the road and toast to the journey.",
     "zh": "午后返抵乌兰巴托。逛逛黑市，挑选羊绒与传统工艺品，或在城市的喧嚣中静静歇息。傍晚，共聚告别晚宴，叙说旅途故事，为这段旅程举杯。"
@@ -686,18 +378,6 @@ window.__i18n = {
   "mn_14n_day15_label": {
     "en": "Day 15",
     "zh": "第十五天"
-  },
-  "mn_14n_day15_location": {
-    "en": "Depart Ulaanbaatar",
-    "zh": "离开乌兰巴托"
-  },
-  "mn_14n_day15_date": {
-    "en": "Day 18",
-    "zh": "第18天"
-  },
-  "mn_14n_day15_desc": {
-    "en": "Transfer to Chinggis Khan International Airport for your onward journey. The expedition is complete. We hope you carry a little of the eternal blue sky with you.",
-    "zh": "前往成吉思汗国际机场，踏上归途。探险圆满落幕。愿你将一抹永恒的苍天蓝，带回属于你的世界。"
   },
   "mn_11n_day1_label": {
     "en": "Day 1",
@@ -907,14 +587,6 @@ window.__i18n = {
     "en": "What's Included",
     "zh": "费用包含"
   },
-  "mn_detail_dates_label": {
-    "en": "Duration",
-    "zh": "行程时长"
-  },
-  "mn_detail_dates_value": {
-    "en": "17, 14, or 11 Nights",
-    "zh": "17晚、14晚或11晚"
-  },
   "mn_detail_duration_label": {
     "en": "Duration",
     "zh": "行程时长"
@@ -995,10 +667,6 @@ window.__i18n = {
     "en": "$4,950",
     "zh": "$4,950"
   },
-  "mn_pricing_card1_per": {
-    "en": "USD per person",
-    "zh": "美元/每人"
-  },
   "mn_pricing_card1_note": {
     "en": "Ulaanbaatar, Naadam Festival, Karakorum, Orkhon Valley, Ongi, Gobi Desert, Tsagaan Suvarga",
     "zh": "乌兰巴托、那达慕节、哈拉和林、鄂尔浑河谷、翁金寺、戈壁沙漠、白塔"
@@ -1015,17 +683,9 @@ window.__i18n = {
     "en": "$5,950",
     "zh": "$5,950"
   },
-  "mn_pricing_card2_per": {
-    "en": "USD per person",
-    "zh": "美元/每人"
-  },
   "mn_pricing_card2_note": {
     "en": "All of the above, plus Ulaanbaatar city tour, Terelj National Park with Genghis Khan Statue",
     "zh": "含以上所有内容，另增乌兰巴托城市游览、特雷勒吉国家公园与成吉思汗骑马雕像"
-  },
-  "mn_pricing_card2_badge": {
-    "en": "Complete Experience",
-    "zh": "完整体验"
   },
   "mn_pricing_card3_nights": {
     "en": "17 Nights",
@@ -1150,26 +810,6 @@ window.__i18n = {
   "mn_related_wa_sub": {
     "en": "Voodoo, Castles & the Slave Coast",
     "zh": "巫毒文化、古堡传说与奴隶海岸"
-  },
-  "mn_footer_link_home": {
-    "en": "Home",
-    "zh": "首页"
-  },
-  "mn_footer_link_socotra": {
-    "en": "Socotra Island Expedition",
-    "zh": "索科特拉岛探险"
-  },
-  "mn_footer_link_wa": {
-    "en": "Ghana, Benin & Togo Expedition",
-    "zh": "加纳、贝宁与多哥探险"
-  },
-  "mn_footer_link_mn": {
-    "en": "Mongolia Expedition",
-    "zh": "蒙古探险"
-  },
-  "mn_footer_link_pk": {
-    "en": "Pakistan Expedition",
-    "zh": "巴基斯坦探险"
   },
   "mn_nav_about": {
     "en": "About Us",

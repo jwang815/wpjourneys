@@ -286,6 +286,9 @@
       transform: translateX(40px);
       transition: opacity 0.85s ease, transform 0.85s ease;
     }
+    @media (max-width: 900px) {
+      .fade-in-right { transform: none; }
+    }
 
     .fade-in-right.visible {
       opacity: 1;
@@ -1655,8 +1658,7 @@
             <img
               src="/images/expeditions/unsplash-1765881775363.jpg"
               alt="Gobi Desert sand dunes at golden hour, southern Mongolia"
-              loading="lazy"
-            />
+              loading="lazy" width="1200" height="800" />
             <div class="intro-image-caption">
               <span data-i18n="mn_overview_image_caption">The Mongolian steppe at golden hour, Arkhangai Province</span>
             </div>
@@ -2314,8 +2316,7 @@
       src="/images/expeditions/unsplash-1501854140801.jpg"
       alt="Lush green Mongolian valley landscape at sunset"
       loading="lazy"
-      style="width:100%; height:100%; object-fit:cover; object-position: center 50%;"
-    />
+      style="width:100%; height:100%; object-fit:cover; object-position: center 50%;" width="1200" height="714" />
     <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(10,8,5,0.65) 0%, rgba(10,8,5,0.2) 50%, rgba(10,8,5,0.65) 100%);"></div>
     <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;">
       <div class="fade-in">

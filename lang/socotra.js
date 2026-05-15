@@ -275,14 +275,6 @@ window.__i18n = {
     "en": "What's Included",
     "zh": "费用包含"
   },
-  "sc_detail_dates_label": {
-    "en": "Duration",
-    "zh": "行程时长"
-  },
-  "sc_detail_dates_value": {
-    "en": "7 Days",
-    "zh": "7天"
-  },
   "sc_detail_duration_label": {
     "en": "Duration",
     "zh": "行程时长"
@@ -459,26 +451,6 @@ window.__i18n = {
   "sc_related_mn_sub": {
     "en": "Land of the Eternal Sky",
     "zh": "永恒苍穹之地"
-  },
-  "sc_footer_link_home": {
-    "en": "Home",
-    "zh": "首页"
-  },
-  "sc_footer_link_socotra": {
-    "en": "Socotra Island Expedition",
-    "zh": "索科特拉岛探险"
-  },
-  "sc_footer_link_wa": {
-    "en": "Ghana, Benin & Togo Expedition",
-    "zh": "加纳、贝宁与多哥探险"
-  },
-  "sc_footer_link_mn": {
-    "en": "Mongolia Expedition",
-    "zh": "蒙古探险"
-  },
-  "sc_footer_link_pk": {
-    "en": "Pakistan Expedition",
-    "zh": "巴基斯坦探险"
   },
   "sc_nav_about": {
     "en": "About Us",
