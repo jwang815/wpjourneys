@@ -714,6 +714,10 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "en": "Start a Conversation",
     "zh": "开启一次对话"
   },
+  "post_wakhan_cta_secondary": {
+    "en": "Or view our full <a href=\"/pakistan-expedition/\">Pakistan Karakoram expedition itinerary</a>.",
+    "zh": "或查看我们完整的<a href=\"/pakistan-expedition/\">巴基斯坦喀喇昆仑探险行程</a>。"
+  },
 
   // Related posts
   "post_wakhan_related_h2": {

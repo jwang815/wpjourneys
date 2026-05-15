@@ -563,6 +563,20 @@ a {
 .post-cta .cta-btn:hover {
   background: var(--gold-light);
 }
+.post-cta .post-cta-secondary {
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  opacity: 0.55;
+}
+.post-cta .post-cta-secondary a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.post-cta .post-cta-secondary a:hover {
+  color: var(--gold);
+}
 
 /* Related Posts */
 .related-posts {

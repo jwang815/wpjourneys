@@ -67,6 +67,10 @@ window.__i18n = {
     "en": "\"To stand in Hunza in October is to understand why travellers have been calling this valley paradise for a thousand years.\"",
     "zh": "「十月站在罕萨，你便明白了，为何千年来的旅人都称这片山谷为人间天堂。」"
   },
+  "pk_overview_further_reading": {
+    "en": "Crossing into the high Pamir? Read our <a href=\"/blog/wakhan-corridor-travel-guide/\">Wakhan Corridor travel guide</a>.",
+    "zh": "想要深入帕米尔高原？请阅读我们的<a href=\"/blog/wakhan-corridor-travel-guide/\">瓦罕走廊旅行指南</a>。"
+  },
   "pk_overview_image_caption": {
     "en": "Badshahi Mosque, Lahore",
     "zh": "巴德沙希清真寺，拉合尔"

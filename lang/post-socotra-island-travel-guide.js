@@ -523,6 +523,10 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "en": "Start a Conversation",
     "zh": "立即与我们联系"
   },
+  "post_socotra_guide_cta_secondary": {
+    "en": "Or view our full <a href=\"/socotra/\">Socotra expedition itinerary</a>.",
+    "zh": "或查看我们完整的<a href=\"/socotra/\">索科特拉探险行程</a>。"
+  },
 
   "post_socotra_guide_related_h2": {
     "en": "More from the Journal",

@@ -71,6 +71,10 @@ window.__i18n = {
     "en": "\"In Mongolia, the distance between you and the horizon is the distance between who you are and who you might become.\"",
     "zh": "「在蒙古，你与地平线之间的距离，正是你现在的自己与可能成为的自己之间的距离。」"
   },
+  "mn_overview_further_reading": {
+    "en": "Considering a private trip? Read our guide to <a href=\"/blog/mongolia-private-expedition/\">private Mongolia expeditions</a>.",
+    "zh": "考虑私人定制行程？请阅读我们的<a href=\"/blog/mongolia-private-expedition/\">蒙古私人探险指南</a>。"
+  },
   "mn_overview_image_caption": {
     "en": "The Mongolian steppe at golden hour, Arkhangai Province",
     "zh": "黄金时分的蒙古草原，阿尔汗盖省"

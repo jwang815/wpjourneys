@@ -71,6 +71,10 @@ window.__i18n = {
     "en": "\"A Noah's Ark where ancient flora, fauna, and a unique culture have survived until the present day.\"",
     "zh": "「一座诺亚方舟，远古的动植物与独特的文化在此延续至今。」"
   },
+  "sc_intro_further_reading": {
+    "en": "Planning ahead? Read our detailed <a href=\"/blog/socotra-island-travel-guide/\">Socotra Island travel guide</a>.",
+    "zh": "正在规划行程？请阅读我们详尽的<a href=\"/blog/socotra-island-travel-guide/\">索科特拉岛旅行指南</a>。"
+  },
   "sc_photo_caption": {
     "en": "Dragon Blood Tree — Dracaena cinnabari — Homhil Plateau",
     "zh": "龙血树 · 龙血龙属 · 霍姆希尔高原"

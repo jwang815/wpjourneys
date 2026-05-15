@@ -216,6 +216,10 @@ window.__i18n = Object.assign(window.__i18n || {}, {
     "en": "Start a Conversation",
     "zh": "立即开启对话"
   },
+  "post_mn_priv_cta_secondary": {
+    "en": "Or view our full <a href=\"/mongolia-expedition/\">Mongolia expedition itinerary</a>.",
+    "zh": "或查看我们完整的<a href=\"/mongolia-expedition/\">蒙古探险行程</a>。"
+  },
 
   // Related posts
   "post_mn_priv_related_h2": {
