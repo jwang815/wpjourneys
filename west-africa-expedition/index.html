@@ -952,7 +952,7 @@
 
     .gallery-strip {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       height: 340px;
       overflow: hidden;
     }
@@ -1401,8 +1401,11 @@
       }
 
       .gallery-strip {
-        grid-template-columns: 1fr 1fr;
-        height: 360px;
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+      .gallery-strip-item {
+        height: 220px;
       }
 
       .detail-row {
@@ -1423,6 +1426,21 @@
       section { page-break-inside: avoid; }
       .timeline::before { background: #999; }
       .book-cta, .hero-cta { border: 1px solid #000; }
+    }
+  
+    /* MOBILE-SECTION-PADDING: reduce big section gaps on phones */
+    @media (max-width: 768px) {
+      #overview, #highlights, #itinerary, #details, #book, #security {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+      }
+      .gallery-strip {
+        margin-top: 0 !important;
+      }
+      .related-expeditions {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
     }
   </style>
 </head>
@@ -1518,10 +1536,6 @@
     </div>
     <div class="gallery-strip-item">
       <img src="/images/expeditions/unsplash-1753818293309.jpg" alt="Bustling West African marketplace in Ghana, Benin or Togo" loading="lazy" width="600" height="400" />
-      <div class="gallery-strip-overlay"></div>
-    </div>
-    <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1721011694126.jpg" alt="Cape Coast Castle historic slave fort entrance, Ghana" loading="lazy" width="600" height="400" />
       <div class="gallery-strip-overlay"></div>
     </div>
     <div class="gallery-strip-item">

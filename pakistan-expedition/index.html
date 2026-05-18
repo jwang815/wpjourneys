@@ -957,7 +957,7 @@
 
     .gallery-strip {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       height: 340px;
       overflow: hidden;
     }
@@ -1406,8 +1406,11 @@
       }
 
       .gallery-strip {
-        grid-template-columns: 1fr 1fr;
-        height: 360px;
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+      .gallery-strip-item {
+        height: 220px;
       }
 
       .detail-row {
@@ -1428,6 +1431,21 @@
       section { page-break-inside: avoid; }
       .timeline::before { background: #999; }
       .book-cta, .hero-cta { border: 1px solid #000; }
+    }
+  
+    /* MOBILE-SECTION-PADDING: reduce big section gaps on phones */
+    @media (max-width: 768px) {
+      #overview, #highlights, #itinerary, #details, #book, #security {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+      }
+      .gallery-strip {
+        margin-top: 0 !important;
+      }
+      .related-expeditions {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
     }
   </style>
 </head>
@@ -1495,7 +1513,6 @@
   </section>
 
   <section id="overview" aria-labelledby="overview-title">
-    <div style="background: var(--sand); padding: 7rem 0;">
       <div class="container">
         <div class="intro-grid">
           <div class="intro-text fade-in-left">
@@ -1521,16 +1538,11 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <div class="gallery-strip" aria-hidden="true">
     <div class="gallery-strip-item">
       <img src="/images/expeditions/unsplash-1589798044196.jpg" alt="Karakoram Highway winding through Pakistan's dramatic mountain passes" loading="lazy" width="600" height="400" />
-      <div class="gallery-strip-overlay"></div>
-    </div>
-    <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1722926283743.jpg" alt="Badshahi Mosque Mughal architecture at sunset in Lahore, Pakistan" loading="lazy" width="600" height="400" />
       <div class="gallery-strip-overlay"></div>
     </div>
     <div class="gallery-strip-item">

@@ -949,7 +949,7 @@
 
     .gallery-strip {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       height: 340px;
       overflow: hidden;
     }
@@ -1079,7 +1079,7 @@
     .pricing-bg {
       position: absolute;
       inset: 0;
-      background-image: url('/images/expeditions/unsplash-1516533075015.jpg');
+      background-image: url('/images/expeditions/unsplash-1580320239377.jpg');
       background-size: cover;
       background-position: center;
       opacity: 0.18;
@@ -1398,8 +1398,11 @@
       }
 
       .gallery-strip {
-        grid-template-columns: 1fr 1fr;
-        height: 360px;
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+      .gallery-strip-item {
+        height: 220px;
       }
 
       .detail-row {
@@ -1420,6 +1423,21 @@
       section { page-break-inside: avoid; }
       .timeline::before { background: #999; }
       .book-cta, .hero-cta { border: 1px solid #000; }
+    }
+  
+    /* MOBILE-SECTION-PADDING: reduce big section gaps on phones */
+    @media (max-width: 768px) {
+      #overview, #highlights, #itinerary, #details, #book, #security {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+      }
+      .gallery-strip {
+        margin-top: 0 !important;
+      }
+      .related-expeditions {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
     }
   </style>
 </head>
@@ -1487,7 +1505,6 @@
   </section>
 
   <section id="overview" aria-labelledby="overview-title">
-    <div style="background: var(--sand); padding: 7rem 0;">
       <div class="container">
         <div class="intro-grid">
           <div class="intro-text fade-in-left">
@@ -1512,27 +1529,7 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
-
-  <div class="gallery-strip" aria-hidden="true">
-    <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1580320239377.jpg" alt="Asmara, Eritrea at sunset" loading="lazy" width="600" height="400" />
-      <div class="gallery-strip-overlay"></div>
-    </div>
-    <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1516533075015.jpg" alt="Volcanic landscape of the Horn of Africa" loading="lazy" width="600" height="400" />
-      <div class="gallery-strip-overlay"></div>
-    </div>
-    <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1580320239377.jpg" alt="Silhouette at sunset in Asmara" loading="lazy" width="600" height="400" />
-      <div class="gallery-strip-overlay"></div>
-    </div>
-    <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1516533075015.jpg" alt="Horn of Africa desert landscape" loading="lazy" width="600" height="400" />
-      <div class="gallery-strip-overlay"></div>
-    </div>
-  </div>
 
   <section id="highlights" aria-labelledby="highlights-title">
     <div class="container">

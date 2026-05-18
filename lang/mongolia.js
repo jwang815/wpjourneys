@@ -72,8 +72,8 @@ window.__i18n = {
     "zh": "考虑私人定制行程？请阅读我们的<a href=\"/blog/mongolia-private-expedition/\">蒙古私人探险指南</a>。"
   },
   "mn_overview_image_caption": {
-    "en": "The Mongolian steppe at golden hour, Arkhangai Province",
-    "zh": "黄金时分的蒙古草原，阿尔汗盖省"
+    "en": "Wild khulan on the Mongolian steppe at sunset",
+    "zh": "落日下，蒙古草原上的野驴"
   },
   "mn_highlights_label": {
     "en": "Why Mongolia",

@@ -20,7 +20,7 @@
   <meta property="og:description" content="11 to 17-night luxury expedition across Mongolia. Naadam Festival, Gobi Desert, Golden Eagle Hunters, nomadic steppe culture. Max 5 guests, from $4,950." />
   <meta property="og:url" content="https://wpjourneys.com/mongolia-expedition/" />
   <meta property="og:site_name" content="Waypoint Journeys" />
-  <meta property="og:image" content="/images/expeditions/unsplash-1516026672322.jpg" />
+  <meta property="og:image" content="/images/expeditions/unsplash-1575415868394.jpg" />
   <meta property="og:image:width" content="1600" />
   <meta property="og:image:height" content="1067" />
 
@@ -28,7 +28,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mongolia Expedition | Waypoint Journeys" />
   <meta name="twitter:description" content="11 to 17-night luxury expedition across Mongolia. Naadam Festival, Gobi Desert, Golden Eagle Hunters, nomadic steppe culture. Max 5 guests, from $4,950." />
-  <meta name="twitter:image" content="/images/expeditions/unsplash-1516026672322.jpg" />
+  <meta name="twitter:image" content="/images/expeditions/unsplash-1575415868394.jpg" />
 
   <!-- Structured Data: BreadcrumbList -->
   <script type="application/ld+json">
@@ -176,7 +176,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
 
   <!-- Preload LCP hero image -->
-  <link rel="preload" as="image" fetchpriority="high" href="/images/expeditions/unsplash-1516026672322.jpg" />
+  <link rel="preload" as="image" fetchpriority="high" href="/images/expeditions/unsplash-1575415868394.jpg" />
 
   <link rel="stylesheet" href="/css/related-expeditions.css">
   <style>
@@ -471,7 +471,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('/images/expeditions/unsplash-1516026672322.jpg');
+      background-image: url('/images/expeditions/unsplash-1575415868394.jpg');
       background-size: cover;
       background-position: center 40%;
       will-change: transform;
@@ -1039,7 +1039,7 @@
 
     .gallery-strip {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       height: 340px;
       overflow: hidden;
     }
@@ -1554,8 +1554,11 @@
       }
 
       .gallery-strip {
-        grid-template-columns: 1fr 1fr;
-        height: 360px;
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+      .gallery-strip-item {
+        height: 220px;
       }
 
       .detail-row {
@@ -1576,6 +1579,21 @@
       section { page-break-inside: avoid; }
       .timeline::before { background: #999; }
       .book-cta, .hero-cta { border: 1px solid #000; }
+    }
+  
+    /* MOBILE-SECTION-PADDING: reduce big section gaps on phones */
+    @media (max-width: 768px) {
+      #overview, #highlights, #itinerary, #details, #book, #security {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+      }
+      .gallery-strip {
+        margin-top: 0 !important;
+      }
+      .related-expeditions {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
     }
   </style>
 </head>
@@ -1641,7 +1659,6 @@
   </section>
 
   <section id="overview" aria-labelledby="overview-title">
-    <div style="background: var(--sand); padding: 7rem 0;">
       <div class="container">
         <div class="intro-grid">
           <div class="intro-text fade-in-left">
@@ -1659,7 +1676,7 @@
           <div class="intro-image-wrap fade-in-right">
             <img
               src="/images/expeditions/unsplash-1765881775363.jpg"
-              alt="Gobi Desert sand dunes at golden hour, southern Mongolia"
+              alt="Wild khulan (Mongolian wild ass) on the open Mongolian steppe"
               loading="lazy" width="1200" height="800" />
             <div class="intro-image-caption">
               <span data-i18n="mn_overview_image_caption">The Mongolian steppe at golden hour, Arkhangai Province</span>
@@ -1667,26 +1684,18 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <div class="gallery-strip" aria-hidden="true">
     <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1516026672322.jpg" alt="Kazakh Golden Eagle hunter with eagle on horseback in Mongolia" loading="lazy" width="600" height="400" />
+      <img src="/images/expeditions/unsplash-1575415868394.jpg" alt="Traditional Mongolian ger camp on the open steppe at sunset" loading="lazy" width="600" height="400" />
       <div class="gallery-strip-overlay"></div>
     </div>
     <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1765881775363.jpg" alt="Gobi Desert Khongor sand dunes at sunset, Mongolia expedition" loading="lazy" width="600" height="400" />
+      <img src="/images/expeditions/unsplash-1501854140801.jpg" alt="Rolling green hills of the Mongolian steppe" loading="lazy" width="600" height="400" />
       <div class="gallery-strip-overlay"></div>
     </div>
-    <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1501854140801.jpg" alt="Traditional Mongolian ger camp on the vast steppe landscape" loading="lazy" width="600" height="400" />
-      <div class="gallery-strip-overlay"></div>
-    </div>
-    <div class="gallery-strip-item">
-      <img src="/images/expeditions/unsplash-1575415868394.jpg" alt="Wild Mongolian horses galloping across the open steppe" loading="lazy" width="600" height="400" />
-      <div class="gallery-strip-overlay"></div>
-    </div>
+  
   </div>
 
   <section id="highlights" aria-labelledby="highlights-title">
