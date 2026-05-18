@@ -955,7 +955,7 @@
 
     .gallery-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       height: 340px;
       overflow: hidden;
     }
@@ -1404,11 +1404,8 @@
       }
 
       .gallery-strip {
-        grid-template-columns: 1fr;
-        height: auto;
-      }
-      .gallery-strip-item {
-        height: 220px;
+        grid-template-columns: 1fr 1fr;
+        height: 360px;
       }
 
       .detail-row {
@@ -1548,6 +1545,10 @@
     </div>
     <div class="gallery-strip-item">
       <img src="/images/expeditions/unsplash-1733397792983.jpg" alt="Ashgabat seen from the foothills of the Kopet Dag, Turkmenistan" loading="lazy" width="600" height="400" />
+      <div class="gallery-strip-overlay"></div>
+    </div>
+    <div class="gallery-strip-item">
+      <img src="/images/expeditions/turkmenistan-ashgabat-tower.jpg" alt="Illuminated modern tower in Ashgabat at dusk, Turkmenistan" loading="lazy" width="1920" height="1280" />
       <div class="gallery-strip-overlay"></div>
     </div>
   </div>

@@ -949,7 +949,7 @@
 
     .gallery-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       height: 340px;
       overflow: hidden;
     }
@@ -1398,11 +1398,8 @@
       }
 
       .gallery-strip {
-        grid-template-columns: 1fr;
-        height: auto;
-      }
-      .gallery-strip-item {
-        height: 220px;
+        grid-template-columns: 1fr 1fr;
+        height: 360px;
       }
 
       .detail-row {
@@ -1530,6 +1527,25 @@
         </div>
       </div>
   </section>
+
+  <div class="gallery-strip" aria-hidden="true">
+    <div class="gallery-strip-item">
+      <img src="/images/expeditions/eritrea-asmara-street.jpg" alt="Asmara avenue lined with Italian modernist buildings, Eritrea" loading="lazy" width="1920" height="2560" />
+      <div class="gallery-strip-overlay"></div>
+    </div>
+    <div class="gallery-strip-item">
+      <img src="/images/expeditions/eritrea-coastal-town.jpg" alt="Red Sea coastal town view, Massawa region, Eritrea" loading="lazy" width="1920" height="1440" />
+      <div class="gallery-strip-overlay"></div>
+    </div>
+    <div class="gallery-strip-item">
+      <img src="/images/expeditions/eritrea-asmara-architecture.jpg" alt="Brick and arch detail of Asmara's distinctive architecture" loading="lazy" width="1920" height="1280" />
+      <div class="gallery-strip-overlay"></div>
+    </div>
+    <div class="gallery-strip-item">
+      <img src="/images/expeditions/eritrea-coffee-ceremony.jpg" alt="Traditional Eritrean coffee ceremony with jebena and incense" loading="lazy" width="1920" height="3412" />
+      <div class="gallery-strip-overlay"></div>
+    </div>
+  </div>
 
   <section id="highlights" aria-labelledby="highlights-title">
     <div class="container">

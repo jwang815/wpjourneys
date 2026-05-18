@@ -957,7 +957,7 @@
 
     .gallery-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       height: 340px;
       overflow: hidden;
     }
@@ -1406,11 +1406,8 @@
       }
 
       .gallery-strip {
-        grid-template-columns: 1fr;
-        height: auto;
-      }
-      .gallery-strip-item {
-        height: 220px;
+        grid-template-columns: 1fr 1fr;
+        height: 360px;
       }
 
       .detail-row {
@@ -1551,6 +1548,10 @@
     </div>
     <div class="gallery-strip-item">
       <img src="/images/expeditions/unsplash-1464822759023.jpg" alt="Attabad Lake turquoise waters surrounded by Karakoram mountain walls" loading="lazy" width="600" height="400" />
+      <div class="gallery-strip-overlay"></div>
+    </div>
+    <div class="gallery-strip-item">
+      <img src="/images/expeditions/pakistan-hunza-river-autumn.jpg" alt="Hunza Valley autumn colors over a glacial river, Karakoram Pakistan" loading="lazy" width="1920" height="1280" />
       <div class="gallery-strip-overlay"></div>
     </div>
   </div>

@@ -1039,7 +1039,7 @@
 
     .gallery-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       height: 340px;
       overflow: hidden;
     }
@@ -1554,11 +1554,8 @@
       }
 
       .gallery-strip {
-        grid-template-columns: 1fr;
-        height: auto;
-      }
-      .gallery-strip-item {
-        height: 220px;
+        grid-template-columns: 1fr 1fr;
+        height: 360px;
       }
 
       .detail-row {
@@ -1695,7 +1692,14 @@
       <img src="/images/expeditions/unsplash-1501854140801.jpg" alt="Rolling green hills of the Mongolian steppe" loading="lazy" width="600" height="400" />
       <div class="gallery-strip-overlay"></div>
     </div>
-  
+    <div class="gallery-strip-item">
+      <img src="/images/expeditions/mongolia-eagle-hunter-flight.jpg" alt="Kazakh golden eagle hunter releasing his eagle, Altai Mongolia" loading="lazy" width="1920" height="1280" />
+      <div class="gallery-strip-overlay"></div>
+    </div>
+    <div class="gallery-strip-item">
+      <img src="/images/expeditions/mongolia-eagle-hunter-cliff.jpg" alt="Kazakh eagle hunter holding his golden eagle on a cliff edge, western Mongolia" loading="lazy" width="1920" height="1280" />
+      <div class="gallery-strip-overlay"></div>
+    </div>
   </div>
 
   <section id="highlights" aria-labelledby="highlights-title">

@@ -976,7 +976,7 @@
     ───────────────────────────────────────────────── */
     .gallery-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       height: 340px;
       overflow: hidden;
     }
@@ -1381,11 +1381,8 @@
       }
 
       .gallery-strip {
-        grid-template-columns: 1fr;
-        height: auto;
-      }
-      .gallery-strip-item {
-        height: 220px;
+        grid-template-columns: 1fr 1fr;
+        height: 360px;
       }
 
       .detail-row {
