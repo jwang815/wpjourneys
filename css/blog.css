@@ -339,7 +339,7 @@ a {
   font-family: var(--font-body);
   font-size: 0.78rem;
   color: var(--off-white);
-  opacity: 0.4;
+  opacity: 0.65;
   letter-spacing: 0.05em;
 }
 
@@ -616,11 +616,13 @@ a {
   font-family: var(--font-body);
   font-size: 0.82rem;
   color: var(--off-white);
-  opacity: 0.35;
+  opacity: 0.65;
   letter-spacing: 0.06em;
 }
 .blog-footer a {
-  color: var(--gold);
+  color: #E6BB6F;
+  text-decoration: underline;
+  text-underline-offset: 2px;
   transition: color 0.3s ease;
 }
 .blog-footer a:hover {
