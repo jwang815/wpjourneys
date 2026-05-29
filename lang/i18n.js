@@ -179,34 +179,20 @@
       return;
     }
 
-    // 2. Check browser language
-    var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    if (browserLang.startsWith('zh')) {
-      callback('zh');
-      return;
+    // 2. Check browser language(s)
+    var langs = navigator.languages || [navigator.language || navigator.userLanguage || ''];
+    for (var i = 0; i < langs.length; i++) {
+      if ((langs[i] || '').toLowerCase().indexOf('zh') === 0) {
+        callback('zh');
+        return;
+      }
     }
 
-    // 3. IP-based detection via free geolocation API
-    // Use a timeout so the page doesn't wait too long
-    var done = false;
-    var timer = setTimeout(function() {
-      if (!done) { done = true; callback('en'); }
-    }, 2000);
-
-    fetch('https://ipapi.co/json/', { mode: 'cors' })
-      .then(function(r) { return r.json(); })
-      .then(function(data) {
-        if (!done) {
-          done = true;
-          clearTimeout(timer);
-          // CN = China, TW = Taiwan, HK = Hong Kong, MO = Macau, SG = Singapore
-          var zhCountries = ['CN', 'TW', 'HK', 'MO'];
-          callback(zhCountries.indexOf(data.country_code) !== -1 ? 'zh' : 'en');
-        }
-      })
-      .catch(function() {
-        if (!done) { done = true; clearTimeout(timer); callback('en'); }
-      });
+    // 3. Default to English. We intentionally do NOT call a third-party IP
+    //    geolocation service here: it would send every first-time visitor's
+    //    IP to an external host and add a network dependency to the render
+    //    path. Visitors can switch languages anytime with the EN | 中文 toggle.
+    callback('en');
   }
 
   // ── Initialize ──
