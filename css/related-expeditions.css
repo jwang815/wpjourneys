@@ -117,3 +117,5 @@
     gap: 16px;
   }
 }
+
+picture{display:contents}

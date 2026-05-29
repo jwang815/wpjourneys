@@ -1266,3 +1266,5 @@
         -webkit-line-clamp: 2;
       }
     }
+
+picture{display:contents}
