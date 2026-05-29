@@ -560,8 +560,8 @@ window.__i18n = {
     "zh": "Waypoint Journeys 与其他高端旅行公司有什么不同？"
   },
   "faq_a1": {
-    "en": "Waypoint Journeys is a private luxury expedition company specializing in remote destinations most operators won't attempt. Every expedition is limited to 5 guests maximum, with itineraries built from the ground up by destination specialists and local experts. Current expeditions include Socotra Island (a UNESCO World Heritage Site), Mongolia, Pakistan's Karakoram region, and West Africa. Prices start from $2,950 per person.",
-    "zh": "Waypoint Journeys 是一家专注于其他运营商不敢涉足的偏远目的地的私享奢华探险公司。每次探险最多仅五位宾客，行程由目的地专家与当地向导从零开始量身打造。目前的探险包括索科特拉岛（联合国教科文组织世界遗产）、蒙古、巴基斯坦喀喇昆仑地区与西非。每人起价 2,950 美元。"
+    "en": "Waypoint Journeys is a private luxury expedition company specializing in remote destinations most operators won't attempt. Every expedition is limited to 5 guests maximum, with itineraries built from the ground up by destination specialists and local experts. We currently run twelve scheduled expeditions — Bangladesh, Eritrea, Ghana/Benin/Togo, Libya, Madagascar, Mauritania, Mongolia, Myanmar, Pakistan, Socotra, Syria, and Turkmenistan — plus fully custom trips anywhere in the world. Prices start from $1,195 per person.",
+    "zh": "Waypoint Journeys 是一家专注于其他运营商不敢涉足的偏远目的地的私享奢华探险公司。每次探险最多仅五位宾客，行程由目的地专家与当地向导从零开始量身打造。我们目前运营十二条定期探险路线——孟加拉国、厄立特里亚、加纳/贝宁/多哥、利比亚、马达加斯加、毛里塔尼亚、蒙古、缅甸、巴基斯坦、索科特拉、叙利亚和土库曼斯坦——并可定制前往世界任何角落的专属行程。每人起价 1,195 美元。"
   },
   "faq_q2": {
     "en": "What is included in the expedition price?",
@@ -576,8 +576,8 @@ window.__i18n = {
     "zh": "探险对体能要求高吗？"
   },
   "faq_a3": {
-    "en": "Physical demands vary by destination. Socotra involves moderate hiking and beach camping across 7 days. Mongolia ranges from comfortable ger stays to multi-day horseback treks. Pakistan's 13-day Karakoram Highway expedition is mostly vehicle-based with walks at elevations up to 4,693 meters (Khunjerab Pass). West Africa's 10-day cultural expedition is not physically strenuous. None require technical mountaineering.",
-    "zh": "体力要求因目的地而异。索科特拉是7天的中等强度徒步与海滩露营。蒙古从舒适的蒙古包住宿到多日骑马穿越草原皆有。巴基斯坦的13天喀喇昆仑公路探险以车辆为主，辅以海拔高达 4,693 米（红其拉甫山口）的轻度徒步。西非的10天文化探险体力要求不高。所有行程都无需专业登山技能。"
+    "en": "Physical demands vary by destination. Socotra involves moderate hiking and beach camping across 7 days. Mongolia ranges from comfortable ger stays to multi-day horseback treks. Pakistan's 13-day Karakoram Highway expedition is mostly vehicle-based with walks at elevations up to 4,693 meters (Khunjerab Pass). West Africa's 8-day cultural expedition is not physically strenuous. None require technical mountaineering.",
+    "zh": "体力要求因目的地而异。索科特拉是7天的中等强度徒步与海滩露营。蒙古从舒适的蒙古包住宿到多日骑马穿越草原皆有。巴基斯坦的13天喀喇昆仑公路探险以车辆为主，辅以海拔高达 4,693 米（红其拉甫山口）的轻度徒步。西非的8天文化探险体力要求不高。所有行程都无需专业登山技能。"
   },
   "faq_q4": {
     "en": "Can I book a private or custom expedition?",

@@ -231,14 +231,21 @@
 
     // FAQ accordion
     document.querySelectorAll('.faq-question').forEach(function(btn) {
+      // Expose accordion state to assistive tech
+      btn.setAttribute('aria-expanded', btn.parentElement.classList.contains('active') ? 'true' : 'false');
       btn.addEventListener('click', function() {
         var item = this.parentElement;
         var wasActive = item.classList.contains('active');
         // Close all
         document.querySelectorAll('.faq-item.active').forEach(function(el) {
           el.classList.remove('active');
+          var q = el.querySelector('.faq-question');
+          if (q) q.setAttribute('aria-expanded', 'false');
         });
         // Toggle clicked
-        if (!wasActive) item.classList.add('active');
+        if (!wasActive) {
+          item.classList.add('active');
+          this.setAttribute('aria-expanded', 'true');
+        }
       });
     });
