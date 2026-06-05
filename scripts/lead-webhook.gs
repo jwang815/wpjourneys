@@ -42,6 +42,8 @@ var SHEET_HEADERS = ['Timestamp', 'Name', 'Email', 'Phone', 'Destination', 'Trav
 
 /* ============================ entry points ============================== */
 function doPost(e) {
+  try { var __wpjb = JSON.parse(e.postData.contents); if (__wpjb && __wpjb.brief) { MailApp.sendEmail({ to: __wpjb.to || CONFIG.NOTIFY_EMAIL, subject: __wpjb.subject || 'Waypoint Ads — Daily Brief', htmlBody: __wpjb.html || '' }); return ContentService.createTextOutput(JSON.stringify({ ok: true, brief: true })).setMimeType(ContentService.MimeType.JSON); } } catch (__e) {}
+
   var data;
   try { data = JSON.parse((e && e.postData && e.postData.contents) || '{}'); }
   catch (err) { return json({ ok: false, error: 'bad_json' }); }
