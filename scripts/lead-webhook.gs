@@ -26,7 +26,7 @@
 var CONFIG = {
   SHEET_ID:        '1PdgkiFQIyKRz7Hx5m0DhSCaJVd3eHES-BFtDmiacb0k',          // the Leads spreadsheet ID
   SHEET_TAB:       '',                             // '' = first sheet, or a tab name e.g. 'Leads'
-  NOTIFY_EMAIL:    'info@wpjourneys.com',          // where lead emails go (comma-separate for several)
+  NOTIFY_EMAIL:    'admin@wpjourneys.com, jwang815@gmail.com, michaeldu001@gmail.com, weipeng1996@gmail.com, info@wpjourneys.com',          // where lead emails go (comma-separate for several)
 
   META_PIXEL_ID:   '1025894849786420',            // same Pixel ID as in js/tracking.js
   META_CAPI_TOKEN: '__META_CAPI_ACCESS_TOKEN__',   // Events Manager → Settings → Conversions API → token
