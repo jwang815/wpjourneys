@@ -24,11 +24,11 @@
 
 /* ============================== CONFIG ================================== */
 var CONFIG = {
-  SHEET_ID:        '__GOOGLE_SHEET_ID__',          // the Leads spreadsheet ID
+  SHEET_ID:        '1PdgkiFQIyKRz7Hx5m0DhSCaJVd3eHES-BFtDmiacb0k',          // the Leads spreadsheet ID
   SHEET_TAB:       '',                             // '' = first sheet, or a tab name e.g. 'Leads'
   NOTIFY_EMAIL:    'info@wpjourneys.com',          // where lead emails go (comma-separate for several)
 
-  META_PIXEL_ID:   '__META_PIXEL_ID__',            // same Pixel ID as in js/tracking.js
+  META_PIXEL_ID:   '1025894849786420',            // same Pixel ID as in js/tracking.js
   META_CAPI_TOKEN: '__META_CAPI_ACCESS_TOKEN__',   // Events Manager → Settings → Conversions API → token
   META_API_VERSION:'v19.0',
   META_TEST_CODE:  '',                             // optional: Test Events code while testing, '' in production

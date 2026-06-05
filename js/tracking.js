@@ -20,7 +20,7 @@
   /* ============================== CONFIG =================================== */
   /* Replace each __PLACEHOLDER__ with the real value (see MARKETING.md §IDs).  */
   var CFG = {
-    META_PIXEL_ID:         '__META_PIXEL_ID__',         // e.g. '1234567890123456'
+    META_PIXEL_ID:         '1025894849786420',         // e.g. '1234567890123456'
     GA4_ID:                '__GA4_MEASUREMENT_ID__',     // e.g. 'G-XXXXXXXXXX'
     GOOGLE_ADS_ID:         '__GOOGLE_ADS_ID__',          // e.g. 'AW-XXXXXXXXXX'
     GOOGLE_ADS_LEAD_LABEL: '__GOOGLE_ADS_LEAD_LABEL__',  // Ads conversion label for the Lead action
