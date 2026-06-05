@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan Your Private Expedition | Waypoint Journeys</title>
+  <meta name="description" content="Tell us where you dream of going. Private luxury expeditions, max 5 guests, fully bespoke. We reply within the hour — by WhatsApp, email, or a quick call." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://wpjourneys.com/inquire/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Waypoint Journeys" />
+  <meta property="og:title" content="Plan Your Private Expedition | Waypoint Journeys" />
+  <meta property="og:description" content="Private luxury expeditions, max 5 guests, fully bespoke. We reply within the hour." />
+  <meta property="og:url" content="https://wpjourneys.com/inquire/" />
+  <meta property="og:image" content="https://wpjourneys.com/images/expeditions/unsplash-1682686581660.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Destination map (slug → hero image + label + testimonial #). Read early so the
+       hero loads the right image for /inquire/?dest=… with no flash. -->
+  <script>
+    window.WP_DEST = {
+      "bangladesh":   { label: "Bangladesh",            img: "bangladesh-dhaka-aerial",            t: 0 },
+      "eritrea":      { label: "Eritrea",               img: "unsplash-1580320239377",             t: 0 },
+      "libya":        { label: "Libya",                 img: "libya-leptis-magna",                 t: 0 },
+      "madagascar":   { label: "Madagascar",            img: "madagascar-baobabs-avenue",          t: 0 },
+      "mauritania":   { label: "Mauritania",            img: "unsplash-1760681554227",             t: 0 },
+      "mongolia":     { label: "Mongolia",              img: "unsplash-1575415868394",             t: 3 },
+      "myanmar":      { label: "Myanmar",               img: "unsplash-1566811850669",             t: 4 },
+      "pakistan":     { label: "Pakistan",              img: "unsplash-1514558427911",             t: 2 },
+      "socotra":      { label: "Socotra",               img: "socotra-dragon-blood-tree-sunset",   t: 1 },
+      "syria":        { label: "Syria",                 img: "syria-umayyad-mosque",               t: 5 },
+      "turkmenistan": { label: "Turkmenistan",          img: "unsplash-1448772917253",             t: 0 },
+      "west-africa":  { label: "Ghana, Benin & Togo",   img: "unsplash-1545315637",                t: 0 }
+    };
+    window.WP_DEST_ALIAS = { "westafrica": "west-africa", "ghana": "west-africa", "benin": "west-africa", "togo": "west-africa", "burma": "myanmar" };
+    window.WP_SELDEST = (function () {
+      try {
+        var s = new URLSearchParams(location.search).get('dest');
+        if (!s) return '';
+        s = s.toLowerCase().replace(/[^a-z-]/g, '');
+        return (window.WP_DEST[s] && s) || window.WP_DEST_ALIAS[s] || '';
+      } catch (e) { return ''; }
+    })();
+  </script>
+
+  <style>
+    :root{--charcoal:#1A1A1A;--charcoal-deep:#111111;--sand:#F5EDE0;--sand-light:#FAF6F0;--gold:#C4944A;--gold-light:#D4A85C;--teal:#1B5E6B;--off-white:#E8E0D4;--font-display:'Playfair Display',Georgia,'Times New Roman',serif;--font-body:'Source Sans 3','Segoe UI',Helvetica,Arial,sans-serif}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased}
+    body{font-family:var(--font-body);color:var(--sand);background:var(--charcoal-deep);line-height:1.6;overflow-x:hidden}
+    img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+    /* nav */
+    .nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:20px 48px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,padding .4s,box-shadow .4s;background:rgba(17,17,17,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+    .nav.scrolled{padding:14px 48px;box-shadow:0 2px 40px rgba(0,0,0,.3)}
+    .nav-logo{display:flex;align-items:center;gap:14px}.nav-logo svg{width:34px;height:34px}
+    .nav-logo-text{font-weight:600;font-size:.72rem;letter-spacing:.32em;color:var(--sand);text-transform:uppercase}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--sand);transition:color .3s}
+    .nav-links a:hover{color:var(--gold)}
+    .nav-cta-btn{color:var(--charcoal)!important;background:var(--gold);padding:10px 22px;font-weight:600;letter-spacing:.14em}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:8px;z-index:1001}
+    .hamburger span{display:block;width:26px;height:1.5px;background:var(--sand);transition:.3s}
+    .mobile-menu{display:none;position:fixed;top:0;left:0;width:100%;background:rgba(17,17,17,.98);z-index:1000;flex-direction:column;align-items:center;gap:8px;padding:90px 24px 28px}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{padding:12px;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sand)}
+    /* layout */
+    .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+    .inq{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;padding:140px 0 90px}
+    /* hero/intro col */
+    .intro-eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.34em;color:var(--gold);text-transform:uppercase;margin-bottom:18px}
+    .intro-title{font-family:var(--font-display);font-size:clamp(2.1rem,4.4vw,3.2rem);font-weight:500;line-height:1.12;color:#fff;margin-bottom:18px}
+    .intro-hook{font-size:1.06rem;font-weight:300;color:var(--off-white);max-width:30em;margin-bottom:26px}
+    .intro-hero{position:relative;border-radius:4px;overflow:hidden;margin-bottom:26px;aspect-ratio:16/10;background:#222}
+    .intro-hero img{width:100%;height:100%;object-fit:cover}
+    .intro-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,8,5,.5),transparent 55%)}
+    .proof{display:flex;flex-wrap:wrap;gap:10px 22px;margin-bottom:22px;list-style:none}
+    .proof li{display:flex;align-items:center;gap:9px;font-size:.92rem;font-weight:500;color:var(--sand)}
+    .proof li::before{content:"";width:7px;height:7px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
+    .safety{font-size:.9rem;color:var(--off-white);opacity:.85;border-left:2px solid var(--teal);padding:8px 0 8px 16px;margin-bottom:28px}
+    .testi{border-top:1px solid rgba(196,148,74,.25);padding-top:22px}
+    .testi-quote{font-family:var(--font-display);font-style:italic;font-size:1.04rem;line-height:1.6;color:#fff;margin-bottom:12px}
+    .testi-cite{display:block;font-size:.86rem;font-weight:600;color:var(--gold)}
+    .testi-dest{display:block;font-size:.78rem;letter-spacing:.06em;color:var(--off-white);opacity:.7;margin-top:2px}
+    .rating{font-size:1.05rem;letter-spacing:.06em;color:var(--gold);font-weight:600}
+    /* form col */
+    .form-card{background:var(--charcoal);border:1px solid rgba(196,148,74,.22);border-radius:6px;padding:32px 30px}
+    .form-card h2{font-family:var(--font-display);font-size:1.6rem;font-weight:500;color:#fff;margin-bottom:6px}
+    .form-card .sub{font-size:.92rem;color:var(--off-white);opacity:.8;margin-bottom:22px}
+    .field{margin-bottom:16px}
+    .field.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label{display:block;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--off-white);margin-bottom:6px}
+    label .req{color:var(--gold);font-weight:400;text-transform:none;letter-spacing:0}
+    input,select,textarea{width:100%;font-family:var(--font-body);font-size:1rem;color:var(--sand);background:var(--charcoal-deep);border:1px solid rgba(245,237,224,.18);border-radius:3px;padding:12px 13px;transition:border-color .25s}
+    input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+    input::placeholder,textarea::placeholder{color:rgba(245,237,224,.4)}
+    select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%23C4944A' stroke-width='1.5' fill='none'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:34px}
+    textarea{resize:vertical;min-height:84px}
+    .submit-btn{width:100%;font-family:var(--font-body);font-size:.82rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--charcoal);background:var(--gold);border:none;padding:16px;cursor:pointer;transition:background .25s;margin-top:6px}
+    .submit-btn:hover{background:var(--gold-light)}
+    .submit-btn[disabled]{opacity:.6;cursor:progress}
+    .consent{font-size:.76rem;color:var(--off-white);opacity:.65;margin-top:14px;line-height:1.5}
+    .consent a{color:var(--gold-light);text-decoration:underline}
+    .form-err{display:none;font-size:.86rem;color:#E9B7A0;background:rgba(180,70,40,.12);border:1px solid rgba(180,70,40,.4);border-radius:3px;padding:10px 12px;margin-bottom:14px}
+    .form-err.show{display:block}
+    /* honeypot */
+    .wp-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+    /* quick contact */
+    .quick{margin-top:22px;text-align:center}
+    .quick-label{font-size:.82rem;color:var(--off-white);opacity:.75;margin-bottom:12px}
+    .quick-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+    .quick-btn{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:11px 18px;border:1px solid rgba(196,148,74,.5);color:var(--sand);transition:.25s}
+    .quick-btn:hover{background:rgba(196,148,74,.14);border-color:var(--gold)}
+    .quick-btn svg{width:16px;height:16px;fill:currentColor}
+    .quick-btn.wa{background:#1f6f54;border-color:#1f6f54;color:#fff}
+    .quick-btn.wa:hover{background:#22815f}
+    /* thank-you */
+    .thanks{display:none;text-align:center;padding:30px 8px}
+    .thanks.show{display:block}
+    .thanks .tick{width:62px;height:62px;margin:0 auto 18px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center}
+    .thanks .tick svg{width:30px;height:30px;stroke:var(--gold);fill:none;stroke-width:2.4}
+    .thanks h2{font-family:var(--font-display);font-size:1.7rem;color:#fff;font-weight:500;margin-bottom:8px}
+    .thanks p{color:var(--off-white);margin-bottom:22px}
+    /* footer */
+    .footer{background:var(--charcoal-deep);text-align:center;padding:48px 24px;border-top:1px solid rgba(196,148,74,.15)}
+    .footer-logo-text{font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:.8rem;color:var(--sand)}
+    .footer-tagline{font-size:.9rem;color:var(--off-white);opacity:.8;margin:14px 0 8px}
+    .footer-links{margin:10px 0 6px;font-size:.82rem}
+    .footer-links a{color:var(--gold-light);text-decoration:none;margin:0 10px}
+    .footer-links a:hover{text-decoration:underline}
+    .footer-copy{font-size:.78rem;color:var(--off-white);opacity:.55;margin-top:8px}
+    @media(max-width:900px){
+      .nav,.nav.scrolled{padding:16px 22px}
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .inq{grid-template-columns:1fr;gap:38px;padding:104px 0 70px}
+      .field.row{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body data-wp-viewcontent="Inquiry">
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+    <a href="/#expeditions" data-i18n="mobile_nav_expeditions">Expeditions</a>
+    <a href="/blog/" data-i18n="mobile_nav_blog">Blog</a>
+    <a href="/about/" data-i18n="mobile_nav_about">About</a>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="Waypoint Journeys home">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" stroke="#C4944A" stroke-width="1.5" fill="none" opacity="0.6"/>
+        <circle cx="24" cy="24" r="16" stroke="#C4944A" stroke-width="0.8" fill="none" opacity="0.5"/>
+        <line x1="24" y1="2" x2="24" y2="46" stroke="#C4944A" stroke-width="0.8" opacity="0.4"/>
+        <line x1="2" y1="24" x2="46" y2="24" stroke="#C4944A" stroke-width="0.8" opacity="0.4"/>
+        <polygon points="24,6 26.5,20 24,18 21.5,20" fill="#C4944A"/>
+        <circle cx="24" cy="24" r="3" fill="#C4944A"/>
+      </svg>
+      <span class="nav-logo-text">Waypoint Journeys</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#expeditions" data-i18n="mobile_nav_expeditions">Expeditions</a></li>
+      <li><a href="/blog/" data-i18n="mobile_nav_blog">Blog</a></li>
+      <li><a href="/about/" data-i18n="mobile_nav_about">About</a></li>
+      <li><a href="#inquiry-form" class="nav-cta-btn" data-i18n="mobile_nav_inquire">Inquire</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="wrap">
+    <div class="inq">
+      <!-- ============ LEFT: hero + proof + testimonial ============ -->
+      <section class="intro">
+        <p class="intro-eyebrow" id="introEyebrow" data-i18n="inq_eyebrow">PRIVATE INQUIRY</p>
+        <h1 class="intro-title" data-i18n="inq_title">Plan Your Private Expedition</h1>
+
+        <div class="intro-hero">
+          <picture>
+            <source id="inqHeroSrc" type="image/webp" srcset="/images/expeditions/unsplash-1682686581660.webp" />
+            <img id="inqHero" src="/images/expeditions/unsplash-1682686581660.jpg"
+                 alt="Waypoint Journeys luxury expedition" width="1200" height="750"
+                 fetchpriority="high" decoding="async" />
+          </picture>
+        </div>
+        <script>
+          /* Swap hero to the selected destination during parse (no flash). */
+          (function () {
+            var k = window.WP_SELDEST, m = window.WP_DEST[k];
+            if (!m) return;
+            var b = '/images/expeditions/' + m.img;
+            document.getElementById('inqHeroSrc').srcset = b + '.webp';
+            var img = document.getElementById('inqHero');
+            img.src = b + '.jpg';
+            img.alt = m.label + ' — Waypoint Journeys expedition';
+          })();
+        </script>
+
+        <p class="intro-hook" data-i18n="inq_hook">Tell us where you dream of going — we reply within the hour, by WhatsApp, email, or a quick call.</p>
+
+        <ul class="proof">
+          <li data-i18n="inq_bullet_1">Max 5 guests</li>
+          <li data-i18n="inq_bullet_2">Fully bespoke</li>
+          <li data-i18n="inq_bullet_3">24/7 on-ground support</li>
+        </ul>
+
+        <p class="safety" data-i18n="inq_safety">We operate in these regions with vetted local partners, continuous on-the-ground monitoring, and round-the-clock support — and we'll always be candid with you about current conditions.</p>
+
+        <!-- Testimonial (real guest) OR rating strip — set by JS per destination -->
+        <div class="testi">
+          <blockquote class="testi-quote" id="testiQuote" data-i18n="testimonial_1_quote"></blockquote>
+          <cite class="testi-cite" id="testiCite" data-i18n="testimonial_1_attribution"></cite>
+          <span class="testi-dest" id="testiDest" data-i18n="testimonial_1_destination"></span>
+          <p class="rating" id="ratingStrip" data-i18n="inq_rating" style="display:none">5.0 ★★★★★ from our expedition guests</p>
+        </div>
+      </section>
+
+      <!-- ============ RIGHT: form / thank-you ============ -->
+      <section>
+        <div class="form-card" id="formCard">
+          <h2 data-i18n="inq_form_heading">Request your itinerary</h2>
+          <p class="sub" data-i18n="inq_form_sub">A few details and we'll design something around you.</p>
+
+          <div class="form-err" id="formErr" role="alert" aria-live="polite"></div>
+
+          <form id="inquiryForm" novalidate>
+            <!-- honeypot: bots fill it, humans never see it -->
+            <div class="wp-hp" aria-hidden="true">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="field row">
+              <div>
+                <label for="f-name" data-i18n="inq_label_name">Full name</label>
+                <input type="text" id="f-name" name="name" autocomplete="name"
+                       data-i18n-placeholder="inq_ph_name" placeholder="Your name" required aria-required="true" />
+              </div>
+              <div>
+                <label for="f-email"><span data-i18n="inq_label_email">Email</span> <span class="req">(<span data-i18n="inq_required">required</span>)</span></label>
+                <input type="email" id="f-email" name="email" autocomplete="email"
+                       data-i18n-placeholder="inq_ph_email" placeholder="you@example.com" required aria-required="true" />
+              </div>
+            </div>
+
+            <div class="field row">
+              <div>
+                <label for="f-phone" data-i18n="inq_label_phone">Phone / WhatsApp</label>
+                <input type="tel" id="f-phone" name="phone" autocomplete="tel"
+                       data-i18n-placeholder="inq_ph_phone" placeholder="Optional" />
+              </div>
+              <div>
+                <label for="f-dest" data-i18n="inq_label_dest">Destination interest</label>
+                <select id="f-dest" name="destination">
+                  <option value="bangladesh">Bangladesh</option>
+                  <option value="eritrea">Eritrea</option>
+                  <option value="libya">Libya</option>
+                  <option value="madagascar">Madagascar</option>
+                  <option value="mauritania">Mauritania</option>
+                  <option value="mongolia">Mongolia</option>
+                  <option value="myanmar">Myanmar</option>
+                  <option value="pakistan">Pakistan</option>
+                  <option value="socotra">Socotra</option>
+                  <option value="syria">Syria</option>
+                  <option value="turkmenistan">Turkmenistan</option>
+                  <option value="west-africa">Ghana, Benin &amp; Togo</option>
+                  <option value="custom" data-i18n="inq_opt_custom" selected>Custom / not sure</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field row">
+              <div>
+                <label for="f-dates" data-i18n="inq_label_dates">Travel dates</label>
+                <input type="text" id="f-dates" name="travel_dates"
+                       data-i18n-placeholder="inq_ph_dates" placeholder="e.g. March 2027, or flexible" />
+              </div>
+              <div>
+                <label for="f-group" data-i18n="inq_label_group">Group size</label>
+                <input type="number" id="f-group" name="group_size" min="1" inputmode="numeric"
+                       data-i18n-placeholder="inq_ph_group" placeholder="e.g. 2" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-budget" data-i18n="inq_label_budget">Budget per person</label>
+              <select id="f-budget" name="budget">
+                <option value="" data-i18n="inq_budget_choose">Select…</option>
+                <option value="<$2k" data-i18n="inq_budget_lt2">Under $2,000</option>
+                <option value="$2-4k" data-i18n="inq_budget_2_4">$2,000 – $4,000</option>
+                <option value="$4-6k" data-i18n="inq_budget_4_6">$4,000 – $6,000</option>
+                <option value="$6k+" data-i18n="inq_budget_6plus">$6,000+</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-message" data-i18n="inq_label_message">Anything else?</label>
+              <textarea id="f-message" name="message"
+                        data-i18n-placeholder="inq_ph_message" placeholder="Optional — tell us what you have in mind."></textarea>
+            </div>
+
+            <!-- hidden attribution (auto-filled from URL / cookie on load) -->
+            <input type="hidden" name="utm_source" /><input type="hidden" name="utm_medium" />
+            <input type="hidden" name="utm_campaign" /><input type="hidden" name="utm_content" />
+            <input type="hidden" name="utm_term" /><input type="hidden" name="fbclid" />
+            <input type="hidden" name="gclid" /><input type="hidden" name="referrer" />
+            <input type="hidden" name="page_path" />
+
+            <button type="submit" class="submit-btn" id="submitBtn" data-i18n="inq_submit">Request itinerary</button>
+
+            <p class="consent">
+              <span data-i18n="inq_consent">By submitting, you agree we may contact you about your enquiry. We never share your details. See our</span>
+              <a href="/privacy/" data-i18n="inq_privacy_link">Privacy Policy</a>.
+            </p>
+          </form>
+
+          <!-- quick contact: skip the form -->
+          <div class="quick">
+            <p class="quick-label" data-i18n="inq_skip">Prefer not to fill in a form?</p>
+            <div class="quick-row" id="quickRow">
+              <a class="quick-btn wa" id="quickWa" href="https://wa.me/message/4D3P4QCBYG5SG1" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span data-i18n="inq_or_whatsapp">Chat on WhatsApp</span>
+              </a>
+              <a class="quick-btn" id="quickEmail" href="mailto:info@wpjourneys.com?subject=Expedition%20Inquiry">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="1.8"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                <span data-i18n="inq_or_email">Email us</span>
+              </a>
+              <a class="quick-btn" id="quickCall" href="#" style="display:none">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                <span data-i18n="inq_or_call">Call us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- thank-you (revealed on success) -->
+        <div class="form-card thanks" id="thanks">
+          <div class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <h2 data-i18n="inq_ty_title">Thank you — we reply within the hour.</h2>
+          <p data-i18n="inq_ty_text">Prefer to chat now?</p>
+          <div class="quick-row">
+            <a class="quick-btn wa" id="tyWa" href="https://wa.me/message/4D3P4QCBYG5SG1" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span data-i18n="inq_ty_whatsapp">Message us on WhatsApp</span>
+            </a>
+            <a class="quick-btn" id="tyEmail" href="mailto:info@wpjourneys.com?subject=Expedition%20Inquiry">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="1.8"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span data-i18n="inq_ty_email">Email us</span>
+            </a>
+            <a class="quick-btn" id="tyCall" href="#" style="display:none">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span data-i18n="inq_ty_call">Call us</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo-text">Waypoint Journeys</div>
+    <p class="footer-tagline" data-i18n="footer_tagline">Luxury adventure travel to the world's last wild places.</p>
+    <p class="footer-links">
+      <a href="/" data-i18n="mobile_nav_expeditions">Expeditions</a>
+      <a href="/about/" data-i18n="mobile_nav_about">About</a>
+      <a href="/privacy/" data-i18n="footer_privacy">Privacy Policy</a>
+    </p>
+    <p class="footer-copy" data-i18n="footer_copyright">© 2026 Waypoint Journeys. All rights reserved.</p>
+  </footer>
+
+  <!-- tracking engine first (provides window.WPTrack) -->
+  <script src="/js/tracking.js"></script>
+  <!-- i18n data -->
+  <script src="/lang/inquire.js"></script>
+
+  <!-- page setup: nav, destination, testimonial, form. Runs BEFORE i18n.js applies. -->
+  <script>
+  (function () {
+    'use strict';
+    var doc = document;
+
+    /* ---- nav: scrolled state + mobile menu ---- */
+    var nav = doc.getElementById('mainNav'),
+        ham = doc.getElementById('hamburger'),
+        menu = doc.getElementById('mobileMenu');
+    window.addEventListener('scroll', function () {
+      if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+    if (ham) ham.addEventListener('click', function () {
+      var open = menu.classList.toggle('open');
+      ham.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    if (menu) menu.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { menu.classList.remove('open'); ham.setAttribute('aria-expanded', 'false'); }
+    });
+
+    /* ---- destination personalisation ---- */
+    var key = window.WP_SELDEST, meta = window.WP_DEST[key];
+    var destLabel = meta ? meta.label : '';
+
+    // eyebrow → destination name (drop data-i18n so i18n won't overwrite it)
+    if (meta) {
+      var eb = doc.getElementById('introEyebrow');
+      eb.textContent = meta.label.toUpperCase();
+      eb.removeAttribute('data-i18n');
+    }
+    // preselect dropdown
+    var destSel = doc.getElementById('f-dest');
+    if (destSel) destSel.value = meta ? key : 'custom';
+
+    // testimonial: real quote if we have one for this destination, else rating strip
+    var tIdx = meta ? meta.t : 0;
+    if (tIdx >= 1 && tIdx <= 5) {
+      doc.getElementById('testiQuote').setAttribute('data-i18n', 'testimonial_' + tIdx + '_quote');
+      doc.getElementById('testiCite').setAttribute('data-i18n', 'testimonial_' + tIdx + '_attribution');
+      doc.getElementById('testiDest').setAttribute('data-i18n', 'testimonial_' + tIdx + '_destination');
+    } else {
+      // no destination-specific quote → show the 5.0 rating strip instead
+      ['testiQuote', 'testiCite', 'testiDest'].forEach(function (id) {
+        var el = doc.getElementById(id); el.style.display = 'none'; el.removeAttribute('data-i18n');
+      });
+      doc.getElementById('ratingStrip').style.display = 'block';
+    }
+
+    /* ---- attribution into hidden fields + quick-CTA data-destination ---- */
+    var attr = (window.WPTrack && WPTrack.getAttribution()) || {};
+    var form = doc.getElementById('inquiryForm');
+    function setHidden(name, val) { var el = form.elements[name]; if (el) el.value = val || ''; }
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid', 'gclid', 'referrer'].forEach(function (k) { setHidden(k, attr[k]); });
+    setHidden('page_path', attr.landing_path || location.pathname);
+
+    // destination context on the quick-contact + thank-you CTAs (for InitiateInquiry)
+    ['quickWa', 'quickEmail', 'tyWa', 'tyEmail'].forEach(function (id) {
+      var el = doc.getElementById(id); if (el && destLabel) el.setAttribute('data-destination', destLabel);
+    });
+
+    /* ---- phone (Call) buttons — only if a number is configured ---- */
+    var phone = (window.WPTrack && WPTrack.config && WPTrack.config.PHONE) || '';
+    if (phone) {
+      ['quickCall', 'tyCall'].forEach(function (id) {
+        var el = doc.getElementById(id);
+        if (el) { el.href = 'tel:' + phone.replace(/[^+0-9]/g, ''); el.style.display = ''; if (destLabel) el.setAttribute('data-destination', destLabel); }
+      });
+    }
+
+    /* ---- form submit ---- */
+    var errBox = doc.getElementById('formErr'),
+        submitBtn = doc.getElementById('submitBtn'),
+        card = doc.getElementById('formCard'),
+        thanks = doc.getElementById('thanks');
+
+    function t(key, fallback) {
+      var i = window.__i18n && window.__i18n[key];
+      var lang = (window.WPi18n && WPi18n.getCurrentLang && WPi18n.getCurrentLang()) || 'en';
+      return (i && i[lang]) || (i && i.en) || fallback;
+    }
+    function showErr(msg) { errBox.textContent = msg; errBox.classList.add('show'); }
+    function clearErr() { errBox.classList.remove('show'); }
+    function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+    function showThankYou() { card.style.display = 'none'; thanks.classList.add('show'); thanks.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      clearErr();
+
+      // honeypot — silently accept (so the bot thinks it worked) but do nothing
+      if (form.elements['company'] && form.elements['company'].value) { showThankYou(); return; }
+
+      var name = form.elements['name'].value.trim();
+      var email = form.elements['email'].value.trim();
+      if (!name || !email) { showErr(t('inq_err_required', 'Please add your name and a valid email.')); return; }
+      if (!validEmail(email)) { showErr(t('inq_err_email', 'Please enter a valid email address.')); return; }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = t('inq_submitting', 'Sending…');
+
+      var eventId = window.WPTrack ? WPTrack.genEventId() : ('wp-' + Date.now());
+      var fb = (window.WPTrack && WPTrack.getFbCookies()) || {};
+      var selOpt = form.elements['destination'].options[form.elements['destination'].selectedIndex];
+      var payload = {
+        event_id: eventId,
+        name: name, email: email,
+        phone: form.elements['phone'].value.trim(),
+        destination: selOpt ? selOpt.text : '',
+        destination_slug: form.elements['destination'].value,
+        travel_dates: form.elements['travel_dates'].value.trim(),
+        group_size: form.elements['group_size'].value.trim(),
+        budget: form.elements['budget'].value,
+        message: form.elements['message'].value.trim(),
+        utm_source: form.elements['utm_source'].value,
+        utm_medium: form.elements['utm_medium'].value,
+        utm_campaign: form.elements['utm_campaign'].value,
+        utm_content: form.elements['utm_content'].value,
+        utm_term: form.elements['utm_term'].value,
+        fbclid: form.elements['fbclid'].value,
+        gclid: form.elements['gclid'].value,
+        referrer: form.elements['referrer'].value,
+        page_path: form.elements['page_path'].value,
+        page_url: location.href,
+        fbp: fb.fbp || '', fbc: fb.fbc || '',
+        user_agent: navigator.userAgent,
+        lang: (window.WPi18n && WPi18n.getCurrentLang && WPi18n.getCurrentLang()) || 'en',
+        submitted_at: new Date().toISOString()
+      };
+
+      var endpoint = window.WPTrack ? WPTrack.leadEndpoint() : '';
+
+      function fireLeadAndThank() {
+        if (window.WPTrack) WPTrack.lead({ destination: payload.destination, eventId: eventId, email: email });
+        showThankYou();
+      }
+
+      if (!endpoint) {
+        // No backend configured yet (pre-launch). Preview the success UX; no Lead fired.
+        console.warn('[WPTrack] LEAD_ENDPOINT not set — preview mode: lead NOT delivered and Lead event NOT fired. Configure js/tracking.js to go live.');
+        showThankYou();
+        return;
+      }
+
+      var ctrl = ('AbortController' in window) ? new AbortController() : null;
+      var to = ctrl ? setTimeout(function () { ctrl.abort(); }, 9000) : null;
+      fetch(endpoint, {
+        method: 'POST',
+        mode: 'no-cors',                                  // static site → Apps Script: avoids CORS preflight
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload),
+        signal: ctrl ? ctrl.signal : undefined
+      }).then(function () {
+        if (to) clearTimeout(to);
+        fireLeadAndThank();                               // delivered → Lead fires only now
+      }).catch(function () {
+        if (to) clearTimeout(to);
+        submitBtn.disabled = false;
+        submitBtn.textContent = t('inq_submit', 'Request itinerary');
+        showErr(t('inq_err_network', "We couldn't send that just now. Please WhatsApp or email us — we'll reply right away."));
+      });
+    });
+  })();
+  </script>
+
+  <!-- i18n applies last (reads the data-i18n attrs set above) -->
+  <script src="/lang/i18n.js"></script>
+</body>
+</html>
