@@ -208,7 +208,12 @@
   function ago(iso){var s=(Date.now()-new Date(iso).getTime())/1000;if(s<90)return 'just now';if(s<3600)return Math.round(s/60)+' min ago';if(s<86400)return Math.round(s/3600)+' hr ago';return Math.round(s/86400)+' d ago';}
 
   function render(){
-    var d;try{d=JSON.parse(document.getElementById('wpj-data').textContent.replace('/*WPJ_DATA_START*/','').replace('/*WPJ_DATA_END*/',''));}catch(e){return;}
+    var emb=null;try{emb=JSON.parse(document.getElementById('wpj-data').textContent.replace('/*WPJ_DATA_START*/','').replace('/*WPJ_DATA_END*/',''));}catch(e){}
+    fetch('/api/insights',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}).then(function(api){
+      var d=(api&&api.destinations&&api.destinations.length)?api:emb; if(d)draw(d);
+    });
+  }
+  function draw(d){
     var live = d.campaign_status==='ACTIVE';
     document.getElementById('statusDot').className='dot'+(live?' live':'');
     document.getElementById('statusTxt').innerHTML= live? 'Live' : (d.campaign_status==='PAUSED'?'Paused':d.campaign_status);
@@ -276,11 +281,4 @@
     try{
       var ctx=document.getElementById('chart');
       new Chart(ctx,{type:'bar',data:{labels:S.map(function(x){return x.name;}),datasets:[{data:S.map(function(x){return x.leads;}),backgroundColor:'rgba(205,165,92,.55)',borderColor:'#e4c079',borderWidth:1,borderRadius:5,maxBarThickness:34}]},
-        options:{plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return c.parsed.y+' inquiries';}}}},
-          scales:{x:{grid:{display:false},ticks:{color:'#b3a890',font:{size:11}}},y:{beginAtZero:true,grid:{color:'rgba(205,165,92,.10)'},ticks:{color:'#8a7f6d',precision:0,font:{size:11}}}}}});
-    }catch(e){}
-  }
-})();
-</script>
-</body>
-</html>
+        options:{plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return c.parsed.y+' in
