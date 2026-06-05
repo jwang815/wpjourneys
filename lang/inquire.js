@@ -1,0 +1,91 @@
+/**
+ * Waypoint Journeys — Inquiry page translations (EN | 中文)
+ * Loaded by /inquire/ alongside /lang/i18n.js. Nav / footer / testimonial
+ * strings are kept identical to the homepage so the page reads as native.
+ */
+window.__i18n = {
+  /* ---- shared nav / footer (identical to homepage) ---- */
+  "mobile_nav_expeditions": { "en": "Expeditions", "zh": "精选行程" },
+  "mobile_nav_blog":        { "en": "Blog", "zh": "博客" },
+  "mobile_nav_about":       { "en": "About", "zh": "关于" },
+  "mobile_nav_inquire":     { "en": "Inquire", "zh": "咨询预订" },
+  "footer_tagline":         { "en": "Luxury adventure travel to the world's last wild places.", "zh": "奢华探险旅行，抵达世界最后的秘境。" },
+  "footer_copyright":       { "en": "© 2026 Waypoint Journeys. All rights reserved.", "zh": "© 2026 Waypoint Journeys. 保留所有权利。" },
+  "footer_privacy":         { "en": "Privacy Policy", "zh": "隐私政策" },
+
+  /* ---- hero / intro ---- */
+  "inq_eyebrow":  { "en": "PRIVATE INQUIRY", "zh": "专属咨询" },
+  "inq_title":    { "en": "Plan Your Private Expedition", "zh": "定制您的专属探险" },
+  "inq_hook":     { "en": "Tell us where you dream of going — we reply within the hour, by WhatsApp, email, or a quick call.", "zh": "告诉我们您向往的目的地——我们将在一小时内回复，可通过 WhatsApp、邮件或电话沟通。" },
+  "inq_bullet_1": { "en": "Max 5 guests", "zh": "每团最多 5 位宾客" },
+  "inq_bullet_2": { "en": "Fully bespoke", "zh": "完全定制" },
+  "inq_bullet_3": { "en": "24/7 on-ground support", "zh": "全程 24/7 当地支持" },
+  "inq_safety":   { "en": "We operate in these regions with vetted local partners, continuous on-the-ground monitoring, and round-the-clock support — and we'll always be candid with you about current conditions.", "zh": "我们与经过严格甄选的当地伙伴合作，持续进行实地状况监测并提供全天候支持——我们也始终会如实告知您当前的实际情况。" },
+
+  /* ---- quick contact (skip the form) ---- */
+  "inq_skip":        { "en": "Prefer not to fill in a form?", "zh": "不想填写表单？" },
+  "inq_or_whatsapp": { "en": "Chat on WhatsApp", "zh": "WhatsApp 咨询" },
+  "inq_or_email":    { "en": "Email us", "zh": "邮件联系" },
+  "inq_or_call":     { "en": "Call us", "zh": "电话联系" },
+
+  /* ---- form ---- */
+  "inq_form_heading": { "en": "Request your itinerary", "zh": "索取您的行程方案" },
+  "inq_form_sub":     { "en": "A few details and we'll design something around you.", "zh": "留下几项信息，我们将为您量身设计。" },
+  "inq_label_name":   { "en": "Full name", "zh": "姓名" },
+  "inq_ph_name":      { "en": "Your name", "zh": "您的姓名" },
+  "inq_label_email":  { "en": "Email", "zh": "邮箱" },
+  "inq_ph_email":     { "en": "you@example.com", "zh": "you@example.com" },
+  "inq_label_phone":  { "en": "Phone / WhatsApp", "zh": "电话 / WhatsApp" },
+  "inq_ph_phone":     { "en": "Optional", "zh": "选填" },
+  "inq_label_dest":   { "en": "Destination interest", "zh": "意向目的地" },
+  "inq_opt_custom":   { "en": "Custom / not sure", "zh": "定制 / 尚未确定" },
+  "inq_label_dates":  { "en": "Travel dates", "zh": "出行日期" },
+  "inq_ph_dates":     { "en": "e.g. March 2027, or flexible", "zh": "例如 2027 年 3 月，或时间灵活" },
+  "inq_label_group":  { "en": "Group size", "zh": "出行人数" },
+  "inq_ph_group":     { "en": "e.g. 2", "zh": "例如 2" },
+  "inq_label_budget": { "en": "Budget per person", "zh": "每人预算" },
+  "inq_budget_choose":{ "en": "Select…", "zh": "请选择…" },
+  "inq_budget_lt2":   { "en": "Under $2,000", "zh": "2,000 美元以下" },
+  "inq_budget_2_4":   { "en": "$2,000 – $4,000", "zh": "2,000 – 4,000 美元" },
+  "inq_budget_4_6":   { "en": "$4,000 – $6,000", "zh": "4,000 – 6,000 美元" },
+  "inq_budget_6plus": { "en": "$6,000+", "zh": "6,000 美元以上" },
+  "inq_label_message":{ "en": "Anything else?", "zh": "其他需求？" },
+  "inq_ph_message":   { "en": "Optional — tell us what you have in mind.", "zh": "选填——告诉我们您的想法。" },
+  "inq_required":     { "en": "required", "zh": "必填" },
+  "inq_submit":       { "en": "Request itinerary", "zh": "提交咨询" },
+  "inq_submitting":   { "en": "Sending…", "zh": "提交中…" },
+  "inq_consent":      { "en": "By submitting, you agree we may contact you about your enquiry. We never share your details. See our", "zh": "提交即表示您同意我们就此咨询与您联系。我们绝不会泄露您的信息。详见我们的" },
+  "inq_privacy_link": { "en": "Privacy Policy", "zh": "隐私政策" },
+
+  /* ---- validation ---- */
+  "inq_err_required": { "en": "Please add your name and a valid email.", "zh": "请填写您的姓名和有效邮箱。" },
+  "inq_err_email":    { "en": "Please enter a valid email address.", "zh": "请输入有效的邮箱地址。" },
+  "inq_err_network":  { "en": "We couldn't send that just now. Please WhatsApp or email us — we'll reply right away.", "zh": "暂时无法提交。请通过 WhatsApp 或邮件联系我们，我们会立即回复。" },
+
+  /* ---- thank-you state ---- */
+  "inq_ty_title":    { "en": "Thank you — we reply within the hour.", "zh": "感谢您的咨询——我们将在一小时内回复。" },
+  "inq_ty_text":     { "en": "Prefer to chat now?", "zh": "想现在就聊聊？" },
+  "inq_ty_whatsapp": { "en": "Message us on WhatsApp", "zh": "通过 WhatsApp 联系我们" },
+  "inq_ty_email":    { "en": "Email us", "zh": "邮件联系我们" },
+  "inq_ty_call":     { "en": "Call us", "zh": "电话联系我们" },
+
+  /* ---- trust ---- */
+  "inq_rating": { "en": "5.0 ★★★★★ from our expedition guests", "zh": "探险宾客评分 5.0 ★★★★★" },
+
+  /* ---- real guest testimonials (verbatim from homepage, both languages) ---- */
+  "testimonial_1_quote":       { "en": "We almost didn't go. Socotra sounded too remote, too complicated. But from the moment we landed on that charter flight, everything just worked. Our guide Saleh knew every beach, every hidden cave. Sleeping on Detwah Lagoon with the Milky Way right there... my wife still talks about it weekly.", "zh": "我们差点就没去。索科特拉听起来太偏远、太复杂了。但从包机落地的那一刻起，一切都很顺利。向导 Saleh 熟悉每一片海滩、每一个隐藏的洞穴。在 Detwah 潟湖边睡在星空下……我夫人现在还每周都在说这件事。" },
+  "testimonial_1_attribution": { "en": "— Tomás & Elena R.", "zh": "— Tomás & Elena R." },
+  "testimonial_1_destination": { "en": "Socotra Expedition, 2024", "zh": "索科特拉岛探险之旅，2024" },
+  "testimonial_2_quote":       { "en": "I told maybe three people I was going to Pakistan because I didn't want the lecture. Now I won't shut up about it. The Karakoram Highway is genuinely the most beautiful drive I've ever done. And the people... a shopkeeper in Karimabad closed his store to give us a tour of his village. You can't plan that.", "zh": "我只告诉了大概三个人我要去巴基斯坦，因为不想听大道理。现在我逢人就说。喀喇昆仑公路是我这辈子走过最美的路，没有之一。卡里姆阿巴德一个店主关了店带我们参观他的村子。这种事你计划不来的。" },
+  "testimonial_2_attribution": { "en": "— Priya S.", "zh": "— Priya S." },
+  "testimonial_2_destination": { "en": "Pakistan Expedition, 2024", "zh": "巴基斯坦探险之旅，2024" },
+  "testimonial_3_quote":       { "en": "Day three, middle of the steppe, no other humans for miles. Our guide pulls out a bottle of airag and starts singing. His horse is just standing there chewing grass. That's the stuff you remember. The Gobi was incredible too but honestly the quiet moments between the big ones are what got me.", "zh": "第三天，草原正中间，方圆几里都没有人。向导掏出一瓶马奶酒就开始唱歌。他的马就站在那儿嚼草。这种事情才是你会记住的。戈壁也很震撼，但说实话，是那些大场景之间的安静时刻真正打动了我。" },
+  "testimonial_3_attribution": { "en": "— James & Keiko T.", "zh": "— James & Keiko T." },
+  "testimonial_3_destination": { "en": "Mongolia Expedition, 2023", "zh": "蒙古探险之旅，2023" },
+  "testimonial_4_quote":       { "en": "Bagan at sunrise is one of those things that actually lives up to the photos. Two thousand temples in every direction, hot air balloons drifting overhead, and we had the platform to ourselves. Our group was only four people. That would never happen on a normal tour.", "zh": "蒲甘的日出是那种真的和照片一样美的地方。四面八方两千座寺庙，热气球在头顶飘过，而整个观景台只有我们。我们团只有四个人。跟普通团游绝对不可能有这种体验。" },
+  "testimonial_4_attribution": { "en": "— Aisha K.", "zh": "— Aisha K." },
+  "testimonial_4_destination": { "en": "Myanmar Expedition, 2023", "zh": "缅甸探险之旅，2023" },
+  "testimonial_5_quote":       { "en": "Walking through what's left of the Aleppo souk was heavy. Rebuilding everywhere, but the energy is still there. A tea seller insisted we sit and talk for an hour. Damascus blew my mind. I've traveled a lot and Syria is the one trip that actually changed how I think about the world.", "zh": "走在阿勒颇老集市的残垣中，心情很沉重。到处都在重建，但那股生命力还在。一个茶商非要我们坐下来聊了一个小时。大马士革彻底震撼了我。我去过很多地方，叙利亚是唯一一次真正改变了我看世界方式的旅行。" },
+  "testimonial_5_attribution": { "en": "— Marcus & Li Wei C.", "zh": "— Marcus & Li Wei C." },
+  "testimonial_5_destination": { "en": "Syria Expedition, 2024", "zh": "叙利亚探险之旅，2024" }
+};

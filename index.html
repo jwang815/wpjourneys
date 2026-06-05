@@ -374,6 +374,7 @@
   <noscript><link rel="stylesheet" href="/css/homepage.css"></noscript>
   <link rel="stylesheet" href="/css/related-expeditions.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/css/related-expeditions.css"></noscript>
+  <script src="/js/tracking.js?v=20260605"></script>
 </head>
 <body>
 
@@ -397,7 +398,7 @@
       <li><a href="#expeditions" data-i18n="mobile_nav_expeditions">Expeditions</a></li>
       <li><a href="/blog/" data-i18n="mobile_nav_blog">Blog</a></li>
       <li><a href="/about/" data-i18n="mobile_nav_about">About</a></li>
-      <li><a href="mailto:info@wpjourneys.com" class="nav-cta-btn" data-i18n="mobile_nav_inquire">Inquire</a></li>
+      <li><a href="/inquire/" class="nav-cta-btn" data-i18n="mobile_nav_inquire">Inquire</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span>
@@ -412,7 +413,7 @@
     <a href="#custom-expedition" onclick="closeMobileMenu()" data-i18n="mobile_nav_custom">Custom Trip</a>
     <a href="/blog/" onclick="closeMobileMenu()" data-i18n="mobile_nav_blog">Blog</a>
     <a href="/about/" onclick="closeMobileMenu()" data-i18n="mobile_nav_about">About</a>
-    <a href="mailto:info@wpjourneys.com" onclick="closeMobileMenu()" data-i18n="mobile_nav_inquire">Inquire</a>
+    <a href="/inquire/" onclick="closeMobileMenu()" data-i18n="mobile_nav_inquire">Inquire</a>
   </div>
 
 
@@ -808,7 +809,7 @@
             <span class="custom-feature-text" data-i18n="custom_feat4">Permits and transportation handled</span>
           </div>
         </div>
-        <a href="mailto:info@wpjourneys.com?subject=Custom%20Expedition%20Inquiry" class="custom-expedition-btn reveal reveal-delay-3" data-i18n="custom_btn">Plan a Custom Expedition</a>
+        <a href="/inquire/?dest=custom" class="custom-expedition-btn reveal reveal-delay-3" data-i18n="custom_btn">Plan a Custom Expedition</a>
       </div>
     </div>
   </section>
@@ -927,7 +928,7 @@
           <span data-i18n="cta_whatsapp_label">WhatsApp</span>
         </a>
       </div>
-      <a href="mailto:info@wpjourneys.com?subject=Expedition%20Inquiry" class="cta-button reveal reveal-delay-3" data-i18n="cta_button">INQUIRE ABOUT AN EXPEDITION</a>
+      <a href="/inquire/" class="cta-button reveal reveal-delay-3" data-i18n="cta_button">INQUIRE ABOUT AN EXPEDITION</a>
     </div>
   </section>
 
@@ -965,7 +966,8 @@
         </svg>
       </a>
     </div>    <p class="footer-tagline" data-i18n="footer_tagline">Luxury adventure travel to the world's last wild places.</p>
-    <p class="footer-copy" data-i18n="footer_copyright">&copy; 2026 Waypoint Journeys. All rights reserved.</p>
+    <p class="footer-legal" style="margin:12px 0 0"><a href="/inquire/" data-i18n="mobile_nav_inquire" style="color:var(--gold-light);font-size:.82rem;text-decoration:none;margin:0 8px">Inquire</a><a href="/privacy/" data-i18n="footer_privacy" style="color:var(--gold-light);font-size:.82rem;text-decoration:none;margin:0 8px">Privacy Policy</a></p>
+  <p class="footer-copy" data-i18n="footer_copyright">&copy; 2026 Waypoint Journeys. All rights reserved.</p>
   </footer>
 
   <!-- ==================== JAVASCRIPT ==================== -->

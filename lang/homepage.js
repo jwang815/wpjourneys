@@ -539,6 +539,10 @@ window.__i18n = {
     "en": "Luxury adventure travel to the world's last wild places.",
     "zh": "奢华探险旅行，抵达世界最后的秘境。"
   },
+  "footer_privacy": {
+    "en": "Privacy Policy",
+    "zh": "隐私政策"
+  },
   "footer_copyright": {
     "en": "© 2026 Waypoint Journeys. All rights reserved.",
     "zh": "© 2026 Waypoint Journeys. 保留所有权利。"
