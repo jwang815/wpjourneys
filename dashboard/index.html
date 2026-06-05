@@ -8,20 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
-  :root{
-    --ink:#14110d; --ink2:#1c1812; --card:#211b13; --line:rgba(205,165,92,.16);
-    --gold:#cda55c; --gold2:#e4c079; --paper:#efe9dc; --sand:#b3a890; --mut:#8a7f6d;
-    --good:#7faf74; --warn:#d9a441; --bad:#c9786a;
-  }
+  :root{--ink:#14110d;--ink2:#1c1812;--card:#211b13;--line:rgba(205,165,92,.16);--gold:#cda55c;--gold2:#e4c079;--paper:#efe9dc;--sand:#b3a890;--mut:#8a7f6d;--good:#7faf74;--warn:#d9a441;--bad:#c9786a;}
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:var(--ink);color:var(--paper);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1140px;margin:0 auto;padding:28px 22px 70px}
-  .mono{font-variant-numeric:tabular-nums}
-
-  /* ---- gate ---- */
   #gate{position:fixed;inset:0;background:var(--ink);display:flex;align-items:center;justify-content:center;z-index:50;padding:24px}
   #gate .box{max-width:380px;width:100%;text-align:center}
   #gate .mark{font-family:'Gloock',serif;color:var(--gold2);font-size:13px;letter-spacing:.32em;text-transform:uppercase}
@@ -29,16 +21,14 @@
   #gate p{color:var(--sand);font-size:14px;margin-bottom:22px}
   #gate input{width:100%;background:var(--ink2);border:1px solid var(--line);color:var(--paper);border-radius:10px;padding:13px 15px;font-size:16px;text-align:center;letter-spacing:.18em}
   #gate input:focus{outline:none;border-color:var(--gold)}
-  #gate button{width:100%;margin-top:12px;background:var(--gold);color:var(--ink);border:none;border-radius:10px;padding:13px;font-weight:600;font-size:15px;cursor:pointer;letter-spacing:.02em}
+  #gate button{width:100%;margin-top:12px;background:var(--gold);color:var(--ink);border:none;border-radius:10px;padding:13px;font-weight:600;font-size:15px;cursor:pointer}
   #gate button:hover{background:var(--gold2)}
   #gate .err{color:var(--bad);font-size:13px;height:16px;margin-top:10px}
   .shake{animation:sh .35s}
   @keyframes sh{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-7px)}40%,80%{transform:translateX(7px)}}
-
-  /* ---- header ---- */
   header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:24px}
   .brand .mark{display:flex;align-items:center;gap:9px;color:var(--gold2);font-size:12px;letter-spacing:.30em;text-transform:uppercase;font-weight:600}
-  .brand h1{font-family:'Gloock',serif;font-weight:400;font-size:30px;margin-top:7px;letter-spacing:.01em}
+  .brand h1{font-family:'Gloock',serif;font-weight:400;font-size:30px;margin-top:7px}
   .compass{width:17px;height:17px;flex:0 0 auto}
   .meta{text-align:right;font-size:12.5px;color:var(--sand)}
   .meta .stat{display:inline-flex;align-items:center;gap:6px}
@@ -47,77 +37,60 @@
   .meta b{color:var(--paper)}
   .refresh{margin-top:8px;background:transparent;border:1px solid var(--line);color:var(--sand);border-radius:8px;padding:5px 11px;font-size:12px;cursor:pointer}
   .refresh:hover{border-color:var(--gold);color:var(--gold2)}
-
-  .banner{background:linear-gradient(90deg,rgba(205,165,92,.10),transparent);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:13px 16px;margin-bottom:24px;font-size:13.5px;color:var(--paper);display:flex;gap:10px;align-items:center}
+  .banner{background:linear-gradient(90deg,rgba(205,165,92,.10),transparent);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:13px 16px;margin-bottom:24px;font-size:13.5px}
   .banner b{color:var(--gold2)}
-
-  /* ---- kpis ---- */
   .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:13px;margin-bottom:14px}
   .kpi{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:15px 16px}
   .kpi .lab{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:600}
-  .kpi .val{font-family:'Gloock',serif;font-size:27px;margin-top:9px;color:var(--paper);line-height:1}
-  .kpi .val small{font-size:15px;color:var(--sand);font-family:'Inter'}
+  .kpi .val{font-family:'Gloock',serif;font-size:27px;margin-top:9px;line-height:1}
   .kpi.hl .val{color:var(--gold2)}
-  .kpi .sub{font-size:11.5px;color:var(--mut);margin-top:6px}
   .pace{font-size:12px;color:var(--sand);margin:2px 0 26px}
   .pace b{color:var(--paper)}
-
   .grid2{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;margin-bottom:30px;align-items:start}
   .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
-  .panel h2{font-family:'Gloock',serif;font-weight:400;font-size:17px;color:var(--paper);margin-bottom:4px}
-  .panel .hint{font-size:12px;color:var(--mut);margin-bottom:14px}
-  .chartbox{position:relative;height:230px}
-
+  .panel h2{font-family:'Gloock',serif;font-weight:400;font-size:17px;margin-bottom:4px}
+  .panel .hint{font-size:12px;color:var(--mut);margin-bottom:16px}
+  .bar{display:grid;grid-template-columns:96px 1fr 38px;align-items:center;gap:10px;margin-bottom:11px;font-size:12.5px}
+  .bar .bl{color:var(--sand)}
+  .bar .bt{height:10px;background:var(--ink2);border-radius:6px;overflow:hidden}
+  .bar .bt i{display:block;height:100%;background:linear-gradient(90deg,rgba(205,165,92,.6),var(--gold2));border-radius:6px;min-width:2px}
+  .bar .bv{text-align:right;color:var(--paper);font-weight:600}
   .insight{display:flex;flex-direction:column;gap:11px}
   .iline{display:flex;gap:11px;align-items:flex-start;font-size:13px;color:var(--sand)}
   .iline .ic{width:7px;height:7px;border-radius:50%;margin-top:6px;flex:0 0 auto}
   .iline b{color:var(--paper)}
-
-  /* ---- table of destinations ---- */
   .secttl{font-family:'Gloock',serif;font-weight:400;font-size:20px;margin:4px 0 4px}
   .sectsub{font-size:12.5px;color:var(--mut);margin-bottom:16px}
-  .rows{display:flex;flex-direction:column;gap:11px}
-  .row{display:grid;grid-template-columns:62px 1.6fr repeat(5,1fr);gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:11px 15px;transition:border-color .15s}
+  .head-row,.row{display:grid;grid-template-columns:60px 1.6fr repeat(5,1fr);gap:12px;align-items:center}
+  .head-row{padding:0 15px 6px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--mut)}
+  .head-row span{text-align:right}.head-row span:nth-child(2){text-align:left}
+  .row{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:11px 15px;margin-bottom:11px;transition:border-color .15s}
   .row:hover{border-color:rgba(205,165,92,.4)}
-  .row .thumb{width:52px;height:65px;border-radius:7px;object-fit:cover;border:1px solid var(--line);background:var(--ink2)}
+  .row .thumb{width:50px;height:62px;border-radius:7px;object-fit:cover;border:1px solid var(--line);background:var(--ink2)}
   .row .nm{display:flex;flex-direction:column;gap:2px;min-width:0}
-  .row .nm .d{font-family:'Gloock',serif;font-size:16px;color:var(--paper)}
+  .row .nm .d{font-family:'Gloock',serif;font-size:16px}
   .row .nm .t{font-size:11.5px;color:var(--mut)}
-  .row .nm .badge{align-self:flex-start;margin-top:3px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:20px;font-weight:600}
-  .b-top{background:rgba(127,175,116,.15);color:var(--good);border:1px solid rgba(127,175,116,.35)}
-  .b-watch{background:rgba(201,120,106,.13);color:var(--bad);border:1px solid rgba(201,120,106,.32)}
+  .badge{align-self:flex-start;margin-top:3px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:20px;font-weight:600}
+  .b-top{background:rgba(127,175,116,.15);color:var(--good)}
+  .b-watch{background:rgba(201,120,106,.13);color:var(--bad)}
   .cell{text-align:right}
-  .cell .n{font-size:15.5px;color:var(--paper);font-weight:600}
+  .cell .n{font-size:15px;font-weight:600}
   .cell .k{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-top:2px}
   .cell.cpl .n{color:var(--gold2)}
-  .head-row{display:grid;grid-template-columns:62px 1.6fr repeat(5,1fr);gap:12px;padding:0 15px 2px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--mut)}
-  .head-row span{text-align:right}.head-row span:nth-child(2){text-align:left}
-
   footer{margin-top:40px;border-top:1px solid var(--line);padding-top:18px;font-size:11.5px;color:var(--mut);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   footer b{color:var(--sand)}
-
-  @media(max-width:920px){
-    .kpis{grid-template-columns:repeat(3,1fr)}
-    .grid2{grid-template-columns:1fr}
-    .row,.head-row{grid-template-columns:50px 1.4fr repeat(3,1fr)}
-    .row .c-imp,.row .c-clk,.head-row .h-imp,.head-row .h-clk{display:none}
-  }
-  @media(max-width:560px){
-    .kpis{grid-template-columns:repeat(2,1fr)}
-    .row,.head-row{grid-template-columns:46px 1.3fr repeat(2,1fr)}
-    .row .c-ctr,.head-row .h-ctr{display:none}
-  }
+  @media(max-width:920px){.kpis{grid-template-columns:repeat(3,1fr)}.grid2{grid-template-columns:1fr}.head-row,.row{grid-template-columns:48px 1.4fr repeat(3,1fr)}.c-imp,.c-clk,.h-imp,.h-clk{display:none}}
+  @media(max-width:560px){.kpis{grid-template-columns:repeat(2,1fr)}.head-row,.row{grid-template-columns:44px 1.3fr repeat(2,1fr)}.c-ctr,.h-ctr{display:none}}
 </style>
 </head>
 <body>
-
 <div id="gate">
   <div class="box">
     <div class="mark">Waypoint Journeys</div>
     <h1>Ads Dashboard</h1>
     <p>Enter the team passcode to continue.</p>
-    <input id="pw" type="password" inputmode="numeric" placeholder="• • • • •" autocomplete="off" aria-label="Passcode">
-    <button id="enter">Enter</button>
+    <input id="pw" type="password" inputmode="numeric" placeholder="Passcode" autocomplete="off" aria-label="Passcode">
+    <button id="enter" type="button">Enter</button>
     <div class="err" id="err"></div>
   </div>
 </div>
@@ -132,22 +105,19 @@
       <h1>Live Ads Dashboard</h1>
     </div>
     <div class="meta">
-      <div class="stat"><span class="dot" id="statusDot"></span><span id="statusTxt">—</span></div>
-      <div style="margin-top:4px">Updated <b id="updated">—</b></div>
-      <button class="refresh" onclick="location.reload()">↻ Refresh</button>
+      <div class="stat"><span class="dot" id="statusDot"></span><span id="statusTxt">--</span></div>
+      <div style="margin-top:4px">Updated <b id="updated">--</b></div>
+      <button class="refresh" type="button" onclick="location.reload()">&#8635; Refresh</button>
     </div>
   </header>
-
   <div class="banner" id="banner" style="display:none"></div>
-
   <div class="kpis" id="kpis"></div>
   <div class="pace" id="pace"></div>
-
   <div class="grid2">
     <div class="panel">
       <h2>Inquiries by destination</h2>
-      <div class="hint">Where the inquiries are coming from — taller is better.</div>
-      <div class="chartbox"><canvas id="chart"></canvas></div>
+      <div class="hint">Longer bar = more inquiries.</div>
+      <div id="bars"></div>
     </div>
     <div class="panel">
       <h2>Read of the room</h2>
@@ -155,131 +125,103 @@
       <div class="insight" id="insight"></div>
     </div>
   </div>
-
   <div class="secttl">The six ads</div>
-  <div class="sectsub">Sorted by inquiries. Click a card to open its landing page.</div>
-  <div class="head-row">
-    <span></span><span>Destination</span><span class="h-imp c-imp">Impr.</span><span class="h-clk c-clk">Clicks</span><span class="h-ctr c-ctr">CTR</span><span>Spend</span><span>Inquiries · Cost</span>
-  </div>
-  <div class="rows" id="rows"></div>
-
+  <div class="sectsub">Sorted by inquiries. Tap a card to open its landing page.</div>
+  <div class="head-row"><span></span><span>Destination</span><span class="h-imp">Impr.</span><span class="h-clk">Clicks</span><span class="h-ctr">CTR</span><span>Spend</span><span>Inquiries</span></div>
+  <div id="rows"></div>
   <footer>
-    <div>Source: <b>Meta Ads</b> · Campaign <b>WJ | Inquiries | Lead-Optimized</b> · auto-refreshes hourly</div>
-    <div><b>Internal</b> — please don't share outside the team</div>
+    <div>Source: <b>Meta Ads</b> &middot; pulled live from the cloud &middot; campaign <b>WJ | Inquiries</b></div>
+    <div><b>Internal</b> &mdash; please keep within the team</div>
   </footer>
 </div>
 
-<script id="wpj-data" type="application/json">
-/*WPJ_DATA_START*/
-{
-  "updated": "2026-06-05T05:30:00Z",
-  "campaign_status": "PAUSED",
-  "daily_budget": 33,
-  "currency": "USD",
-  "window": "Since launch",
-  "destinations": [
-    {"name":"Socotra","tag":"The Alien Island","img":"/images/ads/AD_Socotra_4x5.jpg","url":"https://wpjourneys.com/socotra/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},
-    {"name":"Turkmenistan","tag":"Door to Hell","img":"/images/ads/AD_Turkmenistan_4x5.jpg","url":"https://wpjourneys.com/turkmenistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},
-    {"name":"Pakistan","tag":"The Karakoram","img":"/images/ads/AD_Pakistan_4x5.jpg","url":"https://wpjourneys.com/pakistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},
-    {"name":"Mongolia","tag":"Eternal Sky","img":"/images/ads/AD_Mongolia_4x5.jpg","url":"https://wpjourneys.com/mongolia-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},
-    {"name":"Libya","tag":"Roman Africa","img":"/images/ads/AD_Libya_4x5.jpg","url":"https://wpjourneys.com/libya-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},
-    {"name":"Custom","tag":"Anywhere on Earth","img":"/images/ads/AD_Custom_4x5.jpg","url":"https://wpjourneys.com/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0}
-  ]
-}
-/*WPJ_DATA_END*/
-</script>
+<script id="wpj-data" type="application/json">{"updated":"2026-06-05T05:30:00Z","campaign_status":"PAUSED","daily_budget":33,"currency":"USD","window":"Since launch","destinations":[{"name":"Socotra","tag":"The Alien Island","img":"/images/ads/AD_Socotra_4x5.jpg","url":"https://wpjourneys.com/socotra/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},{"name":"Turkmenistan","tag":"Door to Hell","img":"/images/ads/AD_Turkmenistan_4x5.jpg","url":"https://wpjourneys.com/turkmenistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},{"name":"Pakistan","tag":"The Karakoram","img":"/images/ads/AD_Pakistan_4x5.jpg","url":"https://wpjourneys.com/pakistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},{"name":"Mongolia","tag":"Eternal Sky","img":"/images/ads/AD_Mongolia_4x5.jpg","url":"https://wpjourneys.com/mongolia-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},{"name":"Libya","tag":"Roman Africa","img":"/images/ads/AD_Libya_4x5.jpg","url":"https://wpjourneys.com/libya-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0},{"name":"Custom","tag":"Anywhere on Earth","img":"/images/ads/AD_Custom_4x5.jpg","url":"https://wpjourneys.com/","spend":0,"impressions":0,"reach":0,"clicks":0,"leads":0}]}</script>
 
 <script>
 (function(){
   var KEY='wpj_dash_ok_2026';
-  var gate=document.getElementById('gate'),app=document.getElementById('app');
+  var gate=document.getElementById('gate'), app=document.getElementById('app');
   function lsGet(k){try{return localStorage.getItem(k);}catch(e){return null;}}
   function lsSet(k,v){try{localStorage.setItem(k,v);}catch(e){}}
-  function unlock(){gate.style.display='none';app.style.display='block';try{render();}catch(e){}}
+  function unlock(){gate.style.display='none';app.style.display='block';load();}
   function tryPw(){
     var v=(document.getElementById('pw').value||'').trim();
     if(v==='12345'){lsSet(KEY,'1');unlock();}
-    else{var e=document.getElementById('err');e.textContent='Incorrect passcode';gate.querySelector('.box').classList.add('shake');setTimeout(function(){gate.querySelector('.box').classList.remove('shake')},400);}
+    else{document.getElementById('err').textContent='Incorrect passcode';var b=gate.querySelector('.box');b.classList.add('shake');setTimeout(function(){b.classList.remove('shake');},400);}
   }
   document.getElementById('enter').onclick=tryPw;
   document.getElementById('pw').addEventListener('keydown',function(e){if(e.key==='Enter')tryPw();});
   if(lsGet(KEY)==='1'){unlock();}
 
-  var fmtUSD=function(n){return '$'+(n||0).toLocaleString('en-US',{minimumFractionDigits:n<100?2:0,maximumFractionDigits:n<100?2:0});};
-  var fmtN=function(n){return (n||0).toLocaleString('en-US');};
-  function ago(iso){var s=(Date.now()-new Date(iso).getTime())/1000;if(s<90)return 'just now';if(s<3600)return Math.round(s/60)+' min ago';if(s<86400)return Math.round(s/3600)+' hr ago';return Math.round(s/86400)+' d ago';}
+  function usd(n){n=+n||0;return '$'+n.toLocaleString('en-US',{minimumFractionDigits:n<100?2:0,maximumFractionDigits:n<100?2:0});}
+  function num(n){return (+n||0).toLocaleString('en-US');}
+  function ago(iso){var s=(Date.now()-new Date(iso).getTime())/1000;if(!(s>=0))return 'just now';if(s<90)return 'just now';if(s<3600)return Math.round(s/60)+' min ago';if(s<86400)return Math.round(s/3600)+' hr ago';return Math.round(s/86400)+' d ago';}
 
-  function render(){
-    var emb=null;try{emb=JSON.parse(document.getElementById('wpj-data').textContent.replace('/*WPJ_DATA_START*/','').replace('/*WPJ_DATA_END*/',''));}catch(e){}
-    fetch('/api/insights',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}).then(function(api){
-      var d=(api&&api.destinations&&api.destinations.length)?api:emb; if(d)draw(d);
-    });
+  function load(){
+    var emb=null;
+    try{emb=JSON.parse(document.getElementById('wpj-data').textContent);}catch(e){}
+    fetch('/api/insights',{cache:'no-store'})
+      .then(function(r){return r.ok?r.json():null;})
+      .catch(function(){return null;})
+      .then(function(api){var d=(api&&api.destinations&&api.destinations.length)?api:emb;if(d)draw(d);});
   }
+
   function draw(d){
-    var live = d.campaign_status==='ACTIVE';
+    var live=d.campaign_status==='ACTIVE';
     document.getElementById('statusDot').className='dot'+(live?' live':'');
-    document.getElementById('statusTxt').innerHTML= live? 'Live' : (d.campaign_status==='PAUSED'?'Paused':d.campaign_status);
+    document.getElementById('statusTxt').textContent=live?'Live':'Paused';
     document.getElementById('updated').textContent=ago(d.updated);
-
     var D=d.destinations||[];
-    var T={spend:0,impr:0,clk:0,leads:0};
-    D.forEach(function(x){T.spend+=+x.spend||0;T.impr+=+x.impressions||0;T.clk+=+x.clicks||0;T.leads+=+x.leads||0;});
-    var ctr=T.impr? (T.clk/T.impr*100):0;
-    var cpl=T.leads? (T.spend/T.leads):0;
+    var T={s:0,i:0,c:0,l:0};
+    for(var k=0;k<D.length;k++){T.s+=+D[k].spend||0;T.i+=+D[k].impressions||0;T.c+=+D[k].clicks||0;T.l+=+D[k].leads||0;}
+    var ctr=T.i?(T.c/T.i*100):0, cpl=T.l?(T.s/T.l):0;
 
-    if(!live || T.spend===0){
-      var b=document.getElementById('banner');b.style.display='flex';
-      b.innerHTML = live
-        ? '<b>Just launched.</b>&nbsp;Numbers begin filling in within an hour or so of the first impressions — check back shortly.'
-        : '<b>Campaign is paused.</b>&nbsp;Metrics start flowing within ~1 hour of going live. Everything below is wired and ready.';
+    var bn=document.getElementById('banner');
+    if(!live||T.s===0){bn.style.display='flex';bn.innerHTML=live?'<b>Just launched.</b>&nbsp;Numbers begin filling in within an hour of the first impressions.':'<b>Campaign is paused.</b>&nbsp;Metrics start flowing within ~1 hour of going live. Everything is wired and ready.';}
+    else{bn.style.display='none';}
+
+    var kpis=[['Spend',usd(T.s),0],['Inquiries',num(T.l),1],['Cost / Inquiry',T.l?usd(cpl):'--',1],['Impressions',num(T.i),0],['Link Clicks',num(T.c),0],['CTR',T.i?ctr.toFixed(2)+'%':'--',0]];
+    var kh='';for(var a=0;a<kpis.length;a++){kh+='<div class="kpi'+(kpis[a][2]?' hl':'')+'"><div class="lab">'+kpis[a][0]+'</div><div class="val">'+kpis[a][1]+'</div></div>';}
+    document.getElementById('kpis').innerHTML=kh;
+    document.getElementById('pace').innerHTML='Daily budget <b>'+usd(d.daily_budget)+'</b> &nbsp;&middot;&nbsp; '+(d.window||'Since launch')+' &nbsp;&middot;&nbsp; US &middot; Canada &middot; Australia &middot; New Zealand';
+
+    var S=D.slice().sort(function(x,y){return (y.leads-x.leads)||(y.spend-x.spend);});
+    var maxLeads=0;for(var m=0;m<S.length;m++){if(S[m].leads>maxLeads)maxLeads=S[m].leads;}
+    var bh='';for(var z=0;z<S.length;z++){var pct=maxLeads?Math.round(S[z].leads/maxLeads*100):0;bh+='<div class="bar"><span class="bl">'+S[z].name+'</span><div class="bt"><i style="width:'+pct+'%"></i></div><span class="bv">'+num(S[z].leads)+'</span></div>';}
+    document.getElementById('bars').innerHTML=bh;
+
+    var cplVals=[];for(var q=0;q<S.length;q++){if(S[q].leads>0)cplVals.push(S[q].spend/S[q].leads);}
+    var best=cplVals.length?Math.min.apply(null,cplVals):null, worst=cplVals.length?Math.max.apply(null,cplVals):null;
+    var rh='';
+    for(var r=0;r<S.length;r++){
+      var x=S[r], xctr=x.impressions?(x.clicks/x.impressions*100):0, xcpl=x.leads?(x.spend/x.leads):0, badge='';
+      if(x.leads>0&&cplVals.length>1&&xcpl===best)badge='<span class="badge b-top">Top</span>';
+      else if(x.leads>0&&cplVals.length>1&&xcpl===worst)badge='<span class="badge b-watch">Watch</span>';
+      rh+='<a class="row" href="'+x.url+'" target="_blank" rel="noopener">'
+        +'<img class="thumb" src="'+x.img+'" alt="'+x.name+'" loading="lazy">'
+        +'<div class="nm"><span class="d">'+x.name+'</span><span class="t">'+x.tag+'</span>'+badge+'</div>'
+        +'<div class="cell c-imp"><div class="n">'+num(x.impressions)+'</div></div>'
+        +'<div class="cell c-clk"><div class="n">'+num(x.clicks)+'</div></div>'
+        +'<div class="cell c-ctr"><div class="n">'+(x.impressions?xctr.toFixed(2)+'%':'--')+'</div></div>'
+        +'<div class="cell"><div class="n">'+usd(x.spend)+'</div></div>'
+        +'<div class="cell cpl"><div class="n">'+num(x.leads)+(x.leads?' &middot; '+usd(xcpl):'')+'</div><div class="k">inq &middot; cost</div></div>'
+        +'</a>';
     }
+    document.getElementById('rows').innerHTML=rh;
 
-    var kpi=[
-      {lab:'Spend',val:fmtUSD(T.spend),hl:false},
-      {lab:'Inquiries',val:fmtN(T.leads),hl:true},
-      {lab:'Cost / Inquiry',val:T.leads?fmtUSD(cpl):'—',hl:true},
-      {lab:'Impressions',val:fmtN(T.impr)},
-      {lab:'Link Clicks',val:fmtN(T.clk)},
-      {lab:'CTR',val:T.impr?ctr.toFixed(2)+'%':'—'}
-    ];
-    document.getElementById('kpis').innerHTML=kpi.map(function(k){return '<div class="kpi'+(k.hl?' hl':'')+'"><div class="lab">'+k.lab+'</div><div class="val">'+k.val+'</div></div>';}).join('');
-    document.getElementById('pace').innerHTML='Daily budget <b>'+fmtUSD(d.daily_budget)+'</b> &nbsp;·&nbsp; '+(d.window||'Since launch')+' &nbsp;·&nbsp; US · Canada · Australia · New Zealand';
-
-    // sort by leads, then spend
-    var S=D.slice().sort(function(a,b){return (b.leads-a.leads)||(b.spend-a.spend);});
-    var cplArr=S.filter(function(x){return x.leads>0;}).map(function(x){return x.spend/x.leads;});
-    var bestCpl=cplArr.length?Math.min.apply(null,cplArr):null, worstCpl=cplArr.length?Math.max.apply(null,cplArr):null;
-
-    document.getElementById('rows').innerHTML=S.map(function(x){
-      var xctr=x.impressions?(x.clicks/x.impressions*100):0;
-      var xcpl=x.leads?(x.spend/x.leads):0;
-      var badge='';
-      if(x.leads>0 && xcpl===bestCpl && cplArr.length>1) badge='<span class="badge b-top">Top performer</span>';
-      else if(x.leads>0 && xcpl===worstCpl && cplArr.length>1) badge='<span class="badge b-watch">Watch</span>';
-      return '<a class="row" href="'+x.url+'" target="_blank" rel="noopener">'+
-        '<img class="thumb" src="'+x.img+'" alt="'+x.name+'" loading="lazy">'+
-        '<div class="nm"><span class="d">'+x.name+'</span><span class="t">'+x.tag+'</span>'+badge+'</div>'+
-        '<div class="cell c-imp"><div class="n">'+fmtN(x.impressions)+'</div></div>'+
-        '<div class="cell c-clk"><div class="n">'+fmtN(x.clicks)+'</div></div>'+
-        '<div class="cell c-ctr"><div class="n">'+(x.impressions?xctr.toFixed(2)+'%':'—')+'</div></div>'+
-        '<div class="cell"><div class="n">'+fmtUSD(x.spend)+'</div></div>'+
-        '<div class="cell cpl"><div class="n">'+fmtN(x.leads)+(x.leads?' · '+fmtUSD(xcpl):'')+'</div><div class="k">inquiries · cost</div></div>'+
-      '</a>';
-    }).join('');
-
-    // insight
     var ins=[];
-    if(T.spend===0){ins.push(['var(--mut)','Nothing has spent yet — the read-out lights up once the ads are live and delivering.']);}
+    if(T.s===0){ins.push(['var(--mut)','Nothing has spent yet &mdash; this lights up once the ads are live and delivering.']);}
     else{
-      if(S[0]&&S[0].leads>0) ins.push(['var(--good)','<b>'+S[0].name+'</b> is pulling the most inquiries ('+S[0].leads+').']);
-      if(bestCpl!=null){var bn=S.find(function(x){return x.leads>0&&x.spend/x.leads===bestCpl;});if(bn)ins.push(['var(--gold2)','Cheapest inquiries: <b>'+bn.name+'</b> at '+fmtUSD(bestCpl)+' each.']);}
-      var dead=S.filter(function(x){return x.spend>15&&x.leads===0;});
-      if(dead.length)ins.push(['var(--bad)','Spending without inquiries yet: <b>'+dead.map(function(x){return x.name;}).join(', ')+'</b> — worth a look.']);
-      ins.push(['var(--sand)','Blended cost per inquiry is <b>'+(T.leads?fmtUSD(cpl):'—')+'</b> across '+fmtN(T.leads)+' inquiries.']);
+      if(S[0]&&S[0].leads>0)ins.push(['var(--good)','<b>'+S[0].name+'</b> is pulling the most inquiries ('+S[0].leads+').']);
+      if(best!=null){for(var bi=0;bi<S.length;bi++){if(S[bi].leads>0&&S[bi].spend/S[bi].leads===best){ins.push(['var(--gold2)','Cheapest inquiries: <b>'+S[bi].name+'</b> at '+usd(best)+' each.']);break;}}}
+      var dead=[];for(var di=0;di<S.length;di++){if(S[di].spend>15&&S[di].leads===0)dead.push(S[di].name);}
+      if(dead.length)ins.push(['var(--bad)','Spending without inquiries yet: <b>'+dead.join(', ')+'</b>.']);
+      ins.push(['var(--sand)','Blended cost per inquiry is <b>'+(T.l?usd(cpl):'--')+'</b> across '+num(T.l)+' inquiries.']);
     }
-    document.getElementById('insight').innerHTML=ins.map(function(i){return '<div class="iline"><span class="ic" style="background:'+i[0]+'"></span><span>'+i[1]+'</span></div>';}).join('');
-
-    // chart
-    try{
-      var ctx=document.getElementById('chart');
-      new Chart(ctx,{type:'bar',data:{labels:S.map(function(x){return x.name;}),datasets:[{data:S.map(function(x){return x.leads;}),backgroundColor:'rgba(205,165,92,.55)',borderColor:'#e4c079',borderWidth:1,borderRadiu
+    var ih='';for(var ii=0;ii<ins.length;ii++){ih+='<div class="iline"><span class="ic" style="background:'+ins[ii][0]+'"></span><span>'+ins[ii][1]+'</span></div>';}
+    document.getElementById('insight').innerHTML=ih;
+  }
+})();
+</script>
+</body>
+</html>
