@@ -193,15 +193,17 @@
 (function(){
   var KEY='wpj_dash_ok_2026';
   var gate=document.getElementById('gate'),app=document.getElementById('app');
-  function unlock(){gate.style.display='none';app.style.display='block';render();}
-  if(localStorage.getItem(KEY)==='1'){unlock();}
+  function lsGet(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+  function lsSet(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+  function unlock(){gate.style.display='none';app.style.display='block';try{render();}catch(e){}}
   function tryPw(){
-    var v=document.getElementById('pw').value.trim();
-    if(v==='12345'){localStorage.setItem(KEY,'1');unlock();}
+    var v=(document.getElementById('pw').value||'').trim();
+    if(v==='12345'){lsSet(KEY,'1');unlock();}
     else{var e=document.getElementById('err');e.textContent='Incorrect passcode';gate.querySelector('.box').classList.add('shake');setTimeout(function(){gate.querySelector('.box').classList.remove('shake')},400);}
   }
   document.getElementById('enter').onclick=tryPw;
   document.getElementById('pw').addEventListener('keydown',function(e){if(e.key==='Enter')tryPw();});
+  if(lsGet(KEY)==='1'){unlock();}
 
   var fmtUSD=function(n){return '$'+(n||0).toLocaleString('en-US',{minimumFractionDigits:n<100?2:0,maximumFractionDigits:n<100?2:0});};
   var fmtN=function(n){return (n||0).toLocaleString('en-US');};
@@ -280,5 +282,4 @@
     // chart
     try{
       var ctx=document.getElementById('chart');
-      new Chart(ctx,{type:'bar',data:{labels:S.map(function(x){return x.name;}),datasets:[{data:S.map(function(x){return x.leads;}),backgroundColor:'rgba(205,165,92,.55)',borderColor:'#e4c079',borderWidth:1,borderRadius:5,maxBarThickness:34}]},
-        options:{plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return c.parsed.y+' in
+      new Chart(ctx,{type:'bar',data:{labels:S.map(function(x){return x.name;}),datasets:[{data:S.map(function(x){return x.leads;}),backgroundColor:'rgba(205,165,92,.55)',borderColor:'#e4c079',borderWidth:1,borderRadiu
