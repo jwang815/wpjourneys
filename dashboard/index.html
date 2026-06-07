@@ -217,4 +217,38 @@
       var x=S[r], xn=FOK?(+x.inquiries||0):null, xctr=x.impressions?(x.clicks/x.impressions*100):0, xcpi=(xn&&x.spend>0)?(x.spend/xn):null, badge='';
       if(xcpi!=null&&cpiVals.length>1&&xcpi===best)badge='<span class="badge b-top">Top</span>';
       else if(xcpi!=null&&cpiVals.length>1&&xcpi===worst)badge='<span class="badge b-watch">Watch</span>';
-      rh+='<a class
+      rh+='<a class="row" href="'+x.url+'" target="_blank" rel="noopener">'
+        +'<img class="thumb" src="'+x.img+'" alt="'+x.name+'" loading="lazy">'
+        +'<div class="nm"><span class="d">'+x.name+'</span><span class="t">'+x.tag+'</span>'+badge+'</div>'
+        +'<div class="cell c-imp"><div class="n">'+num(x.impressions)+'</div></div>'
+        +'<div class="cell c-clk"><div class="n">'+num(x.clicks)+'</div></div>'
+        +'<div class="cell c-ctr"><div class="n">'+(x.impressions?xctr.toFixed(2)+'%':'--')+'</div></div>'
+        +'<div class="cell"><div class="n">'+usd(x.spend)+'</div></div>'
+        +'<div class="cell cpl"><div class="n">'+(xn==null?'--':num(xn)+(xcpi!=null?' &middot; '+usd(xcpi):''))+'</div><div class="k">inq &middot; cost</div></div>'
+        +'</a>';
+    }
+    document.getElementById('rows').innerHTML=rh;
+
+    // ---- Read of the room ----
+    var ins=[];
+    if(T.s===0&&!(FOK&&inqTotal>0)){ins.push(['var(--mut)','Nothing has spent yet &mdash; this lights up once the ads are live and delivering.']);}
+    else{
+      if(FOK&&bars.length&&bars[0].n>0)ins.push(['var(--good)','<b>'+bars[0].name+'</b> leads with '+num(bars[0].n)+' inquiries'+(bars[0].ad?'':' (no ad for it yet)')+'.']);
+      if(FOK){
+        var otherSum=0,otherTxt=[];
+        for(var oi=0;oi<OTHER.length;oi++){otherSum+=+OTHER[oi].inquiries||0;otherTxt.push(OTHER[oi].name+' ('+num(OTHER[oi].inquiries)+')');}
+        if(otherSum>0)ins.push(['var(--gold2)','<b>'+num(otherSum)+' of '+num(inqTotal)+'</b> inquiries are for places we don&rsquo;t advertise yet: <b>'+otherTxt.join(', ')+'</b>. One ad click often turns into inquiries for other destinations &mdash; the ads work as a shop window.']);
+      }
+      if(best!=null){for(var bi=0;bi<S.length;bi++){if((+S[bi].inquiries||0)>0&&S[bi].spend>0&&S[bi].spend/S[bi].inquiries===best){ins.push(['var(--gold2)','Cheapest ad-destination inquiries: <b>'+S[bi].name+'</b> at '+usd(best)+' each.']);break;}}}
+      var dead=[];for(var di=0;di<S.length;di++){if(S[di].spend>15&&FOK&&(+S[di].inquiries||0)===0)dead.push(S[di].name);}
+      if(dead.length)ins.push(['var(--bad)','Spending without inquiries for their own destination yet: <b>'+dead.join(', ')+'</b>.']);
+      if(FOK)ins.push(['var(--sand)','Blended cost per inquiry is <b>'+(cpi!=null?usd(cpi):'--')+'</b> across '+num(inqTotal)+' inquiries'+(F.people?' from '+num(F.people)+' traveler'+(F.people===1?'':'s'):'')+'.']);
+      else ins.push(['var(--warn)','Inquiry feed is unreachable right now &mdash; media metrics only.']);
+    }
+    var ih='';for(var ii=0;ii<ins.length;ii++){ih+='<div class="iline"><span class="ic" style="background:'+ins[ii][0]+'"></span><span>'+ins[ii][1]+'</span></div>';}
+    document.getElementById('insight').innerHTML=ih;
+  }
+})();
+</script>
+</body>
+</html>

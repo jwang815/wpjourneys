@@ -35,12 +35,40 @@ export default async function handler(req, res) {
     if (f && f.ok) form = f;
   } catch (e) { /* form feed unreachable; inquiries render as unavailable, never as ad-attributed counts */ }
   const byDest = {};
-  if (form) for (const k of Object.keys(form.byDestination || {})) {
-    const n = norm(k);
-    byDest[n] = (byDest[n] || 0) + form.byDestination[k];
+  if (form) {
+    for (const k of Object.keys(form.byDestination || {})) {
+      const n = norm(k);
+      byDest[n] = (byDest[n] || 0) + form.byDestination[k];
+    }
   }
   const formMeta = form
     ? { ok:true, total:form.total||0, people:form.people||0, bySource:form.bySource||{}, lastLeadAt:form.lastLeadAt||null }
     : { ok:false };
   const otherInquiries = form
-    ? Obje
+    ? Object.keys(byDest).filter(k => !DESTS.some(d => d.name === k)).map(k => ({ name:k, inquiries:byDest[k] })).sort((a,b)=>b.inquiries-a.inquiries)
+    : [];
+
+  // 2) Meta media metrics per ad set.
+  if (!TOKEN) return res.status(200).json({ ...base, destinations:blank(), other_inquiries:otherInquiries, form:formMeta, note:'META_TOKEN not set' });
+  try {
+    const insUrl = `${API}/${CAMPAIGN_ID}/insights?level=adset&fields=adset_name,spend,impressions,reach,clicks,actions&date_preset=maximum&limit=100&access_token=${encodeURIComponent(TOKEN)}`;
+    const stUrl  = `${API}/${CAMPAIGN_ID}?fields=effective_status&access_token=${encodeURIComponent(TOKEN)}`;
+    const [ins, st] = await Promise.all([ fetch(insUrl).then(r=>r.json()), fetch(stUrl).then(r=>r.json()) ]);
+    if (ins.error) return res.status(200).json({ ...base, destinations:blank(), other_inquiries:otherInquiries, form:formMeta, note:'meta: '+(ins.error.message||'error') });
+    const by = {};
+    (ins.data||[]).forEach(row => {
+      const dn = (row.adset_name||'').split('|')[0].trim();
+      let metaLeads = 0;
+      (row.actions||[]).forEach(a => { if (a.action_type === 'offsite_conversion.fb_pixel_lead') metaLeads += parseFloat(a.value)||0; });
+      by[dn] = { spend:parseFloat(row.spend)||0, impressions:parseInt(row.impressions)||0, reach:parseInt(row.reach)||0, clicks:parseInt(row.clicks)||0, meta_leads:metaLeads };
+    });
+    const destinations = DESTS.map(d => ({
+      ...d, ...(by[d.name]||zero()),
+      inquiries: form ? (byDest[d.name]||0) : null   // form truth; null = feed down (never substitute ad attribution)
+    }));
+    const campaign_status = (st && st.effective_status === 'ACTIVE') ? 'ACTIVE' : 'PAUSED';
+    return res.status(200).json({ ...base, campaign_status, destinations, other_inquiries:otherInquiries, form:formMeta });
+  } catch (e) {
+    return res.status(200).json({ ...base, destinations:blank(), other_inquiries:otherInquiries, form:formMeta, note:'fetch_error' });
+  }
+}
