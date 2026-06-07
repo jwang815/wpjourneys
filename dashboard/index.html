@@ -47,6 +47,15 @@
   .kpi.hl .val{color:var(--gold2)}
   .pace{font-size:12px;color:var(--sand);margin:2px 0 26px}
   .pace b{color:var(--paper)}
+  .plats{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:26px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .pcard .pname{font-family:'Gloock',serif;font-size:18px}
+  .pcard .pname .tag{display:block;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-top:3px}
+  .pcard .pnums{display:flex;gap:20px;text-align:right}
+  .pcard .pn .v{font-family:'Gloock',serif;font-size:21px;color:var(--gold2)}
+  .pcard .pn .k{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-top:2px}
+  .pcard .pnote{flex-basis:100%;font-size:11px;color:var(--mut)}
+  @media(max-width:700px){.plats{grid-template-columns:1fr}}
   .grid2{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;margin-bottom:30px;align-items:start}
   .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
   .panel h2{font-family:'Gloock',serif;font-weight:400;font-size:17px;margin-bottom:4px}
@@ -115,6 +124,7 @@
   <div class="banner" id="banner" style="display:none"></div>
   <div class="kpis" id="kpis"></div>
   <div class="pace" id="pace"></div>
+  <div class="plats" id="plats"></div>
   <div class="grid2">
     <div class="panel">
       <h2>Inquiries by destination</h2>
@@ -132,12 +142,12 @@
   <div class="head-row"><span></span><span>Destination</span><span class="h-imp">Impr.</span><span class="h-clk">Clicks</span><span class="h-ctr">CTR</span><span>Spend</span><span>Inquiries</span></div>
   <div id="rows"></div>
   <footer>
-    <div><b>Inquiries</b> = website form submissions, counted by the destination the traveler selected &mdash; not ad-click attribution. Media: <b>Meta Ads</b>.</div>
+    <div><b>Inquiries</b> = website form submissions, counted by the destination the traveler selected &mdash; not ad-click attribution. Source split via click IDs (fbclid/gclid). Media: <b>Meta Ads</b> live + <b>Google Ads</b> synced hourly.</div>
     <div><b>Internal</b> &mdash; please keep within the team</div>
   </footer>
 </div>
 
-<script id="wpj-data" type="application/json">{"updated":"2026-06-05T05:30:00Z","campaign_status":"PAUSED","daily_budget":33,"currency":"USD","window":"Since launch","form":{"ok":false},"other_inquiries":[],"destinations":[{"name":"Socotra","tag":"The Alien Island","img":"/images/ads/AD_Socotra_4x5.jpg","url":"https://wpjourneys.com/socotra/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Turkmenistan","tag":"Door to Hell","img":"/images/ads/AD_Turkmenistan_4x5.jpg","url":"https://wpjourneys.com/turkmenistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Pakistan","tag":"The Karakoram","img":"/images/ads/AD_Pakistan_4x5.jpg","url":"https://wpjourneys.com/pakistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Mongolia","tag":"Eternal Sky","img":"/images/ads/AD_Mongolia_4x5.jpg","url":"https://wpjourneys.com/mongolia-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Libya","tag":"Roman Africa","img":"/images/ads/AD_Libya_4x5.jpg","url":"https://wpjourneys.com/libya-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Custom","tag":"Anywhere on Earth","img":"/images/ads/AD_Custom_4x5.jpg","url":"https://wpjourneys.com/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null}]}</script>
+<script id="wpj-data" type="application/json">{"updated":"2026-06-05T05:30:00Z","campaign_status":"PAUSED","daily_budget":66,"currency":"USD","window":"Since launch","form":{"ok":false},"other_inquiries":[],"google_spend":null,"destinations":[{"name":"Socotra","tag":"The Alien Island","img":"/images/ads/AD_Socotra_4x5.jpg","url":"https://wpjourneys.com/socotra/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Turkmenistan","tag":"Door to Hell","img":"/images/ads/AD_Turkmenistan_4x5.jpg","url":"https://wpjourneys.com/turkmenistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Pakistan","tag":"The Karakoram","img":"/images/ads/AD_Pakistan_4x5.jpg","url":"https://wpjourneys.com/pakistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Mongolia","tag":"Eternal Sky","img":"/images/ads/AD_Mongolia_4x5.jpg","url":"https://wpjourneys.com/mongolia-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Libya","tag":"Roman Africa","img":"/images/ads/AD_Libya_4x5.jpg","url":"https://wpjourneys.com/libya-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Custom","tag":"Anywhere on Earth","img":"/images/ads/AD_Custom_4x5.jpg","url":"https://wpjourneys.com/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null}]}</script>
 
 <script>
 (function(){
@@ -173,11 +183,13 @@
     document.getElementById('statusDot').className='dot'+(live?' live':'');
     document.getElementById('statusTxt').textContent=live?'Live':'Paused';
     document.getElementById('updated').textContent=ago(d.updated);
-    var D=d.destinations||[], F=d.form||{ok:false}, FOK=!!F.ok, OTHER=d.other_inquiries||[];
+    var D=d.destinations||[], F=d.form||{ok:false}, FOK=!!F.ok, OTHER=d.other_inquiries||[], G=d.google_spend||null;
     var T={s:0,i:0,c:0};
     for(var k=0;k<D.length;k++){T.s+=+D[k].spend||0;T.i+=+D[k].impressions||0;T.c+=+D[k].clicks||0;}
+    var gSpend=G?(+G.total||0):null;
+    var allSpend=T.s+(gSpend||0);
     var inqTotal=FOK?(+F.total||0):null;
-    var ctr=T.i?(T.c/T.i*100):0, cpi=(FOK&&inqTotal>0)?(T.s/inqTotal):null;
+    var ctr=T.i?(T.c/T.i*100):0, cpi=(FOK&&inqTotal>0)?(allSpend/inqTotal):null;
 
     var bn=document.getElementById('banner'), bnotes=[];
     if(!live)bnotes.push('<b>Campaign is paused.</b>&nbsp;Metrics start flowing within ~1 hour of going live.');
@@ -186,13 +198,31 @@
     if(bnotes.length){bn.style.display='block';bn.className='banner'+(FOK?'':' warn');bn.innerHTML=bnotes.join(' ');}
     else{bn.style.display='none';}
 
-    var kpis=[['Spend',usd(T.s),0],['Inquiries',FOK?num(inqTotal):'--',1],['Cost / Inquiry',cpi!=null?usd(cpi):'--',1],['Impressions',num(T.i),0],['Link Clicks',num(T.c),0],['CTR',T.i?ctr.toFixed(2)+'%':'--',0]];
+    var kpis=[['Spend',usd(allSpend),0],['Inquiries',FOK?num(inqTotal):'--',1],['Cost / Inquiry',cpi!=null?usd(cpi):'--',1],['Impressions',num(T.i),0],['Link Clicks',num(T.c),0],['CTR',T.i?ctr.toFixed(2)+'%':'--',0]];
     var kh='';for(var a=0;a<kpis.length;a++){kh+='<div class="kpi'+(kpis[a][2]?' hl':'')+'"><div class="lab">'+kpis[a][0]+'</div><div class="val">'+kpis[a][1]+'</div></div>';}
     document.getElementById('kpis').innerHTML=kh;
     var paceBits=['Daily budget <b>'+usd(d.daily_budget)+'</b>',(d.window||'Since launch'),'US &middot; Canada &middot; Australia &middot; New Zealand'];
     if(FOK&&F.people)paceBits.push('<b>'+num(inqTotal)+'</b> inquiries from <b>'+num(F.people)+'</b> traveler'+(F.people===1?'':'s'));
     if(FOK&&F.bySource)paceBits.push('Source: Meta '+num(F.bySource.meta||0)+' &middot; Google '+num(F.bySource.google||0)+' &middot; Other '+num(F.bySource.other||0));
     document.getElementById('pace').innerHTML=paceBits.join(' &nbsp;&middot;&nbsp; ');
+
+    // ---- Meta vs Google platform cards (spend from each platform, inquiries from the form's click IDs) ----
+    var bs=FOK?(F.bySource||{}):{};
+    var mInq=FOK?(+bs.meta||0):null, gInq=FOK?(+bs.google||0):null, oInq=FOK?(+bs.other||0):null;
+    var mCpi=(mInq>0)?(T.s/mInq):null, gCpi=(gSpend!=null&&gInq>0)?(gSpend/gInq):null;
+    function pcard(name,tag,spendTxt,inq,cpiV,note){
+      return '<div class="pcard"><div class="pname">'+name+'<span class="tag">'+tag+'</span></div>'
+        +'<div class="pnums">'
+        +'<div class="pn"><div class="v">'+spendTxt+'</div><div class="k">spend</div></div>'
+        +'<div class="pn"><div class="v">'+(inq==null?'--':num(inq))+'</div><div class="k">inquiries</div></div>'
+        +'<div class="pn"><div class="v">'+(cpiV!=null?usd(cpiV):'--')+'</div><div class="k">cost / inq</div></div>'
+        +'</div>'+(note?'<div class="pnote">'+note+'</div>':'')+'</div>';
+    }
+    var gNote=(gSpend==null)?'Spend syncs hourly from Google Ads &mdash; first sync pending.':(G&&G.at?'Spend synced '+ago(G.at)+'.':'');
+    var mNote=(oInq>0)?num(oInq)+' further inquir'+(oInq===1?'y':'ies')+' arrived untracked (direct/organic, or an ad click from an earlier visit).':'';
+    document.getElementById('plats').innerHTML=
+      pcard('Meta','Facebook &amp; Instagram',usd(T.s),mInq,mCpi,mNote)
+      +pcard('Google','Search ads',(gSpend!=null?usd(gSpend):'--'),gInq,gCpi,gNote);
 
     // ---- Inquiries by destination: form truth (ads + not-yet-advertised places) ----
     var bars=[];

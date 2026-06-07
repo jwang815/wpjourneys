@@ -26,7 +26,7 @@ const norm = k => /^custom/i.test(String(k).trim()) ? 'Custom' : String(k).trim(
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=900');
   const TOKEN = process.env.META_TOKEN;
-  const base = { updated:new Date().toISOString(), campaign_status:'PAUSED', daily_budget:33, currency:'USD', window:'Since launch' };
+  const base = { updated:new Date().toISOString(), campaign_status:'PAUSED', daily_budget:66, currency:'USD', window:'Since launch' }; // $33 Meta + $33 Google
 
   // 1) Form truth (inquiries by requested destination) — independent of Meta.
   let form = null;
@@ -44,17 +44,21 @@ export default async function handler(req, res) {
   const formMeta = form
     ? { ok:true, total:form.total||0, people:form.people||0, bySource:form.bySource||{}, lastLeadAt:form.lastLeadAt||null }
     : { ok:false };
+  // Google spend, pushed hourly by the "WPJ Spend Sync" Google Ads Script (no Ads API here).
+  const googleSpend = (form && form.googleSpend && typeof form.googleSpend.total === 'number')
+    ? { total:form.googleSpend.total, today:form.googleSpend.today||0, yesterday:form.googleSpend.yesterday||0, at:form.googleSpend.at||null }
+    : null;
   const otherInquiries = form
     ? Object.keys(byDest).filter(k => !DESTS.some(d => d.name === k)).map(k => ({ name:k, inquiries:byDest[k] })).sort((a,b)=>b.inquiries-a.inquiries)
     : [];
 
   // 2) Meta media metrics per ad set.
-  if (!TOKEN) return res.status(200).json({ ...base, destinations:blank(), other_inquiries:otherInquiries, form:formMeta, note:'META_TOKEN not set' });
+  if (!TOKEN) return res.status(200).json({ ...base, destinations:blank(), other_inquiries:otherInquiries, form:formMeta, google_spend:googleSpend, note:'META_TOKEN not set' });
   try {
     const insUrl = `${API}/${CAMPAIGN_ID}/insights?level=adset&fields=adset_name,spend,impressions,reach,clicks,actions&date_preset=maximum&limit=100&access_token=${encodeURIComponent(TOKEN)}`;
     const stUrl  = `${API}/${CAMPAIGN_ID}?fields=effective_status&access_token=${encodeURIComponent(TOKEN)}`;
     const [ins, st] = await Promise.all([ fetch(insUrl).then(r=>r.json()), fetch(stUrl).then(r=>r.json()) ]);
-    if (ins.error) return res.status(200).json({ ...base, destinations:blank(), other_inquiries:otherInquiries, form:formMeta, note:'meta: '+(ins.error.message||'error') });
+    if (ins.error) return res.status(200).json({ ...base, destinations:blank(), other_inquiries:otherInquiries, form:formMeta, google_spend:googleSpend, note:'meta: '+(ins.error.message||'error') });
     const by = {};
     (ins.data||[]).forEach(row => {
       const dn = (row.adset_name||'').split('|')[0].trim();
@@ -67,8 +71,8 @@ export default async function handler(req, res) {
       inquiries: form ? (byDest[d.name]||0) : null   // form truth; null = feed down (never substitute ad attribution)
     }));
     const campaign_status = (st && st.effective_status === 'ACTIVE') ? 'ACTIVE' : 'PAUSED';
-    return res.status(200).json({ ...base, campaign_status, destinations, other_inquiries:otherInquiries, form:formMeta });
+    return res.status(200).json({ ...base, campaign_status, destinations, other_inquiries:otherInquiries, form:formMeta, google_spend:googleSpend });
   } catch (e) {
-    return res.status(200).json({ ...base, destinations:blank(), other_inquiries:otherInquiries, form:formMeta, note:'fetch_error' });
+    return res.status(200).json({ ...base, destinations:blank(), other_inquiries:otherInquiries, form:formMeta, google_spend:googleSpend, note:'fetch_error' });
   }
 }
