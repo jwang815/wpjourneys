@@ -21,7 +21,7 @@
   /* Replace each __PLACEHOLDER__ with the real value (see MARKETING.md §IDs).  */
   var CFG = {
     META_PIXEL_ID:         '1025894849786420',         // e.g. '1234567890123456'
-    GA4_ID:                '__GA4_MEASUREMENT_ID__',     // e.g. 'G-XXXXXXXXXX'
+    GA4_ID:                'G-L363W4XVF0',     // e.g. 'G-XXXXXXXXXX'
     GOOGLE_ADS_ID:         'AW-18219996111',          // e.g. 'AW-XXXXXXXXXX'
     GOOGLE_ADS_LEAD_LABEL: 'KZ-JCKDRrLocEM-n_O9D',  // Ads conversion label for the Lead action
     LEAD_ENDPOINT:         'https://script.google.com/macros/s/AKfycbxLuT6oryPqymAZFXjAVqTdoqebEXKn507IiUMmOccD4P9LaGN6C2FkG2GFQ7pJMXMsEw/exec', // Apps Script web-app /exec URL (lead delivery + CAPI)
