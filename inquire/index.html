@@ -313,6 +313,21 @@
                         data-i18n-placeholder="inq_ph_message" placeholder="Optional — tell us what you have in mind."></textarea>
             </div>
 
+            <div class="field">
+              <label for="f-heard">How did you hear about us? (optional)</label>
+              <select id="f-heard" name="heard">
+                <option value="">Select…</option>
+                <option value="Google search">Google search</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Friend / word of mouth">Friend or word of mouth</option>
+                <option value="Saw your ad">Saw your ad somewhere</option>
+                <option value="News / article / blog">News, article or blog</option>
+                <option value="Travel forum / Reddit">Travel forum or Reddit</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
             <!-- hidden attribution (auto-filled from URL / cookie on load) -->
             <input type="hidden" name="utm_source" /><input type="hidden" name="utm_medium" />
             <input type="hidden" name="utm_campaign" /><input type="hidden" name="utm_content" />
@@ -503,6 +518,7 @@
         group_size: form.elements['group_size'].value.trim(),
         budget: form.elements['budget'].value,
         message: form.elements['message'].value.trim(),
+        heard: form.elements['heard'] ? form.elements['heard'].value : '',
         utm_source: form.elements['utm_source'].value,
         utm_medium: form.elements['utm_medium'].value,
         utm_campaign: form.elements['utm_campaign'].value,

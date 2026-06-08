@@ -42,7 +42,8 @@ export default async function handler(req, res) {
     }
   }
   const formMeta = form
-    ? { ok:true, total:form.total||0, people:form.people||0, bySource:form.bySource||{}, lastLeadAt:form.lastLeadAt||null }
+    ? { ok:true, total:form.total||0, people:form.people||0, bySource:form.bySource||{},
+        otherBreakdown:form.otherBreakdown||null, heardAbout:form.heardAbout||null, lastLeadAt:form.lastLeadAt||null }
     : { ok:false };
   // Google spend, pushed hourly by the "WPJ Spend Sync" Google Ads Script (no Ads API here).
   const googleSpend = (form && form.googleSpend && typeof form.googleSpend.total === 'number')

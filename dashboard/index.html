@@ -216,7 +216,7 @@
     document.getElementById('kpis').innerHTML=kh;
     var paceBits=['Daily budget <b>'+usd(d.daily_budget)+'</b>',(d.window||'Since launch'),'US &middot; Canada &middot; Australia &middot; New Zealand'];
     if(FOK&&F.people)paceBits.push('<b>'+num(inqTotal)+'</b> inquiries from <b>'+num(F.people)+'</b> traveler'+(F.people===1?'':'s'));
-    if(FOK&&F.bySource)paceBits.push('Source: Meta '+num(F.bySource.meta||0)+' &middot; Google '+num(F.bySource.google||0)+' &middot; Other '+num(F.bySource.other||0));
+    if(FOK&&F.bySource){var sb=['Meta '+num(F.bySource.meta||0),'Google '+num(F.bySource.google||0)];var ob=F.otherBreakdown;if(ob){var lbl={direct:'Direct',organicSearch:'Organic',social:'Social',referral:'Referral'};var any=false;['direct','organicSearch','social','referral'].forEach(function(k){if((+ob[k]||0)>0){sb.push(lbl[k]+' '+num(ob[k]));any=true;}});if(!any&&(+F.bySource.other||0)>0)sb.push('Other '+num(F.bySource.other));}else if((+F.bySource.other||0)>0){sb.push('Other '+num(F.bySource.other));}paceBits.push('Source: '+sb.join(' &middot; '));}
     document.getElementById('pace').innerHTML=paceBits.join(' &nbsp;&middot;&nbsp; ');
 
     // ---- Meta vs Google platform cards (spend from each platform, inquiries from the form's click IDs) ----
@@ -309,6 +309,7 @@
       var dead=[];for(var di=0;di<S.length;di++){if(S[di].spend>15&&FOK&&(+S[di].inquiries||0)===0)dead.push(S[di].name);}
       if(dead.length)ins.push(['var(--bad)','Spending without inquiries for their own destination yet: <b>'+dead.join(', ')+'</b>.']);
       if(FOK)ins.push(['var(--sand)','Blended cost per inquiry is <b>'+(cpi!=null?usd(cpi):'--')+'</b> across '+num(inqTotal)+' inquiries'+(F.people?' from '+num(F.people)+' traveler'+(F.people===1?'':'s'):'')+'.']);
+      if(FOK&&F.heardAbout){var hk=Object.keys(F.heardAbout);if(hk.length){hk.sort(function(a,b){return F.heardAbout[b]-F.heardAbout[a];});var htxt=hk.slice(0,4).map(function(k){return k+' ('+num(F.heardAbout[k])+')';}).join(', ');ins.push(['var(--gold2)','Self-reported &mdash; travelers heard via: <b>'+htxt+'</b>.']);}}
       else ins.push(['var(--warn)','Inquiry feed is unreachable right now &mdash; media metrics only.']);
     }
     var ih='';for(var ii=0;ii<ins.length;ii++){ih+='<div class="iline"><span class="ic" style="background:'+ins[ii][0]+'"></span><span>'+ins[ii][1]+'</span></div>';}
