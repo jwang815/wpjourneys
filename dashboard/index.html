@@ -88,6 +88,13 @@
   .cell .n{font-size:15px;font-weight:600}
   .cell .k{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-top:2px}
   .cell.cpl .n{color:var(--gold2)}
+  .ghead{display:grid;grid-template-columns:1.9fr repeat(5,1fr);gap:12px;padding:0 15px 6px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--mut)}
+  .ghead span{text-align:right}
+  .ghead span:first-child{text-align:left}
+  .grow{display:grid;grid-template-columns:1.9fr repeat(5,1fr);gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:13px 15px;margin-bottom:11px}
+  .grow .gn{font-family:'Gloock',serif;font-size:16px}
+  .grow .gn .gs{display:block;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-top:2px}
+  @media(max-width:920px){.ghead,.grow{grid-template-columns:1.6fr repeat(3,1fr)}.gc-imp,.gc-clk{display:none}}
   footer{margin-top:40px;border-top:1px solid var(--line);padding-top:18px;font-size:11.5px;color:var(--mut);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   footer b{color:var(--sand)}
   @media(max-width:920px){.kpis{grid-template-columns:repeat(3,1fr)}.grid2{grid-template-columns:1fr}.head-row,.row{grid-template-columns:48px 1.4fr repeat(3,1fr)}.c-imp,.c-clk,.h-imp,.h-clk{display:none}}
@@ -141,6 +148,12 @@
   <div class="sectsub">Media from Meta; inquiries matched to each ad's destination from the form. Tap a card to open its landing page.</div>
   <div class="head-row"><span></span><span>Destination</span><span class="h-imp">Impr.</span><span class="h-clk">Clicks</span><span class="h-ctr">CTR</span><span>Spend</span><span>Inquiries</span></div>
   <div id="rows"></div>
+  <div id="gsec" style="display:none">
+    <div class="secttl" style="margin-top:26px">Google Search campaigns</div>
+    <div class="sectsub">Synced hourly from the Google Ads account. Conversions = Google's "Inquiry" tag.</div>
+    <div class="ghead"><span>Campaign</span><span class="gc-imp">Impr.</span><span class="gc-clk">Clicks</span><span>CTR</span><span>Spend</span><span>Conv.</span></div>
+    <div id="grows"></div>
+  </div>
   <footer>
     <div><b>Inquiries</b> = website form submissions, counted by the destination the traveler selected &mdash; not ad-click attribution. Source split via click IDs (fbclid/gclid). Media: <b>Meta Ads</b> live + <b>Google Ads</b> synced hourly.</div>
     <div><b>Internal</b> &mdash; please keep within the team</div>
@@ -258,6 +271,29 @@
         +'</a>';
     }
     document.getElementById('rows').innerHTML=rh;
+
+    // ---- Google Search campaigns (synced hourly via Ads Script) ----
+    var GC=(G&&G.campaigns)||[];
+    var gsec=document.getElementById('gsec');
+    if(GC.length){
+      gsec.style.display='block';
+      var GS=GC.slice().sort(function(x,y){return (+y.cost||0)-(+x.cost||0);});
+      var gh='';
+      for(var gi=0;gi<GS.length;gi++){
+        var g=GS[gi], gctr=g.impressions?(g.clicks/g.impressions*100):0;
+        var gname=String(g.name||'').replace(/^WJ \| /,'').replace(/ \| Search$/,'');
+        var conv=+g.conversions||0; var convTxt=(conv%1===0)?num(conv):conv.toFixed(1);
+        gh+='<div class="grow">'
+          +'<div class="gn">'+gname+'<span class="gs">'+(g.enabled===false?'Paused':'Live')+(g.today!=null?' &middot; '+usd(+g.today||0)+' today':'')+'</span></div>'
+          +'<div class="cell gc-imp"><div class="n">'+num(g.impressions)+'</div></div>'
+          +'<div class="cell gc-clk"><div class="n">'+num(g.clicks)+'</div></div>'
+          +'<div class="cell"><div class="n">'+(g.impressions?gctr.toFixed(2)+'%':'--')+'</div></div>'
+          +'<div class="cell"><div class="n">'+usd(+g.cost||0)+'</div></div>'
+          +'<div class="cell cpl"><div class="n">'+convTxt+'</div></div>'
+          +'</div>';
+      }
+      document.getElementById('grows').innerHTML=gh;
+    }else{gsec.style.display='none';}
 
     // ---- Read of the room ----
     var ins=[];

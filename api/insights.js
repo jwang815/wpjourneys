@@ -46,7 +46,8 @@ export default async function handler(req, res) {
     : { ok:false };
   // Google spend, pushed hourly by the "WPJ Spend Sync" Google Ads Script (no Ads API here).
   const googleSpend = (form && form.googleSpend && typeof form.googleSpend.total === 'number')
-    ? { total:form.googleSpend.total, today:form.googleSpend.today||0, yesterday:form.googleSpend.yesterday||0, at:form.googleSpend.at||null }
+    ? { total:form.googleSpend.total, today:form.googleSpend.today||0, yesterday:form.googleSpend.yesterday||0, at:form.googleSpend.at||null,
+        campaigns:Array.isArray(form.googleSpend.campaigns)?form.googleSpend.campaigns:[] }
     : null;
   const otherInquiries = form
     ? Object.keys(byDest).filter(k => !DESTS.some(d => d.name === k)).map(k => ({ name:k, inquiries:byDest[k] })).sort((a,b)=>b.inquiries-a.inquiries)
