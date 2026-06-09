@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_moldova_tag": { "en": "Moldova & Transnistria", "zh": "摩尔多瓦与德涅斯特河沿岸" },
+  "expedition_moldova_name": { "en": "Where Empires End", "zh": "帝国终结之处" },
+  "expedition_moldova_subtitle": { "en": "Soviet Ghosts & Underground Wine", "zh": "苏联幽灵与地下美酒" },
+  "expedition_moldova_desc": { "en": "A 4-day expedition through Europe's least-visited corner — the unrecognised breakaway republic of Transnistria, the world's largest underground wine city at Mileștii Mici, the cave monastery of Orheiul Vechi, and Chișinău. Our most affordable expedition.", "zh": "一段 4 天的探险，穿越欧洲访客最少的角落——不被承认的分离共和国德涅斯特河沿岸、米列什蒂米茨世界最大的地下酒城、奥尔黑旧城的岩洞修道院，以及基希讷乌。我们最实惠的探险。" },
+  "expedition_moldova_dates": { "en": "4 Days", "zh": "4 天" },
+  "expedition_moldova_price": { "en": "From $695", "zh": "起价 $695" },
+  "expedition_moldova_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_caribbean_tag": { "en": "Nine Islands, Thirteen Days", "zh": "九岛十三天" },
   "expedition_caribbean_name": { "en": "The Caribbean Arc", "zh": "加勒比之弧" },
   "expedition_caribbean_subtitle": { "en": "The Full Length of the Lesser Antilles", "zh": "纵贯小安的列斯群岛" },
