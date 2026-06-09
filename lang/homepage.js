@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_gorilla_tag": { "en": "Burundi · Rwanda · Uganda · DRC", "zh": "布隆迪 · 卢旺达 · 乌干达 · 刚果（金）" },
+  "expedition_gorilla_name": { "en": "Where the Volcanoes Meet", "zh": "群山交汇之地" },
+  "expedition_gorilla_subtitle": { "en": "Gorillas, Lava Lakes & the Three-Country Peak", "zh": "大猩猩、熔岩湖与三国之巅" },
+  "expedition_gorilla_desc": { "en": "A 10-day Albertine Rift expedition — mountain gorillas in Rwanda and Bwindi, an active lava lake on Nyiragongo, golden monkeys, and the summit of Mt Sabyinyo where three countries touch. All permits included.", "zh": "一段 10 天的阿尔伯丁裂谷探险——卢旺达与布温迪的山地大猩猩、尼拉贡戈的活跃熔岩湖、金丝猴，以及三国相接的萨比尼奥山峰顶。所有许可证全含。" },
+  "expedition_gorilla_dates": { "en": "10 Days", "zh": "10 天" },
+  "expedition_gorilla_price": { "en": "From $3,995", "zh": "起价 $3,995" },
+  "expedition_gorilla_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_maya_tag": { "en": "El Salvador · Guatemala · Honduras", "zh": "萨尔瓦多 · 危地马拉 · 洪都拉斯" },
   "expedition_maya_name": { "en": "The Maya Corridor", "zh": "玛雅走廊" },
   "expedition_maya_subtitle": { "en": "Volcanoes, Ruins & the Acatenango Overnight", "zh": "火山、遗迹与阿卡特南戈夜宿" },
