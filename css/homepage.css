@@ -1390,10 +1390,7 @@ picture{display:contents}
       align-items: center;
       gap: 9px;
       width: 100%;
-      max-height: 52vh;
-      overflow-y: auto;
       margin-top: 6px;
-      -webkit-overflow-scrolling: touch;
     }
     .m-exp-list.open { display: flex; }
     .m-exp-cont {
@@ -1418,8 +1415,9 @@ picture{display:contents}
     @media (max-width: 900px) {
       .mobile-menu {
         justify-content: flex-start;
-        padding: 96px 24px 40px;
+        padding: 96px 24px calc(64px + env(safe-area-inset-bottom));
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         gap: 22px;
       }
       .nav-dd-menu { display: none !important; }
