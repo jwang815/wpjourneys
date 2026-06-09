@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_maya_tag": { "en": "El Salvador · Guatemala · Honduras", "zh": "萨尔瓦多 · 危地马拉 · 洪都拉斯" },
+  "expedition_maya_name": { "en": "The Maya Corridor", "zh": "玛雅走廊" },
+  "expedition_maya_subtitle": { "en": "Volcanoes, Ruins & the Acatenango Overnight", "zh": "火山、遗迹与阿卡特南戈夜宿" },
+  "expedition_maya_desc": { "en": "A 7-day expedition across three countries — the Santa Ana crater, colonial Antigua, the overnight Acatenango hike beside erupting Fuego, the Black Christ of Esquipulas, and the Maya carvings of Copán.", "zh": "一段 7 天、横跨三国的探险——圣安娜火山口、殖民古城安提瓜、在富埃戈喷发旁的阿卡特南戈夜宿徒步、埃斯基普拉斯的黑基督，以及科潘的玛雅雕刻。" },
+  "expedition_maya_dates": { "en": "7 Days", "zh": "7 天" },
+  "expedition_maya_price": { "en": "From $2,295", "zh": "起价 $2,295" },
+  "expedition_maya_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_china_tag": { "en": "The Middle Kingdom", "zh": "中央之国" },
   "expedition_china_name": { "en": "China", "zh": "中国" },
   "expedition_china_subtitle": { "en": "Pandas, Avatar Mountains & the Great Wall", "zh": "熊猫、阿凡达群峰与长城" },
