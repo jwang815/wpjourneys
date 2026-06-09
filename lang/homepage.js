@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_centralasia_tag": { "en": "Steppe, Summit & the Silk Road", "zh": "草原、峰巅与丝绸之路" },
+  "expedition_centralasia_name": { "en": "4 Stans of Central Asia", "zh": "中亚四国" },
+  "expedition_centralasia_subtitle": { "en": "Kazakhstan, Kyrgyzstan, Tajikistan & Uzbekistan", "zh": "哈萨克、吉尔吉斯、塔吉克与乌兹别克" },
+  "expedition_centralasia_desc": { "en": "An 18-day Silk Road expedition across four countries — Charyn Canyon, Kyrgyz eagle hunters, the Seven Lakes of Tajikistan, and the turquoise domes of Samarkand, Bukhara, and Khiva. Optional Turkmenistan extension.", "zh": "一段 18 天、横跨四国的丝绸之路探险——恰伦峡谷、吉尔吉斯猎鹰人、塔吉克七湖，以及撒马尔罕、布哈拉与希瓦的蓝顶。可选土库曼斯坦延展线。" },
+  "expedition_centralasia_dates": { "en": "18 Days", "zh": "18 天" },
+  "expedition_centralasia_price": { "en": "From $5,995", "zh": "起价 $5,995" },
+  "expedition_centralasia_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_gorilla_tag": { "en": "Burundi · Rwanda · Uganda · DRC", "zh": "布隆迪 · 卢旺达 · 乌干达 · 刚果（金）" },
   "expedition_gorilla_name": { "en": "Where the Volcanoes Meet", "zh": "群山交汇之地" },
   "expedition_gorilla_subtitle": { "en": "Gorillas, Lava Lakes & the Three-Country Peak", "zh": "大猩猩、熔岩湖与三国之巅" },
