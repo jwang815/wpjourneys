@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_china_tag": { "en": "The Middle Kingdom", "zh": "中央之国" },
+  "expedition_china_name": { "en": "China", "zh": "中国" },
+  "expedition_china_subtitle": { "en": "Pandas, Avatar Mountains & the Great Wall", "zh": "熊猫、阿凡达群峰与长城" },
+  "expedition_china_desc": { "en": "A 14-day private luxury expedition across the greatest contrasts in Asia — pandas in Chengdu, the vertical city of Chongqing, the Avatar peaks of Zhangjiajie, the Li River karst, the Terracotta Army, and the Great Wall.", "zh": "一段 14 天的私人奢华探险，纵贯亚洲最极致的反差——成都的熊猫、垂直之城重庆、张家界的阿凡达群峰、漓江喀斯特、兵马俑，以及长城。" },
+  "expedition_china_dates": { "en": "14 Days", "zh": "14 天" },
+  "expedition_china_price": { "en": "From $8,995", "zh": "起价 $8,995" },
+  "expedition_china_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_maghreb_tag": { "en": "Rome, Sand & the Maghreb", "zh": "罗马、黄沙与马格里布" },
   "expedition_maghreb_name": { "en": "Tunisia & Algeria", "zh": "突尼斯与阿尔及利亚" },
   "expedition_maghreb_subtitle": { "en": "Dougga, El Jem, Timgad & Constantine", "zh": "杜加、埃尔杰姆、提姆加德与君士坦丁" },
