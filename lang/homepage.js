@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_maghreb_tag": { "en": "Rome, Sand & the Maghreb", "zh": "罗马、黄沙与马格里布" },
+  "expedition_maghreb_name": { "en": "Tunisia & Algeria", "zh": "突尼斯与阿尔及利亚" },
+  "expedition_maghreb_subtitle": { "en": "Dougga, El Jem, Timgad & Constantine", "zh": "杜加、埃尔杰姆、提姆加德与君士坦丁" },
+  "expedition_maghreb_desc": { "en": "Two companion 8-day expeditions across the two halves of Roman Africa — Dougga, El Jem, Carthage, and the Sahara in Tunisia; Timgad, Djemila, Tipaza, and the gorge-city of Constantine in Algeria. Among the finest Roman cities almost nobody visits.", "zh": "两段姊妹式 8 天探险，纵贯罗马阿非利加的两半——突尼斯的杜加、埃尔杰姆、迦太基与撒哈拉；阿尔及利亚的提姆加德、杰米拉、蒂帕萨与峡谷之城君士坦丁。皆为几乎无人造访的顶级罗马古城。" },
+  "expedition_maghreb_dates": { "en": "8 + 8 Days", "zh": "8 + 8 天" },
+  "expedition_maghreb_price": { "en": "From $2,295", "zh": "起价 $2,295" },
+  "expedition_maghreb_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_guianas_tag": { "en": "Guyana & Suriname", "zh": "圭亚那与苏里南" },
   "expedition_guianas_name": { "en": "The Forgotten Coast", "zh": "被遗忘的海岸" },
   "expedition_guianas_subtitle": { "en": "Kaieteur Falls & the Amazonian Interior", "zh": "凯厄图尔瀑布与亚马逊腹地" },
