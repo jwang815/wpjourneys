@@ -1272,19 +1272,24 @@ picture{display:contents}
     /* ========== CONTINENT GROUPS (expeditions) ========== */
     .continent-group {
       max-width: 1400px;
-      margin: 0 auto 76px;
+      margin: 0 auto;
+      padding-top: 110px;
     }
-    .continent-group:last-child { margin-bottom: 0; }
+    .continent-group:first-child { padding-top: 0; }
     .continent-heading {
       font-family: var(--font-display);
       font-size: clamp(1.5rem, 2.6vw, 2rem);
       font-weight: 500;
       color: var(--gold);
       letter-spacing: 0.02em;
-      margin-bottom: 30px;
-      padding-bottom: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 16px;
       border-bottom: 1px solid rgba(196, 148, 74, 0.25);
       scroll-margin-top: 120px;
+    }
+    @media (max-width: 900px) {
+      .continent-group { padding-top: 72px; }
+      .continent-heading { margin-bottom: 28px; }
     }
 
     /* ========== DESKTOP NAV DROPDOWN ========== */
