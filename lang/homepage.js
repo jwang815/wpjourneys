@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_mauritius_tag": { "en": "Indian Ocean Luxury", "zh": "印度洋奢华" },
+  "expedition_mauritius_name": { "en": "Mauritius", "zh": "毛里求斯" },
+  "expedition_mauritius_subtitle": { "en": "Lagoons, Seven Coloured Earth & Quiet Luxury", "zh": "泻湖、七色土与静谧奢华" },
+  "expedition_mauritius_desc": { "en": "A 4-day romantic island escape — turquoise lagoons, Île aux Cerfs, the Seven Coloured Earth of Chamarel, Le Morne, and the finest resort hospitality in the Indian Ocean. Pairs beautifully with Madagascar.", "zh": "一段 4 天的浪漫海岛之旅——碧蓝泻湖、鹿岛、夏马雷尔七色土、勒莫纳，以及印度洋最出色的度假村款待。与马达加斯加完美搭配。" },
+  "expedition_mauritius_dates": { "en": "4 Days", "zh": "4 天" },
+  "expedition_mauritius_price": { "en": "From $1,995", "zh": "起价 $1,995" },
+  "expedition_mauritius_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_centralasia_tag": { "en": "Steppe, Summit & the Silk Road", "zh": "草原、峰巅与丝绸之路" },
   "expedition_centralasia_name": { "en": "4 Stans of Central Asia", "zh": "中亚四国" },
   "expedition_centralasia_subtitle": { "en": "Kazakhstan, Kyrgyzstan, Tajikistan & Uzbekistan", "zh": "哈萨克、吉尔吉斯、塔吉克与乌兹别克" },
