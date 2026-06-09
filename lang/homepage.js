@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_guianas_tag": { "en": "Guyana & Suriname", "zh": "圭亚那与苏里南" },
+  "expedition_guianas_name": { "en": "The Forgotten Coast", "zh": "被遗忘的海岸" },
+  "expedition_guianas_subtitle": { "en": "Kaieteur Falls & the Amazonian Interior", "zh": "凯厄图尔瀑布与亚马逊腹地" },
+  "expedition_guianas_desc": { "en": "A 6-day expedition through the most overlooked corner of South America — Kaieteur Falls by private charter, UNESCO-listed Paramaribo, and a river journey deep into untouched Amazonian rainforest.", "zh": "一段 6 天的探险，穿越南美大陆最被忽视的角落——乘私人包机俯瞰凯厄图尔瀑布、世界遗产帕拉马里博，以及一段深入未受扰动亚马逊雨林的河上旅程。" },
+  "expedition_guianas_dates": { "en": "6 Days", "zh": "6 天" },
+  "expedition_guianas_price": { "en": "From $2,495", "zh": "起价 $2,495" },
+  "expedition_guianas_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_pacific_tag": { "en": "The Central Pacific", "zh": "中太平洋" },
   "expedition_pacific_name": { "en": "The Last Atolls", "zh": "最后的环礁" },
   "expedition_pacific_subtitle": { "en": "Five Microstates & the Island Hopper", "zh": "五个微型国家与跳岛航班" },
