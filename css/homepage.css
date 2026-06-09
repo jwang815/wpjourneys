@@ -1295,7 +1295,10 @@ picture{display:contents}
     }
 
     /* ========== DESKTOP NAV DROPDOWN ========== */
-    .nav-dd { position: relative; }
+    /* position:static so the absolutely-positioned menu anchors to the fixed
+       .nav (full-width bar) and right-aligns to the viewport edge, instead of
+       to the mid-nav toggle (which caused off-screen overflow). */
+    .nav-dd { position: static; }
     .nav-links .nav-dd-toggle { cursor: pointer; }
     .nav-links .nav-dd-toggle::after {
       content: '\2304';
@@ -1311,14 +1314,16 @@ picture{display:contents}
     .nav-dd.open .nav-dd-toggle::after { transform: rotate(180deg); }
     .nav-dd-menu {
       position: absolute;
-      top: calc(100% + 18px);
-      right: 0;
+      top: calc(100% - 6px);
+      right: 48px;
+      left: auto;
+      max-width: calc(100vw - 96px);
       background: rgba(17, 17, 17, 0.98);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border: 1px solid rgba(196, 148, 74, 0.22);
       box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
-      padding: 32px 36px;
+      padding: 30px 36px;
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
@@ -1331,18 +1336,19 @@ picture{display:contents}
       visibility: visible;
       transform: translateY(0);
     }
+    /* CSS grid (not flex-wrap): an absolutely-positioned panel shrink-to-fits,
+       which makes flex-wrap collapse to a single column. Explicit grid columns
+       are immune to that. 3 columns: Africa|Asia|Americas / Europe|Oceania. */
     .nav-dd-grid {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      gap: 30px 46px;
-      max-width: 780px;
+      display: grid;
+      grid-template-columns: repeat(3, max-content);
+      align-items: start;
+      gap: 26px 44px;
     }
     .nav-dd-col {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      min-width: 150px;
     }
     .nav-links .nav-dd-col a {
       font-family: var(--font-body);
@@ -1425,15 +1431,8 @@ picture{display:contents}
       .nav-dd-menu { display: none !important; }
     }
 
-    @media (max-width: 1024px) {
-      .nav-dd-grid { max-width: 620px; }
-    }
-
-    /* Dropdown: keep the mega-menu within the viewport on narrow desktop widths
-       (901–1120px), where it is right-anchored to a mid-nav toggle. Below 901px
-       the desktop nav is replaced by the hamburger menu, so this only covers the
-       narrow-desktop band. body{overflow-x:hidden} is the final backstop. */
-    @media (min-width: 901px) and (max-width: 1120px) {
+    /* Narrow desktop: tighten column gaps so the 3-column grid stays compact. */
+    @media (min-width: 901px) and (max-width: 1100px) {
       .nav-dd-menu { padding: 26px 28px; }
-      .nav-dd-grid { max-width: 380px; gap: 22px 32px; }
+      .nav-dd-grid { gap: 22px 30px; }
     }
