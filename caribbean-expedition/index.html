@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Best of the Caribbean Arc — Nine Islands, Thirteen Days | Waypoint Journeys</title>
+  <title>The Caribbean Arc — Nine Islands End to End | Waypoint Journeys</title>
   <meta name="description" content="13-day Eastern Caribbean expedition, end to end — nine islands from Saint Kitts and Dominica's Boiling Lake to the Pitons, Grenada &amp; Trinidad. From $5,995." />
   <meta name="keywords" content="Caribbean expedition, Lesser Antilles, Saint Kitts, Antigua, Barbuda, Dominica, Saint Lucia, Barbados, Saint Vincent, Grenadines, Grenada, Trinidad, Tobago, Pitons, Boiling Lake, Waypoint Journeys" />
   <meta name="author" content="Waypoint Journeys" />
@@ -21,7 +21,7 @@
   <meta property="og:site_name" content="Waypoint Journeys" />
   <meta property="og:image" content="https://wpjourneys.com/images/expeditions/caribbean-pitons.jpg" />
   <meta property="og:image:width" content="1600" />
-  <meta property="og:image:height" content="1067" />
+  <meta property="og:image:height" content="1200" />
   <meta property="og:image:alt" content="The twin Pitons at sunset, Saint Lucia" />
 
   <meta name="twitter:card" content="summary_large_image" />
@@ -101,11 +101,11 @@
   <link rel="preload" as="image" fetchpriority="high" href="/images/expeditions/caribbean-pitons.webp" type="image/webp">
   <link rel="stylesheet" href="/css/expedition.css">
   <link rel="stylesheet" href="/css/related-expeditions.css">
-  <style>#heroBg{--hero-img:url('/images/expeditions/caribbean-pitons.jpg');--hero-pos:center 50%} .pricing-bg{--pricing-img:url('/images/expeditions/caribbean-brimstone.jpg')}</style>
+  <style>#heroBg{--hero-img:url('/images/expeditions/caribbean-pitons.webp');--hero-pos:center 50%} .pricing-bg{--pricing-img:url('/images/expeditions/caribbean-brimstone.webp')}</style>
 </head>
 <body>
 
-  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
     <a href="#overview" onclick="closeMobileMenu()" data-i18n="cb_nav_overview">Overview</a>
     <a href="#itinerary" onclick="closeMobileMenu()" data-i18n="cb_nav_itinerary">Itinerary</a>
     <a href="#details" onclick="closeMobileMenu()" data-i18n="cb_nav_details">Details</a>
@@ -412,7 +412,7 @@
         <div class="pricing-divider"></div>
         <p class="pricing-includes" data-i18n="cb_pricing_includes">Fully inclusive of accommodation, all inter-island flights and ferries, expert guides, ground transport, and listed meals</p>
         <p class="pricing-note" data-i18n="cb_pricing_note">Excludes international flights, travel insurance, and meals not listed. Single supplement $695. Small group supplement $450 for groups of 2 or fewer. Combined Caribbean Arc + Guianas pricing available on request</p>
-        <a href="mailto:info@wpjourneys.com" class="book-cta" target="_blank" rel="noopener noreferrer" data-i18n="cb_pricing_cta">Reserve Your Spot</a>
+        <a href="/inquire/?dest=caribbean" class="book-cta" target="_blank" rel="noopener noreferrer" data-i18n="cb_pricing_cta">Reserve Your Spot</a>
         <div class="contact-options">
           <a href="mailto:info@wpjourneys.com" class="contact-option" title="Email us">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="1.8"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
@@ -507,7 +507,7 @@
     hamburger.addEventListener('click',()=>{menuOpen?closeMobileMenu():openMobileMenu();});
     document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&menuOpen)closeMobileMenu();});
     document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=document.getElementById(this.getAttribute('href').slice(1));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-navbar.offsetHeight,behavior:'smooth'});}});});
-    document.querySelectorAll('.faq-question').forEach(b=>{b.addEventListener('click',function(){var it=this.parentElement,was=it.classList.contains('active');document.querySelectorAll('.faq-item.active').forEach(el=>el.classList.remove('active'));if(!was)it.classList.add('active');});});
+    document.querySelectorAll('.faq-question').forEach(b=>{b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var it=this.parentElement,was=it.classList.contains('active');document.querySelectorAll('.faq-item.active').forEach(el=>{el.classList.remove('active');var q=el.querySelector('.faq-question');if(q)q.setAttribute('aria-expanded','false');});if(!was){it.classList.add('active');this.setAttribute('aria-expanded','true');}});});
   </script>
   <script src="/lang/caribbean.js"></script>
   <script src="/lang/i18n.js?v=20260609"></script>

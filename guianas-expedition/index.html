@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Forgotten Coast — Guyana &amp; Suriname Expedition | Waypoint Journeys</title>
+  <title>The Forgotten Coast — Guyana &amp; Suriname | Waypoint Journeys</title>
   <meta name="description" content="6-day Guyana &amp; Suriname expedition — Kaieteur Falls by private charter, UNESCO-listed Paramaribo, and an Amazonian river journey. From $2,495." />
   <meta name="keywords" content="Guyana expedition, Suriname expedition, Kaieteur Falls, Paramaribo, the Guianas, Amazon rainforest, Georgetown, Maroon community, Bigi Pan, Waypoint Journeys, South America off the beaten path" />
   <meta name="author" content="Waypoint Journeys" />
@@ -21,7 +21,7 @@
   <meta property="og:site_name" content="Waypoint Journeys" />
   <meta property="og:image" content="https://wpjourneys.com/images/expeditions/guianas-kaieteur-falls.jpg" />
   <meta property="og:image:width" content="1600" />
-  <meta property="og:image:height" content="1067" />
+  <meta property="og:image:height" content="841" />
   <meta property="og:image:alt" content="Kaieteur Falls dropping in a single plunge into the jungle gorge, Guyana" />
 
   <meta name="twitter:card" content="summary_large_image" />
@@ -94,11 +94,11 @@
   <link rel="preload" as="image" fetchpriority="high" href="/images/expeditions/guianas-kaieteur-falls.webp" type="image/webp">
   <link rel="stylesheet" href="/css/expedition.css">
   <link rel="stylesheet" href="/css/related-expeditions.css">
-  <style>#heroBg{--hero-img:url('/images/expeditions/guianas-kaieteur-falls.jpg');--hero-pos:center 50%} .pricing-bg{--pricing-img:url('/images/expeditions/guianas-paramaribo.jpg')}</style>
+  <style>#heroBg{--hero-img:url('/images/expeditions/guianas-kaieteur-falls.webp');--hero-pos:center 50%} .pricing-bg{--pricing-img:url('/images/expeditions/guianas-paramaribo.webp')}</style>
 </head>
 <body>
 
-  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
     <a href="#overview" onclick="closeMobileMenu()" data-i18n="gy_nav_overview">Overview</a>
     <a href="#itinerary" onclick="closeMobileMenu()" data-i18n="gy_nav_itinerary">Itinerary</a>
     <a href="#details" onclick="closeMobileMenu()" data-i18n="gy_nav_details">Details</a>
@@ -335,7 +335,7 @@
         <div class="pricing-divider"></div>
         <p class="pricing-includes" data-i18n="gy_pricing_includes">Fully inclusive of the Kaieteur charter, accommodation, expert guide, all ground and river transport, and listed meals</p>
         <p class="pricing-note" data-i18n="gy_pricing_note">Excludes international flights, travel insurance, e-visas, and meals not listed. Single supplement $320. Small group supplement $280 for groups of 2 or fewer. Combined Caribbean Arc + Guianas pricing available on request</p>
-        <a href="mailto:info@wpjourneys.com" class="book-cta" target="_blank" rel="noopener noreferrer" data-i18n="gy_pricing_cta">Reserve Your Spot</a>
+        <a href="/inquire/?dest=guianas" class="book-cta" target="_blank" rel="noopener noreferrer" data-i18n="gy_pricing_cta">Reserve Your Spot</a>
         <div class="contact-options">
           <a href="mailto:info@wpjourneys.com" class="contact-option" title="Email us">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="1.8"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
@@ -430,7 +430,7 @@
     hamburger.addEventListener('click',()=>{menuOpen?closeMobileMenu():openMobileMenu();});
     document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&menuOpen)closeMobileMenu();});
     document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=document.getElementById(this.getAttribute('href').slice(1));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-navbar.offsetHeight,behavior:'smooth'});}});});
-    document.querySelectorAll('.faq-question').forEach(b=>{b.addEventListener('click',function(){var it=this.parentElement,was=it.classList.contains('active');document.querySelectorAll('.faq-item.active').forEach(el=>el.classList.remove('active'));if(!was)it.classList.add('active');});});
+    document.querySelectorAll('.faq-question').forEach(b=>{b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var it=this.parentElement,was=it.classList.contains('active');document.querySelectorAll('.faq-item.active').forEach(el=>{el.classList.remove('active');var q=el.querySelector('.faq-question');if(q)q.setAttribute('aria-expanded','false');});if(!was){it.classList.add('active');this.setAttribute('aria-expanded','true');}});});
   </script>
   <script src="/lang/guianas.js"></script>
   <script src="/lang/i18n.js?v=20260609"></script>

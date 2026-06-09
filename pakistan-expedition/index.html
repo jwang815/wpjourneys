@@ -21,8 +21,8 @@
   <meta property="og:url" content="https://wpjourneys.com/pakistan-expedition/" />
   <meta property="og:site_name" content="Waypoint Journeys" />
   <meta property="og:image" content="https://wpjourneys.com/images/expeditions/unsplash-1514558427911.jpg" />
-  <meta property="og:image:width" content="1600" />
-  <meta property="og:image:height" content="1067" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="800" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -150,7 +150,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
 
   <!-- Preload LCP hero image -->
-  <link rel="preload" as="image" fetchpriority="high" href="/images/expeditions/unsplash-1514558427911.webp" / type="image/webp">
+  <link rel="preload" as="image" fetchpriority="high" href="/images/expeditions/unsplash-1514558427911.webp" type="image/webp">
 
   <link rel="stylesheet" href="/css/related-expeditions.css">
   <style>picture{display:contents}
@@ -445,7 +445,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('/images/expeditions/unsplash-1514558427911.jpg');
+      background-image: url('/images/expeditions/unsplash-1514558427911.webp');
       background-size: cover;
       background-position: center 40%;
       will-change: transform;
@@ -1087,7 +1087,7 @@
     .pricing-bg {
       position: absolute;
       inset: 0;
-      background-image: url('/images/expeditions/unsplash-1589798044196.jpg');
+      background-image: url('/images/expeditions/unsplash-1589798044196.webp');
       background-size: cover;
       background-position: center;
       opacity: 0.18;
@@ -1453,7 +1453,7 @@
 
 <body data-wp-viewcontent="Pakistan">
 
-  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
     <a href="#overview" onclick="closeMobileMenu()" data-i18n="pk_nav_overview">Overview</a>
     <a href="#itinerary" onclick="closeMobileMenu()" data-i18n="pk_nav_itinerary">Itinerary</a>
     <a href="#details" onclick="closeMobileMenu()" data-i18n="pk_nav_details">Details</a>
@@ -2092,13 +2092,19 @@
 
     // FAQ accordion
     document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.setAttribute('aria-expanded', 'false');
       btn.addEventListener('click', function() {
         var item = this.parentElement;
         var wasActive = item.classList.contains('active');
         document.querySelectorAll('.faq-item.active').forEach(function(el) {
           el.classList.remove('active');
+          var b = el.querySelector('.faq-question');
+          if (b) b.setAttribute('aria-expanded', 'false');
         });
-        if (!wasActive) item.classList.add('active');
+        if (!wasActive) {
+          item.classList.add('active');
+          this.setAttribute('aria-expanded', 'true');
+        }
       });
     });
 

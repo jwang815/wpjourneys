@@ -46,7 +46,20 @@
       "socotra":      { label: "Socotra",               img: "socotra-dragon-blood-tree-sunset",   t: 1 },
       "syria":        { label: "Syria",                 img: "syria-umayyad-mosque",               t: 5 },
       "turkmenistan": { label: "Turkmenistan",          img: "turkmenistan-darvaza",             t: 0 },
-      "west-africa":  { label: "Ghana, Benin & Togo",   img: "unsplash-1545315637",                t: 0 }
+      "west-africa":  { label: "Ghana, Benin & Togo",   img: "unsplash-1545315637",                t: 0 },
+      "bhutan": { label: "Bhutan", img: "bhutan-tigers-nest", t: 0 },
+      "caribbean": { label: "Caribbean", img: "caribbean-pitons", t: 0 },
+      "central-asia": { label: "Central Asia", img: "centralasia-registan", t: 0 },
+      "china": { label: "China", img: "china-li-river", t: 0 },
+      "egypt": { label: "Egypt", img: "egypt-abu-simbel", t: 0 },
+      "ethiopia": { label: "Ethiopia", img: "ethiopia-dallol", t: 0 },
+      "guianas": { label: "Guyana & Suriname", img: "guianas-kaieteur-falls", t: 0 },
+      "mauritius": { label: "Mauritius", img: "mauritius-le-morne", t: 0 },
+      "maya": { label: "Maya Corridor", img: "maya-antigua-arch", t: 0 },
+      "moldova": { label: "Moldova & Transnistria", img: "moldova-tiraspol", t: 0 },
+      "pacific": { label: "Pacific Islands", img: "pacific-nan-madol", t: 0 },
+      "gorilla": { label: "Rwanda, Uganda & Gorillas", img: "gorilla-silverback", t: 0 },
+      "tunisia-algeria": { label: "Tunisia & Algeria", img: "maghreb-el-jem", t: 0 }
     };
     window.WP_DEST_ALIAS = { "westafrica": "west-africa", "ghana": "west-africa", "benin": "west-africa", "togo": "west-africa", "burma": "myanmar" };
     window.WP_SELDEST = (function () {
@@ -156,7 +169,7 @@
 <body data-wp-viewcontent="Inquiry">
 
   <!-- Mobile menu -->
-  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
     <a href="/#expeditions" data-i18n="mobile_nav_expeditions">Expeditions</a>
     <a href="/blog/" data-i18n="mobile_nav_blog">Blog</a>
     <a href="/about/" data-i18n="mobile_nav_about">About</a>
@@ -250,7 +263,7 @@
 
             <div class="field row">
               <div>
-                <label for="f-name" data-i18n="inq_label_name">Full name</label>
+                <label for="f-name"><span data-i18n="inq_label_name">Full name</span> <span class="req">(<span data-i18n="inq_required">required</span>)</span></label>
                 <input type="text" id="f-name" name="name" autocomplete="name"
                        data-i18n-placeholder="inq_ph_name" placeholder="Your name" required aria-required="true" />
               </div>
@@ -271,17 +284,30 @@
                 <label for="f-dest" data-i18n="inq_label_dest">Destination interest</label>
                 <select id="f-dest" name="destination">
                   <option value="bangladesh">Bangladesh</option>
+                  <option value="bhutan">Bhutan</option>
+                  <option value="caribbean">Caribbean</option>
+                  <option value="central-asia">Central Asia</option>
+                  <option value="china">China</option>
+                  <option value="egypt">Egypt</option>
                   <option value="eritrea">Eritrea</option>
+                  <option value="ethiopia">Ethiopia</option>
+                  <option value="west-africa">Ghana, Benin &amp; Togo</option>
+                  <option value="guianas">Guyana &amp; Suriname</option>
                   <option value="libya">Libya</option>
                   <option value="madagascar">Madagascar</option>
                   <option value="mauritania">Mauritania</option>
+                  <option value="mauritius">Mauritius</option>
+                  <option value="maya">Maya Corridor</option>
+                  <option value="moldova">Moldova &amp; Transnistria</option>
                   <option value="mongolia">Mongolia</option>
                   <option value="myanmar">Myanmar</option>
+                  <option value="pacific">Pacific Islands</option>
                   <option value="pakistan">Pakistan</option>
+                  <option value="gorilla">Rwanda, Uganda &amp; Gorillas</option>
                   <option value="socotra">Socotra</option>
                   <option value="syria">Syria</option>
+                  <option value="tunisia-algeria">Tunisia &amp; Algeria</option>
                   <option value="turkmenistan">Turkmenistan</option>
-                  <option value="west-africa">Ghana, Benin &amp; Togo</option>
                   <option value="custom" data-i18n="inq_opt_custom" selected>Custom / not sure</option>
                 </select>
               </div>

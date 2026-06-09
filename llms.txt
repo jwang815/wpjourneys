@@ -1,6 +1,6 @@
 # Waypoint Journeys
 
-> Luxury adventure travel to the world's last wild places. Small-group expeditions with a maximum of 5 guests per trip.
+> Luxury adventure travel to the world's last wild places. Small-group expeditions with a maximum of 5 guests per trip (4 on the gorilla expedition).
 
 ## About
 
@@ -215,7 +215,7 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 
 ## Key Facts
 
-- Maximum 5 guests per expedition
+- Maximum 5 guests per expedition (gorilla expedition: maximum 4)
 - Bespoke, hand-crafted itineraries
 - 24/7 on-the-ground support
 - Expert local guides

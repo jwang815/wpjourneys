@@ -21,8 +21,8 @@
   <meta property="og:url" content="https://wpjourneys.com/syria-expedition/" />
   <meta property="og:site_name" content="Waypoint Journeys" />
   <meta property="og:image" content="https://wpjourneys.com/images/expeditions/syria-umayyad-mosque.jpg" />
-  <meta property="og:image:width" content="2400" />
-  <meta property="og:image:height" content="1600" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1280" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -147,7 +147,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
 
   <!-- Preload LCP hero image -->
-  <link rel="preload" as="image" fetchpriority="high" href="/images/expeditions/syria-umayyad-mosque.webp" / type="image/webp">
+  <link rel="preload" as="image" fetchpriority="high" href="/images/expeditions/syria-umayyad-mosque.webp" type="image/webp">
 
   <link rel="stylesheet" href="/css/related-expeditions.css">
   <style>picture{display:contents}
@@ -442,7 +442,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('/images/expeditions/syria-umayyad-mosque.jpg');
+      background-image: url('/images/expeditions/syria-umayyad-mosque.webp');
       background-size: cover;
       background-position: center 40%;
       will-change: transform;
@@ -1088,7 +1088,7 @@
     .pricing-bg {
       position: absolute;
       inset: 0;
-      background-image: url('/images/expeditions/syria-palmyra-sunset.jpg');
+      background-image: url('/images/expeditions/syria-palmyra-sunset.webp');
       background-size: cover;
       background-position: center;
       opacity: 0.18;
@@ -1519,7 +1519,7 @@
 
 <body data-wp-viewcontent="Syria">
 
-  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
     <a href="#overview" onclick="closeMobileMenu()" data-i18n="sy_nav_overview">Overview</a>
     <a href="#itinerary" onclick="closeMobileMenu()" data-i18n="sy_nav_itinerary">Itinerary</a>
     <a href="#details" onclick="closeMobileMenu()" data-i18n="sy_nav_details">Details</a>
@@ -1830,7 +1830,6 @@
 
       </div>
       </div>
-    </div>
   </section>
 
   <div style="position: relative; height: 480px; overflow: hidden;">
@@ -2141,13 +2140,19 @@
 
     // FAQ accordion
     document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.setAttribute('aria-expanded', 'false');
       btn.addEventListener('click', function() {
         var item = this.parentElement;
         var wasActive = item.classList.contains('active');
         document.querySelectorAll('.faq-item.active').forEach(function(el) {
           el.classList.remove('active');
+          var b = el.querySelector('.faq-question');
+          if (b) b.setAttribute('aria-expanded', 'false');
         });
-        if (!wasActive) item.classList.add('active');
+        if (!wasActive) {
+          item.classList.add('active');
+          this.setAttribute('aria-expanded', 'true');
+        }
       });
     });
 
