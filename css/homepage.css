@@ -1295,12 +1295,12 @@ picture{display:contents}
     }
 
     /* ========== DESKTOP NAV DROPDOWN ========== */
-    /* position:static so the absolutely-positioned menu anchors to the fixed
-       .nav (full-width bar) and right-aligns to the viewport edge, instead of
-       to the mid-nav toggle (which caused off-screen overflow). */
-    .nav-dd { position: static; }
+    .nav-dd { position: relative; }
     .nav-links .nav-dd-toggle { cursor: pointer; }
-    .nav-links .nav-dd-toggle::after {
+    /* a.nav-dd-toggle (not just .nav-dd-toggle) so this outranks the
+       .nav-links a:hover::after underline rule, which otherwise stretches
+       the chevron to width:100% on hover. */
+    .nav-links a.nav-dd-toggle::after {
       content: '\2304';
       position: static;
       width: auto; height: auto;
@@ -1314,10 +1314,9 @@ picture{display:contents}
     .nav-dd.open .nav-dd-toggle::after { transform: rotate(180deg); }
     .nav-dd-menu {
       position: absolute;
-      top: calc(100% - 6px);
-      right: 48px;
-      left: auto;
-      max-width: calc(100vw - 96px);
+      top: calc(100% + 16px);
+      left: 50%;
+      right: auto;
       background: rgba(17, 17, 17, 0.98);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
@@ -1326,15 +1325,25 @@ picture{display:contents}
       padding: 30px 36px;
       opacity: 0;
       visibility: hidden;
-      transform: translateY(-10px);
+      transform: translate(-50%, -10px);
       transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s;
       z-index: 1100;
+    }
+    /* Invisible bridge over the gap between the toggle and the panel so
+       :hover doesn't drop while the cursor crosses it. */
+    .nav-dd-menu::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      height: 20px;
     }
     .nav-dd.open .nav-dd-menu,
     .nav-dd:hover .nav-dd-menu {
       opacity: 1;
       visibility: visible;
-      transform: translateY(0);
+      transform: translate(-50%, 0);
     }
     /* CSS grid (not flex-wrap): an absolutely-positioned panel shrink-to-fits,
        which makes flex-wrap collapse to a single column. Explicit grid columns

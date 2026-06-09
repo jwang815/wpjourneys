@@ -749,7 +749,7 @@ window.__i18n = {
     "zh": "任何目的地，全程规划，专属于您"
   },
   "custom_text": {
-    "en": "Our scheduled expeditions cover Bangladesh, Eritrea, Ghana/Benin/Togo, Libya, Madagascar, Mauritania, Mongolia, Myanmar, Pakistan, Socotra, Syria, and Turkmenistan, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
+    "en": "Our scheduled expeditions span more than two dozen destinations across five continents, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
     "zh": "我们的定期探险遍及五大洲二十余个目的地——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
   },
   "custom_feat1": {

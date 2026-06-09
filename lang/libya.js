@@ -354,6 +354,7 @@ window.__i18n = {
 
   // ── Pricing option cards (shared) ──
   "lb_opt_card_per": { "en": "USD per person", "zh": "美元 / 每人" },
+  "lb_opt4_card_per": { "en": "USD per person · includes 2 domestic flights", "zh": "美元 / 每人 · 含两段国内航班" },
   "lb_opt_card_cta": { "en": "Inquire →", "zh": "咨询 →" },
 
   // ── Pricing option cards (per option) ──

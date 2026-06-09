@@ -76,8 +76,8 @@ window.__i18n = {
     "zh": "正在规划行程？请阅读我们详尽的<a href=\"/blog/socotra-island-travel-guide/\">索科特拉岛旅行指南</a>。"
   },
   "sc_photo_caption": {
-    "en": "Dragon Blood Tree — Dracaena cinnabari — Homhil Plateau",
-    "zh": "龙血树 · 龙血龙属 · 霍姆希尔高原"
+    "en": "Dragon’s Blood Trees beneath the Hajhir Mountains",
+    "zh": "哈吉尔山脉下的龙血树"
   },
   "sc_highlights_label": {
     "en": "Why Socotra",

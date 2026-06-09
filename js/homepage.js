@@ -45,6 +45,9 @@
       var open = mobileMenu.classList.contains('open');
       hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
       document.body.style.overflow = open ? 'hidden' : '';
+      // Solid nav while the menu is open so scrolling menu items don't
+      // collide with the logo through the transparent bar.
+      document.getElementById('mainNav').classList.toggle('scrolled', open || window.scrollY > 80);
     });
 
     function closeMobileMenu() {
@@ -52,6 +55,7 @@
       hamburger.setAttribute('aria-expanded', 'false');
       mobileMenu.classList.remove('open');
       document.body.style.overflow = '';
+      document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 80);
     }
 
     // ========== Expeditions dropdown (desktop) ==========
