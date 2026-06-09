@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_ethiopia_tag": { "en": "Fire and Faith", "zh": "火焰与信仰" },
+  "expedition_ethiopia_name": { "en": "Ethiopia", "zh": "埃塞俄比亚" },
+  "expedition_ethiopia_subtitle": { "en": "The Danakil, Tigray & Lalibela", "zh": "达纳基尔、提格雷与拉利贝拉" },
+  "expedition_ethiopia_desc": { "en": "An 8-day expedition through ancient Ethiopia — the Erta Ale lava lake and the alien Dallol depression of the Danakil, the cliff-carved churches of Tigray, the stelae of Axum, and the rock-hewn churches of Lalibela. Extended 16-day option with the Omo Valley and Harar.", "zh": "一段 8 天的探险，穿越古老的埃塞俄比亚——尔塔阿雷熔岩湖与达纳基尔如外星般的达洛尔洼地、提格雷的崖凿教堂、阿克苏姆的方尖碑，以及拉利贝拉的岩凿教堂。16 天延展版另含奥莫山谷与哈勒尔。" },
+  "expedition_ethiopia_dates": { "en": "8 or 16 Days", "zh": "8 或 16 天" },
+  "expedition_ethiopia_price": { "en": "From $3,295", "zh": "起价 $3,295" },
+  "expedition_ethiopia_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_moldova_tag": { "en": "Moldova & Transnistria", "zh": "摩尔多瓦与德涅斯特河沿岸" },
   "expedition_moldova_name": { "en": "Where Empires End", "zh": "帝国终结之处" },
   "expedition_moldova_subtitle": { "en": "Soviet Ghosts & Underground Wine", "zh": "苏联幽灵与地下美酒" },
