@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_egypt_tag": { "en": "Beyond the Pyramids", "zh": "超越金字塔" },
+  "expedition_egypt_name": { "en": "Egypt", "zh": "埃及" },
+  "expedition_egypt_subtitle": { "en": "Cairo's Hidden City, the Nile Road South & Abu Simbel", "zh": "开罗的隐秘之城、尼罗河南下之路与阿布辛贝" },
+  "expedition_egypt_desc": { "en": "A 7-day expedition beyond the Pyramids — Islamic and Coptic Cairo, the Zabaleen's Garbage City and its cave church, the overnight Nile sleeper train, Luxor's Valley of the Kings and Karnak, a felucca to Aswan, and the rock-cut colossi of Abu Simbel.", "zh": "一段超越金字塔的 7 天探险——伊斯兰与科普特开罗、扎巴林人的垃圾城及其岩洞教堂、夜行尼罗河卧铺列车、卢克索的帝王谷与卡尔纳克、扬帆至阿斯旺，以及阿布辛贝的岩凿巨像。" },
+  "expedition_egypt_dates": { "en": "7 Days", "zh": "7 天" },
+  "expedition_egypt_price": { "en": "From $3,495", "zh": "起价 $3,495" },
+  "expedition_egypt_cta": { "en": "View Expedition", "zh": "查看行程" },
   "mobile_nav_expeditions": {
     "en": "Expeditions",
     "zh": "精选行程"
@@ -44,8 +51,8 @@ window.__i18n = {
     "zh": "即将出发的探险之旅"
   },
   "expeditions_title": {
-    "en": "Upcoming Off-the-Beaten-Path Expeditions",
-    "zh": "即将出发的人迹罕至探险"
+    "en": "Off the Beaten Path",
+    "zh": "人迹罕至之地"
   },
   "expedition_bangladesh_tag": {
     "en": "Soul of the Bengal Delta",
