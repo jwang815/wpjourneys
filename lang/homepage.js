@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_caribbean_tag": { "en": "Nine Islands, Thirteen Days", "zh": "九岛十三天" },
+  "expedition_caribbean_name": { "en": "The Caribbean Arc", "zh": "加勒比之弧" },
+  "expedition_caribbean_subtitle": { "en": "The Full Length of the Lesser Antilles", "zh": "纵贯小安的列斯群岛" },
+  "expedition_caribbean_desc": { "en": "A 13-day expedition down the full length of the Lesser Antilles — Saint Kitts, Antigua & Barbuda, Dominica, Saint Lucia, Barbados, the Grenadines, Grenada, and Trinidad & Tobago. The Eastern Caribbean done properly, end to end.", "zh": "一段 13 天、纵贯小安的列斯群岛全程的探险——圣基茨、安提瓜与巴布达、多米尼克、圣卢西亚、巴巴多斯、格林纳丁斯、格林纳达，以及特立尼达与多巴哥。以正确方式走完东加勒比，从头到尾。" },
+  "expedition_caribbean_dates": { "en": "13 Days", "zh": "13 天" },
+  "expedition_caribbean_price": { "en": "From $5,995", "zh": "起价 $5,995" },
+  "expedition_caribbean_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_mauritius_tag": { "en": "Indian Ocean Luxury", "zh": "印度洋奢华" },
   "expedition_mauritius_name": { "en": "Mauritius", "zh": "毛里求斯" },
   "expedition_mauritius_subtitle": { "en": "Lagoons, Seven Coloured Earth & Quiet Luxury", "zh": "泻湖、七色土与静谧奢华" },
