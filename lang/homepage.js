@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_bhutan_tag": { "en": "The Thunder Dragon Kingdom", "zh": "雷龙之国" },
+  "expedition_bhutan_name": { "en": "Bhutan", "zh": "不丹" },
+  "expedition_bhutan_subtitle": { "en": "Tiger's Nest, Punakha & the Black-Necked Cranes", "zh": "虎穴寺、普纳卡与黑颈鹤" },
+  "expedition_bhutan_desc": { "en": "A 7-day expedition across the last Himalayan kingdom — the Tiger's Nest monastery, a traditional hot stone bath, the phallus-painted Fertility Village, the riverside dzong at Punakha, and the wintering cranes of the Phobjika valley.", "zh": "一段穿越最后的喜马拉雅王国的 7 天探险——虎穴寺、传统热石浴、绘满阳具图腾的「生育之村」、河畔的普纳卡宗，以及福布吉卡山谷越冬的黑颈鹤。" },
+  "expedition_bhutan_dates": { "en": "7 Days", "zh": "7 天" },
+  "expedition_bhutan_price": { "en": "From $3,795", "zh": "起价 $3,795" },
+  "expedition_bhutan_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_egypt_tag": { "en": "Beyond the Pyramids", "zh": "超越金字塔" },
   "expedition_egypt_name": { "en": "Egypt", "zh": "埃及" },
   "expedition_egypt_subtitle": { "en": "Cairo's Hidden City, the Nile Road South & Abu Simbel", "zh": "开罗的隐秘之城、尼罗河南下之路与阿布辛贝" },
