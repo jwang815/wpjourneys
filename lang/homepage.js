@@ -1,4 +1,11 @@
 window.__i18n = {
+  "expedition_pacific_tag": { "en": "The Central Pacific", "zh": "中太平洋" },
+  "expedition_pacific_name": { "en": "The Last Atolls", "zh": "最后的环礁" },
+  "expedition_pacific_subtitle": { "en": "Five Microstates & the Island Hopper", "zh": "五个微型国家与跳岛航班" },
+  "expedition_pacific_desc": { "en": "A 15-day expedition across five of the world's least-visited nations — Tuvalu, Kiribati, Nauru, the Marshall Islands, and Micronesia — linked by the United Island Hopper and ending at Nan Madol, the ancient basalt stone city off Pohnpei.", "zh": "一段 15 天的探险，穿越世界上访客最少的五个国度——图瓦卢、基里巴斯、瑙鲁、马绍尔群岛与密克罗尼西亚——由联合航空跳岛航班串连，终于波纳佩外海的玄武岩古城南马都尔。" },
+  "expedition_pacific_dates": { "en": "15 Days", "zh": "15 天" },
+  "expedition_pacific_price": { "en": "From $3,495", "zh": "起价 $3,495" },
+  "expedition_pacific_cta": { "en": "View Expedition", "zh": "查看行程" },
   "expedition_bhutan_tag": { "en": "The Thunder Dragon Kingdom", "zh": "雷龙之国" },
   "expedition_bhutan_name": { "en": "Bhutan", "zh": "不丹" },
   "expedition_bhutan_subtitle": { "en": "Tiger's Nest, Punakha & the Black-Necked Cranes", "zh": "虎穴寺、普纳卡与黑颈鹤" },
