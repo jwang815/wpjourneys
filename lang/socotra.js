@@ -348,8 +348,8 @@ window.__i18n = {
     "zh": "全包住宿、全部餐饮、活动及地面交通"
   },
   "sc_pricing_note": {
-    "en": "International airfare (Jeddah ↔ Socotra) and $150 USD visa fee not included",
-    "zh": "国际机票（吉达 ↔ 索科特拉）及$150美元签证费不含在内"
+    "en": "International flights to/from Jeddah and the $150 USD visa fee are not included. The round-trip Jeddah–Socotra charter flight is included.",
+    "zh": "不含往返吉达的国际机票及 150 美元签证费。吉达↔索科特拉的往返包机已包含在内。"
   },
   "sc_book_cta": {
     "en": "Reserve Your Spot",

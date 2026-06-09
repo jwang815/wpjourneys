@@ -685,8 +685,8 @@ window.__i18n = {
     "zh": "Waypoint Journeys 与其他高端旅行公司有什么不同？"
   },
   "faq_a1": {
-    "en": "Waypoint Journeys is a private luxury expedition company specializing in remote destinations most operators won't attempt. Every expedition is limited to 5 guests maximum, with itineraries built from the ground up by destination specialists and local experts. We currently run twelve scheduled expeditions — Bangladesh, Eritrea, Ghana/Benin/Togo, Libya, Madagascar, Mauritania, Mongolia, Myanmar, Pakistan, Socotra, Syria, and Turkmenistan — plus fully custom trips anywhere in the world. Prices start from $1,195 per person.",
-    "zh": "Waypoint Journeys 是一家专注于其他运营商不敢涉足的偏远目的地的私享奢华探险公司。每次探险最多仅五位宾客，行程由目的地专家与当地向导从零开始量身打造。我们目前运营十二条定期探险路线——孟加拉国、厄立特里亚、加纳/贝宁/多哥、利比亚、马达加斯加、毛里塔尼亚、蒙古、缅甸、巴基斯坦、索科特拉、叙利亚和土库曼斯坦——并可定制前往世界任何角落的专属行程。每人起价 1,195 美元。"
+    "en": "Waypoint Journeys is a private luxury expedition company specializing in remote destinations most operators won't attempt. Every expedition is limited to 5 guests maximum, with itineraries built from the ground up by destination specialists and local experts. We currently run more than two dozen scheduled expeditions across Africa, Asia, the Americas, Europe, and the Pacific — from Egypt and Bhutan to the Caribbean and the central Pacific — plus fully custom trips anywhere in the world. Prices start from $695 per person.",
+    "zh": "Waypoint Journeys 是一家专注于其他运营商不敢涉足的偏远目的地的私享奢华探险公司。每次探险最多仅五位宾客，行程由目的地专家与当地向导从零开始量身打造。我们目前运营二十余条定期探险路线，遍及非洲、亚洲、美洲、欧洲与太平洋——从埃及、不丹到加勒比与中太平洋——并可定制前往世界任何角落的专属行程。每人起价 695 美元。"
   },
   "faq_q2": {
     "en": "What is included in the expedition price?",
@@ -750,7 +750,7 @@ window.__i18n = {
   },
   "custom_text": {
     "en": "Our scheduled expeditions cover Bangladesh, Eritrea, Ghana/Benin/Togo, Libya, Madagascar, Mauritania, Mongolia, Myanmar, Pakistan, Socotra, Syria, and Turkmenistan, but we don't stop there. Have a destination in mind that's not on our list? We'll build an expedition from scratch, anywhere in the world. From permits and logistics to local guides and accommodations, we handle every detail so you can focus on the journey.",
-    "zh": "我们的定期探险涵盖孟加拉国、厄立特里亚、加纳/贝宁/多哥、利比亚、马达加斯加、毛里塔尼亚、蒙古、缅甸、巴基斯坦、索科特拉、叙利亚与土库曼斯坦——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
+    "zh": "我们的定期探险遍及五大洲二十余个目的地——但我们的脚步远不止于此。心中有一个不在列表上的目的地？我们将在世界任何角落，从零开始为您量身打造一次探险。从许可与物流到当地向导与住宿，每一个细节都由我们处理，让您只需专注于旅程本身。"
   },
   "custom_feat1": {
     "en": "Any country, any region",

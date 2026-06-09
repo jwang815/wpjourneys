@@ -57,7 +57,7 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - URL: https://wpjourneys.com/gorilla-expedition/
 - Duration: 10 days / 9 nights (Bujumbura to Entebbe)
 - Price: From $3,995 per person (luxury, all permits included)
-- Group size: Max 5 guests
+- Group size: Max 4 guests
 - Highlights: Lake Tanganyika & Burundi, Rwanda mountain gorilla trek (Volcanoes NP), golden monkeys, Lake Kivu, Nyiragongo lava lake summit (DRC, conditional), Mt Sabyinyo three-country peak (Uganda), Bwindi gorilla trek, Queen Elizabeth NP & Kazinga Channel
 - Description: A 10-day expedition across the Albertine Rift through four countries — mountain gorillas in Rwanda's Volcanoes NP and Uganda's Bwindi, golden monkeys, the active Nyiragongo lava lake, and the summit of Mt Sabyinyo where Uganda, Rwanda, and the DRC share a single point. The DRC/Nyiragongo component sits in North Kivu and is conditional on confirmed safe access at time of travel, with a full Rwanda/Uganda substitution available; the Mt Sabyinyo summit requires no DRC entry. All gorilla, monkey, and volcano permits included. Max 4 guests.
 
@@ -125,7 +125,7 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - Highlights: Old Dhaka and Buriganga river, Sreemangal tea gardens, Lawachara rainforest (hoolock gibbons), Khasia village, overnight launch from Dhaka to Barisal, Barisal floating markets, Bagerhat (UNESCO — Sixty Dome Mosque), Sonargaon, Panam Nagar, Meghna river sunset
 - Description: Seven days through one of South Asia's most-overlooked countries. Old Dhaka's medieval medina, the emerald tea hills of Sreemangal, an overnight river launch through the inland delta to Barisal's floating markets, the 15th-century UNESCO ruins of Bagerhat, and the abandoned colonial mansions of Panam Nagar.
 
-### Socotra Island, Yemen — April 21–27, 2026
+### Socotra Island, Yemen
 - URL: https://wpjourneys.com/socotra/
 - Duration: 7 days
 - Price: From $2,950 per person
@@ -133,7 +133,7 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - Highlights: Dragon's Blood Trees, Hoq Cave, Detwah Lagoon, Shu'ab Beach, UNESCO World Heritage biodiversity
 - Description: Explore the "Galápagos of the Indian Ocean" — one of the most isolated and biodiverse places on Earth. Camp under the stars, trek through alien landscapes, and discover species found nowhere else.
 
-### Ghana, Benin & Togo — May 2–9, 2026
+### Ghana, Benin & Togo
 - URL: https://wpjourneys.com/west-africa-expedition/
 - Duration: 8 days
 - Price: From $2,950 per person
@@ -219,7 +219,7 @@ Waypoint Journeys is a luxury adventure travel company specializing in hand-craf
 - Bespoke, hand-crafted itineraries
 - 24/7 on-the-ground support
 - Expert local guides
-- Price range: $2,450–$7,450 per person
-- Destinations: Bangladesh, Eritrea, Ghana, Benin, Togo, Libya, Madagascar, Mauritania, Mongolia, Myanmar, Pakistan, Socotra (Yemen), Syria, Turkmenistan
+- Price range: $695–$8,995 per person
+- Destinations: Bangladesh, Bhutan, Caribbean (Lesser Antilles), Central Asia (Kazakhstan, Kyrgyzstan, Tajikistan, Uzbekistan), China, Egypt, Eritrea, Ethiopia, Ghana/Benin/Togo, Guyana & Suriname, Libya, Madagascar, Mauritania, Mauritius, the Maya Corridor (El Salvador, Guatemala, Honduras), Moldova & Transnistria, Mongolia, Myanmar, Pacific Islands (Tuvalu, Kiribati, Nauru, Marshall Islands, Micronesia), Pakistan, Rwanda/Uganda gorillas, Socotra (Yemen), Syria, Tunisia & Algeria, Turkmenistan
 - All trips include accommodation, internal transport, guided activities, and most meals
 - Bilingual website: English and Simplified Chinese (中文)

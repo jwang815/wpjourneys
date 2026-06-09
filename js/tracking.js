@@ -182,44 +182,10 @@
     loadGoogle();
     autoViewContent();
   }
-  function showConsentBanner() {
-    if (getCookie(CONSENT_COOKIE)) return;                   // already chosen / dismissed
-    var gated = CFG.CONSENT_MODE === 'gated';
-    var bar = d.createElement('div');
-    bar.id = 'wp-consent';
-    bar.setAttribute('role', 'region');
-    bar.setAttribute('aria-label', 'Cookie notice');
-    bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:9999;background:rgba(17,17,17,.97);' +
-      'color:#F5EDE0;font-family:"Source Sans 3",system-ui,sans-serif;font-size:.86rem;line-height:1.5;' +
-      'padding:16px 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center;' +
-      'box-shadow:0 -2px 24px rgba(0,0,0,.4);backdrop-filter:blur(8px)';
-    var msg = gated
-      ? 'We use cookies for analytics and ad measurement. You can accept or decline.'
-      : 'We use cookies to measure site traffic and the performance of our ads.';
-    bar.innerHTML =
-      '<span style="max-width:640px">' + msg +
-      ' <a href="/privacy/" style="color:#D4A85C;text-decoration:underline">Privacy Policy</a>.</span>';
-    var btns = d.createElement('span');
-    btns.style.cssText = 'display:flex;gap:10px;flex-shrink:0';
-    function mkBtn(label, primary) {
-      var b = d.createElement('button');
-      b.type = 'button'; b.textContent = label;
-      b.style.cssText = 'font:600 .78rem/1 "Source Sans 3",sans-serif;letter-spacing:.06em;text-transform:uppercase;' +
-        'padding:9px 18px;border:1px solid ' + (primary ? '#C4944A' : 'rgba(245,237,224,.4)') + ';cursor:pointer;' +
-        'background:' + (primary ? '#C4944A' : 'transparent') + ';color:' + (primary ? '#111' : '#F5EDE0') + ';';
-      return b;
-    }
-    var accept = mkBtn(gated ? 'Accept' : 'Got it', true);
-    accept.addEventListener('click', function () { setCookie(CONSENT_COOKIE, 'accepted', 180); bar.remove(); if (gated) loadTags(); });
-    btns.appendChild(accept);
-    if (gated) {
-      var decline = mkBtn('Decline', false);
-      decline.addEventListener('click', function () { setCookie(CONSENT_COOKIE, 'declined', 180); bar.remove(); });
-      btns.appendChild(decline);
-    }
-    bar.appendChild(btns);
-    (d.body || d.documentElement).appendChild(bar);
-  }
+  // Cookie consent banner removed at the site owner's request (US-focused, soft consent).
+  // Kept as a no-op so any existing references stay safe. Flip CONSENT_MODE to 'gated'
+  // and restore a banner before opening the UK/EU market.
+  function showConsentBanner() { /* intentionally disabled */ }
 
   /* ============================== public API ============================= */
   w.WPTrack = {
@@ -239,7 +205,6 @@
     captureAttribution();   // always — independent of consent (first-party, functional)
     wireInquiryClicks();
     loadTags();             // soft: loads now. gated: loads only if previously accepted.
-    showConsentBanner();
   }
   if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', init);
   else init();

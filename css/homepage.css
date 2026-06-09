@@ -420,7 +420,7 @@
     }
     .expeditions-header {
       text-align: center;
-      margin-bottom: 64px;
+      margin-bottom: 36px;
     }
     .expeditions-title {
       font-family: var(--font-display);
@@ -1275,7 +1275,9 @@ picture{display:contents}
       margin: 0 auto;
       padding-top: 110px;
     }
-    .continent-group:first-child { padding-top: 0; }
+    /* First group (Africa) sits directly under the section header — no big top gap.
+       (.expeditions-header is the actual first child, so :first-child won't match here.) */
+    .expeditions-header + .continent-group { padding-top: 0; }
     .continent-heading {
       font-family: var(--font-display);
       font-size: clamp(1.5rem, 2.6vw, 2rem);
@@ -1425,4 +1427,13 @@ picture{display:contents}
 
     @media (max-width: 1024px) {
       .nav-dd-grid { max-width: 620px; }
+    }
+
+    /* Dropdown: keep the mega-menu within the viewport on narrow desktop widths
+       (901–1120px), where it is right-anchored to a mid-nav toggle. Below 901px
+       the desktop nav is replaced by the hamburger menu, so this only covers the
+       narrow-desktop band. body{overflow-x:hidden} is the final backstop. */
+    @media (min-width: 901px) and (max-width: 1120px) {
+      .nav-dd-menu { padding: 26px 28px; }
+      .nav-dd-grid { max-width: 380px; gap: 22px 32px; }
     }
