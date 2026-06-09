@@ -51,6 +51,49 @@
       document.body.style.overflow = '';
     }
 
+    // ========== Expeditions dropdown (desktop) ==========
+    (function() {
+      var toggle = document.getElementById('expDropdownToggle');
+      if (!toggle) return;
+      var dd = toggle.closest('.nav-dd');
+      if (!dd) return;
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        var open = dd.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function(e) {
+        if (!dd.contains(e.target)) {
+          dd.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          dd.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+      dd.querySelectorAll('.nav-dd-menu a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          dd.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+
+    // ========== Expeditions accordion (mobile menu) ==========
+    (function() {
+      var mToggle = document.getElementById('mExpToggle');
+      var mList = document.getElementById('mExpList');
+      if (!mToggle || !mList) return;
+      mToggle.addEventListener('click', function() {
+        var open = mList.classList.toggle('open');
+        mToggle.classList.toggle('open', open);
+        mToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+
     // ========== Scroll Reveal (IntersectionObserver) ==========
     (function() {
       const reveals = document.querySelectorAll('.reveal');

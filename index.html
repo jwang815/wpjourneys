@@ -562,7 +562,53 @@
       <span class="nav-logo-text">Waypoint Journeys</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#expeditions" data-i18n="mobile_nav_expeditions">Expeditions</a></li>
+      <li class="nav-dd">
+        <a href="/#expeditions" class="nav-dd-toggle" id="expDropdownToggle" aria-haspopup="true" aria-expanded="false" data-i18n="mobile_nav_expeditions">Expeditions</a>
+        <div class="nav-dd-menu" id="expDropdownMenu" role="menu">
+          <div class="nav-dd-grid">
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-africa" data-i18n="continent_africa">Africa</a>
+          <a href="/egypt-expedition/" data-i18n="nav_exp_egypt">Egypt</a>
+          <a href="/eritrea-expedition/" data-i18n="nav_exp_eritrea">Eritrea</a>
+          <a href="/ethiopia-expedition/" data-i18n="nav_exp_ethiopia">Ethiopia</a>
+          <a href="/libya-expedition/" data-i18n="nav_exp_libya">Libya</a>
+          <a href="/madagascar-expedition/" data-i18n="nav_exp_madagascar">Madagascar</a>
+          <a href="/mauritania-expedition/" data-i18n="nav_exp_mauritania">Mauritania</a>
+          <a href="/mauritius-expedition/" data-i18n="nav_exp_mauritius">Mauritius</a>
+          <a href="/gorilla-expedition/" data-i18n="nav_exp_gorilla">Rwanda, Uganda &amp; Gorillas</a>
+          <a href="/tunisia-algeria-expedition/" data-i18n="nav_exp_tunisia">Tunisia &amp; Algeria</a>
+          <a href="/west-africa-expedition/" data-i18n="nav_exp_westafrica">West Africa</a>
+        </div>
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-asia" data-i18n="continent_asia">Asia</a>
+          <a href="/bangladesh-expedition/" data-i18n="nav_exp_bangladesh">Bangladesh</a>
+          <a href="/bhutan-expedition/" data-i18n="nav_exp_bhutan">Bhutan</a>
+          <a href="/central-asia-expedition/" data-i18n="nav_exp_centralasia">Central Asia</a>
+          <a href="/china-expedition/" data-i18n="nav_exp_china">China</a>
+          <a href="/mongolia-expedition/" data-i18n="nav_exp_mongolia">Mongolia</a>
+          <a href="/myanmar-expedition/" data-i18n="nav_exp_myanmar">Myanmar</a>
+          <a href="/pakistan-expedition/" data-i18n="nav_exp_pakistan">Pakistan</a>
+          <a href="/socotra/" data-i18n="nav_exp_socotra">Socotra</a>
+          <a href="/syria-expedition/" data-i18n="nav_exp_syria">Syria</a>
+          <a href="/turkmenistan-expedition/" data-i18n="nav_exp_turkmenistan">Turkmenistan</a>
+        </div>
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-americas" data-i18n="continent_americas">The Americas</a>
+          <a href="/caribbean-expedition/" data-i18n="nav_exp_caribbean">Caribbean</a>
+          <a href="/guianas-expedition/" data-i18n="nav_exp_guianas">Guyana &amp; Suriname</a>
+          <a href="/maya-corridor-expedition/" data-i18n="nav_exp_maya">Maya Corridor</a>
+        </div>
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-europe" data-i18n="continent_europe">Europe</a>
+          <a href="/moldova-expedition/" data-i18n="nav_exp_moldova">Moldova &amp; Transnistria</a>
+        </div>
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-oceania" data-i18n="continent_oceania">Oceania &amp; the Pacific</a>
+          <a href="/pacific-expedition/" data-i18n="nav_exp_pacific">Pacific Islands</a>
+        </div>
+          </div>
+        </div>
+      </li>
       <li><a href="/blog/" data-i18n="mobile_nav_blog">Blog</a></li>
       <li><a href="/about/" data-i18n="mobile_nav_about">About</a></li>
       <li><a href="/inquire/" class="nav-cta-btn" data-i18n="mobile_nav_inquire">Inquire</a></li>
@@ -576,7 +622,39 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#expeditions" onclick="closeMobileMenu()" data-i18n="mobile_nav_expeditions">Expeditions</a>
+    <button type="button" class="m-exp-toggle" id="mExpToggle" aria-expanded="false" data-i18n="mobile_nav_expeditions">Expeditions</button>
+    <div class="m-exp-list" id="mExpList">
+      <span class="m-exp-cont" data-i18n="continent_africa">Africa</span>
+        <a href="/egypt-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_egypt">Egypt</a>
+        <a href="/eritrea-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_eritrea">Eritrea</a>
+        <a href="/ethiopia-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_ethiopia">Ethiopia</a>
+        <a href="/libya-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_libya">Libya</a>
+        <a href="/madagascar-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_madagascar">Madagascar</a>
+        <a href="/mauritania-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_mauritania">Mauritania</a>
+        <a href="/mauritius-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_mauritius">Mauritius</a>
+        <a href="/gorilla-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_gorilla">Rwanda, Uganda &amp; Gorillas</a>
+        <a href="/tunisia-algeria-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_tunisia">Tunisia &amp; Algeria</a>
+        <a href="/west-africa-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_westafrica">West Africa</a>
+      <span class="m-exp-cont" data-i18n="continent_asia">Asia</span>
+        <a href="/bangladesh-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_bangladesh">Bangladesh</a>
+        <a href="/bhutan-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_bhutan">Bhutan</a>
+        <a href="/central-asia-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_centralasia">Central Asia</a>
+        <a href="/china-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_china">China</a>
+        <a href="/mongolia-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_mongolia">Mongolia</a>
+        <a href="/myanmar-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_myanmar">Myanmar</a>
+        <a href="/pakistan-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_pakistan">Pakistan</a>
+        <a href="/socotra/" onclick="closeMobileMenu()" data-i18n="nav_exp_socotra">Socotra</a>
+        <a href="/syria-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_syria">Syria</a>
+        <a href="/turkmenistan-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_turkmenistan">Turkmenistan</a>
+      <span class="m-exp-cont" data-i18n="continent_americas">The Americas</span>
+        <a href="/caribbean-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_caribbean">Caribbean</a>
+        <a href="/guianas-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_guianas">Guyana &amp; Suriname</a>
+        <a href="/maya-corridor-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_maya">Maya Corridor</a>
+      <span class="m-exp-cont" data-i18n="continent_europe">Europe</span>
+        <a href="/moldova-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_moldova">Moldova &amp; Transnistria</a>
+      <span class="m-exp-cont" data-i18n="continent_oceania">Oceania &amp; the Pacific</span>
+        <a href="/pacific-expedition/" onclick="closeMobileMenu()" data-i18n="nav_exp_pacific">Pacific Islands</a>
+    </div>
     <a href="#custom-expedition" onclick="closeMobileMenu()" data-i18n="mobile_nav_custom">Custom Trip</a>
     <a href="/blog/" onclick="closeMobileMenu()" data-i18n="mobile_nav_blog">Blog</a>
     <a href="/about/" onclick="closeMobileMenu()" data-i18n="mobile_nav_about">About</a>
@@ -635,261 +713,9 @@
       <span class="section-label light reveal" data-i18n="expeditions_label">UPCOMING EXPEDITIONS</span>
       <h2 class="expeditions-title reveal reveal-delay-1" data-i18n="expeditions_title">Off the Beaten Path</h2>
     </div>
-    <div class="expeditions-grid">
-
-      <!-- Bangladesh -->
-      <a href="/bangladesh-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/bangladesh-dhaka-aerial.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/bangladesh-dhaka-aerial.jpg" alt="Aerial view of Dhaka and the Buriganga river, Bangladesh" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_bangladesh_tag">Soul of the Bengal Delta</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_bangladesh_name">Bangladesh</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_bangladesh_subtitle">Old Dhaka, Sreemangal Tea Country &amp; the Floating Markets</p>
-          <p class="expedition-card-desc" data-i18n="expedition_bangladesh_desc">A 7-day expedition through one of South Asia's most-overlooked countries. Old Dhaka and the Buriganga, the tea gardens of Sreemangal, the hoolock gibbons of Lawachara, an overnight launch to the Barisal floating markets, and the UNESCO ruins of Bagerhat.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_bangladesh_dates">7 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_bangladesh_price">From $1,695</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_bangladesh_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Eritrea -->
-      <a href="/eritrea-expedition/" class="expedition-card reveal reveal-delay-1">
-        <picture><source srcset="/images/expeditions/unsplash-1580320239377.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1580320239377.jpg" alt="Silhouette at sunset in Asmara, Eritrea" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_eritrea_tag">Modernist Africa</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_eritrea_name">Eritrea</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_eritrea_subtitle">The Horn of Africa's Modernist Jewel</p>
-          <p class="expedition-card-desc" data-i18n="expedition_eritrea_desc">The country almost nobody has been to. Asmara is UNESCO's newest world heritage city — the finest collection of early modernist architecture on Earth — with the Red Sea coast at Massawa and Keren's Monday camel market as counterpoints.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_eritrea_dates">5 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_eritrea_price">From $2,450</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_eritrea_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Ghana, Benin & Togo (West Africa) -->
-      <a href="/west-africa-expedition/" class="expedition-card reveal reveal-delay-2">
-        <picture><source srcset="/images/expeditions/unsplash-1545315637.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1545315637.jpg" alt="Colorful pirogue boat on West African beach at sunset — Ghana, Benin, Togo expedition" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_westafrica_tag">Cultural Expedition</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_westafrica_name">Ghana, Benin & Togo</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_westafrica_subtitle">Voodoo, Castles & the Slave Coast</p>
-          <p class="expedition-card-desc" data-i18n="expedition_westafrica_desc">Three nations, one extraordinary journey along the Gulf of Guinea. Explore Voodoo temples in Ouidah, walk the halls of Cape Coast and Elmina slave castles, visit the stilt village of Ganvié, and witness the royal palaces of Abomey.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_westafrica_dates">8 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_westafrica_price">From $2,950</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_westafrica_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Libya -->
-      <a href="/libya-expedition/" class="expedition-card reveal reveal-delay-3">
-        <picture><source srcset="/images/expeditions/libya-leptis-magna.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/libya-leptis-magna.jpg" alt="Roman ruins at Leptis Magna, Libya" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_libya_tag">Roman Africa &amp; Sahara</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_libya_name">Libya</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_libya_subtitle">Leptis Magna, Sabratha &amp; the Acacus Sahara</p>
-          <p class="expedition-card-desc" data-i18n="expedition_libya_desc">Two of the most complete Roman cities in the Mediterranean, the Berber Nafusa mountains, the UNESCO Ghadames oasis, and — on the deepest itinerary — the prehistoric rock art of the Tadrart Acacus. Choose 2, 3, 5, or 8 nights.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_libya_dates">2–9 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_libya_price">From $1,195</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_libya_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Madagascar -->
-      <a href="/madagascar-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/madagascar-baobabs-avenue.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/madagascar-baobabs-avenue.jpg" alt="Avenue of the Baobabs near Morondava, Madagascar" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_madagascar_tag">The Eighth Continent</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_madagascar_name">Madagascar</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_madagascar_subtitle">Baobabs, Lemurs &amp; the Eastern Rainforest</p>
-          <p class="expedition-card-desc" data-i18n="expedition_madagascar_desc">Watch the Avenue of the Baobabs throw hundred-metre shadows at sunset, walk Kirindy Forest by night in search of the fossa, meet lemurs at five reserves, and end at the dawn chorus of the indri in the Andasibe rainforest. Optional 2-day Tsingy de Bemaraha extension.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_madagascar_dates">7 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_madagascar_price">From $2,750</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_madagascar_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Mauritania -->
-      <a href="/mauritania-expedition/" class="expedition-card reveal reveal-delay-1">
-        <picture><source srcset="/images/expeditions/unsplash-1760681554227.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1760681554227.jpg" alt="Camel caravan crossing the Sahara dunes at sunset in Mauritania" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_mauritania_tag">Sahara Expedition</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_mauritania_name">Mauritania</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_mauritania_subtitle">The Sahara and the Iron Ore Train</p>
-          <p class="expedition-card-desc" data-i18n="expedition_mauritania_desc">Ride one of the longest trains in the world across the Sahara, walk the stone libraries of medieval Chinguetti, camp beneath the monolith of Ben Amera, and close the journey at Cabo Blanco — the last refuge of the Mediterranean monk seal.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_mauritania_dates">8 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_mauritania_price">From $2,950</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_mauritania_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Mongolia -->
-      <a href="/mongolia-expedition/" class="expedition-card reveal reveal-delay-2">
-        <picture><source srcset="/images/expeditions/unsplash-1575415868394.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1575415868394.jpg" alt="Traditional Mongolian ger camp on the open steppe at sunset" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_mongolia_tag">Naadam Festival</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_mongolia_name">Mongolia</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_mongolia_subtitle">Land of the Eternal Sky</p>
-          <p class="expedition-card-desc" data-i18n="expedition_mongolia_desc">From the Naadam Festival's ancient competitions to the sweeping dunes of the Gobi Desert and the Kazakh Golden Eagle hunters of the Altai Mountains. Sleep in traditional gers, ride across the open steppe, and experience nomadic culture firsthand.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_mongolia_dates">11–17 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_mongolia_price">From $4,950</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_mongolia_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Myanmar -->
-      <a href="/myanmar-expedition/" class="expedition-card reveal reveal-delay-3">
-        <picture><source srcset="/images/expeditions/unsplash-1566811850669.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1566811850669.jpg" alt="Pink hot air balloons at sunrise over Bagan temples, Myanmar" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_myanmar_tag">Balloons Over Bagan</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_myanmar_name">Myanmar</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_myanmar_subtitle">Bagan, Balloons & the Golden Land</p>
-          <p class="expedition-card-desc" data-i18n="expedition_myanmar_desc">Drift silently at sunrise across Bagan's plain of two thousand temples. Cross the U Bein teak bridge at golden hour. Float through Inle Lake's stilted villages, climb into Pindaya's Buddha caves, and end at Yangon's golden Shwedagon Pagoda.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_myanmar_dates">15 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_myanmar_price">From $3,950</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_myanmar_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Pakistan -->
-      <a href="/pakistan-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/unsplash-1514558427911.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1514558427911.jpg" alt="Hunza Valley autumn foliage with Karakoram mountains in Pakistan" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_pakistan_tag">Fall Foliage Season</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_pakistan_name">Pakistan</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_pakistan_subtitle">The Karakoram and Ancient Empires</p>
-          <p class="expedition-card-desc" data-i18n="expedition_pakistan_desc">Drive the legendary Karakoram Highway through the world's most dramatic mountain corridor. Explore the Hunza Valley's ancient forts and apricot orchards, cross the highest paved border crossing on Earth, and discover Lahore's Mughal heritage.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_pakistan_dates">13 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_pakistan_price">From $3,695</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_pakistan_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Socotra -->
-      <a href="/socotra/" class="expedition-card reveal reveal-delay-1" data-card="socotra">
-        <picture><source srcset="/images/expeditions/socotra-dragon-blood-tree-sunset.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/socotra-dragon-blood-tree-sunset.jpg" alt="Dragon blood trees and goats in the Diksam Plateau, Socotra Island" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_socotra_tag">Featured Expedition</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_socotra_name">Socotra Island</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_socotra_subtitle">The Alien Island</p>
-          <p class="expedition-card-desc" data-i18n="expedition_socotra_desc">A UNESCO-protected archipelago off the Horn of Africa with alien-like Dragon's Blood Trees, pristine white-sand beaches, and one of the most biodiverse marine environments on Earth. Charter flight from Jeddah included.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_socotra_dates">7 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_socotra_price">From $2,950</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_socotra_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Syria -->
-      <a href="/syria-expedition/" class="expedition-card reveal reveal-delay-2">
-        <picture><source srcset="/images/expeditions/syria-umayyad-mosque.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/syria-umayyad-mosque.jpg" alt="Birds in flight over the Umayyad Mosque, Damascus, Syria" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_syria_tag">Levant Reopening</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_syria_name">Syria</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_syria_subtitle">Damascus, Palmyra &amp; the Old City of Aleppo</p>
-          <p class="expedition-card-desc" data-i18n="expedition_syria_desc">Ten days from Beirut across six UNESCO World Heritage sites: the Old City of Damascus, Bosra's Roman theatre, Maaloula where Aramaic is still spoken, Krak des Chevaliers, Palmyra, Apamea's Roman colonnade, and the Old City of Aleppo.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_syria_dates">10 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_syria_price">From $2,950</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_syria_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Turkmenistan -->
-      <a href="/turkmenistan-expedition/" class="expedition-card reveal reveal-delay-3">
-        <picture><source srcset="/images/expeditions/unsplash-1448772917253.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1448772917253.jpg" alt="The Darvaza Gas Crater (Door to Hell) burning at night in Turkmenistan" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_turkmenistan_tag">The Door to Hell</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_turkmenistan_name">Turkmenistan</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_turkmenistan_subtitle">The Door to Hell, Ancient Merv & White-Marble Ashgabat</p>
-          <p class="expedition-card-desc" data-i18n="expedition_turkmenistan_desc">Sleep on the rim of the Darvaza Gas Crater — a 70-metre flaming pit burning since 1971 — then walk the Silk Road ruins of Ancient Merv and Konye-Urgench, drive into the striped cliffs of Yangykala Canyon, and end among the white-marble boulevards of Ashgabat.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_turkmenistan_dates">7 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_turkmenistan_price">From $3,495</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_turkmenistan_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Egypt -->
+        <div class="continent-group">
+      <h3 class="continent-heading reveal" id="cont-africa" data-i18n="continent_africa">Africa</h3>
+      <div class="expeditions-grid">
       <a href="/egypt-expedition/" class="expedition-card reveal">
         <picture><source srcset="/images/expeditions/egypt-abu-simbel.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/egypt-abu-simbel.jpg" alt="The colossi of Abu Simbel, Egypt" loading="lazy" width="800" height="533"></picture>
         <div class="expedition-card-overlay"></div>
@@ -909,239 +735,25 @@
           </span>
         </div>
       </a>
-
-      <!-- Bhutan -->
-      <a href="/bhutan-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/bhutan-tigers-nest.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/bhutan-tigers-nest.jpg" alt="Tiger's Nest monastery on a cliff, Bhutan" loading="lazy" width="800" height="533"></picture>
+      <a href="/eritrea-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/unsplash-1580320239377.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1580320239377.jpg" alt="Silhouette at sunset in Asmara, Eritrea" loading="lazy" width="800" height="533"></picture>
         <div class="expedition-card-overlay"></div>
         <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_bhutan_tag">The Thunder Dragon Kingdom</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_bhutan_name">Bhutan</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_bhutan_subtitle">Tiger's Nest, Punakha &amp; the Black-Necked Cranes</p>
-          <p class="expedition-card-desc" data-i18n="expedition_bhutan_desc">A 7-day expedition across the last Himalayan kingdom — the Tiger's Nest monastery, a traditional hot stone bath, the phallus-painted Fertility Village, the riverside dzong at Punakha, and the wintering cranes of the Phobjika valley.</p>
+          <span class="expedition-card-tag" data-i18n="expedition_eritrea_tag">Modernist Africa</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_eritrea_name">Eritrea</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_eritrea_subtitle">The Horn of Africa's Modernist Jewel</p>
+          <p class="expedition-card-desc" data-i18n="expedition_eritrea_desc">The country almost nobody has been to. Asmara is UNESCO's newest world heritage city — the finest collection of early modernist architecture on Earth — with the Red Sea coast at Massawa and Keren's Monday camel market as counterpoints.</p>
           <p class="expedition-card-details">
-            <span data-i18n="expedition_bhutan_dates">7 Days</span>
+            <span data-i18n="expedition_eritrea_dates">5 Days</span>
             <span class="separator">·</span>
-            <span data-i18n="expedition_bhutan_price">From $3,795</span>
+            <span data-i18n="expedition_eritrea_price">From $2,450</span>
           </p>
           <span class="expedition-card-link">
-            <span data-i18n="expedition_bhutan_cta">View Expedition</span>
+            <span data-i18n="expedition_eritrea_cta">View Expedition</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </span>
         </div>
       </a>
-
-      <!-- The Last Atolls -->
-      <a href="/pacific-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/pacific-nan-madol.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/pacific-nan-madol.jpg" alt="The basalt walls of Nan Madol rising from the canal, Pohnpei" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_pacific_tag">The Central Pacific</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_pacific_name">The Last Atolls</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_pacific_subtitle">Five Microstates &amp; the Island Hopper</p>
-          <p class="expedition-card-desc" data-i18n="expedition_pacific_desc">A 15-day expedition across five of the world's least-visited nations — Tuvalu, Kiribati, Nauru, the Marshall Islands, and Micronesia — linked by the United Island Hopper and ending at Nan Madol, the ancient basalt stone city off Pohnpei.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_pacific_dates">15 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_pacific_price">From $3,495</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_pacific_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- The Forgotten Coast -->
-      <a href="/guianas-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/guianas-kaieteur-falls.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/guianas-kaieteur-falls.jpg" alt="Kaieteur Falls plunging into the jungle gorge, Guyana" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_guianas_tag">Guyana &amp; Suriname</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_guianas_name">The Forgotten Coast</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_guianas_subtitle">Kaieteur Falls &amp; the Amazonian Interior</p>
-          <p class="expedition-card-desc" data-i18n="expedition_guianas_desc">A 6-day expedition through the most overlooked corner of South America — Kaieteur Falls by private charter, UNESCO-listed Paramaribo, and a river journey deep into untouched Amazonian rainforest.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_guianas_dates">6 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_guianas_price">From $2,495</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_guianas_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Tunisia & Algeria -->
-      <a href="/tunisia-algeria-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/maghreb-el-jem.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/maghreb-el-jem.jpg" alt="Aerial view of the El Jem amphitheatre, Tunisia" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_maghreb_tag">Rome, Sand &amp; the Maghreb</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_maghreb_name">Tunisia & Algeria</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_maghreb_subtitle">Dougga, El Jem, Timgad &amp; Constantine</p>
-          <p class="expedition-card-desc" data-i18n="expedition_maghreb_desc">Two companion 8-day expeditions across the two halves of Roman Africa — Dougga, El Jem, Carthage, and the Sahara in Tunisia; Timgad, Djemila, Tipaza, and the gorge-city of Constantine in Algeria. Among the finest Roman cities almost nobody visits.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_maghreb_dates">8 + 8 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_maghreb_price">From $2,295</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_maghreb_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- China -->
-      <a href="/china-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/china-li-river.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/china-li-river.jpg" alt="The karst peaks and bend of the Li River, Guilin, China" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_china_tag">The Middle Kingdom</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_china_name">China</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_china_subtitle">Pandas, Avatar Mountains &amp; the Great Wall</p>
-          <p class="expedition-card-desc" data-i18n="expedition_china_desc">A 14-day private luxury expedition across the greatest contrasts in Asia — pandas in Chengdu, the vertical city of Chongqing, the Avatar peaks of Zhangjiajie, the Li River karst, the Terracotta Army, and the Great Wall.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_china_dates">14 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_china_price">From $8,995</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_china_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- The Maya Corridor -->
-      <a href="/maya-corridor-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/maya-antigua-arch.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/maya-antigua-arch.jpg" alt="The Santa Catalina Arch and volcano, Antigua, Guatemala" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_maya_tag">El Salvador · Guatemala · Honduras</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_maya_name">The Maya Corridor</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_maya_subtitle">Volcanoes, Ruins &amp; the Acatenango Overnight</p>
-          <p class="expedition-card-desc" data-i18n="expedition_maya_desc">A 7-day expedition across three countries — the Santa Ana crater, colonial Antigua, the overnight Acatenango hike beside erupting Fuego, the Black Christ of Esquipulas, and the Maya carvings of Copán.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_maya_dates">7 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_maya_price">From $2,295</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_maya_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Where the Volcanoes Meet -->
-      <a href="/gorilla-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/gorilla-silverback.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/gorilla-silverback.jpg" alt="A silverback mountain gorilla in the forest" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_gorilla_tag">Burundi · Rwanda · Uganda · DRC</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_gorilla_name">Where the Volcanoes Meet</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_gorilla_subtitle">Gorillas, Lava Lakes &amp; the Three-Country Peak</p>
-          <p class="expedition-card-desc" data-i18n="expedition_gorilla_desc">A 10-day Albertine Rift expedition — mountain gorillas in Rwanda and Bwindi, an active lava lake on Nyiragongo, golden monkeys, and the summit of Mt Sabyinyo where three countries touch. All permits included.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_gorilla_dates">10 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_gorilla_price">From $3,995</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_gorilla_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- 4 Stans of Central Asia -->
-      <a href="/central-asia-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/centralasia-registan.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/centralasia-registan.jpg" alt="The Registan in Samarkand, Uzbekistan" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_centralasia_tag">Steppe, Summit &amp; the Silk Road</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_centralasia_name">4 Stans of Central Asia</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_centralasia_subtitle">Kazakhstan, Kyrgyzstan, Tajikistan &amp; Uzbekistan</p>
-          <p class="expedition-card-desc" data-i18n="expedition_centralasia_desc">An 18-day Silk Road expedition across four countries — Charyn Canyon, Kyrgyz eagle hunters, the Seven Lakes of Tajikistan, and the turquoise domes of Samarkand, Bukhara, and Khiva. Optional Turkmenistan extension.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_centralasia_dates">18 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_centralasia_price">From $5,995</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_centralasia_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Mauritius -->
-      <a href="/mauritius-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/mauritius-le-morne.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/mauritius-le-morne.jpg" alt="Le Morne Brabant and turquoise lagoon, Mauritius" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_mauritius_tag">Indian Ocean Luxury</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_mauritius_name">Mauritius</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_mauritius_subtitle">Lagoons, Seven Coloured Earth &amp; Quiet Luxury</p>
-          <p class="expedition-card-desc" data-i18n="expedition_mauritius_desc">A 4-day romantic island escape — turquoise lagoons, Île aux Cerfs, the Seven Coloured Earth of Chamarel, Le Morne, and the finest resort hospitality in the Indian Ocean. Pairs beautifully with Madagascar.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_mauritius_dates">4 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_mauritius_price">From $1,995</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_mauritius_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- The Caribbean Arc -->
-      <a href="/caribbean-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/caribbean-pitons.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/caribbean-pitons.jpg" alt="The twin Pitons at sunset, Saint Lucia" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_caribbean_tag">Nine Islands, Thirteen Days</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_caribbean_name">The Caribbean Arc</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_caribbean_subtitle">The Full Length of the Lesser Antilles</p>
-          <p class="expedition-card-desc" data-i18n="expedition_caribbean_desc">A 13-day expedition down the full length of the Lesser Antilles — Saint Kitts, Antigua & Barbuda, Dominica, Saint Lucia, Barbados, the Grenadines, Grenada, and Trinidad & Tobago. The Eastern Caribbean done properly, end to end.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_caribbean_dates">13 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_caribbean_price">From $5,995</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_caribbean_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Where Empires End -->
-      <a href="/moldova-expedition/" class="expedition-card reveal">
-        <picture><source srcset="/images/expeditions/moldova-tiraspol.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/moldova-tiraspol.jpg" alt="A street scene in Tiraspol, Transnistria" loading="lazy" width="800" height="533"></picture>
-        <div class="expedition-card-overlay"></div>
-        <div class="expedition-card-content">
-          <span class="expedition-card-tag" data-i18n="expedition_moldova_tag">Moldova &amp; Transnistria</span>
-          <h3 class="expedition-card-name" data-i18n="expedition_moldova_name">Where Empires End</h3>
-          <p class="expedition-card-subtitle" data-i18n="expedition_moldova_subtitle">Soviet Ghosts &amp; Underground Wine</p>
-          <p class="expedition-card-desc" data-i18n="expedition_moldova_desc">A 4-day expedition through Europe's least-visited corner — the unrecognised breakaway republic of Transnistria, the world's largest underground wine city at Mileștii Mici, the cave monastery of Orheiul Vechi, and Chișinău. Our most affordable expedition.</p>
-          <p class="expedition-card-details">
-            <span data-i18n="expedition_moldova_dates">4 Days</span>
-            <span class="separator">·</span>
-            <span data-i18n="expedition_moldova_price">From $695</span>
-          </p>
-          <span class="expedition-card-link">
-            <span data-i18n="expedition_moldova_cta">View Expedition</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Ethiopia -->
       <a href="/ethiopia-expedition/" class="expedition-card reveal">
         <picture><source srcset="/images/expeditions/ethiopia-dallol.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/ethiopia-dallol.jpg" alt="The Dallol depression, Danakil, Ethiopia" loading="lazy" width="800" height="533"></picture>
         <div class="expedition-card-overlay"></div>
@@ -1161,8 +773,447 @@
           </span>
         </div>
       </a>
-
+      <a href="/libya-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/libya-leptis-magna.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/libya-leptis-magna.jpg" alt="Roman ruins at Leptis Magna, Libya" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_libya_tag">Roman Africa &amp; Sahara</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_libya_name">Libya</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_libya_subtitle">Leptis Magna, Sabratha &amp; the Acacus Sahara</p>
+          <p class="expedition-card-desc" data-i18n="expedition_libya_desc">Two of the most complete Roman cities in the Mediterranean, the Berber Nafusa mountains, the UNESCO Ghadames oasis, and — on the deepest itinerary — the prehistoric rock art of the Tadrart Acacus. Choose 2, 3, 5, or 8 nights.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_libya_dates">2–9 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_libya_price">From $1,195</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_libya_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/madagascar-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/madagascar-baobabs-avenue.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/madagascar-baobabs-avenue.jpg" alt="Avenue of the Baobabs near Morondava, Madagascar" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_madagascar_tag">The Eighth Continent</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_madagascar_name">Madagascar</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_madagascar_subtitle">Baobabs, Lemurs &amp; the Eastern Rainforest</p>
+          <p class="expedition-card-desc" data-i18n="expedition_madagascar_desc">Watch the Avenue of the Baobabs throw hundred-metre shadows at sunset, walk Kirindy Forest by night in search of the fossa, meet lemurs at five reserves, and end at the dawn chorus of the indri in the Andasibe rainforest. Optional 2-day Tsingy de Bemaraha extension.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_madagascar_dates">7 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_madagascar_price">From $2,750</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_madagascar_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/mauritania-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/unsplash-1760681554227.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1760681554227.jpg" alt="Camel caravan crossing the Sahara dunes at sunset in Mauritania" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_mauritania_tag">Sahara Expedition</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_mauritania_name">Mauritania</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_mauritania_subtitle">The Sahara and the Iron Ore Train</p>
+          <p class="expedition-card-desc" data-i18n="expedition_mauritania_desc">Ride one of the longest trains in the world across the Sahara, walk the stone libraries of medieval Chinguetti, camp beneath the monolith of Ben Amera, and close the journey at Cabo Blanco — the last refuge of the Mediterranean monk seal.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_mauritania_dates">8 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_mauritania_price">From $2,950</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_mauritania_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/mauritius-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/mauritius-le-morne.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/mauritius-le-morne.jpg" alt="Le Morne Brabant and turquoise lagoon, Mauritius" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_mauritius_tag">Indian Ocean Luxury</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_mauritius_name">Mauritius</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_mauritius_subtitle">Lagoons, Seven Coloured Earth &amp; Quiet Luxury</p>
+          <p class="expedition-card-desc" data-i18n="expedition_mauritius_desc">A 4-day romantic island escape — turquoise lagoons, Île aux Cerfs, the Seven Coloured Earth of Chamarel, Le Morne, and the finest resort hospitality in the Indian Ocean. Pairs beautifully with Madagascar.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_mauritius_dates">4 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_mauritius_price">From $1,995</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_mauritius_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/gorilla-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/gorilla-silverback.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/gorilla-silverback.jpg" alt="A silverback mountain gorilla in the forest" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_gorilla_tag">Burundi · Rwanda · Uganda · DRC</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_gorilla_name">Where the Volcanoes Meet</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_gorilla_subtitle">Gorillas, Lava Lakes &amp; the Three-Country Peak</p>
+          <p class="expedition-card-desc" data-i18n="expedition_gorilla_desc">A 10-day Albertine Rift expedition — mountain gorillas in Rwanda and Bwindi, an active lava lake on Nyiragongo, golden monkeys, and the summit of Mt Sabyinyo where three countries touch. All permits included.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_gorilla_dates">10 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_gorilla_price">From $3,995</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_gorilla_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/tunisia-algeria-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/maghreb-el-jem.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/maghreb-el-jem.jpg" alt="Aerial view of the El Jem amphitheatre, Tunisia" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_maghreb_tag">Rome, Sand &amp; the Maghreb</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_maghreb_name">Tunisia &amp; Algeria</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_maghreb_subtitle">Dougga, El Jem, Timgad &amp; Constantine</p>
+          <p class="expedition-card-desc" data-i18n="expedition_maghreb_desc">Two companion 8-day expeditions across the two halves of Roman Africa — Dougga, El Jem, Carthage, and the Sahara in Tunisia; Timgad, Djemila, Tipaza, and the gorge-city of Constantine in Algeria. Among the finest Roman cities almost nobody visits.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_maghreb_dates">8 + 8 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_maghreb_price">From $2,295</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_maghreb_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/west-africa-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/unsplash-1545315637.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1545315637.jpg" alt="Colorful pirogue boat on West African beach at sunset — Ghana, Benin, Togo expedition" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_westafrica_tag">Cultural Expedition</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_westafrica_name">Ghana, Benin & Togo</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_westafrica_subtitle">Voodoo, Castles & the Slave Coast</p>
+          <p class="expedition-card-desc" data-i18n="expedition_westafrica_desc">Three nations, one extraordinary journey along the Gulf of Guinea. Explore Voodoo temples in Ouidah, walk the halls of Cape Coast and Elmina slave castles, visit the stilt village of Ganvié, and witness the royal palaces of Abomey.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_westafrica_dates">8 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_westafrica_price">From $2,950</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_westafrica_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      </div>
     </div>
+    <div class="continent-group">
+      <h3 class="continent-heading reveal" id="cont-asia" data-i18n="continent_asia">Asia</h3>
+      <div class="expeditions-grid">
+      <a href="/bangladesh-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/bangladesh-dhaka-aerial.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/bangladesh-dhaka-aerial.jpg" alt="Aerial view of Dhaka and the Buriganga river, Bangladesh" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_bangladesh_tag">Soul of the Bengal Delta</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_bangladesh_name">Bangladesh</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_bangladesh_subtitle">Old Dhaka, Sreemangal Tea Country &amp; the Floating Markets</p>
+          <p class="expedition-card-desc" data-i18n="expedition_bangladesh_desc">A 7-day expedition through one of South Asia's most-overlooked countries. Old Dhaka and the Buriganga, the tea gardens of Sreemangal, the hoolock gibbons of Lawachara, an overnight launch to the Barisal floating markets, and the UNESCO ruins of Bagerhat.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_bangladesh_dates">7 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_bangladesh_price">From $1,695</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_bangladesh_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/bhutan-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/bhutan-tigers-nest.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/bhutan-tigers-nest.jpg" alt="Tiger's Nest monastery on a cliff, Bhutan" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_bhutan_tag">The Thunder Dragon Kingdom</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_bhutan_name">Bhutan</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_bhutan_subtitle">Tiger's Nest, Punakha &amp; the Black-Necked Cranes</p>
+          <p class="expedition-card-desc" data-i18n="expedition_bhutan_desc">A 7-day expedition across the last Himalayan kingdom — the Tiger's Nest monastery, a traditional hot stone bath, the phallus-painted Fertility Village, the riverside dzong at Punakha, and the wintering cranes of the Phobjika valley.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_bhutan_dates">7 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_bhutan_price">From $3,795</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_bhutan_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/central-asia-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/centralasia-registan.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/centralasia-registan.jpg" alt="The Registan in Samarkand, Uzbekistan" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_centralasia_tag">Steppe, Summit &amp; the Silk Road</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_centralasia_name">4 Stans of Central Asia</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_centralasia_subtitle">Kazakhstan, Kyrgyzstan, Tajikistan &amp; Uzbekistan</p>
+          <p class="expedition-card-desc" data-i18n="expedition_centralasia_desc">An 18-day Silk Road expedition across four countries — Charyn Canyon, Kyrgyz eagle hunters, the Seven Lakes of Tajikistan, and the turquoise domes of Samarkand, Bukhara, and Khiva. Optional Turkmenistan extension.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_centralasia_dates">18 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_centralasia_price">From $5,995</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_centralasia_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/china-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/china-li-river.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/china-li-river.jpg" alt="The karst peaks and bend of the Li River, Guilin, China" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_china_tag">The Middle Kingdom</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_china_name">China</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_china_subtitle">Pandas, Avatar Mountains &amp; the Great Wall</p>
+          <p class="expedition-card-desc" data-i18n="expedition_china_desc">A 14-day private luxury expedition across the greatest contrasts in Asia — pandas in Chengdu, the vertical city of Chongqing, the Avatar peaks of Zhangjiajie, the Li River karst, the Terracotta Army, and the Great Wall.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_china_dates">14 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_china_price">From $8,995</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_china_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/mongolia-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/unsplash-1575415868394.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1575415868394.jpg" alt="Traditional Mongolian ger camp on the open steppe at sunset" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_mongolia_tag">Naadam Festival</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_mongolia_name">Mongolia</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_mongolia_subtitle">Land of the Eternal Sky</p>
+          <p class="expedition-card-desc" data-i18n="expedition_mongolia_desc">From the Naadam Festival's ancient competitions to the sweeping dunes of the Gobi Desert and the Kazakh Golden Eagle hunters of the Altai Mountains. Sleep in traditional gers, ride across the open steppe, and experience nomadic culture firsthand.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_mongolia_dates">11–17 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_mongolia_price">From $4,950</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_mongolia_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/myanmar-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/unsplash-1566811850669.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1566811850669.jpg" alt="Pink hot air balloons at sunrise over Bagan temples, Myanmar" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_myanmar_tag">Balloons Over Bagan</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_myanmar_name">Myanmar</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_myanmar_subtitle">Bagan, Balloons & the Golden Land</p>
+          <p class="expedition-card-desc" data-i18n="expedition_myanmar_desc">Drift silently at sunrise across Bagan's plain of two thousand temples. Cross the U Bein teak bridge at golden hour. Float through Inle Lake's stilted villages, climb into Pindaya's Buddha caves, and end at Yangon's golden Shwedagon Pagoda.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_myanmar_dates">15 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_myanmar_price">From $3,950</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_myanmar_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/pakistan-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/unsplash-1514558427911.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1514558427911.jpg" alt="Hunza Valley autumn foliage with Karakoram mountains in Pakistan" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_pakistan_tag">Fall Foliage Season</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_pakistan_name">Pakistan</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_pakistan_subtitle">The Karakoram and Ancient Empires</p>
+          <p class="expedition-card-desc" data-i18n="expedition_pakistan_desc">Drive the legendary Karakoram Highway through the world's most dramatic mountain corridor. Explore the Hunza Valley's ancient forts and apricot orchards, cross the highest paved border crossing on Earth, and discover Lahore's Mughal heritage.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_pakistan_dates">13 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_pakistan_price">From $3,695</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_pakistan_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/socotra/" class="expedition-card reveal" data-card="socotra">
+        <picture><source srcset="/images/expeditions/socotra-dragon-blood-tree-sunset.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/socotra-dragon-blood-tree-sunset.jpg" alt="Dragon blood trees and goats in the Diksam Plateau, Socotra Island" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_socotra_tag">Featured Expedition</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_socotra_name">Socotra Island</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_socotra_subtitle">The Alien Island</p>
+          <p class="expedition-card-desc" data-i18n="expedition_socotra_desc">A UNESCO-protected archipelago off the Horn of Africa with alien-like Dragon's Blood Trees, pristine white-sand beaches, and one of the most biodiverse marine environments on Earth. Charter flight from Jeddah included.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_socotra_dates">7 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_socotra_price">From $2,950</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_socotra_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/syria-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/syria-umayyad-mosque.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/syria-umayyad-mosque.jpg" alt="Birds in flight over the Umayyad Mosque, Damascus, Syria" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_syria_tag">Levant Reopening</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_syria_name">Syria</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_syria_subtitle">Damascus, Palmyra &amp; the Old City of Aleppo</p>
+          <p class="expedition-card-desc" data-i18n="expedition_syria_desc">Ten days from Beirut across six UNESCO World Heritage sites: the Old City of Damascus, Bosra's Roman theatre, Maaloula where Aramaic is still spoken, Krak des Chevaliers, Palmyra, Apamea's Roman colonnade, and the Old City of Aleppo.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_syria_dates">10 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_syria_price">From $2,950</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_syria_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/turkmenistan-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/unsplash-1448772917253.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/unsplash-1448772917253.jpg" alt="The Darvaza Gas Crater (Door to Hell) burning at night in Turkmenistan" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_turkmenistan_tag">The Door to Hell</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_turkmenistan_name">Turkmenistan</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_turkmenistan_subtitle">The Door to Hell, Ancient Merv & White-Marble Ashgabat</p>
+          <p class="expedition-card-desc" data-i18n="expedition_turkmenistan_desc">Sleep on the rim of the Darvaza Gas Crater — a 70-metre flaming pit burning since 1971 — then walk the Silk Road ruins of Ancient Merv and Konye-Urgench, drive into the striped cliffs of Yangykala Canyon, and end among the white-marble boulevards of Ashgabat.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_turkmenistan_dates">7 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_turkmenistan_price">From $3,495</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_turkmenistan_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      </div>
+    </div>
+    <div class="continent-group">
+      <h3 class="continent-heading reveal" id="cont-americas" data-i18n="continent_americas">The Americas</h3>
+      <div class="expeditions-grid">
+      <a href="/caribbean-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/caribbean-pitons.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/caribbean-pitons.jpg" alt="The twin Pitons at sunset, Saint Lucia" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_caribbean_tag">Nine Islands, Thirteen Days</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_caribbean_name">The Caribbean Arc</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_caribbean_subtitle">The Full Length of the Lesser Antilles</p>
+          <p class="expedition-card-desc" data-i18n="expedition_caribbean_desc">A 13-day expedition down the full length of the Lesser Antilles — Saint Kitts, Antigua & Barbuda, Dominica, Saint Lucia, Barbados, the Grenadines, Grenada, and Trinidad & Tobago. The Eastern Caribbean done properly, end to end.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_caribbean_dates">13 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_caribbean_price">From $5,995</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_caribbean_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/guianas-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/guianas-kaieteur-falls.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/guianas-kaieteur-falls.jpg" alt="Kaieteur Falls plunging into the jungle gorge, Guyana" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_guianas_tag">Guyana &amp; Suriname</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_guianas_name">The Forgotten Coast</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_guianas_subtitle">Kaieteur Falls &amp; the Amazonian Interior</p>
+          <p class="expedition-card-desc" data-i18n="expedition_guianas_desc">A 6-day expedition through the most overlooked corner of South America — Kaieteur Falls by private charter, UNESCO-listed Paramaribo, and a river journey deep into untouched Amazonian rainforest.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_guianas_dates">6 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_guianas_price">From $2,495</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_guianas_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      <a href="/maya-corridor-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/maya-antigua-arch.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/maya-antigua-arch.jpg" alt="The Santa Catalina Arch and volcano, Antigua, Guatemala" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_maya_tag">El Salvador · Guatemala · Honduras</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_maya_name">The Maya Corridor</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_maya_subtitle">Volcanoes, Ruins &amp; the Acatenango Overnight</p>
+          <p class="expedition-card-desc" data-i18n="expedition_maya_desc">A 7-day expedition across three countries — the Santa Ana crater, colonial Antigua, the overnight Acatenango hike beside erupting Fuego, the Black Christ of Esquipulas, and the Maya carvings of Copán.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_maya_dates">7 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_maya_price">From $2,295</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_maya_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      </div>
+    </div>
+    <div class="continent-group">
+      <h3 class="continent-heading reveal" id="cont-europe" data-i18n="continent_europe">Europe</h3>
+      <div class="expeditions-grid">
+      <a href="/moldova-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/moldova-tiraspol.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/moldova-tiraspol.jpg" alt="A street scene in Tiraspol, Transnistria" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_moldova_tag">Moldova &amp; Transnistria</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_moldova_name">Where Empires End</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_moldova_subtitle">Soviet Ghosts &amp; Underground Wine</p>
+          <p class="expedition-card-desc" data-i18n="expedition_moldova_desc">A 4-day expedition through Europe's least-visited corner — the unrecognised breakaway republic of Transnistria, the world's largest underground wine city at Mileștii Mici, the cave monastery of Orheiul Vechi, and Chișinău. Our most affordable expedition.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_moldova_dates">4 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_moldova_price">From $695</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_moldova_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      </div>
+    </div>
+    <div class="continent-group">
+      <h3 class="continent-heading reveal" id="cont-oceania" data-i18n="continent_oceania">Oceania &amp; the Pacific</h3>
+      <div class="expeditions-grid">
+      <a href="/pacific-expedition/" class="expedition-card reveal">
+        <picture><source srcset="/images/expeditions/pacific-nan-madol.webp" type="image/webp"><img class="expedition-card-img" src="/images/expeditions/pacific-nan-madol.jpg" alt="The basalt walls of Nan Madol rising from the canal, Pohnpei" loading="lazy" width="800" height="533"></picture>
+        <div class="expedition-card-overlay"></div>
+        <div class="expedition-card-content">
+          <span class="expedition-card-tag" data-i18n="expedition_pacific_tag">The Central Pacific</span>
+          <h3 class="expedition-card-name" data-i18n="expedition_pacific_name">The Last Atolls</h3>
+          <p class="expedition-card-subtitle" data-i18n="expedition_pacific_subtitle">Five Microstates &amp; the Island Hopper</p>
+          <p class="expedition-card-desc" data-i18n="expedition_pacific_desc">A 15-day expedition across five of the world's least-visited nations — Tuvalu, Kiribati, Nauru, the Marshall Islands, and Micronesia — linked by the United Island Hopper and ending at Nan Madol, the ancient basalt stone city off Pohnpei.</p>
+          <p class="expedition-card-details">
+            <span data-i18n="expedition_pacific_dates">15 Days</span>
+            <span class="separator">·</span>
+            <span data-i18n="expedition_pacific_price">From $3,495</span>
+          </p>
+          <span class="expedition-card-link">
+            <span data-i18n="expedition_pacific_cta">View Expedition</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+      </a>
+      </div>
+    </div>
+  
   </section>
 
   <!-- ==================== EXPERIENCE STRIP ==================== -->
