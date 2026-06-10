@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plan Your Private Expedition | Waypoint Journeys</title>
-  <meta name="description" content="Tell us where you dream of going. Private luxury expeditions, max 5 guests, fully bespoke. We reply within the hour — by WhatsApp, email, or a quick call." />
+  <meta name="description" content="Tell us where you dream of going. Private luxury expeditions, max 5 guests, fully bespoke. We reply within 24 hours — by WhatsApp, email, or a quick call." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://wpjourneys.com/inquire/" />
 
@@ -12,12 +12,12 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Waypoint Journeys" />
   <meta property="og:title" content="Plan Your Private Expedition | Waypoint Journeys" />
-  <meta property="og:description" content="Private luxury expeditions, max 5 guests, fully bespoke. We reply within the hour." />
+  <meta property="og:description" content="Private luxury expeditions, max 5 guests, fully bespoke. We reply within 24 hours." />
   <meta property="og:url" content="https://wpjourneys.com/inquire/" />
   <meta property="og:image" content="https://wpjourneys.com/images/expeditions/unsplash-1682686581660.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Plan Your Private Expedition | Waypoint Journeys" />
-  <meta name="twitter:description" content="Private luxury expeditions, max 5 guests, fully bespoke. We reply within the hour." />
+  <meta name="twitter:description" content="Private luxury expeditions, max 5 guests, fully bespoke. We reply within 24 hours." />
   <meta name="twitter:image" content="https://wpjourneys.com/images/expeditions/unsplash-1682686581660.jpg" />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -164,6 +164,20 @@
       .inq{grid-template-columns:1fr;gap:38px;padding:104px 0 70px}
       .field.row{grid-template-columns:1fr}
     }
+    /* desktop expeditions dropdown (shared with homepage) */
+    .nav-dd{position:relative}
+    .nav-links .nav-dd-toggle{cursor:pointer}
+    .nav-links .nav-dd-toggle::after{content:'\2304';margin-left:7px;font-size:1.05em;line-height:1;display:inline-block;transition:transform .3s ease}
+    .nav-dd.open .nav-dd-toggle::after{transform:rotate(180deg)}
+    .nav-dd-menu{position:absolute;top:100%;right:0;left:auto;max-width:calc(100vw - 96px);background:rgba(17,17,17,.98);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(196,148,74,.22);box-shadow:0 24px 60px rgba(0,0,0,.5);padding:30px 36px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .28s ease,transform .28s ease,visibility .28s;z-index:1100}
+    .nav-dd.open .nav-dd-menu,.nav-dd:hover .nav-dd-menu{opacity:1;visibility:visible;transform:translateY(0)}
+    .nav-dd-grid{display:grid;grid-template-columns:repeat(3,max-content);align-items:start;gap:26px 44px}
+    .nav-dd-col{display:flex;flex-direction:column;gap:10px}
+    .nav-links .nav-dd-col a{font-size:.8rem;font-weight:400;letter-spacing:.04em;text-transform:none;color:var(--sand);white-space:nowrap;transition:color .2s ease}
+    .nav-links .nav-dd-col a:hover{color:var(--gold)}
+    .nav-links .nav-dd-heading{font-family:var(--font-display);font-size:.95rem;color:var(--gold)!important;letter-spacing:.04em;margin-bottom:4px;padding-bottom:9px;border-bottom:1px solid rgba(196,148,74,.2);text-transform:none}
+    @media(max-width:1240px){.nav-dd{position:static}.nav-dd-menu{top:calc(100% - 6px);right:48px}}
+    @media(max-width:900px){.nav-dd-menu{display:none!important}}
   </style>
 </head>
 <body data-wp-viewcontent="Inquiry">
@@ -189,7 +203,53 @@
       <span class="nav-logo-text">Waypoint Journeys</span>
     </a>
     <ul class="nav-links">
-      <li><a href="/#expeditions" data-i18n="mobile_nav_expeditions">Expeditions</a></li>
+      <li class="nav-dd">
+        <a href="/#expeditions" class="nav-dd-toggle" id="expDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="expDropdownMenu" data-i18n="mobile_nav_expeditions">Expeditions</a>
+        <div class="nav-dd-menu" id="expDropdownMenu">
+          <div class="nav-dd-grid">
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-africa" data-i18n="continent_africa">Africa</a>
+          <a href="/egypt-expedition/" data-i18n="nav_exp_egypt">Egypt</a>
+          <a href="/eritrea-expedition/" data-i18n="nav_exp_eritrea">Eritrea</a>
+          <a href="/ethiopia-expedition/" data-i18n="nav_exp_ethiopia">Ethiopia</a>
+          <a href="/libya-expedition/" data-i18n="nav_exp_libya">Libya</a>
+          <a href="/madagascar-expedition/" data-i18n="nav_exp_madagascar">Madagascar</a>
+          <a href="/mauritania-expedition/" data-i18n="nav_exp_mauritania">Mauritania</a>
+          <a href="/mauritius-expedition/" data-i18n="nav_exp_mauritius">Mauritius</a>
+          <a href="/gorilla-expedition/" data-i18n="nav_exp_gorilla">Rwanda, Uganda &amp; Gorillas</a>
+          <a href="/tunisia-algeria-expedition/" data-i18n="nav_exp_tunisia">Tunisia &amp; Algeria</a>
+          <a href="/west-africa-expedition/" data-i18n="nav_exp_westafrica">West Africa</a>
+        </div>
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-asia" data-i18n="continent_asia">Asia</a>
+          <a href="/bangladesh-expedition/" data-i18n="nav_exp_bangladesh">Bangladesh</a>
+          <a href="/bhutan-expedition/" data-i18n="nav_exp_bhutan">Bhutan</a>
+          <a href="/central-asia-expedition/" data-i18n="nav_exp_centralasia">Central Asia</a>
+          <a href="/china-expedition/" data-i18n="nav_exp_china">China</a>
+          <a href="/mongolia-expedition/" data-i18n="nav_exp_mongolia">Mongolia</a>
+          <a href="/myanmar-expedition/" data-i18n="nav_exp_myanmar">Myanmar</a>
+          <a href="/pakistan-expedition/" data-i18n="nav_exp_pakistan">Pakistan</a>
+          <a href="/socotra/" data-i18n="nav_exp_socotra">Socotra</a>
+          <a href="/syria-expedition/" data-i18n="nav_exp_syria">Syria</a>
+          <a href="/turkmenistan-expedition/" data-i18n="nav_exp_turkmenistan">Turkmenistan</a>
+        </div>
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-americas" data-i18n="continent_americas">The Americas</a>
+          <a href="/caribbean-expedition/" data-i18n="nav_exp_caribbean">Caribbean</a>
+          <a href="/guianas-expedition/" data-i18n="nav_exp_guianas">Guyana &amp; Suriname</a>
+          <a href="/maya-corridor-expedition/" data-i18n="nav_exp_maya">Maya Corridor</a>
+        </div>
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-europe" data-i18n="continent_europe">Europe</a>
+          <a href="/moldova-expedition/" data-i18n="nav_exp_moldova">Moldova &amp; Transnistria</a>
+        </div>
+        <div class="nav-dd-col">
+          <a class="nav-dd-heading" href="/#cont-oceania" data-i18n="continent_oceania">Oceania &amp; the Pacific</a>
+          <a href="/pacific-expedition/" data-i18n="nav_exp_pacific">Pacific Islands</a>
+        </div>
+          </div>
+        </div>
+      </li>
       <li><a href="/blog/" data-i18n="mobile_nav_blog">Blog</a></li>
       <li><a href="/about/" data-i18n="mobile_nav_about">About</a></li>
       <li><a href="#inquiryForm" class="nav-cta-btn" data-i18n="mobile_nav_inquire">Inquire</a></li>
@@ -227,7 +287,7 @@
           })();
         </script>
 
-        <p class="intro-hook" data-i18n="inq_hook">Tell us where you dream of going — we reply within the hour, by WhatsApp, email, or a quick call.</p>
+        <p class="intro-hook" data-i18n="inq_hook">Tell us where you dream of going — we reply within 24 hours, by WhatsApp, email, or a quick call.</p>
 
         <ul class="proof">
           <li data-i18n="inq_bullet_1">Max 5 guests</li>
@@ -396,7 +456,7 @@
         <!-- thank-you (revealed on success) -->
         <div class="form-card thanks" id="thanks">
           <div class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-          <h2 data-i18n="inq_ty_title">Thank you — we reply within the hour.</h2>
+          <h2 data-i18n="inq_ty_title">Thank you — we reply within 24 hours.</h2>
           <p data-i18n="inq_ty_text">Prefer to chat now?</p>
           <div class="quick-row">
             <a class="quick-btn wa" id="tyWa" href="https://wa.me/message/4D3P4QCBYG5SG1" target="_blank" rel="noopener noreferrer">
@@ -431,7 +491,7 @@
   <!-- tracking engine first (provides window.WPTrack) -->
   <script src="/js/tracking.js?v=20260609c"></script>
   <!-- i18n data -->
-  <script src="/lang/inquire.js"></script>
+  <script src="/lang/inquire.js?v=20260610d"></script>
 
   <!-- page setup: nav, destination, testimonial, form. Runs BEFORE i18n.js applies. -->
   <script>
@@ -602,5 +662,24 @@
 
   <!-- i18n applies last (reads the data-i18n attrs set above) -->
   <script src="/lang/i18n.js"></script>
+  <script>
+    (function () {
+      var toggle = document.getElementById('expDropdownToggle');
+      if (!toggle) return;
+      var dd = toggle.closest('.nav-dd');
+      if (!dd) return;
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        var open = dd.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function (e) {
+        if (!dd.contains(e.target)) { dd.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { dd.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
+  </script>
 </body>
 </html>

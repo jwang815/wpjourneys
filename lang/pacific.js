@@ -484,7 +484,7 @@ window.__i18n = {
     "zh": "继续你的旅程"
   },
   "wp_cta_plan":       { "en": "Plan This Expedition →", "zh": "定制此次探险 →" },
-  "wp_cta_reply":      { "en": "We reply within the hour", "zh": "我们将在一小时内回复" },
+  "wp_cta_reply":      { "en": "We reply within 24 hours", "zh": "我们将在24小时内回复" },
   "wp_cta_sticky":     { "en": "Request Itinerary", "zh": "索取行程方案" },
-  "wp_cta_sticky_sub": { "en": "We reply within the hour", "zh": "一小时内回复" }
+  "wp_cta_sticky_sub": { "en": "We reply within 24 hours", "zh": "24小时内回复" }
 };

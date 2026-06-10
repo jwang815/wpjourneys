@@ -226,7 +226,7 @@ window.__i18n = {
   "my_footer_copy": { "en": "© 2026 Waypoint Journeys. All rights reserved.", "zh": "© 2026 Waypoint Journeys。版权所有。" },
   // ── Inquiry CTAs (added 2026-06-09) ──
   "wp_cta_plan":       { "en": "Plan This Expedition →", "zh": "定制此次探险 →" },
-  "wp_cta_reply":      { "en": "We reply within the hour", "zh": "我们将在一小时内回复" },
+  "wp_cta_reply":      { "en": "We reply within 24 hours", "zh": "我们将在24小时内回复" },
   "wp_cta_sticky":     { "en": "Request Itinerary", "zh": "索取行程方案" },
-  "wp_cta_sticky_sub": { "en": "We reply within the hour", "zh": "一小时内回复" }
+  "wp_cta_sticky_sub": { "en": "We reply within 24 hours", "zh": "24小时内回复" }
 };

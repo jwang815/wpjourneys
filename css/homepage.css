@@ -1295,10 +1295,10 @@ picture{display:contents}
     }
 
     /* ========== DESKTOP NAV DROPDOWN ========== */
-    /* position:static so the absolutely-positioned menu anchors to the fixed
-       .nav (full-width bar) and right-aligns to the viewport edge, instead of
-       to the mid-nav toggle (which caused off-screen overflow). */
-    .nav-dd { position: static; }
+    /* Anchored to the toggle's <li> so the panel opens under the Expeditions
+       word. Below 1241px (toggle too close to the left for the panel width)
+       a media query falls back to viewport-anchored right:48px. */
+    .nav-dd { position: relative; }
     .nav-links .nav-dd-toggle { cursor: pointer; }
     .nav-links .nav-dd-toggle::after {
       content: '\2304';
@@ -1314,8 +1314,8 @@ picture{display:contents}
     .nav-dd.open .nav-dd-toggle::after { transform: rotate(180deg); }
     .nav-dd-menu {
       position: absolute;
-      top: calc(100% - 6px);
-      right: 48px;
+      top: 100%;
+      right: 0;
       left: auto;
       max-width: calc(100vw - 96px);
       background: rgba(17, 17, 17, 0.98);
@@ -1373,6 +1373,10 @@ picture{display:contents}
       text-transform: none;
     }
 
+    @media (max-width: 1240px) {
+      .nav-dd { position: static; }
+      .nav-dd-menu { top: calc(100% - 6px); right: 48px; }
+    }
     /* ========== MOBILE EXPEDITIONS ACCORDION ========== */
     .m-exp-toggle {
       font-family: var(--font-display);

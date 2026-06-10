@@ -7,7 +7,7 @@
  *
  * What it does
  *   1. Styles the above-fold hero "Plan This Expedition" button added in the
- *      page HTML (class .wp-hero-inquire) + its "We reply within the hour"
+ *      page HTML (class .wp-hero-inquire) + its "We reply within 24 hours"
  *      subline (.wp-hero-reply).
  *   2. Builds a sticky "Request Itinerary" button (bottom-right on desktop,
  *      full-width bottom bar on mobile) that appears after ~0.85 viewport of
@@ -77,9 +77,9 @@
     var a = d.createElement('a');
     a.className = 'wp-sticky-cta';
     a.href = href;
-    a.setAttribute('aria-label', 'Request your itinerary — we reply within the hour');
+    a.setAttribute('aria-label', 'Request your itinerary — we reply within 24 hours');
     var L = {
-      en: { label: 'Request Itinerary', sub: 'We reply within the hour' },
+      en: { label: 'Request Itinerary', sub: 'We reply within 24 hours' },
       zh: { label: '\u7d22\u53d6\u884c\u7a0b\u65b9\u6848', sub: '\u4e00\u5c0f\u65f6\u5185\u56de\u590d' }
     };
     var lang = /(?:^|; )wp_lang=zh/.test(d.cookie) ? 'zh' : 'en';
@@ -89,11 +89,18 @@
     d.body.appendChild(a);
 
     var shown = false;
+    // On mobile the bar is a fixed full-width strip: pad the body while it is
+    // shown so the footer can scroll fully above it (never hidden behind it).
+    function padBody() {
+      var mobile = w.matchMedia && w.matchMedia('(max-width:640px)').matches;
+      d.body.style.paddingBottom = (shown && mobile) ? a.offsetHeight + 'px' : '';
+    }
     function onScroll() {
       var on = w.scrollY > w.innerHeight * 0.85;
-      if (on !== shown) { shown = on; a.classList.toggle('wp-on', on); }
+      if (on !== shown) { shown = on; a.classList.toggle('wp-on', on); padBody(); }
     }
     w.addEventListener('scroll', onScroll, { passive: true });
+    w.addEventListener('resize', padBody);
     onScroll();
 
     // hero button (already in page HTML) — wire tracking
