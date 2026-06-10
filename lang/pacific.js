@@ -191,14 +191,6 @@ window.__i18n = {
     "en": "Small group expedition: maximum 5 guests",
     "zh": "小型团队探险：最多 5 位宾客"
   },
-  "pc_details_2_label": {
-    "en": "Flights",
-    "zh": "航班"
-  },
-  "pc_details_2_value": {
-    "en": "All inter-island flights within the itinerary (the Fiji-to-Honolulu arc, including the Island Hopper segment) — booked and scheduled by us",
-    "zh": "行程内所有岛际航班（斐济至檀香山的弧线，含跳岛航班段）——均由我们预订与排程"
-  },
   "pc_details_3_label": {
     "en": "Guides",
     "zh": "向导"
@@ -236,8 +228,8 @@ window.__i18n = {
     "zh": "不含项目"
   },
   "pc_details_7_value": {
-    "en": "International flights to Fiji / from Honolulu, travel insurance, visa fees, meals not listed, tips, alcohol",
-    "zh": "往返斐济 / 檀香山的国际机票、旅行保险、签证费、未列明餐食、小费、酒水"
+    "en": "International flights to Fiji / from Honolulu, inter-island flights within the itinerary, travel insurance, visa fees, meals not listed, tips, alcohol",
+    "zh": "往返斐济 / 檀香山的国际机票、行程内岛际航班、旅行保险、签证费、未列明餐食、小费、酒水"
   },
   "pc_faq1_q": {
     "en": "How far in advance do I need to book?",
@@ -452,16 +444,16 @@ window.__i18n = {
     "zh": "探险费用"
   },
   "pc_pricing_per": {
-    "en": "USD per person, twin share — excludes international flights",
-    "zh": "美元 / 每人（双人同住）— 不含国际机票"
+    "en": "USD per person, twin share — excludes international and inter-island flights",
+    "zh": "美元 / 每人（双人同住）— 不含国际及岛际机票"
   },
   "pc_pricing_includes": {
-    "en": "Fully inclusive of all inter-island flights, accommodation, guides, ground and boat transport, entry permits, and listed meals",
-    "zh": "全包所有岛际航班、住宿、向导、地面与船只交通、入境许可及所列餐食"
+    "en": "Fully inclusive of accommodation, guides, ground and boat transport, entry permits, and listed meals",
+    "zh": "全包住宿、向导、地面与船只交通、入境许可及所列餐食"
   },
   "pc_pricing_note": {
-    "en": "Excludes international flights to Fiji and from Honolulu, travel insurance, and meals not listed. Single supplement $520. Small group supplement $380 for groups of 2 or fewer",
-    "zh": "不含往返斐济与檀香山的国际机票、旅行保险及未列明餐食。单人补差 520 美元。2 人及以下小团补差 380 美元"
+    "en": "Excludes international flights to Fiji and from Honolulu, inter-island flights within the itinerary, travel insurance, and meals not listed. Single supplement $520. Small group supplement $380 for groups of 2 or fewer",
+    "zh": "不含往返斐济与檀香山的国际机票、行程内岛际航班、旅行保险及未列明餐食。单人补差 520 美元。2 人及以下小团补差 380 美元"
   },
   "pc_pricing_cta": {
     "en": "Reserve Your Spot",
