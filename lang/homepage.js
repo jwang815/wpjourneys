@@ -771,5 +771,10 @@ window.__i18n = {
   "custom_btn": {
     "en": "Plan a Custom Expedition",
     "zh": "规划定制探险"
-  }
+  },
+  // ── Inquiry CTAs (added 2026-06-09) ──
+  "wp_cta_plan":       { "en": "Plan Your Expedition →", "zh": "定制您的探险 →" },
+  "wp_cta_reply":      { "en": "We reply within the hour", "zh": "我们将在一小时内回复" },
+  "wp_cta_sticky":     { "en": "Request Itinerary", "zh": "索取行程方案" },
+  "wp_cta_sticky_sub": { "en": "We reply within the hour", "zh": "一小时内回复" }
 };

@@ -75,8 +75,13 @@
     a.className = 'wp-sticky-cta';
     a.href = href;
     a.setAttribute('aria-label', 'Request your itinerary — we reply within the hour');
-    a.innerHTML = 'Request Itinerary' +
-      '<span class="wp-sticky-sub">We reply within the hour</span>';
+    var L = {
+      en: { label: 'Request Itinerary', sub: 'We reply within the hour' },
+      zh: { label: '\u7d22\u53d6\u884c\u7a0b\u65b9\u6848', sub: '\u4e00\u5c0f\u65f6\u5185\u56de\u590d' }
+    };
+    var lang = /(?:^|; )wp_lang=zh/.test(d.cookie) ? 'zh' : 'en';
+    a.innerHTML = '<span data-i18n="wp_cta_sticky">' + L[lang].label + '</span>' +
+      '<span class="wp-sticky-sub" data-i18n="wp_cta_sticky_sub">' + L[lang].sub + '</span>';
     a.addEventListener('click', function () { track('sticky_cta'); });
     d.body.appendChild(a);
 

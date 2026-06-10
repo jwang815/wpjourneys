@@ -160,5 +160,10 @@ window.__i18n = {
   // ─── Footer ───
   "ma_footer_brand": { "en": "Waypoint Journeys", "zh": "Waypoint Journeys" },
   "ma_footer_tagline": { "en": "Luxury adventure travel to the world's last wild places.", "zh": "奢华探险，抵达世界最后的秘境。" },
-  "ma_footer_copy": { "en": "© 2026 Waypoint Journeys. All rights reserved.", "zh": "© 2026 Waypoint Journeys。版权所有。" }
+  "ma_footer_copy": { "en": "© 2026 Waypoint Journeys. All rights reserved.", "zh": "© 2026 Waypoint Journeys。版权所有。" },
+  // ── Inquiry CTAs (added 2026-06-09) ──
+  "wp_cta_plan":       { "en": "Plan This Expedition →", "zh": "定制此次探险 →" },
+  "wp_cta_reply":      { "en": "We reply within the hour", "zh": "我们将在一小时内回复" },
+  "wp_cta_sticky":     { "en": "Request Itinerary", "zh": "索取行程方案" },
+  "wp_cta_sticky_sub": { "en": "We reply within the hour", "zh": "一小时内回复" }
 };
