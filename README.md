@@ -1,2 +1,3 @@
-# jwang815.github.io
-Waypoint Journeys - Personal GitHub Pages user site
+# wpjourneys
+
+Waypoint Journeys — https://wpjourneys.com (static site; see DEPLOY.md for hosting/deployment).

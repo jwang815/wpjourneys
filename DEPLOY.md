@@ -1,7 +1,7 @@
 # Deployment
 
 The site is currently served by **GitHub Pages** from the `main` branch
-of `jwang815/jwang815.github.io`, with `wpjourneys.com` set as the custom
+of `jwang815/wpjourneys`, with `wpjourneys.com` set as the custom
 domain via the `CNAME` file.
 
 A `vercel.json` is committed at the repo root so the same `main` branch
@@ -12,7 +12,7 @@ can also be deployed to Vercel for zero-config previews + auto-deploys.
 One-time setup, ~5 minutes:
 
 1. **Create the Vercel project**
-   - Go to https://vercel.com/new and import `jwang815/jwang815.github.io`.
+   - Go to https://vercel.com/new and import `jwang815/wpjourneys`.
    - Framework preset: *Other* (it's a static site — Vercel will serve
      the repo files directly using `vercel.json`). No build command.
    - Production branch: `main`.

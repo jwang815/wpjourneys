@@ -104,8 +104,10 @@
   <link rel="stylesheet" href="/css/expedition.css">
   <link rel="stylesheet" href="/css/related-expeditions.css">
   <style>#heroBg{--hero-img:url('/images/expeditions/centralasia-registan.webp');--hero-pos:center 60%} .pricing-bg{--pricing-img:url('/images/expeditions/centralasia-charyn.webp')}</style>
+  <script src="/js/tracking.js?v=20260609c"></script>
+  <script src="/js/inquire-cta.js?v=20260610c" defer></script>
 </head>
-<body>
+<body data-wp-viewcontent="Central Asia">
 
   <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
     <a href="#overview" onclick="closeMobileMenu()" data-i18n="ca_nav_overview">Overview</a>
@@ -152,6 +154,8 @@
       <p class="hero-dates" data-i18n="ca_hero_dates">18 Days</p>
       <p class="hero-tagline" data-i18n="ca_hero_tagline">Steppe, Summit, and the Silk Road</p>
       <a href="#overview" class="hero-cta" data-i18n="ca_hero_cta">View Expedition Details &#8595;</a>
+      <a href="/inquire/?dest=central-asia" class="hero-cta wp-hero-inquire" data-i18n="wp_cta_plan">Plan This Expedition &#8594;</a>
+      <p class="wp-hero-reply" data-i18n="wp_cta_reply">We reply within the hour</p>
     </div>
     <div class="hero-scroll" aria-hidden="true"><span data-i18n="ca_hero_scroll">Scroll</span><div class="scroll-arrow"></div></div>
   </section>
@@ -531,7 +535,7 @@
     document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=document.getElementById(this.getAttribute('href').slice(1));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-navbar.offsetHeight,behavior:'smooth'});}});});
     document.querySelectorAll('.faq-question').forEach(b=>{b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var it=this.parentElement,was=it.classList.contains('active');document.querySelectorAll('.faq-item.active').forEach(el=>{el.classList.remove('active');var q=el.querySelector('.faq-question');if(q)q.setAttribute('aria-expanded','false');});if(!was){it.classList.add('active');this.setAttribute('aria-expanded','true');}});});
   </script>
-  <script src="/lang/centralasia.js"></script>
+  <script src="/lang/centralasia.js?v=20260610c"></script>
   <script src="/lang/i18n.js?v=20260609"></script>
 </body>
 </html>

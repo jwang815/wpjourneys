@@ -2,8 +2,8 @@
  * Waypoint Journeys — Inquiry CTAs (sticky button + above-fold hero button)
  * ============================================================================
  * Added 2026-06-09. Self-contained: injects its own CSS, no edits to
- * tracking.js or page stylesheets. Loaded only on the homepage and the 12
- * advertised destination pages (see script tags in those files).
+ * tracking.js or page stylesheets. Loaded on the homepage and all 25
+ * destination pages (see script tags in those files).
  *
  * What it does
  *   1. Styles the above-fold hero "Plan This Expedition" button added in the
@@ -21,9 +21,12 @@
 (function (w, d) {
   'use strict';
 
-  var DESTS = ['bangladesh', 'eritrea', 'libya', 'madagascar', 'mauritania',
-               'mongolia', 'myanmar', 'pakistan', 'socotra', 'syria',
-               'turkmenistan', 'west-africa'];
+  var DESTS = ['bangladesh', 'bhutan', 'caribbean', 'central-asia', 'china',
+               'egypt', 'eritrea', 'ethiopia', 'gorilla', 'guianas', 'libya',
+               'madagascar', 'mauritania', 'mauritius', 'maya-corridor',
+               'moldova', 'mongolia', 'myanmar', 'pacific', 'pakistan',
+               'socotra', 'syria', 'tunisia-algeria', 'turkmenistan',
+               'west-africa'];
 
   var path = w.location.pathname;
   if (/^\/inquire\b/.test(path)) return;                       // never on the form itself

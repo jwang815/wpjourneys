@@ -42,6 +42,8 @@
     .doc ul{padding-left:22px;margin-bottom:12px}
     .doc strong{color:var(--sand)}
     table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:.92rem}
+    @media(max-width:480px){table{display:block;overflow-x:auto}}
+    main a,article a,.content a{text-decoration:underline}
     th,td{text-align:left;padding:10px 12px;border:1px solid rgba(196,148,74,.25);vertical-align:top;color:var(--off-white)}
     th{background:rgba(196,148,74,.1);color:var(--sand);font-weight:600}
     .footer{background:var(--charcoal-deep);text-align:center;padding:44px 24px;border-top:1px solid rgba(196,148,74,.15)}
@@ -83,7 +85,7 @@
 
     <h2>Cookies &amp; tracking technologies</h2>
     <p>We use a small number of first-party cookies to run the site, and third-party tags to measure traffic and the performance of our advertising.</p>
-    <table>
+    <table tabindex="0" aria-label="Cookies and tags used on this site">
       <thead><tr><th>Cookie / tag</th><th>Set by</th><th>Purpose</th></tr></thead>
       <tbody>
         <tr><td>wp_lang</td><td>Waypoint (first-party)</td><td>Remembers your language choice (EN / 中文). Functional.</td></tr>
