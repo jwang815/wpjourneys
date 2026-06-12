@@ -13,12 +13,20 @@
 // Key-protected with the same shared key as /api/daily-brief.
 const EXEC = 'https://script.google.com/macros/s/AKfycbxLuT6oryPqymAZFXjAVqTdoqebEXKn507IiUMmOccD4P9LaGN6C2FkG2GFQ7pJMXMsEw/exec';
 
+// Google's edge serves an "Access Denied" page to UA-less server clients
+// (Node fetch default); a browser-like UA is accepted like the website form.
+const BROWSER_HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+  'Accept': 'application/json,text/plain,*/*',
+  'Accept-Language': 'en-US,en;q=0.9'
+};
+
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
   if ((req.query.key || '') !== 'wpj7392kx') return res.status(401).json({ error: 'unauthorized' });
 
   if (req.method === 'GET') {
-    const r = await fetch(EXEC + '?action=stats', { redirect: 'follow' });
+    const r = await fetch(EXEC + '?action=stats', { redirect: 'follow', headers: BROWSER_HEADERS });
     const text = await r.text();
     try { return res.status(200).json(JSON.parse(text)); }
     catch { return res.status(502).json({ error: 'bad_upstream', raw: text.slice(0, 300) }); }
@@ -30,7 +38,7 @@ export default async function handler(req, res) {
   const r = await fetch(EXEC, {
     method: 'POST',
     redirect: 'follow',
-    headers: { 'Content-Type': 'text/plain;charset=utf-8' },   // same as the form: no CORS preflight semantics needed server-side
+    headers: { ...BROWSER_HEADERS, 'Content-Type': 'text/plain;charset=utf-8' },   // same content type as the form
     body: JSON.stringify(req.body)
   });
   const text = await r.text();
