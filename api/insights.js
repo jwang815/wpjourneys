@@ -16,7 +16,8 @@ const DESTS = [
   { name:'Pakistan',     tag:'The Karakoram',      img:'/images/ads/AD_Pakistan_4x5.jpg',     url:'https://wpjourneys.com/pakistan-expedition/' },
   { name:'Mongolia',     tag:'Eternal Sky',        img:'/images/ads/AD_Mongolia_4x5.jpg',     url:'https://wpjourneys.com/mongolia-expedition/' },
   { name:'Libya',        tag:'Roman Africa',       img:'/images/ads/AD_Libya_4x5.jpg',        url:'https://wpjourneys.com/libya-expedition/' },
-  { name:'Custom',       tag:'Anywhere on Earth',  img:'/images/ads/AD_Custom_4x5.jpg',       url:'https://wpjourneys.com/' }
+  { name:'Custom',       tag:'Anywhere on Earth',  img:'/images/ads/AD_Custom_4x5.jpg',       url:'https://wpjourneys.com/' },
+  { name:'Ghana, Benin & Togo', adset:'West Africa', tag:'Voodoo & the Slave Coast', img:'/images/ads/PHOTO_WestAfrica_Ganvie_4x5.jpg', url:'https://wpjourneys.com/west-africa-expedition/' }
 ];
 const zero = () => ({ spend:0, impressions:0, reach:0, clicks:0, meta_leads:0 });
 const blank = () => DESTS.map(d => ({ ...d, ...zero(), inquiries:null }));
@@ -26,7 +27,7 @@ const norm = k => /^custom/i.test(String(k).trim()) ? 'Custom' : String(k).trim(
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=900');
   const TOKEN = process.env.META_TOKEN;
-  const base = { updated:new Date().toISOString(), campaign_status:'PAUSED', daily_budget:66, currency:'USD', window:'Since launch' }; // $33 Meta + $33 Google
+  const base = { updated:new Date().toISOString(), campaign_status:'PAUSED', daily_budget:78, currency:'USD', window:'Since launch' }; // $45 Meta + $33 Google
 
   // 1) Form truth (inquiries by requested destination) — independent of Meta.
   let form = null;
@@ -69,7 +70,7 @@ export default async function handler(req, res) {
       by[dn] = { spend:parseFloat(row.spend)||0, impressions:parseInt(row.impressions)||0, reach:parseInt(row.reach)||0, clicks:parseInt(row.clicks)||0, meta_leads:metaLeads };
     });
     const destinations = DESTS.map(d => ({
-      ...d, ...(by[d.name]||zero()),
+      ...d, ...(by[d.adset||d.name]||zero()),
       inquiries: form ? (byDest[d.name]||0) : null   // form truth; null = feed down (never substitute ad attribution)
     }));
     const campaign_status = (st && st.effective_status === 'ACTIVE') ? 'ACTIVE' : 'PAUSED';
