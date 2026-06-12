@@ -1,0 +1,44 @@
+# Manual lead entry — relays a lead payload to the Apps Script lead webhook
+# from a GitHub-hosted runner. Exists because Google's edge intermittently
+# serves "Access Denied" to datacenter fetches (Vercel functions, ad-hoc
+# scripts), while accepting browser-like clients from other IP pools.
+#
+# Dispatch with action=stats to read the aggregate stats feed instead.
+# NOTE: logs deliberately print only the webhook's ok/results JSON (no PII).
+name: Manual lead entry
+
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: 'Lead JSON (same shape as the /inquire/ form POST). Ignored when action=stats.'
+        required: false
+        default: ''
+      action:
+        description: 'post | stats'
+        required: false
+        default: 'post'
+
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Relay to lead webhook
+        env:
+          PAYLOAD: ${{ inputs.payload }}
+          MODE: ${{ inputs.action }}
+        run: |
+          EXEC="https://script.google.com/macros/s/AKfycbxLuT6oryPqymAZFXjAVqTdoqebEXKn507IiUMmOccD4P9LaGN6C2FkG2GFQ7pJMXMsEw/exec"
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+          if [ "$MODE" = "stats" ]; then
+            curl -sL --max-time 45 -H "User-Agent: $UA" "$EXEC?action=stats" -w '\nHTTP %{http_code}\n'
+            exit 0
+          fi
+          if [ -z "$PAYLOAD" ]; then echo "no payload provided"; exit 1; fi
+          printf '%s' "$PAYLOAD" > /tmp/payload.json
+          # response only — never echo the payload (lead PII) into public logs
+          curl -sL --max-time 45 -X POST \
+            -H "User-Agent: $UA" \
+            -H 'Content-Type: text/plain;charset=utf-8' \
+            --data-binary @/tmp/payload.json \
+            "$EXEC" -w '\nHTTP %{http_code}\n'
