@@ -144,7 +144,7 @@
       <div class="insight" id="insight"></div>
     </div>
   </div>
-  <div class="secttl">The six ads</div>
+  <div class="secttl">The ads</div>
   <div class="sectsub">Media from Meta; inquiries matched to each ad's destination from the form. Tap a card to open its landing page.</div>
   <div class="head-row"><span></span><span>Destination</span><span class="h-imp">Impr.</span><span class="h-clk">Clicks</span><span class="h-ctr">CTR</span><span>Spend</span><span>Inquiries</span></div>
   <div id="rows"></div>
@@ -160,7 +160,7 @@
   </footer>
 </div>
 
-<script id="wpj-data" type="application/json">{"updated":"2026-06-05T05:30:00Z","campaign_status":"PAUSED","daily_budget":66,"currency":"USD","window":"Since launch","form":{"ok":false},"other_inquiries":[],"google_spend":null,"destinations":[{"name":"Socotra","tag":"The Alien Island","img":"/images/ads/AD_Socotra_4x5.jpg","url":"https://wpjourneys.com/socotra/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Turkmenistan","tag":"Door to Hell","img":"/images/ads/AD_Turkmenistan_4x5.jpg","url":"https://wpjourneys.com/turkmenistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Pakistan","tag":"The Karakoram","img":"/images/ads/AD_Pakistan_4x5.jpg","url":"https://wpjourneys.com/pakistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Mongolia","tag":"Eternal Sky","img":"/images/ads/AD_Mongolia_4x5.jpg","url":"https://wpjourneys.com/mongolia-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Libya","tag":"Roman Africa","img":"/images/ads/AD_Libya_4x5.jpg","url":"https://wpjourneys.com/libya-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Custom","tag":"Anywhere on Earth","img":"/images/ads/AD_Custom_4x5.jpg","url":"https://wpjourneys.com/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null}]}</script>
+<script id="wpj-data" type="application/json">{"updated":"2026-06-05T05:30:00Z","campaign_status":"PAUSED","daily_budget":78,"currency":"USD","window":"Since launch","form":{"ok":false},"other_inquiries":[],"google_spend":null,"destinations":[{"name":"Socotra","tag":"The Alien Island","img":"/images/ads/AD_Socotra_4x5.jpg","url":"https://wpjourneys.com/socotra/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Turkmenistan","tag":"Door to Hell","img":"/images/ads/AD_Turkmenistan_4x5.jpg","url":"https://wpjourneys.com/turkmenistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Pakistan","tag":"The Karakoram","img":"/images/ads/AD_Pakistan_4x5.jpg","url":"https://wpjourneys.com/pakistan-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Mongolia","tag":"Eternal Sky","img":"/images/ads/AD_Mongolia_4x5.jpg","url":"https://wpjourneys.com/mongolia-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Libya","tag":"Roman Africa","img":"/images/ads/AD_Libya_4x5.jpg","url":"https://wpjourneys.com/libya-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Custom","tag":"Anywhere on Earth","img":"/images/ads/AD_Custom_4x5.jpg","url":"https://wpjourneys.com/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null},{"name":"Ghana, Benin & Togo","adset":"West Africa","tag":"Voodoo & the Slave Coast","img":"/images/ads/PHOTO_WestAfrica_Ganvie_4x5.jpg","url":"https://wpjourneys.com/west-africa-expedition/","spend":0,"impressions":0,"reach":0,"clicks":0,"inquiries":null}]}</script>
 
 <script>
 (function(){
@@ -250,7 +250,7 @@
     }
     document.getElementById('bars').innerHTML=bh;
 
-    // ---- The six ads: media from Meta, inquiries matched by destination ----
+    // ---- The ads: media from Meta, inquiries matched by destination ----
     var S=D.slice().sort(function(x,y){return ((+y.inquiries||0)-(+x.inquiries||0))||(y.spend-x.spend);});
     var cpiVals=[];
     if(FOK)for(var q=0;q<S.length;q++){if((+S[q].inquiries||0)>0&&S[q].spend>0)cpiVals.push(S[q].spend/S[q].inquiries);}
