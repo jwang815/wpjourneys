@@ -1091,6 +1091,19 @@
     }
 
     /* ========== RESPONSIVE ========== */
+    /* 3 columns on laptop/mid widths so cards stay wide enough that the
+       content never overflows the fixed-ratio tile (4 columns only on large
+       screens; 2 then 1 column further down). */
+    @media (max-width: 1440px) {
+      .expeditions-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 1100px) {
+      .expeditions-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
     @media (max-width: 1024px) {
       .philosophy-grid {
         grid-template-columns: 1fr;
