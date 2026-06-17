@@ -224,8 +224,8 @@ window.__i18n = {
     "en": "Waypoint Journeys Presents",
     "zh": "Waypoint Journeys 呈献"
   },
-  "vz_hero_title": { "en": "The Lost World", "zh": "失落的世界" },
-  "vz_hero_subtitle": { "en": "Venezuela", "zh": "委内瑞拉" },
+  "vz_hero_title": { "en": "Venezuela", "zh": "委内瑞拉" },
+  "vz_hero_subtitle": { "en": "The Lost World", "zh": "失落的世界" },
   "vz_hero_dates": { "en": "10 Days", "zh": "10 天" },
   "vz_hero_tagline": {
     "en": "Angel Falls, the Table-Top Mountains & the Labyrinth of the Orinoco",

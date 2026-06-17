@@ -21,12 +21,12 @@
 (function (w, d) {
   'use strict';
 
-  var DESTS = ['bangladesh', 'bhutan', 'caribbean', 'central-asia', 'china',
-               'egypt', 'eritrea', 'ethiopia', 'gorilla', 'guianas', 'libya',
+  var DESTS = ['afghanistan', 'bangladesh', 'bhutan', 'caribbean', 'central-asia',
+               'china', 'egypt', 'eritrea', 'ethiopia', 'gorilla', 'guianas', 'libya',
                'madagascar', 'mauritania', 'mauritius', 'maya-corridor',
                'moldova', 'mongolia', 'myanmar', 'pacific', 'pakistan',
                'socotra', 'syria', 'tunisia-algeria', 'turkmenistan',
-               'west-africa'];
+               'venezuela', 'west-africa'];
 
   var path = w.location.pathname;
   if (/^\/inquire\b/.test(path)) return;                       // never on the form itself

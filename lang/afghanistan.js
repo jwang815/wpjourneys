@@ -192,8 +192,8 @@ window.__i18n = {
     "en": "Waypoint Journeys Presents",
     "zh": "Waypoint Journeys 呈献"
   },
-  "af_hero_title": { "en": "The Crossroads of Asia", "zh": "亚洲的十字路口" },
-  "af_hero_subtitle": { "en": "Afghanistan", "zh": "阿富汗" },
+  "af_hero_title": { "en": "Afghanistan", "zh": "阿富汗" },
+  "af_hero_subtitle": { "en": "The Crossroads of Asia", "zh": "亚洲的十字路口" },
   "af_hero_dates": { "en": "7 Days", "zh": "7 天" },
   "af_hero_tagline": {
     "en": "Across the Hindu Kush — Bamiyan, the Band-e-Amir Lakes & the Blue Mosque",

@@ -511,6 +511,10 @@
       color: var(--off-white);
       margin-bottom: 14px;
       opacity: 0.85;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
     .expedition-card-details {
       font-family: var(--font-body);
