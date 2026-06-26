@@ -181,6 +181,21 @@
   function usd(n){n=+n||0;return '$'+n.toLocaleString('en-US',{minimumFractionDigits:n<100?2:0,maximumFractionDigits:n<100?2:0});}
   function num(n){return (+n||0).toLocaleString('en-US');}
   function ago(iso){var s=(Date.now()-new Date(iso).getTime())/1000;if(!(s>=0))return 'just now';if(s<90)return 'just now';if(s<3600)return Math.round(s/60)+' min ago';if(s<86400)return Math.round(s/3600)+' hr ago';return Math.round(s/86400)+' d ago';}
+  // Last-known-good inquiry cache: if the form feed drops, show the last real counts (flagged stale) instead of blanking.
+  var LASTGOOD='wpj_lastgood_2026';
+  function saveGood(d){if(!(d&&d.form&&d.form.ok))return;try{lsSet(LASTGOOD,JSON.stringify({updated:d.updated,form:d.form,other_inquiries:d.other_inquiries||[],google_spend:d.google_spend||null,destinations:(d.destinations||[]).map(function(x){return {name:x.name,inquiries:x.inquiries};})}));}catch(e){}}
+  function applyFallback(d){
+    if(d&&d.form&&d.form.ok)return d;            // live feed good -> nothing to do
+    var raw=lsGet(LASTGOOD);if(!raw)return d;     // no cache yet -> existing 'unreachable' behaviour
+    var c;try{c=JSON.parse(raw);}catch(e){return d;}
+    if(!c||!c.form||!c.form.ok)return d;
+    d.form=c.form;d.other_inquiries=c.other_inquiries||[];
+    if(!d.google_spend&&c.google_spend)d.google_spend=c.google_spend;
+    var cmap={};(c.destinations||[]).forEach(function(x){cmap[x.name]=x.inquiries;});
+    (d.destinations||[]).forEach(function(x){if(cmap[x.name]!=null)x.inquiries=cmap[x.name];});
+    d._stale=c.updated||(c.form&&c.form.lastLeadAt)||null; // drives the 'reconnecting' note
+    return d;
+  }
 
   function load(){
     var emb=null;
@@ -188,7 +203,7 @@
     fetch('/api/insights',{cache:'no-store'})
       .then(function(r){return r.ok?r.json():null;})
       .catch(function(){return null;})
-      .then(function(api){var d=(api&&api.destinations&&api.destinations.length)?api:emb;if(d)draw(d);});
+      .then(function(api){var d=(api&&api.destinations&&api.destinations.length)?api:emb;if(!d)return;saveGood(d);d=applyFallback(d);draw(d);});
   }
 
   function draw(d){
@@ -208,7 +223,8 @@
     if(!live)bnotes.push('<b>Campaign is paused.</b>&nbsp;Metrics start flowing within ~1 hour of going live.');
     else if(T.s===0)bnotes.push('<b>Just launched.</b>&nbsp;Numbers begin filling in within an hour of the first impressions.');
     if(!FOK)bnotes.push('<b>Inquiry feed unreachable.</b>&nbsp;Destination counts are hidden rather than shown from ad-click attribution (which miscounts).');
-    if(bnotes.length){bn.style.display='block';bn.className='banner'+(FOK?'':' warn');bn.innerHTML=bnotes.join(' ');}
+    else if(d._stale)bnotes.push('<b>Inquiry feed reconnecting.</b>&nbsp;Counts last synced '+ago(d._stale)+' &mdash; media metrics are live.');
+    if(bnotes.length){bn.style.display='block';bn.className='banner'+((FOK&&!d._stale)?'':' warn');bn.innerHTML=bnotes.join(' ');}
     else{bn.style.display='none';}
 
     var kpis=[['Spend',usd(allSpend),0],['Inquiries',FOK?num(inqTotal):'--',1],['Cost / Inquiry',cpi!=null?usd(cpi):'--',1],['Impressions',num(T.i),0],['Link Clicks',num(T.c),0],['CTR',T.i?ctr.toFixed(2)+'%':'--',0]];

@@ -32,9 +32,17 @@ export default async function handler(req, res) {
   // 1) Form truth (inquiries by requested destination) — independent of Meta.
   let form = null;
   try {
-    const f = await fetch(STATS_URL, { redirect:'follow' }).then(r => r.json());
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 6000); // never let a hung feed stall the function
+    let txt = '';
+    try {
+      const r = await fetch(STATS_URL, { redirect:'follow', signal: ctrl.signal });
+      txt = await r.text();
+    } finally { clearTimeout(timer); }
+    let f = null;
+    try { f = JSON.parse(txt); } catch (_) { f = null; } // auth/HTML page -> not JSON -> treated as down
     if (f && f.ok) form = f;
-  } catch (e) { /* form feed unreachable; inquiries render as unavailable, never as ad-attributed counts */ }
+  } catch (e) { /* feed unreachable/timeout; inquiries omitted here, client falls back to last-known-good */ }
   const byDest = {};
   if (form) {
     for (const k of Object.keys(form.byDestination || {})) {
