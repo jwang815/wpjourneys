@@ -17,7 +17,7 @@
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:var(--font-body);background:var(--charcoal);color:var(--sand);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  body{font-family:var(--font-body);background:var(--charcoal);color:var(--sand);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   h1,h2,h3,h4{font-family:var(--font-display);font-weight:500;line-height:1.12}
   p{margin-bottom:1.1rem}
   a{color:var(--gold-light);text-decoration:none}
@@ -132,11 +132,38 @@
     .chapter,.chapter.alt{grid-template-columns:1fr}
     .plate{min-height:200px}
     .chapter.alt .plate{order:0}
-    .chapter .body{padding:38px 28px}
-    .topbar{padding:18px 20px}
+    .chapter .body{padding:36px 26px}
+    .topbar{padding:16px 22px}
     .topbar .tag{display:none}
     .stats{gap:30px}
-    .hero-compass{font-size:18rem}
+    .hero-compass{font-size:15rem;right:-34px;bottom:-34px}
+    section{padding:64px 0}
+    .hero{min-height:auto}
+    .hero-inner{padding:104px 0 72px}
+    .hero h1{font-size:clamp(2.15rem,8.5vw,3.3rem)}
+    .hero .lede{font-size:1.12rem;max-width:none}
+    .hero .meta{font-size:.85rem;margin:24px 0 30px}
+    .eyebrow{letter-spacing:.2em}
+    .lede-h2{font-size:clamp(1.7rem,6vw,2.4rem)}
+    .big{font-size:1.1rem}
+  }
+  @media(max-width:480px){
+    .wrap{padding:0 24px}
+    .topbar{padding:14px 18px}
+    .brand{font-size:1.15rem}
+    .hero-inner{padding:92px 0 60px}
+    .hero h1{font-size:2.1rem;letter-spacing:0}
+    .hero .lede{font-size:1.04rem}
+    .hero .meta{font-size:.8rem}
+    .btn{padding:14px 24px;font-size:.74rem;letter-spacing:.12em}
+    .chapter .body{padding:30px 22px}
+    .chapter h3{font-size:1.7rem}
+    .plate{min-height:140px;padding:28px}
+    .plate .rn{font-size:3.6rem}
+    .stats{gap:26px}
+    .stats .n{font-size:2.6rem}
+    .tier{padding:28px 22px}
+    .honest .card{padding:24px 22px}
   }
 </style>
 </head>
