@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hanno Expedition — Internal Feasibility & Costing · Waypoint Journeys</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#1A1A1A;--gold:#C4944A;--gold-d:#9c722f;--sand:#F5EDE0;--sand-l:#FAF6F0;
+    --teal:#1B5E6B;--teal-d:#154C57;--ink:#2a2723;--muted:#6B5B45;
+    --green:#1f7a4d;--amber:#b9822c;--red:#b1392b;
+    --font-body:'Source Sans 3','Segoe UI',Helvetica,Arial,sans-serif;
+    --font-display:'Playfair Display',Georgia,serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--font-body);background:#ece4d6;color:var(--ink);font-size:15px;line-height:1.6}
+  .page{max-width:920px;margin:28px auto;background:var(--sand-l);box-shadow:0 2px 24px rgba(0,0,0,.12)}
+  .inner{padding:54px 64px}
+  h1,h2,h3,h4{font-family:var(--font-display);color:var(--charcoal);font-weight:600;line-height:1.15}
+  h2{font-size:1.6rem;margin:38px 0 6px;padding-top:22px;border-top:2px solid var(--gold)}
+  h3{font-size:1.18rem;margin:22px 0 8px;color:var(--teal-d)}
+  h4{font-size:1rem;margin:16px 0 4px}
+  p{margin-bottom:11px}
+  .eyebrow{text-transform:uppercase;letter-spacing:.24em;font-size:.68rem;font-weight:700;color:var(--teal)}
+  .masthead{background:var(--charcoal);color:var(--sand);padding:40px 64px}
+  .masthead .brand{font-family:var(--font-display);font-size:1.2rem;color:#fff;letter-spacing:.04em}
+  .masthead .brand .m{color:var(--gold)}
+  .masthead h1{color:#fff;font-size:2.5rem;margin:14px 0 8px;font-weight:700}
+  .masthead .sub{color:var(--gold);font-size:1rem;letter-spacing:.02em}
+  .masthead .meta{color:#cdbfa6;font-size:.82rem;margin-top:14px;letter-spacing:.03em}
+  .verdict{background:var(--teal);color:#fff;padding:24px 28px;margin:30px 0;border-left:6px solid var(--gold)}
+  .verdict .eyebrow{color:#e9c98f}
+  .verdict h3{color:#fff;margin:6px 0 8px}
+  .verdict p{margin-bottom:8px;font-size:1.02rem}
+  .verdict b{color:#ffe6bf}
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:.86rem}
+  th{background:var(--charcoal);color:#fff;text-align:left;padding:9px 11px;font-weight:600;font-size:.74rem;text-transform:uppercase;letter-spacing:.06em}
+  td{padding:8px 11px;border-bottom:1px solid #e3d8c4;vertical-align:top}
+  tr:nth-child(even) td{background:#f3ebdc}
+  .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .badge{display:inline-block;padding:2px 9px;border-radius:2px;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff;white-space:nowrap}
+  .g{background:var(--green)} .a{background:var(--amber)} .r{background:var(--red)}
+  .callout{padding:14px 18px;border-left:4px solid var(--gold);background:#f4ead4;margin:14px 0;font-size:.92rem}
+  .callout.red{border-color:var(--red);background:#f7e6e3}
+  .callout.teal{border-color:var(--teal);background:#e7f0f1}
+  ul{margin:8px 0 14px 22px}li{margin-bottom:5px}
+  a{color:var(--teal-d);word-break:break-word}
+  .small{font-size:.8rem;color:var(--muted)}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}
+  .kpi{background:#fff;border:1px solid #e3d8c4;padding:14px 16px;text-align:center}
+  .kpi .n{font-family:var(--font-display);font-size:1.7rem;color:var(--teal-d);font-weight:700}
+  .kpi .l{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:4px}
+  .tot td{font-weight:700;background:var(--sand)!important;border-top:2px solid var(--gold)}
+  .foot{padding:26px 64px;background:var(--charcoal);color:#cdbfa6;font-size:.78rem}
+  @media print{body{background:#fff}.page{box-shadow:none;margin:0;max-width:none}.inner{padding:24px 26px}.masthead,.foot{padding:24px 26px}}
+  @media(max-width:680px){.inner,.masthead,.foot{padding:26px 22px}.kpis{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="masthead">
+  <div class="brand"><span class="m">✦</span> WAYPOINT JOURNEYS &nbsp;·&nbsp; Internal Brief</div>
+  <h1>The Hanno Expedition</h1>
+  <div class="sub">Feasibility, Fixers &amp; Costing — Carthage to the Gulf of Guinea</div>
+  <div class="meta">Prospect: "spalind" (IG) · Solo traveller · Winter window · Budget flexible, authenticity over luxury · Prepared 28 June 2026</div>
+</div>
+
+<div class="inner">
+
+<div class="verdict">
+  <div class="eyebrow">Bottom line up front</div>
+  <h3>Yes — for roughly four-fifths of the route. Build it in phases; defer the climax.</h3>
+  <p>This is a real, deliverable expedition from <b>Carthage to Ghana/Benin</b>, and unusually for us, three of the hardest legs sit on ground <b>we already operate</b> (Tunisia, Mauritania, West Africa). The northern two-thirds — Tunisia → Morocco → Western Sahara → Mauritania → Senegal/Bijagós — is the strongest: safe enough in winter, genuinely authentic, and home to the only two confirmed Punic sites on the whole route.</p>
+  <p>The one piece we <b>cannot</b> sell responsibly in 2026 is the maximalist terminus. <b>Mount Cameroon — the "Chariot of the Gods" — is under a Do-Not-Travel advisory with an active insurgency.</b> The Nigerian coast is out on piracy grounds. Recommendation: contract <b>the Core (≈45 days) now</b>, price the southern phases as conditional add-ons, and hold the summit until the ground allows.</p>
+</div>
+
+<div class="kpis">
+  <div class="kpi"><div class="n">12</div><div class="l">Countries on the route</div></div>
+  <div class="kpi"><div class="n">~73</div><div class="l">Days, full version</div></div>
+  <div class="kpi"><div class="n">3</div><div class="l">Legs already Waypoint-run</div></div>
+  <div class="kpi"><div class="n">50%+</div><div class="l">Target gross margin</div></div>
+</div>
+
+<h2>1 · The concept, and why it holds up</h2>
+<p>The prospect doesn't want a West Africa trip — he wants a recreation of <em>Hanno the Navigator's</em> voyage (the <em>Periplus of Hanno</em>, c. 500 BC), following the strongest historical reading of the text rather than modern borders, travelled rough: overland, local boats, fishing pirogues, hiking, local guides. That instinct is sound. The route below is anchored to the text and, critically, to places that still physically exist.</p>
+
+<table>
+<tr><th>Periplus waypoint</th><th>Modern identification</th><th>Confidence</th><th>What's actually there</th></tr>
+<tr><td>Carthage (departure)</td><td>Tunis / Carthage, Tunisia</td><td><span class="badge g">Solid</span></td><td>Excavated Punic ports, Tophet, Byrsa Hill museum</td></tr>
+<tr><td>Pillars of Hercules</td><td>Strait of Gibraltar</td><td><span class="badge g">Solid</span></td><td>Cap Spartel, Caves of Hercules; the geographic gateway</td></tr>
+<tr><td>Thymiaterion + 4 colonies</td><td>Kenitra / Mogador / Agadir coast</td><td><span class="badge a">Contested</span></td><td>Mogador Island = confirmed Phoenician dye-works</td></tr>
+<tr><td>Cape Soloeis</td><td>Cap Cantin / Cap Beddouza</td><td><span class="badge a">Probable</span></td><td>Wooded Atlantic headland; working sardine ports</td></tr>
+<tr><td>Lixus river</td><td>Loukkos river / Lixus, Larache</td><td><span class="badge g">Solid (site)</span></td><td><b>Genuine Phoenician–Roman city, visitable. The anchor.</b></td></tr>
+<tr><td>Cerne (trading island)</td><td>Herné Is. / Dakhla, W. Sahara</td><td><span class="badge a">Contested</span></td><td>Island in the Río de Oro lagoon; reachable by boat</td></tr>
+<tr><td>Chretes river</td><td>Senegal River (Saint-Louis)</td><td><span class="badge a">Probable</span></td><td>River mouth at the Langue de Barbarie</td></tr>
+<tr><td>River of crocodiles/hippos</td><td>Gambia River</td><td><span class="badge a">Probable</span></td><td>Hippos &amp; crocodiles still present upriver</td></tr>
+<tr><td>Horn of the West</td><td>Bijagós Archipelago, Guinea-Bissau</td><td><span class="badge a">Contested</span></td><td>Island labyrinth, reached by local boat</td></tr>
+<tr><td>Theon Ochema ("Chariot of the Gods")</td><td>Mount Cameroon (vs Kakulima, Guinea)</td><td><span class="badge a">Contested</span></td><td>Only live volcano on the coast — best physical match</td></tr>
+<tr><td>Land of the Gorillai</td><td>Island in a southern bay</td><td><span class="badge r">Speculative</span></td><td>No fixed site; voyage's outer limit</td></tr>
+</table>
+<p class="small">Honest framing for the client: everything south of Lixus is scholarly inference on a deliberately obscured text (a single Byzantine manuscript of a lost Punic original). Lead authenticity claims with Lixus and Mogador; present Cerne, the Horn of the West and the Chariot of the Gods as "the leading hypothesis," never as fact. The prospect explicitly values that honesty — it's a selling point, not a weakness.</p>
+
+<h2>2 · Feasibility by leg — the risk register</h2>
+<p>Advisory levels are current to June 2026 (US State Dept tiers; UK FCDO where it diverges). "Runnable" means runnable for a paying solo client with a professional operator, in winter.</p>
+
+<table>
+<tr><th>Leg</th><th>Advisory</th><th>Verdict</th><th>The real constraint</th></tr>
+<tr><td>Tunisia — Carthage</td><td>US L2</td><td><span class="badge g">Go</span></td><td>Easy &amp; safe. Waypoint already operates here.</td></tr>
+<tr><td>Tunisia → Morocco</td><td>—</td><td><span class="badge a">Fly</span></td><td>No overland: Algeria border closed, no ferry. Fly TUN→Casablanca, rail to Tangier.</td></tr>
+<tr><td>Morocco — Strait &amp; Atlantic coast</td><td>US L2</td><td><span class="badge g">Go</span></td><td>Excellent rail + roads. Lixus, Mogador, sardine boats. The richest authentic leg.</td></tr>
+<tr><td>Western Sahara (coastal N1 / Dakhla)</td><td>US L2 (MA)</td><td><span class="badge g">Go</span></td><td>Coastal corridor is outside the FCDO no-go zone. Stay on the N1 — minefields lie east of the Berm.</td></tr>
+<tr><td>Mauritania — coastal circuit</td><td>US L3 / UK AGAT east</td><td><span class="badge a">Go, managed</span></td><td>Tourist circuit (Nouadhibou–Banc d'Arguin–Atar–Choum–Nouakchott) is explicitly excluded from no-go zones. <b>Waypoint already runs it.</b> Board the ore train at Choum, not Zouérat (L4). e-visa in advance.</td></tr>
+<tr><td>Senegal</td><td>US L1</td><td><span class="badge g">Go</span></td><td>Smooth. Saint-Louis, Saloum, Dakar.</td></tr>
+<tr><td>Casamance (S. Senegal)</td><td>US L1 / local caution</td><td><span class="badge a">Manage</span></td><td>Paved roads OK; landmines off-road. Approach Ziguinchor by pirogue from Saloum, not the bush roads.</td></tr>
+<tr><td>The Gambia</td><td>US L2</td><td><span class="badge g">Go</span></td><td>River Gambia, FairPlay Gambia. Easy crossings.</td></tr>
+<tr><td>Guinea-Bissau / Bijagós</td><td>US L3</td><td><span class="badge a">Monitor</span></td><td><b>Nov 2025 coup</b> — mainland fragile; islands calmer but port/border closures can strand. Keep an air-exit (Air Bijagos) in reserve.</td></tr>
+<tr><td>Guinea (Conakry)</td><td>US L2</td><td><span class="badge a">Hard</span></td><td>Junta; rough roads; checkpoints. Transit, not a highlight.</td></tr>
+<tr><td>Sierra Leone</td><td>US L2</td><td><span class="badge a">Go, manage</span></td><td>Freetown crime; weak health infra (medevac cover essential). Banana Islands worthwhile.</td></tr>
+<tr><td>Liberia</td><td>US L2</td><td><span class="badge a">Manage</span></td><td>Monrovia night crime. Transit leg.</td></tr>
+<tr><td>Côte d'Ivoire</td><td>US L2</td><td><span class="badge a">Manage</span></td><td>Abidjan/Grand-Bassam fine; avoid the Liberia-border 25 km zone. Fly Monrovia→Abidjan.</td></tr>
+<tr><td>Ghana · Togo · Benin</td><td>US L2</td><td><span class="badge g">Go</span></td><td><b>Waypoint home turf.</b> Elmina, Ouidah, Ganvié. Cheapest, richest southern leg.</td></tr>
+<tr><td>Nigeria</td><td>US L3 / Delta L4</td><td><span class="badge r">Fly over</span></td><td>Gulf of Guinea piracy + Niger Delta. No coast, no boats. Lagos airside only.</td></tr>
+<tr><td>Cameroon — Mt Cameroon / SW Region</td><td>US L4 / UK AGAT</td><td><span class="badge r">Deferred</span></td><td><b>Active Ambazonia insurgency, IEDs, kidnapping of Westerners.</b> The summit — the intended climax — is not runnable in 2026.</td></tr>
+<tr><td>Cameroon — Douala (Littoral)</td><td>US L2</td><td><span class="badge a">Hub only</span></td><td>Usable fly-in/out hub for a symbolic terminus.</td></tr>
+<tr><td>Gabon (Libreville)</td><td>US L2</td><td><span class="badge a">Conditional</span></td><td>Post-2023-coup stabilising; thin infrastructure; verify Libreville curfew. A symbolic terminus, by air only.</td></tr>
+</table>
+
+<div class="callout red"><b>The one hard "no": the Chariot of the Gods.</b> Mt Cameroon sits in the Southwest Region, the epicentre of the Anglophone crisis — Do-Not-Travel (US L4) / advise-against-all-travel (UK), with documented 2025–26 attacks, IEDs and abductions. No reputable operator is running the climb for Westerners right now. Selling it would be indefensible. Keep it in the <em>story</em> as the terminus; deliver it as a symbolic fly-in to Douala/Gabon, and bank the actual ascent as a future Phase II once a ceasefire holds.</div>
+
+<h2>3 · The Waypoint advantage — three legs already in-house</h2>
+<p>This is the single biggest reason to take the commission, and the biggest margin lever. Three of the route's hardest segments are existing Waypoint expeditions, which means existing fixers, vehicles, accommodation contracts and — crucially — permits:</p>
+<ul>
+  <li><b>Tunisia (Carthage)</b> — our <em>Tunisia &amp; Algeria</em> expedition already covers Carthage. The departure leg runs at in-house cost.</li>
+  <li><b>Mauritania (the Iron-Ore Train)</b> — our <em>Mauritania</em> expedition already holds the SNIM permit relationship needed to ride the ore wagons (now closed to independent travellers) and to reach the Banc d'Arguin. This de-risks the crux leg entirely.</li>
+  <li><b>Ghana · Togo · Benin</b> — our <em>West Africa</em> expedition is home ground (Elmina, Ouidah, Ganvié), run at in-house rates with established drivers and fixers.</li>
+</ul>
+<p>Net effect: three legs carry no third-party DMC markup, lifting blended margin and shortening the quote-gathering cycle. The cost model already reflects in-house pricing on these rows.</p>
+
+<h2>4 · Movement &amp; border plan</h2>
+<p>The "feel of the voyage" is delivered by <em>how</em> you move. Where local boats are authentic and safe, we use them; where they're a piracy risk, we fly and say so.</p>
+<table>
+<tr><th>Segment</th><th>Mode</th><th>Notes</th></tr>
+<tr><td>Tunis → Tangier</td><td>Air + rail</td><td>TUN→CMN (Royal Air Maroc/Tunisair), then Al Boraq high-speed to Tangier (~2h10).</td></tr>
+<tr><td>Cross the Strait</td><td>Ferry</td><td>Tarifa–Tangier (Balearia / AML), ~1h. The physical Pillars crossing.</td></tr>
+<tr><td>Atlantic Morocco</td><td>Rail + private 4x4 + fishing boats</td><td>Al Boraq spine; coastal driver to Lixus/Essaouira/Safi; dawn sardine-boat outings.</td></tr>
+<tr><td>Agadir → Dakhla</td><td>Private 4x4</td><td>~1,100 km on the sealed N1. Checkpoints; carry passport copies.</td></tr>
+<tr><td>Guerguerat crossing</td><td>Overland</td><td>4 km no-man's-land; open. Mauritania e-visa <b>before</b> arrival (mandatory since Jan 2025).</td></tr>
+<tr><td>Mauritania</td><td>Iron-ore train + 4x4 + lateen pirogue</td><td>Board train at Choum; Imraguen sail at Banc d'Arguin; Diama dam crossing (not chaotic Rosso) into Senegal.</td></tr>
+<tr><td>Senegal → Bijagós</td><td>Sept-place + pirogue + speedboat</td><td>Saloum→Casamance by water; Bissau→Bubaque via Consulmar speedboat (Fri) or local canoa (Tue).</td></tr>
+<tr><td>Guinea → Côte d'Ivoire</td><td>Private vehicle + one flight</td><td>Overland grind; fly Monrovia→Abidjan to skip the bad border roads.</td></tr>
+<tr><td>Abidjan → Accra</td><td>Air</td><td>Short hop onto home turf.</td></tr>
+<tr><td>Ghana → Benin</td><td>Waypoint vehicles</td><td>Aflao &amp; Hilacondji borders, well-practised. Ganvié by pirogue.</td></tr>
+<tr><td>Cotonou → Douala</td><td>Air (over Nigeria)</td><td>Lagos airside only. No Nigerian coast.</td></tr>
+<tr><td>Douala → Libreville</td><td>Air</td><td>No viable overland Cameroon→Gabon. Symbolic terminus.</td></tr>
+</table>
+<div class="callout teal"><b>Where the romance is real:</b> authentic coastal/river sailing works from <b>Morocco to the Bijagós</b> — sardine boats, the Imraguen lateen rig, Saloum/Gambia/Bijagós pirogues. From <b>Ghana eastward the sea is off-limits</b> (Gulf of Guinea piracy). Front-load the "under sail" experiences in the north; treat the south as land-and-air.</div>
+
+<h2>5 · Fixer &amp; guide directory</h2>
+<p>Vetted starting points by leg. "In-house" = Waypoint's own ground network. All third-party rates need a firm solo-private quote (see the <em>Fixers &amp; Quotes</em> tab in the CSV) — West/Saharan-African operators almost always price on request.</p>
+<table>
+<tr><th>Leg</th><th>Operator / fixer</th><th>Role</th><th>Web</th></tr>
+<tr><td>1</td><td><b>Waypoint — Tunisia op</b></td><td>Carthage ground</td><td>in-house</td></tr>
+<tr><td>1</td><td>Hamdi Ahmed / Ahmed Riahi</td><td>Carthage licensed guide</td><td>tourhq.com</td></tr>
+<tr><td>2</td><td>Balearia</td><td>Tarifa–Tangier ferry</td><td>balearia.com</td></tr>
+<tr><td>2–3</td><td>TaxiLux Tours</td><td>Tangier driver-guide / Lixus</td><td>taxiluxtours.com</td></tr>
+<tr><td>3</td><td>SheherazadVentures</td><td>Atlantic-coast DMC</td><td>morocco-adventure-holidays.com</td></tr>
+<tr><td>3</td><td>Traces Berbères</td><td>Essaouira/Mogador history</td><td>traces-berberes.com</td></tr>
+<tr><td>4</td><td>Chinguitty Voyages</td><td>Dakhla &amp; W. Sahara logistics</td><td>mauritaniatours.com</td></tr>
+<tr><td>4</td><td>La Tour d'Éole</td><td>Dakhla lagoon boats (Herné)</td><td>latourdeole.com</td></tr>
+<tr><td>5</td><td><b>Waypoint — Mauritania op</b></td><td>SNIM train permit + ground</td><td>in-house</td></tr>
+<tr><td>5</td><td>Against the Compass Expeditions</td><td>Ore-train permit backup</td><td>expeditions.againstthecompass.com</td></tr>
+<tr><td>5</td><td>Amatlich Tours</td><td>Atar / Banc d'Arguin</td><td>amatlichtours.mr</td></tr>
+<tr><td>6</td><td>Sahel Découverte</td><td>Saint-Louis pirogue/river</td><td>saheldecouverte.com</td></tr>
+<tr><td>6</td><td>Salam Saloum</td><td>Saloum delta bivouac pirogue</td><td>salamsaloum.com</td></tr>
+<tr><td>6</td><td>FairPlay Gambia</td><td>River Gambia trips</td><td>fairplaygambia.com</td></tr>
+<tr><td>6</td><td>Consulmar</td><td>Bijagós ferry / speedboat charter</td><td>consulmarbissau.com</td></tr>
+<tr><td>6</td><td>Scoot West Africa</td><td>Regional overland fixer</td><td>scootwestafrica.com</td></tr>
+<tr><td>7</td><td>VSL Travel</td><td>Sierra Leone DMC / Banana Is.</td><td>visitsierraleone.org</td></tr>
+<tr><td>7</td><td>Rainbow Tours</td><td>Guinea/Liberia/CdI agent</td><td>rainbowtours.co.uk</td></tr>
+<tr><td>8</td><td><b>Waypoint — West Africa op</b></td><td>Ghana/Togo/Benin ground</td><td>in-house</td></tr>
+<tr><td>8</td><td>Jolinaiko Eco Tours</td><td>Ghana–Togo–Benin partner DMC</td><td>joli-ecotours.com</td></tr>
+<tr><td>9</td><td>Discover Cameroon</td><td>Douala hub / Mt Cameroon (deferred)</td><td>discover-cameroon.com</td></tr>
+<tr><td>9</td><td>TraveloGabon</td><td>Libreville DMC (terminus)</td><td>travelogabon.com</td></tr>
+</table>
+
+<h2>6 · Costing &amp; pricing</h2>
+<p>Solo, fully private, expedition-grade-but-authentic lodging. No cost-sharing — the dominant cost driver. Figures are planning-grade (±15–20%); the CSV model lets you drop in firm quotes. Three configurations.</p>
+
+<h3>6.1 · Segment ground costs (what Waypoint pays)</h3>
+<table>
+<tr><th>Phase</th><th>Segment</th><th class="num">Days</th><th class="num">Ground cost</th></tr>
+<tr><td>Core</td><td>1 · Carthage &amp; the Departure</td><td class="num">6</td><td class="num">$2,050</td></tr>
+<tr><td>Core</td><td>2 · The Pillars of Hercules</td><td class="num">3</td><td class="num">$1,070</td></tr>
+<tr><td>Core</td><td>3 · The Lost Colonies (Morocco)</td><td class="num">9</td><td class="num">$3,500</td></tr>
+<tr><td>Core</td><td>4 · The Edge of the Map (→ Cerne/Dakhla)</td><td class="num">6</td><td class="num">$3,000</td></tr>
+<tr><td>Core</td><td>5 · The River of Crocodiles (Mauritania)</td><td class="num">9</td><td class="num">$5,400</td></tr>
+<tr><td>Core</td><td>6 · The Western Horn (Senegal→Bijagós)</td><td class="num">12</td><td class="num">$6,000</td></tr>
+<tr><td>Grand</td><td>7 · The Fiery Coast (Guinea→CdI)</td><td class="num">13</td><td class="num">$6,500</td></tr>
+<tr><td>Grand</td><td>8 · The Gulf of Guinea (Ghana/Togo/Benin)</td><td class="num">8</td><td class="num">$2,700</td></tr>
+<tr><td>Full</td><td>9 · The Chariot of the Gods (terminus)</td><td class="num">7</td><td class="num">$4,000</td></tr>
+</table>
+
+<h3>6.2 · Loaded cost by configuration</h3>
+<table>
+<tr><th>Component</th><th class="num">Core</th><th class="num">Grand</th><th class="num">Full</th></tr>
+<tr><td>Days</td><td class="num">45</td><td class="num">66</td><td class="num">73</td></tr>
+<tr><td>Ground costs (segments)</td><td class="num">$21,020</td><td class="num">$30,220</td><td class="num">$34,220</td></tr>
+<tr><td>Medical evacuation &amp; security</td><td class="num">$2,800</td><td class="num">$3,600</td><td class="num">$4,200</td></tr>
+<tr><td>Satellite comms &amp; safety kit</td><td class="num">$500</td><td class="num">$500</td><td class="num">$500</td></tr>
+<tr><td>Visas &amp; permits (multi-country)</td><td class="num">$600</td><td class="num">$1,200</td><td class="num">$1,600</td></tr>
+<tr><td>Waypoint design &amp; 24/7 ops</td><td class="num">$2,500</td><td class="num">$3,200</td><td class="num">$3,600</td></tr>
+<tr><td>Contingency (12% of ground)</td><td class="num">$2,522</td><td class="num">$3,626</td><td class="num">$4,106</td></tr>
+<tr class="tot"><td>LOADED COST</td><td class="num">$29,942</td><td class="num">$42,346</td><td class="num">$48,226</td></tr>
+</table>
+
+<h3>6.3 · Sell price &amp; margin</h3>
+<p>Sell price = loaded cost ÷ (1 − gross margin). The prospect chose expedition-premium pricing; at 50% margin, dollar profit equals loaded cost.</p>
+<table>
+<tr><th>Configuration</th><th class="num">Loaded</th><th class="num">Sell @50%</th><th class="num">Sell @55%</th><th class="num">Sell @60%</th><th class="num">Profit @50%</th><th class="num">$/day @50%</th></tr>
+<tr><td>Core <span class="small">(Carthage→Bijagós, 45d)</span></td><td class="num">$29,942</td><td class="num"><b>$59,884</b></td><td class="num">$66,538</td><td class="num">$74,855</td><td class="num">$29,942</td><td class="num">$1,331</td></tr>
+<tr><td>Grand <span class="small">(→ Ghana/Benin, 66d)</span></td><td class="num">$42,346</td><td class="num"><b>$84,692</b></td><td class="num">$94,102</td><td class="num">$105,865</td><td class="num">$42,346</td><td class="num">$1,283</td></tr>
+<tr><td>Full <span class="small">(→ Cameroon/Gabon, 73d)</span></td><td class="num">$48,226</td><td class="num"><b>$96,452</b></td><td class="num">$107,169</td><td class="num">$120,565</td><td class="num">$48,226</td><td class="num">$1,321</td></tr>
+</table>
+<p class="small">Excludes international airfare to Tunis and home from the finish (left to the client, per Waypoint norm). ~$1,300/day all-in is the right ballpark for fully-private expedition travel through hard regions — roughly 3–4× our shared-group per-day, which is expected when there's no one to split a 4×4, a guide or a permit with.</p>
+
+<h2>7 · Recommendation &amp; next steps</h2>
+<ul>
+  <li><b>Sell the Core first.</b> Carthage→Bijagós (≈45 days, from ~$60k at 50% margin) is the strongest, safest, fully-deliverable product and stands alone. Quote it at <b>50–55%</b> given the build complexity and our in-house leverage on three legs.</li>
+  <li><b>Offer Grand &amp; Full as phased add-ons</b>, explicitly conditional on live security. This matches our modular house style and the prospect's appetite without over-promising.</li>
+  <li><b>Defer the Mt Cameroon summit.</b> Keep it as the narrative terminus; deliver a symbolic fly-in to Douala/Gabon now; bank the ascent as Phase II when the Anglophone ceasefire holds.</li>
+  <li><b>Firm the numbers:</b> send quote requests to the third-party fixers in the tracker; the in-house legs (Tunisia, Mauritania, West Africa) we can price internally today. Re-pull every advisory at contract — Guinea-Bissau (coup), Cameroon, and Gabon are moving.</li>
+  <li><b>Confirm scope with the client:</b> total duration he can commit to (the Full is ~10–11 weeks), and target travel month (winter is the only sane window for the Sahara coast).</li>
+</ul>
+
+<h2>8 · Confidence &amp; sources</h2>
+<p class="small">Costs are planning-grade estimates, not quotes; many operators price on request. Security and political conditions are volatile on this route (Guinea-Bissau Nov-2025 coup, Cameroon Anglophone crisis, Gabon post-coup transition) — re-verify before any commitment. Mauritania requires an e-visa secured in advance; the iron-ore ore-wagon now requires an operator with a SNIM permit.</p>
+<p class="small"><b>Key sources:</b> US State Dept &amp; UK FCDO travel advisories (Mauritania, Guinea-Bissau, Cameroon, Nigeria, Gabon, Western Sahara, et al., 2025–26); MARAD Advisory 2025-015 (Gulf of Guinea piracy); Britannica &amp; Livius.org (Periplus of Hanno); Roller, <em>Through the Pillars of Herakles</em> (2006) and Warmington, <em>Carthage</em> (1960) on Theon Ochema; operator sites as listed in §5. Full source URLs are retained in the research file and available on request.</p>
+
+</div>
+
+<div class="foot">
+  <b>WAYPOINT JOURNEYS</b> — Internal feasibility &amp; costing brief · The Hanno Expedition · 28 June 2026 · Planning-grade; not for external distribution.
+</div>
+
+</div>
+</body>
+</html>

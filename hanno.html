@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hanno Expedition — A Bespoke Proposal · Waypoint Journeys</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#1A1A1A; --charcoal-deep:#111111; --gold:#C4944A; --gold-light:#D4A85C;
+    --off-white:#E8E0D4; --sand:#F5EDE0; --sand-light:#FAF6F0; --teal:#1B5E6B; --teal-dark:#154C57;
+    --font-body:'Source Sans 3','Segoe UI',Helvetica,Arial,sans-serif;
+    --font-display:'Playfair Display',Georgia,'Times New Roman',serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font-body);background:var(--charcoal);color:var(--sand);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:var(--font-display);font-weight:500;line-height:1.12}
+  p{margin-bottom:1.1rem}
+  a{color:var(--gold-light);text-decoration:none}
+  .eyebrow{font-family:var(--font-body);text-transform:uppercase;letter-spacing:.28em;font-size:.72rem;font-weight:600;color:var(--gold)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+  .btn{display:inline-block;background:var(--gold);color:var(--charcoal);text-transform:uppercase;letter-spacing:.16em;font-weight:600;font-size:.8rem;padding:16px 34px;border:1px solid var(--gold);transition:.25s}
+  .btn:hover{background:transparent;color:var(--gold)}
+
+  .topbar{position:absolute;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:24px 40px}
+  .brand{font-family:var(--font-display);font-size:1.35rem;letter-spacing:.04em;color:#fff;display:flex;align-items:center;gap:12px}
+  .brand .mark{font-size:1.1rem;color:var(--gold)}
+  .topbar .tag{font-family:var(--font-body);text-transform:uppercase;letter-spacing:.22em;font-size:.68rem;color:var(--off-white);opacity:.85}
+
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;
+    background:
+      radial-gradient(120% 80% at 78% 8%, rgba(196,148,74,.20) 0%, rgba(196,148,74,0) 46%),
+      radial-gradient(circle at 50% 50%, rgba(196,148,74,.05) 1px, transparent 1px) 0 0/24px 24px,
+      linear-gradient(165deg,#123039 0%,#1A1A1A 55%,#0e0e0e 100%)}
+  .hero-route{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
+  .hero-compass{position:absolute;right:-60px;bottom:-60px;font-size:30rem;line-height:1;color:rgba(196,148,74,.05);font-family:var(--font-display);pointer-events:none;user-select:none}
+  .hero-inner{position:relative;z-index:2;padding:120px 0 90px}
+  .hero h1{font-size:clamp(3rem,7vw,5.7rem);color:#fff;margin:18px 0 22px;letter-spacing:-.01em}
+  .hero .lede{font-size:1.35rem;max-width:680px;color:var(--off-white);font-weight:300}
+  .hero .meta{margin:30px 0 38px;font-size:.95rem;letter-spacing:.04em;color:var(--off-white);opacity:.9}
+  .hero .meta span{color:var(--gold)}
+
+  section{padding:96px 0}
+  .sand{background:var(--sand);color:var(--charcoal)}
+  .sand .eyebrow{color:var(--teal)}
+  .sand h2,.sand h3{color:var(--charcoal)}
+  .deep{background:var(--charcoal-deep);
+    background-image:radial-gradient(circle at 50% 50%, rgba(196,148,74,.05) 1px, transparent 1px);background-size:24px 24px}
+  .lede-h2{font-size:clamp(2rem,4vw,3rem);margin:14px 0 28px;max-width:780px}
+  .col-narrow{max-width:760px}
+  .big{font-size:1.2rem}
+
+  .creds{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(196,148,74,.25);margin-top:40px}
+  .creds .c{background:var(--charcoal-deep);padding:30px 26px}
+  .creds .c h4{color:var(--gold);font-size:1.25rem;margin-bottom:8px}
+  .creds .c p{font-size:.95rem;color:var(--off-white);margin:0}
+
+  .chapter{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;border-top:1px solid rgba(196,148,74,.25)}
+  .plate{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:380px;padding:40px;text-align:center;overflow:hidden}
+  .plate .rn{font-family:var(--font-display);font-size:5.5rem;font-weight:600;line-height:1;color:var(--gold)}
+  .plate .rule{width:54px;height:1px;background:rgba(255,255,255,.35);margin:18px 0 14px}
+  .plate .pl-sub{text-transform:uppercase;letter-spacing:.26em;font-size:.7rem;color:var(--off-white);opacity:.92}
+  .plate .star{position:absolute;top:22px;left:26px;font-size:1.2rem;color:rgba(196,148,74,.55)}
+  .plate-teal{background:linear-gradient(140deg,#1d525d 0%,#10262b 100%)}
+  .plate-char{background:linear-gradient(140deg,#2c2823 0%,#141414 100%)}
+  .plate-gold{background:linear-gradient(140deg,#7c5b24 0%,#3a2c12 100%)}
+  .chapter .body{padding:54px 56px}
+  .chapter .num{font-family:var(--font-display);font-size:1rem;color:var(--gold);letter-spacing:.1em}
+  .chapter h3{font-size:2rem;margin:6px 0 4px}
+  .chapter .place{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;color:var(--gold);font-weight:600;margin-bottom:18px;display:block}
+  .chapter p{font-size:1.02rem}
+  .anchor{margin-top:16px;padding:14px 18px;border-left:3px solid var(--gold);background:rgba(196,148,74,.10);font-size:.92rem;color:var(--off-white)}
+  .sand .anchor{color:#3b342a;background:#ecdfc4;border-left-color:#9c722f}
+  .anchor b{color:var(--gold-light)}
+  .sand .anchor b{color:#16505c}
+  .chapter.alt .plate{order:2}
+  .conditional{display:inline-block;margin-left:10px;font-family:var(--font-body);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--charcoal);background:var(--gold);padding:3px 9px;vertical-align:middle}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;text-align:center;margin-top:30px}
+  .stats .n{font-family:var(--font-display);font-size:3rem;color:var(--gold);line-height:1}
+  .stats .l{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:var(--off-white);margin-top:10px}
+
+  .honest{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:34px}
+  .honest .card{padding:30px 30px;border:1px solid rgba(26,26,26,.15)}
+  .honest .card.will{background:rgba(27,94,107,.08);border-color:rgba(27,94,107,.3)}
+  .honest .card.wont{background:rgba(26,26,26,.04)}
+  .honest h4{font-size:1.3rem;margin-bottom:14px}
+  .honest ul{list-style:none}
+  .honest li{padding:8px 0 8px 26px;position:relative;font-size:.98rem;border-bottom:1px solid rgba(26,26,26,.08)}
+  .honest li:before{content:'';position:absolute;left:0;top:15px;width:9px;height:9px;background:var(--teal)}
+  .honest .wont li:before{background:var(--gold)}
+
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+  .tier{background:var(--charcoal);border:1px solid rgba(196,148,74,.3);padding:34px 28px;display:flex;flex-direction:column}
+  .tier.feature{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+  .tier .badge{align-self:flex-start;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--charcoal);background:var(--gold);padding:4px 10px;margin-bottom:16px}
+  .tier h3{font-size:1.5rem;color:#fff;margin-bottom:4px}
+  .tier .span{font-size:.85rem;color:var(--off-white);opacity:.8;margin-bottom:18px}
+  .tier .price{font-family:var(--font-display);font-size:2.2rem;color:var(--gold);margin-bottom:4px}
+  .tier .price small{font-family:var(--font-body);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--off-white);display:block;opacity:.7}
+  .tier ul{list-style:none;margin:18px 0 0}
+  .tier li{font-size:.92rem;padding:7px 0 7px 22px;position:relative;color:var(--sand);border-bottom:1px solid rgba(255,255,255,.07)}
+  .tier li:before{content:'';position:absolute;left:0;top:13px;width:7px;height:7px;background:var(--gold)}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:40px}
+  .step .s{font-family:var(--font-display);font-size:2.4rem;color:rgba(196,148,74,.5)}
+  .step h4{font-size:1.3rem;margin:8px 0 10px}
+  .step p{font-size:.98rem}
+
+  .cta{text-align:center;
+    background:
+      radial-gradient(100% 120% at 50% 0%, rgba(196,148,74,.16) 0%, rgba(196,148,74,0) 50%),
+      radial-gradient(circle at 50% 50%, rgba(196,148,74,.05) 1px, transparent 1px) 0 0/24px 24px,
+      linear-gradient(180deg,#0e0e0e,#15333b)}
+  .cta h2{font-size:clamp(2rem,4vw,3rem);color:#fff;margin-bottom:16px}
+  .cta p{max-width:600px;margin:0 auto 30px;color:var(--off-white)}
+  .cta .contact{margin-top:26px;font-size:.95rem;letter-spacing:.04em;color:var(--off-white)}
+  .cta .contact a{color:var(--gold)}
+
+  footer{background:var(--charcoal-deep);padding:48px 0;border-top:1px solid rgba(196,148,74,.2)}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+  footer .brand{font-size:1.1rem}
+  footer p{font-size:.82rem;color:var(--off-white);opacity:.65;margin:0}
+  .disclaimer{font-size:.74rem;color:var(--off-white);opacity:.5;margin-top:18px;max-width:760px}
+
+  @media(max-width:820px){
+    .creds,.stats,.honest,.tiers,.steps{grid-template-columns:1fr}
+    .chapter,.chapter.alt{grid-template-columns:1fr}
+    .plate{min-height:200px}
+    .chapter.alt .plate{order:0}
+    .chapter .body{padding:38px 28px}
+    .topbar{padding:18px 20px}
+    .topbar .tag{display:none}
+    .stats{gap:30px}
+    .hero-compass{font-size:18rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><span class="mark">✦</span> Waypoint Journeys</div>
+  <div class="tag">A Bespoke Expedition Proposal</div>
+</div>
+
+<header class="hero">
+  <svg class="hero-route" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M110,90 C320,150 250,360 470,400 S780,470 720,600 S560,760 1090,720" fill="none" stroke="#C4944A" stroke-width="2" stroke-dasharray="1 12" stroke-linecap="round"/>
+    <circle cx="110" cy="90" r="6" fill="#C4944A"/>
+    <circle cx="470" cy="400" r="5" fill="#C4944A"/>
+    <circle cx="720" cy="600" r="5" fill="#C4944A"/>
+    <circle cx="1090" cy="720" r="6" fill="#C4944A"/>
+  </svg>
+  <div class="hero-compass">✦</div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">A Bespoke Expedition · Prepared For You</div>
+    <h1>The Hanno Expedition</h1>
+    <p class="lede">Carthage to the Chariot of the Gods. Two and a half thousand years after the first recorded voyage of discovery, we put you back on its wake — overland, by river, and under sail.</p>
+    <div class="meta">Solo &nbsp;·&nbsp; Winter season &nbsp;·&nbsp; <span>Tunisia → the Gulf of Guinea</span> &nbsp;·&nbsp; Built from the ground up</div>
+    <a href="#begin" class="btn">Begin the Conversation</a>
+  </div>
+</header>
+
+<section class="sand">
+  <div class="wrap col-narrow">
+    <div class="eyebrow">The Commission</div>
+    <h2 class="lede-h2">Not a trip through West Africa. An expedition in Hanno's wake.</h2>
+    <p class="big">Around 500 BC a Carthaginian admiral named Hanno took a fleet of sixty ships out through the Pillars of Hercules and turned south, down a coast no Mediterranean power had charted. The account he left — the <em>Periplus of Hanno</em> — is the oldest first-hand record of exploration that survives. Colonies founded on the Atlantic shore. A trading island called Cerne. A river of crocodiles and hippopotami. A bay where drums sounded in the dark. And, at the limit of the voyage, a mountain on fire that the Carthaginians called <em>Theon Ochema</em> — the Chariot of the Gods.</p>
+    <p>This is not a tour that visits those countries. It is an expedition that follows the strongest historical reading of the text itself — Carthage, the Strait, the Moroccan colonies, Lixus, the Cerne region, Mauritania, the great river-mouths of Senegal, and only as far south as the evidence and the ground genuinely allow. You travel the way the journey deserves to be travelled: by local boat and fishing pirogue, by desert train and 4×4, on foot and on water. Authenticity before luxury. The expedition, not the highlight reel.</p>
+  </div>
+</section>
+
+<section class="deep">
+  <div class="wrap">
+    <div class="eyebrow">Ground Truth</div>
+    <h2 class="lede-h2">We already run three of these coasts.</h2>
+    <p class="col-narrow">An itinerary this ambitious lives or dies on who you know on the ground. Three of the hardest legs of Hanno's route are expeditions we already operate — with our own fixers, drivers and permits in place. That is the difference between a beautiful idea and a journey that actually happens.</p>
+    <div class="creds">
+      <div class="c"><h4>Carthage</h4><p>Our Tunisia &amp; Algeria expedition already stands on Byrsa Hill and the Punic ports — Hanno's harbour of departure.</p></div>
+      <div class="c"><h4>The Iron-Ore Train</h4><p>Our Mauritania expedition holds the permits to ride the Sahara ore train and reach the Banc d'Arguin. The crux leg — solved.</p></div>
+      <div class="c"><h4>The Slave Coast</h4><p>Ghana, Togo and Benin are home ground. Our West Africa expedition runs Elmina, Ouidah and Ganvié every season.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sand" style="padding-bottom:0">
+  <div class="wrap" style="text-align:center;margin-bottom:18px">
+    <div class="eyebrow">The Route</div>
+    <h2 class="lede-h2" style="margin:14px auto 10px">Seven chapters, north to south</h2>
+    <p class="col-narrow" style="margin:0 auto">Each chapter is anchored to a passage of the <em>Periplus</em> and to a place you can still stand in. Where the scholarship is solid, we say so. Where it is inspired guesswork, we say that too.</p>
+  </div>
+</section>
+
+<div class="sand" style="padding-bottom:90px">
+<div class="chapter">
+  <div class="plate plate-teal"><span class="star">✦</span><span class="rn">I</span><span class="rule"></span><span class="pl-sub">Tunisia · the Strait</span></div>
+  <div class="body">
+    <span class="num">Chapter I</span>
+    <h3>Carthage &amp; the Pillars</h3>
+    <span class="place">Tunisia · the Strait of Gibraltar</span>
+    <p>Begin where the fleet did: the circular military harbour of Carthage, the Tophet, the museum on Byrsa Hill. Then the one concession the map demands — there is no land route west through Algeria, so we fly to Tangier and pick the coast back up. At Cap Spartel, where the Mediterranean pours into the Atlantic, you cross the Strait itself by boat and turn south. The Pillars of Hercules behind you. Open ocean ahead.</p>
+    <div class="anchor"><b>You stand on it:</b> the Punic ports of Carthage — genuine, excavated, Hanno's own harbour.</div>
+  </div>
+</div>
+<div class="chapter alt">
+  <div class="plate plate-gold"><span class="star">✦</span><span class="rn">II</span><span class="rule"></span><span class="pl-sub">Atlantic Morocco</span></div>
+  <div class="body">
+    <span class="num">Chapter II</span>
+    <h3>The Lost Colonies</h3>
+    <span class="place">Atlantic Morocco</span>
+    <p>The <em>Periplus</em> lists a string of cities founded in a single day along this shore. We travel it by coastal rail and private road: the genuinely Phoenician ruins of Lixus above the Loukkos river; Roman-Punic Sala at Rabat; and the island of Mogador off Essaouira, a confirmed Phoenician dye-works you watch from the ramparts. At Safi and Cape Beddouza — a strong candidate for Hanno's Cape Soloeis — you ride out with the dawn sardine fleet.</p>
+    <div class="anchor"><b>You stand on it:</b> Lixus and Mogador — two sites with confirmed Phoenician material older than the voyage itself.</div>
+  </div>
+</div>
+<div class="chapter">
+  <div class="plate plate-char"><span class="star">✦</span><span class="rn">III</span><span class="rule"></span><span class="pl-sub">The Saharan Atlantic</span></div>
+  <div class="body">
+    <span class="num">Chapter III</span>
+    <h3>The Edge of the Map</h3>
+    <span class="place">The Saharan Atlantic · Cerne</span>
+    <p>South of Agadir the road thins and the Sahara meets the sea. We run the coastal highway down through Tarfaya and Laâyoune to Dakhla, on its long lagoon. Out in the bay lies Herné Island — the leading candidate for <em>Cerne</em>, the trading post at the far edge of Hanno's known world. We take a boat to it at low tide. No one can prove a Carthaginian stood here. Standing here yourself, you understand why they thought one did.</p>
+    <div class="anchor"><b>Honest note:</b> Cerne is a scholarly best-guess, not a certainty — and the finest kind of place to argue about at a campfire.</div>
+  </div>
+</div>
+<div class="chapter alt">
+  <div class="plate plate-teal"><span class="star">✦</span><span class="rn">IV</span><span class="rule"></span><span class="pl-sub">Mauritania</span></div>
+  <div class="body">
+    <span class="num">Chapter IV</span>
+    <h3>The River of Crocodiles</h3>
+    <span class="place">Mauritania</span>
+    <p>Our home leg, and the heart of the journey. Cross into Mauritania and ride one of the longest trains on earth across the desert, on the iron ore. Reach the Banc d'Arguin, where the Imraguen still fish from lateen-sailed pirogues exactly as the coast's people have for millennia — and where, in winter, dolphins drive the mullet into their nets. Camp under the cleanest sky you will ever see. End at the Nouakchott fish market at dawn.</p>
+    <div class="anchor"><b>The signature scene:</b> sailing with the Imraguen — a living maritime tradition, and the closest you will come to Hanno's own decks.</div>
+  </div>
+</div>
+<div class="chapter">
+  <div class="plate plate-gold"><span class="star">✦</span><span class="rn">V</span><span class="rule"></span><span class="pl-sub">Senegal · Gambia · Bijagós</span></div>
+  <div class="body">
+    <span class="num">Chapter V</span>
+    <h3>The Western Horn</h3>
+    <span class="place">Senegal · The Gambia · the Bijagós</span>
+    <p>Now the great river-mouths the text describes. Saint-Louis and the Langue de Barbarie at the mouth of the Senegal — a strong reading of Hanno's "Chretes." Pirogue through the Saloum delta and down to the Casamance by water, avoiding the roads. The River Gambia, with its hippos and crocodiles. And finally the labyrinth of the Bijagós islands — a candidate for the "Horn of the West," reached by local boat, where the drums the Carthaginians heard in the dark still sound.</p>
+    <div class="anchor"><b>You stand on it:</b> the Senegal and Gambia river-mouths — the crocodile-and-hippo country the <em>Periplus</em> actually names.</div>
+  </div>
+</div>
+<div class="chapter alt">
+  <div class="plate plate-char"><span class="star">✦</span><span class="rn">VI</span><span class="rule"></span><span class="pl-sub">The Guinea Coast</span></div>
+  <div class="body">
+    <span class="num">Chapter VI</span>
+    <h3>The Fiery Coast <span class="conditional">Conditional Leg</span></h3>
+    <span class="place">Guinea · Sierra Leone · Liberia · Côte d'Ivoire</span>
+    <p>The expedition's hardest overland stretch — and the one we plan around live conditions, not romance. Long days on rough roads, real border friction, a flight where the route demands it. Freetown's Lion Mountains, the Banana Islands, the old colonial coast. No coastal sailing here: the Gulf of Guinea is the world's piracy capital and that line is absolute. We run this leg only when the ground says yes, and we tell you plainly when it does not.</p>
+    <div class="anchor"><b>Honest note:</b> a grind, not a cruise — included for the completists, scoped to the security picture at the time of travel.</div>
+  </div>
+</div>
+<div class="chapter">
+  <div class="plate plate-teal"><span class="star">✦</span><span class="rn">VII</span><span class="rule"></span><span class="pl-sub">to the Chariot of the Gods</span></div>
+  <div class="body">
+    <span class="num">Chapter VII</span>
+    <h3>The Chariot of the Gods <span class="conditional">Terminus · Conditional</span></h3>
+    <span class="place">Ghana · Benin · Cameroon · Gabon</span>
+    <p>The home straight runs through our own ground — Elmina and Cape Coast, the Vodun shrines of Ouidah, the stilt-city of Ganvié. Then the terminus the maximalist reading points to: Mount Cameroon, the only live volcano on this whole coast, almost certainly Hanno's burning <em>Theon Ochema</em>. We bring you to its shoulder as the journey's final act. The summit climb itself sits in a conflict zone today and is <em>deferred</em> — held until it can be done safely. A symbolic arrival now; the ascent when the mountain is open again.</p>
+    <div class="anchor"><b>Honest note:</b> Mt Cameroon is the best match in all the scholarship for the Chariot of the Gods — and currently a Do-Not-Travel zone. We will not sell you the climb until it is safe. That is the promise.</div>
+  </div>
+</div>
+</div>
+
+<section class="deep">
+  <div class="wrap">
+    <div style="text-align:center"><div class="eyebrow">The Shape of It</div></div>
+    <div class="stats">
+      <div><div class="n">12</div><div class="l">Countries on the Wake</div></div>
+      <div><div class="n">~75</div><div class="l">Days, End to End</div></div>
+      <div><div class="n">2</div><div class="l">Genuine Punic Sites</div></div>
+      <div><div class="n">1</div><div class="l">Guest — You</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sand">
+  <div class="wrap">
+    <div class="eyebrow">How We Handle Risk</div>
+    <h2 class="lede-h2">The expedition you can actually take — and the parts we won't fake.</h2>
+    <p class="col-narrow">You asked for historical faithfulness over comfort, and for honesty over a hard sell. So here is exactly where the line sits. This is the same judgement we apply to every Waypoint expedition: we go to difficult places, and we are straight about what that means.</p>
+    <div class="honest">
+      <div class="card will">
+        <h4>What we will do</h4>
+        <ul>
+          <li>Build the Carthage-to-Bijagós core in full — the strongest, safest, most authentic two-thirds of the route.</li>
+          <li>Put you on the iron-ore train and under sail with the Imraguen, on our own permits.</li>
+          <li>Move you by local boat, bush taxi, rail and 4×4 — the expedition's true texture.</li>
+          <li>Carry satellite comms, medical-evacuation cover and 24/7 ground support the entire way.</li>
+        </ul>
+      </div>
+      <div class="card wont">
+        <h4>What we won't do</h4>
+        <ul>
+          <li>Sail the Nigerian coast. The Gulf of Guinea piracy risk makes it uninsurable — we fly over it.</li>
+          <li>Sell you a Mount Cameroon summit today. Its region is under a Do-Not-Travel advisory; the climb is deferred.</li>
+          <li>Pretend the Guinea-coast leg is smooth. It is a grind, scoped to live conditions.</li>
+          <li>Quote a final figure before our fixers confirm. The prices here are honest planning ranges.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deep">
+  <div class="wrap">
+    <div class="eyebrow">Three Ways to Run It</div>
+    <h2 class="lede-h2">One expedition, built in phases.</h2>
+    <p class="col-narrow">We recommend contracting the Core first — it is fully deliverable now and stands complete on its own. The southern phases are added as the calendar and the security picture allow. Pricing is bespoke and solo-private; figures below are tailored starting points, not per-group rates.</p>
+    <div class="tiers">
+      <div class="tier feature">
+        <span class="badge">Recommended Foundation</span>
+        <h3>The Core</h3>
+        <div class="span">Carthage → the Bijagós · ~6 weeks</div>
+        <div class="price">from $59,500<small>solo · private · all ground</small></div>
+        <ul>
+          <li>Carthage, the Strait &amp; Atlantic Morocco</li>
+          <li>The Cerne coast to Dakhla</li>
+          <li>Mauritania: ore train &amp; the Imraguen</li>
+          <li>Senegal, Gambia &amp; the Bijagós by water</li>
+          <li>Deliverable in full, this winter</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <span class="badge">Extension</span>
+        <h3>The Grand</h3>
+        <div class="span">…to the Slave Coast · ~9–10 weeks</div>
+        <div class="price">from $84,000<small>solo · private · all ground</small></div>
+        <ul>
+          <li>Everything in the Core</li>
+          <li>The Guinea coast: Sierra Leone to Abidjan</li>
+          <li>Ghana, Togo &amp; Benin — our home ground</li>
+          <li>Elmina, Ouidah, Ganvié</li>
+          <li>Conditional legs scoped to live risk</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <span class="badge">The Full Vision</span>
+        <h3>The Maximalist</h3>
+        <div class="span">…to the Chariot of the Gods · ~11 weeks</div>
+        <div class="price">from $96,000<small>solo · private · all ground</small></div>
+        <ul>
+          <li>Everything in the Grand</li>
+          <li>Over Nigeria by air, to Cameroon</li>
+          <li>The shoulder of Mount Cameroon</li>
+          <li>A symbolic terminus in Gabon</li>
+          <li>Summit climb deferred until safe</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:.82rem;color:var(--off-white);opacity:.6;margin-top:26px;max-width:780px">Figures exclude international flights to Tunis and home from the finish, and are firmed once ground partners confirm. International airfare is left open by design, so you keep control of your own routing — as on every Waypoint expedition.</p>
+  </div>
+</section>
+
+<section class="sand">
+  <div class="wrap">
+    <div class="eyebrow">How It Works</div>
+    <h2 class="lede-h2">From this conversation to the Pillars of Hercules.</h2>
+    <div class="steps">
+      <div class="step"><div class="s">01</div><h4>We Pressure-Test the Vision</h4><p>We confirm dates, pace and how far south you want to push, then lock the firm quotes from our ground network — fixer by fixer, border by border.</p></div>
+      <div class="step"><div class="s">02</div><h4>We Build Your Expedition</h4><p>A day-by-day itinerary tailored to your fitness and appetite for the rough end of things, every guide, boat and permit handled by our on-the-ground team.</p></div>
+      <div class="step"><div class="s">03</div><h4>You Sail in Hanno's Wake</h4><p>A full briefing — visas, kit, the lot — then wheels up. From Carthage to the Chariot of the Gods, we are with you 24/7 on the ground.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="begin">
+  <div class="wrap">
+    <div class="eyebrow">Begin Your Story</div>
+    <h2>The first voyage of discovery deserves a second.</h2>
+    <p>Tell us when, and how far you want to go. We will build the rest.</p>
+    <a href="mailto:info@wpjourneys.com?subject=The%20Hanno%20Expedition" class="btn">Begin the Conversation</a>
+    <div class="contact"><a href="mailto:info@wpjourneys.com">info@wpjourneys.com</a> &nbsp;·&nbsp; <a href="https://wa.me/message/4D3P4QCBYG5SG1">WhatsApp</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand"><span class="mark">✦</span> Waypoint Journeys</div>
+      <p class="disclaimer">Luxury expeditions to the world's last wild places. The Hanno Expedition is a bespoke commission; routing and pricing are indicative and confirmed on contract. Security-sensitive legs are run only when conditions permit.</p>
+    </div>
+    <p>© 2026 Waypoint Journeys. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
