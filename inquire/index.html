@@ -180,7 +180,7 @@
     .nav-links .nav-dd-heading{font-family:var(--font-display);font-size:.95rem;color:var(--gold)!important;letter-spacing:.04em;margin-bottom:4px;padding-bottom:9px;border-bottom:1px solid rgba(196,148,74,.2);text-transform:none}
     @media(max-width:1240px){.nav-dd{position:static}.nav-dd-menu{top:calc(100% - 6px);right:48px}}
     @media(max-width:900px){.nav-dd-menu{display:none!important}}
-  </style>
+  .wa-top{display:flex;align-items:center;justify-content:center;gap:9px;background:#1f6f54;color:#fff;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:13px 16px;border-radius:3px;margin-bottom:14px;transition:background .25s}.wa-top:hover{background:#22815f}.wa-top svg{width:17px;height:17px;fill:currentColor}.or-divider{display:flex;align-items:center;text-align:center;gap:12px;color:rgba(232,224,212,.5);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;margin:0 0 16px}.or-divider::before,.or-divider::after{content:"";flex:1;height:1px;background:rgba(245,237,224,.14)}details.more{margin:2px 0 16px;border-top:1px solid rgba(245,237,224,.12);padding-top:14px}details.more>summary{list-style:none;cursor:pointer;font-size:.82rem;font-weight:600;letter-spacing:.04em;color:var(--gold-light);display:flex;align-items:center;gap:9px;padding:2px 0}details.more>summary::-webkit-details-marker{display:none}details.more>summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border:1px solid rgba(196,148,74,.5);border-radius:50%;font-size:1rem;line-height:1;color:var(--gold-light)}details.more[open]>summary::before{content:"−"}details.more>summary span{font-weight:400;text-transform:none;letter-spacing:0;color:rgba(232,224,212,.6)}details.more .more-inner{padding-top:14px}</style>
 </head>
 <body data-wp-viewcontent="Inquiry">
 
@@ -313,6 +313,8 @@
         <div class="form-card" id="formCard">
           <h2 data-i18n="inq_form_heading">Request your itinerary</h2>
           <p class="sub" data-i18n="inq_form_sub">A few details and we'll design something around you.</p>
+<a class="wa-top" id="topWa" href="https://wa.me/message/4D3P4QCBYG5SG1" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Chat on WhatsApp — we usually reply in minutes</span></a>
+<div class="or-divider"><span>or send your details</span></div>
 
           <div class="form-err" id="formErr" role="alert" aria-live="polite"></div>
 
@@ -377,9 +379,10 @@
               </div>
             </div>
 
-            <div class="field row">
-              <div>
-                <label for="f-dates" data-i18n="inq_label_dates">Travel dates</label>
+            <details class="more"><summary>Add trip details <span>(optional — helps us tailor your itinerary)</span></summary><div class="more-inner">
+<div class="field row">
+<div>
+<label for="f-dates" data-i18n="inq_label_dates">Travel dates</label>
                 <input type="text" id="f-dates" name="travel_dates"
                        data-i18n-placeholder="inq_ph_dates" placeholder="e.g. March 2027, or flexible" />
               </div>
@@ -422,7 +425,9 @@
               </select>
             </div>
 
-            <!-- hidden attribution (auto-filled from URL / cookie on load) -->
+            </div></details>
+
+<!-- hidden attribution (auto-filled from URL / cookie on load) -->
             <input type="hidden" name="utm_source" /><input type="hidden" name="utm_medium" />
             <input type="hidden" name="utm_campaign" /><input type="hidden" name="utm_content" />
             <input type="hidden" name="utm_term" /><input type="hidden" name="fbclid" />
@@ -554,7 +559,7 @@
     setHidden('page_path', attr.landing_path || location.pathname);
 
     // destination context on the quick-contact + thank-you CTAs (for InitiateInquiry)
-    ['quickWa', 'quickEmail', 'tyWa', 'tyEmail'].forEach(function (id) {
+    ['quickWa', 'quickEmail', 'tyWa', 'tyEmail', 'topWa'].forEach(function (id) {
       var el = doc.getElementById(id); if (el && destLabel) el.setAttribute('data-destination', destLabel);
     });
 
