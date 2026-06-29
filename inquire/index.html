@@ -180,7 +180,7 @@
     .nav-links .nav-dd-heading{font-family:var(--font-display);font-size:.95rem;color:var(--gold)!important;letter-spacing:.04em;margin-bottom:4px;padding-bottom:9px;border-bottom:1px solid rgba(196,148,74,.2);text-transform:none}
     @media(max-width:1240px){.nav-dd{position:static}.nav-dd-menu{top:calc(100% - 6px);right:48px}}
     @media(max-width:900px){.nav-dd-menu{display:none!important}}
-  </style>
+  details.more{margin:2px 0 16px;border-top:1px solid rgba(245,237,224,.12);padding-top:14px}details.more>summary{list-style:none;cursor:pointer;font-size:.82rem;font-weight:600;letter-spacing:.04em;color:var(--gold-light);display:flex;align-items:center;gap:9px;padding:2px 0}details.more>summary::-webkit-details-marker{display:none}details.more>summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border:1px solid rgba(196,148,74,.5);border-radius:50%;font-size:1rem;line-height:1;color:var(--gold-light)}details.more[open]>summary::before{content:"−"}details.more>summary span{font-weight:400;text-transform:none;letter-spacing:0;color:rgba(232,224,212,.6)}details.more .more-inner{padding-top:14px}</style>
 </head>
 <body data-wp-viewcontent="Inquiry">
 
@@ -377,9 +377,10 @@
               </div>
             </div>
 
-            <div class="field row">
-              <div>
-                <label for="f-dates" data-i18n="inq_label_dates">Travel dates</label>
+            <details class="more"><summary>Add trip details <span>(optional — helps us tailor your itinerary)</span></summary><div class="more-inner">
+<div class="field row">
+<div>
+<label for="f-dates" data-i18n="inq_label_dates">Travel dates</label>
                 <input type="text" id="f-dates" name="travel_dates"
                        data-i18n-placeholder="inq_ph_dates" placeholder="e.g. March 2027, or flexible" />
               </div>
@@ -422,7 +423,9 @@
               </select>
             </div>
 
-            <!-- hidden attribution (auto-filled from URL / cookie on load) -->
+            </div></details>
+
+<!-- hidden attribution (auto-filled from URL / cookie on load) -->
             <input type="hidden" name="utm_source" /><input type="hidden" name="utm_medium" />
             <input type="hidden" name="utm_campaign" /><input type="hidden" name="utm_content" />
             <input type="hidden" name="utm_term" /><input type="hidden" name="fbclid" />
